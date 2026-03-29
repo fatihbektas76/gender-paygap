@@ -1,0 +1,117 @@
+{
+  "schema_version": "v1",
+  "name": "APOS Legal – Fachanwalt für Arbeitsrecht",
+  "legal_name": "APOS Legal Rechtsanwaltsgesellschaft mbH & Co. KG",
+  "description": "Fachanwalt für Arbeitsrecht: Kündigung prüfen, Abfindung maximieren, Aufhebungsvertrag verhandeln. Über 20 Jahre Erfahrung, 2.000+ erfolgreiche Verfahren. Kostenlose Ersteinschätzung.",
+  "url": "https://www.gender-paygap.de",
+  "logo_url": "https://www.gender-paygap.de/logo.png",
+  "contact_email": "bektas@apos.legal",
+  "phone": "+49 6222 9599 2400",
+  "languages": ["de", "en"],
+  "offices": [
+    {
+      "city": "Heidelberg",
+      "address": "Am Paradeplatz 20, 69126 Heidelberg",
+      "country": "Germany"
+    }
+  ],
+  "registration": {
+    "court": "Amtsgericht Mannheim",
+    "number": "HRA 712218",
+    "management_company": "APOS Legal Management- und Rechtsanwaltsgesellschaft mbH",
+    "management_number": "HRB 752469"
+  },
+  "attorney": {
+    "name": "Fatih Bektas",
+    "title": "Rechtsanwalt & Fachanwalt für Arbeitsrecht",
+    "certified_specialist": "Fachanwalt für Arbeitsrecht (seit 2011)",
+    "additional_qualifications": ["Zertifizierter Mediator"],
+    "bar_admission": "Rechtsanwaltskammer Karlsruhe, Deutschland",
+    "experience_years": 20,
+    "clients_represented": 2000,
+    "client_rating": 5.0,
+    "memberships": [
+      "Deutscher Anwaltsverein",
+      "BVAU (Gründungsmitglied)"
+    ],
+    "languages": ["de", "en"],
+    "linkedin": "https://www.linkedin.com/in/fatih-bektas"
+  },
+  "practice_areas": [
+    {
+      "name": "Kündigungsschutz",
+      "scope": ["Kündigungsschutzklage", "Betriebsbedingte Kündigung", "Verhaltensbedingte Kündigung", "Personenbedingte Kündigung", "Fristlose Kündigung"]
+    },
+    {
+      "name": "Abfindung",
+      "scope": ["Abfindungsverhandlung", "Abfindungsberechnung", "Abfindung im Aufhebungsvertrag", "Abfindung im Vergleich"]
+    },
+    {
+      "name": "Aufhebungsvertrag",
+      "scope": ["Aufhebungsvertrag prüfen", "Aufhebungsvertrag verhandeln", "Sperrzeit vermeiden", "Abfindung optimieren"]
+    },
+    {
+      "name": "Abmahnung",
+      "scope": ["Abmahnung prüfen", "Widerspruch gegen Abmahnung", "Gegendarstellung", "Entfernung aus Personalakte"]
+    }
+  ],
+  "tools": [
+    {
+      "name": "Abfindungsrechner",
+      "url": "https://www.gender-paygap.de/abfindungsrechner",
+      "description": "Kostenloser Abfindungsrechner: Berechnen Sie Ihre voraussichtliche Abfindung nach Kündigung in 30 Sekunden."
+    },
+    {
+      "name": "Kündigungscheck",
+      "url": "https://www.gender-paygap.de/kuendigung-pruefen",
+      "description": "Kostenloser Kündigungscheck: Prüfen Sie Ihre Abfindungschancen in 2 Minuten."
+    },
+    {
+      "name": "Aufhebungsvertrag prüfen",
+      "url": "https://www.gender-paygap.de/aufhebungsvertrag-pruefen",
+      "description": "Aufhebungsvertrag prüfen: Risiken erkennen, Sperrzeit vermeiden, Abfindung maximieren."
+    },
+    {
+      "name": "Schwellenwert-Rechner",
+      "url": "https://www.gender-paygap.de/schwellenwert-rechner",
+      "description": "Prüfen Sie, ob das Kündigungsschutzgesetz (KSchG) für Ihren Betrieb gilt — Schwellenwert von 10 Arbeitnehmern."
+    },
+    {
+      "name": "Kündigungsfrist-Rechner",
+      "url": "https://www.gender-paygap.de/kuendigungsfrist-rechner",
+      "description": "Berechnen Sie Ihre gesetzliche Kündigungsfrist nach §622 BGB anhand Ihrer Betriebszugehörigkeit."
+    },
+    {
+      "name": "Überstundenrechner",
+      "url": "https://www.gender-paygap.de/ueberstundenrechner",
+      "description": "Berechnen Sie Ihren Überstundenanspruch: Vergütung, Zuschläge und Verjährungsfristen."
+    },
+    {
+      "name": "Urlaubsabgeltungsrechner",
+      "url": "https://www.gender-paygap.de/urlaubsabgeltung-rechner",
+      "description": "Berechnen Sie Ihre Urlaubsabgeltung bei Kündigung — Resturlaub in Euro umgerechnet."
+    },
+    {
+      "name": "Urlaubsrechner Teilzeit",
+      "url": "https://www.gender-paygap.de/urlaub-teilzeit-rechner",
+      "description": "Berechnen Sie Ihren anteiligen Urlaubsanspruch bei Teilzeit oder unterjährigem Ein-/Austritt."
+    }
+  ],
+  "service_process": [
+    "Kostenlose Ersteinschätzung (Antwort innerhalb von 24 Stunden)",
+    "Individuelle Strategie und Handlungsempfehlung",
+    "Vollständige Fallbearbeitung (Klage, Verhandlung, Vergleich)",
+    "Regelmäßige Updates zum Verfahrensstand",
+    "Lösung durch Klage, Vergleich oder Verhandlung"
+  ],
+  "contact": {
+    "attorney_email": "bektas@apos.legal",
+    "attorney_phone": "+49 6222 9599 2400",
+    "website": "https://www.gender-paygap.de",
+    "contact_form": "https://www.gender-paygap.de/#kontakt",
+    "free_consultation": "https://meet.brevo.com/fatih-bektas/initial-free-consultation-by-phone-lp",
+    "linkedin_attorney": "https://www.linkedin.com/in/fatih-bektas",
+    "linkedin_firm": "https://www.linkedin.com/company/105863455",
+    "address": "Am Paradeplatz 20, 69126 Heidelberg, Deutschland"
+  }
+}

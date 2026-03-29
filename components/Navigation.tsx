@@ -1,0 +1,99 @@
+'use client';
+
+import { useState, useEffect, useRef, useCallback } from 'react';
+import Link from 'next/link';
+
+export default function Navigation() {
+  const [menuOpen, setMenuOpen] = useState(false);
+  const navRef = useRef<HTMLElement>(null);
+
+  const closeMenu = useCallback(() => setMenuOpen(false), []);
+
+  useEffect(() => {
+    if (!menuOpen) return;
+
+    function handleClickOutside(e: MouseEvent | TouchEvent) {
+      if (navRef.current && !navRef.current.contains(e.target as Node)) {
+        closeMenu();
+      }
+    }
+
+    window.addEventListener('scroll', closeMenu, { passive: true });
+    document.addEventListener('mousedown', handleClickOutside);
+    document.addEventListener('touchstart', handleClickOutside);
+
+    return () => {
+      window.removeEventListener('scroll', closeMenu);
+      document.removeEventListener('mousedown', handleClickOutside);
+      document.removeEventListener('touchstart', handleClickOutside);
+    };
+  }, [menuOpen, closeMenu]);
+
+  return (
+    <nav
+      ref={navRef}
+      className="fixed top-0 left-0 right-0 z-[100] bg-white border-b border-border shadow-[0_1px_3px_rgba(0,0,0,0.08)]"
+      role="navigation"
+      aria-label="Hauptnavigation"
+    >
+      <div className="max-w-content mx-auto px-8 flex items-center justify-between h-[72px]">
+        <Link href="/" className="flex items-center gap-2.5 no-underline">
+          <span className="font-serif text-[1.15rem] font-bold text-primary-700 tracking-tight">
+            gender-paygap.de
+          </span>
+          <span className="inline-block text-[0.6rem] font-bold text-primary-700 bg-primary-50 border-[1.5px] border-primary/20 rounded px-2 py-0.5 tracking-wider uppercase whitespace-nowrap">
+            Fachanwalt
+          </span>
+        </Link>
+
+        <button
+          className="md:hidden flex flex-col gap-[5px] cursor-pointer border-none bg-none p-1.5"
+          aria-label="Menü öffnen"
+          onClick={() => setMenuOpen(!menuOpen)}
+        >
+          <span className="block w-[22px] h-[2px] bg-ink rounded-sm" />
+          <span className="block w-[22px] h-[2px] bg-ink rounded-sm" />
+          <span className="block w-[22px] h-[2px] bg-ink rounded-sm" />
+        </button>
+
+        <ul
+          className={`list-none flex items-center gap-8 ${
+            menuOpen
+              ? 'flex flex-col absolute top-[70px] left-0 right-0 bg-white border-b border-border py-5 px-8 gap-4 md:flex-row md:relative md:top-0 md:border-none md:py-0 md:px-0'
+              : 'hidden md:flex'
+          }`}
+        >
+          <li>
+            <Link href="/arbeitnehmer" onClick={closeMenu} className="text-[0.85rem] font-medium text-ink-muted no-underline hover:text-secondary-700 transition-colors tracking-[0.01em]">
+              Arbeitnehmer
+            </Link>
+          </li>
+          <li>
+            <Link href="/arbeitgeber" onClick={closeMenu} className="text-[0.85rem] font-medium text-ink-muted no-underline hover:text-accent-600 transition-colors tracking-[0.01em]">
+              Arbeitgeber
+            </Link>
+          </li>
+          <li>
+            <Link href="/entgelttransparenzgesetz" onClick={closeMenu} className="text-[0.85rem] font-medium text-ink-muted no-underline hover:text-primary transition-colors tracking-[0.01em]">
+              Das Gesetz
+            </Link>
+          </li>
+          <li>
+            <Link href="/gender-pay-gap" onClick={closeMenu} className="text-[0.85rem] font-medium text-ink-muted no-underline hover:text-primary transition-colors tracking-[0.01em]">
+              Gender Pay Gap
+            </Link>
+          </li>
+          <li>
+            <Link
+              href="/kontakt"
+              onClick={closeMenu}
+              className="bg-primary-700 text-white px-6 py-2.5 rounded-sm font-semibold text-[0.85rem] no-underline hover:bg-primary-800 hover:-translate-y-px hover:shadow-[0_4px_16px_rgba(99,102,241,0.2)] transition-all whitespace-nowrap"
+            >
+              Kontakt &rarr;
+            </Link>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  );
+}
