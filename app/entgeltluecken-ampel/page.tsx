@@ -30,11 +30,11 @@ const ampelConfig = {
   gruen: {
     label: 'Grün',
     sublabel: 'Bereinigter GPG unter 2%',
-    bgClass: 'bg-secondary-50',
-    borderClass: 'border-secondary',
-    badgeClass: 'bg-secondary text-white',
-    textClass: 'text-secondary-700',
-    dotColor: 'bg-secondary',
+    bgClass: 'bg-green-bg',
+    borderClass: 'border-green',
+    badgeClass: 'bg-green text-white',
+    textClass: 'text-green',
+    dotColor: 'bg-green',
   },
   gelb: {
     label: 'Gelb',
@@ -131,20 +131,20 @@ export default function EntgeltlueckenAmpelPage() {
       />
 
       {/* Header */}
-      <div className="bg-accent-50 pt-[120px] pb-[50px] px-8 border-b border-border">
+      <div className="bg-cream-dark pt-[120px] pb-[50px] px-8 border-b border-border">
         <div className="max-w-content mx-auto">
           <nav className="text-[0.84rem] text-ink-muted mb-6">
-            <Link href="/" className="text-accent no-underline hover:underline">
+            <Link href="/" className="text-blue no-underline hover:underline">
               Start
             </Link>
             <span className="mx-2">/</span>
-            <Link href="/arbeitgeber" className="text-accent no-underline hover:underline">
+            <Link href="/arbeitgeber" className="text-blue no-underline hover:underline">
               Arbeitgeber
             </Link>
             <span className="mx-2">/</span>
             <span>Entgeltlücken-Ampel</span>
           </nav>
-          <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-accent-700 mb-2.5">
+          <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-blue mb-2.5">
             Kostenloses Tool
           </div>
           <h1 className="font-serif text-[clamp(1.8rem,4vw,2.4rem)] font-bold leading-[1.2] max-w-[700px]">
@@ -193,7 +193,7 @@ export default function EntgeltlueckenAmpelPage() {
                     value={mitarbeiterGesamt}
                     onChange={(e) => setMitarbeiterGesamt(e.target.value)}
                     placeholder="z. B. 250"
-                    className="w-full py-3 px-4 border border-border rounded-sm font-sans text-[0.92rem] text-ink bg-white transition-all outline-none focus:border-accent focus:shadow-[0_0_0_3px_rgba(59,130,246,0.1)] placeholder:text-ink-muted"
+                    className="w-full py-3 px-4 border border-border rounded-sm font-sans text-[0.92rem] text-ink bg-white transition-all outline-none focus:border-blue focus:shadow-[0_0_0_3px_rgba(61,90,128,0.1)] placeholder:text-ink-muted"
                   />
                 </div>
 
@@ -208,7 +208,7 @@ export default function EntgeltlueckenAmpelPage() {
                     value={mitarbeiterWeiblich}
                     onChange={(e) => setMitarbeiterWeiblich(e.target.value)}
                     placeholder="z. B. 120"
-                    className="w-full py-3 px-4 border border-border rounded-sm font-sans text-[0.92rem] text-ink bg-white transition-all outline-none focus:border-accent focus:shadow-[0_0_0_3px_rgba(59,130,246,0.1)] placeholder:text-ink-muted"
+                    className="w-full py-3 px-4 border border-border rounded-sm font-sans text-[0.92rem] text-ink bg-white transition-all outline-none focus:border-blue focus:shadow-[0_0_0_3px_rgba(61,90,128,0.1)] placeholder:text-ink-muted"
                   />
                 </div>
 
@@ -223,7 +223,7 @@ export default function EntgeltlueckenAmpelPage() {
                     value={gehaltM}
                     onChange={(e) => setGehaltM(e.target.value)}
                     placeholder="z. B. 55000"
-                    className="w-full py-3 px-4 border border-border rounded-sm font-sans text-[0.92rem] text-ink bg-white transition-all outline-none focus:border-accent focus:shadow-[0_0_0_3px_rgba(59,130,246,0.1)] placeholder:text-ink-muted"
+                    className="w-full py-3 px-4 border border-border rounded-sm font-sans text-[0.92rem] text-ink bg-white transition-all outline-none focus:border-blue focus:shadow-[0_0_0_3px_rgba(61,90,128,0.1)] placeholder:text-ink-muted"
                   />
                 </div>
 
@@ -238,7 +238,7 @@ export default function EntgeltlueckenAmpelPage() {
                     value={gehaltF}
                     onChange={(e) => setGehaltF(e.target.value)}
                     placeholder="z. B. 48000"
-                    className="w-full py-3 px-4 border border-border rounded-sm font-sans text-[0.92rem] text-ink bg-white transition-all outline-none focus:border-accent focus:shadow-[0_0_0_3px_rgba(59,130,246,0.1)] placeholder:text-ink-muted"
+                    className="w-full py-3 px-4 border border-border rounded-sm font-sans text-[0.92rem] text-ink bg-white transition-all outline-none focus:border-blue focus:shadow-[0_0_0_3px_rgba(61,90,128,0.1)] placeholder:text-ink-muted"
                   />
                 </div>
 
@@ -253,8 +253,8 @@ export default function EntgeltlueckenAmpelPage() {
                       onClick={() => setVariableBestandteile(true)}
                       className={`flex-1 py-2.5 rounded-sm font-sans text-[0.92rem] font-semibold border transition-all cursor-pointer ${
                         variableBestandteile === true
-                          ? 'bg-accent-700 text-white border-accent-700'
-                          : 'bg-white text-ink border-border hover:border-accent/50'
+                          ? 'bg-blue text-white border-blue'
+                          : 'bg-white text-ink border-border hover:border-blue/50'
                       }`}
                     >
                       Ja
@@ -264,8 +264,8 @@ export default function EntgeltlueckenAmpelPage() {
                       onClick={() => setVariableBestandteile(false)}
                       className={`flex-1 py-2.5 rounded-sm font-sans text-[0.92rem] font-semibold border transition-all cursor-pointer ${
                         variableBestandteile === false
-                          ? 'bg-accent-700 text-white border-accent-700'
-                          : 'bg-white text-ink border-border hover:border-accent/50'
+                          ? 'bg-blue text-white border-blue'
+                          : 'bg-white text-ink border-border hover:border-blue/50'
                       }`}
                     >
                       Nein
@@ -284,8 +284,8 @@ export default function EntgeltlueckenAmpelPage() {
                       onClick={() => setTarifgebunden(true)}
                       className={`flex-1 py-2.5 rounded-sm font-sans text-[0.92rem] font-semibold border transition-all cursor-pointer ${
                         tarifgebunden === true
-                          ? 'bg-accent-700 text-white border-accent-700'
-                          : 'bg-white text-ink border-border hover:border-accent/50'
+                          ? 'bg-blue text-white border-blue'
+                          : 'bg-white text-ink border-border hover:border-blue/50'
                       }`}
                     >
                       Ja
@@ -295,8 +295,8 @@ export default function EntgeltlueckenAmpelPage() {
                       onClick={() => setTarifgebunden(false)}
                       className={`flex-1 py-2.5 rounded-sm font-sans text-[0.92rem] font-semibold border transition-all cursor-pointer ${
                         tarifgebunden === false
-                          ? 'bg-accent-700 text-white border-accent-700'
-                          : 'bg-white text-ink border-border hover:border-accent/50'
+                          ? 'bg-blue text-white border-blue'
+                          : 'bg-white text-ink border-border hover:border-blue/50'
                       }`}
                     >
                       Nein
@@ -309,7 +309,7 @@ export default function EntgeltlueckenAmpelPage() {
                   disabled={!allFilled}
                   className={`w-full py-3.5 border-none rounded-sm font-sans text-base font-semibold cursor-pointer transition-all mt-2 ${
                     allFilled
-                      ? 'bg-accent-700 text-white hover:bg-accent-800 hover:-translate-y-px hover:shadow-[0_6px_20px_rgba(59,130,246,0.25)]'
+                      ? 'bg-blue text-white hover:bg-blue hover:-translate-y-px hover:shadow-[0_6px_20px_rgba(61,90,128,0.25)]'
                       : 'bg-slate-200 text-ink-muted cursor-not-allowed'
                   }`}
                 >
@@ -320,7 +320,7 @@ export default function EntgeltlueckenAmpelPage() {
                 <strong>Hinweis:</strong> Dieses Tool dient ausschließlich der unverbindlichen
                 Erstorientierung und ersetzt keine anwaltliche Beratung. Für eine verbindliche
                 Einschätzung wenden Sie sich bitte an einen{' '}
-                <Link href="/kontakt" className="text-accent no-underline hover:underline">
+                <Link href="/kontakt" className="text-blue no-underline hover:underline">
                   Fachanwalt für Arbeitsrecht
                 </Link>
                 .
@@ -350,7 +350,7 @@ export default function EntgeltlueckenAmpelPage() {
                     />
                     <div
                       className={`w-10 h-10 rounded-full ${
-                        result.risiko === 'gruen' ? 'bg-green-500 shadow-[0_0_12px_rgba(34,197,94,0.6)]' : 'bg-gray-600'
+                        result.risiko === 'gruen' ? 'bg-green-500 shadow-[0_0_12px_rgba(43,76,53,0.6)]' : 'bg-gray-600'
                       }`}
                     />
                   </div>
@@ -395,8 +395,8 @@ export default function EntgeltlueckenAmpelPage() {
 
                 {/* Context: Tarifbindung */}
                 {tarifgebunden && (
-                  <div className="mt-4 p-4 bg-accent-50 border border-accent-200 rounded-sm">
-                    <p className="text-[0.92rem] text-accent-800 leading-relaxed m-0">
+                  <div className="mt-4 p-4 bg-cream-dark border border-blue/30 rounded-sm">
+                    <p className="text-[0.92rem] text-blue leading-relaxed m-0">
                       <strong>Tarifbindung:</strong> Tarifbindung reduziert das Risiko,
                       schließt es aber nicht aus. Auch tarifgebundene Unternehmen müssen
                       sicherstellen, dass übertarifliche Zulagen und Eingruppierungen
@@ -418,8 +418,8 @@ export default function EntgeltlueckenAmpelPage() {
                 )}
 
                 {/* Handlungsempfehlung */}
-                <div className="mt-6 py-5 px-6 bg-slate-50 rounded-sm border-l-[3px] border-accent">
-                  <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-accent-700 mb-2">
+                <div className="mt-6 py-5 px-6 bg-slate-50 rounded-sm border-l-[3px] border-blue">
+                  <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-blue mb-2">
                     Handlungsempfehlung
                   </div>
                   {result.risiko === 'gruen' && (
@@ -431,7 +431,7 @@ export default function EntgeltlueckenAmpelPage() {
                       </p>
                       <Link
                         href="/kontakt"
-                        className="inline-block py-3 px-6 bg-accent-700 text-white border-none rounded-sm font-sans text-[0.92rem] font-semibold no-underline transition-all hover:bg-accent-800"
+                        className="inline-block py-3 px-6 bg-blue text-white border-none rounded-sm font-sans text-[0.92rem] font-semibold no-underline transition-all hover:bg-blue"
                       >
                         Audit zur Absicherung anfragen &rarr;
                       </Link>
@@ -446,7 +446,7 @@ export default function EntgeltlueckenAmpelPage() {
                       </p>
                       <Link
                         href="/kontakt"
-                        className="inline-block py-3 px-6 bg-accent-700 text-white border-none rounded-sm font-sans text-[0.92rem] font-semibold no-underline transition-all hover:bg-accent-800"
+                        className="inline-block py-3 px-6 bg-blue text-white border-none rounded-sm font-sans text-[0.92rem] font-semibold no-underline transition-all hover:bg-blue"
                       >
                         Audit anfragen &mdash; bevor es teuer wird &rarr;
                       </Link>
@@ -461,7 +461,7 @@ export default function EntgeltlueckenAmpelPage() {
                       </p>
                       <Link
                         href="/kontakt"
-                        className="inline-block py-3 px-6 bg-accent-700 text-white border-none rounded-sm font-sans text-[0.92rem] font-bold no-underline transition-all hover:bg-accent-800 hover:-translate-y-px hover:shadow-[0_6px_20px_rgba(59,130,246,0.25)]"
+                        className="inline-block py-3 px-6 bg-blue text-white border-none rounded-sm font-sans text-[0.92rem] font-bold no-underline transition-all hover:bg-blue hover:-translate-y-px hover:shadow-[0_6px_20px_rgba(61,90,128,0.25)]"
                       >
                         Sofort Compliance-Audit anfragen &rarr;
                       </Link>
@@ -478,7 +478,7 @@ export default function EntgeltlueckenAmpelPage() {
       <section className="py-[70px] px-8 bg-slate-50">
         <div className="max-w-content mx-auto">
           <div className="max-w-[740px]">
-            <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-accent-700 mb-2.5">
+            <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-blue mb-2.5">
               Hintergrund
             </div>
             <h2 className="font-serif text-[clamp(1.4rem,3vw,1.9rem)] font-bold leading-[1.25] mb-5">
@@ -512,7 +512,7 @@ export default function EntgeltlueckenAmpelPage() {
       {/* FAQ */}
       <section className="py-[70px] px-8 bg-white">
         <div className="max-w-content mx-auto">
-          <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-accent-700 mb-2.5">
+          <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-blue mb-2.5">
             Häufige Fragen
           </div>
           <h2 className="font-serif text-[clamp(1.4rem,3vw,1.9rem)] font-bold leading-[1.25] mb-6">
@@ -523,7 +523,7 @@ export default function EntgeltlueckenAmpelPage() {
       </section>
 
       {/* CTA */}
-      <section className="py-[70px] px-8 bg-accent-700 text-white text-center">
+      <section className="py-[70px] px-8 bg-blue text-white text-center">
         <div className="max-w-[700px] mx-auto">
           <h2 className="font-serif text-[clamp(1.4rem,3vw,1.8rem)] font-bold mb-4">
             Compliance-Audit anfragen &mdash; kostenlose Ersteinschätzung
@@ -534,7 +534,7 @@ export default function EntgeltlueckenAmpelPage() {
           </p>
           <Link
             href="/kontakt"
-            className="inline-flex items-center gap-2 px-8 py-3.5 rounded-sm text-[0.95rem] font-semibold no-underline transition-all bg-white text-accent-700 hover:bg-accent-50 hover:-translate-y-0.5"
+            className="inline-flex items-center gap-2 px-8 py-3.5 rounded-sm text-[0.95rem] font-semibold no-underline transition-all bg-white text-blue hover:bg-cream-dark hover:-translate-y-0.5"
           >
             Jetzt Kontakt aufnehmen &rarr;
           </Link>
@@ -550,7 +550,7 @@ export default function EntgeltlueckenAmpelPage() {
             statistischer Durchschnittswert &mdash; die tatsächliche Bereinigung hängt von
             unternehmensspezifischen Faktoren ab. Für eine exakte Analyse Ihres Gender Pay
             Gap wenden Sie sich an einen{' '}
-            <Link href="/kontakt" className="text-accent no-underline hover:underline">
+            <Link href="/kontakt" className="text-blue no-underline hover:underline">
               Fachanwalt für Arbeitsrecht
             </Link>
             .

@@ -98,7 +98,7 @@ ${n}`;
   const isFormValid = name.trim() && arbeitgeber.trim() && stelle.trim() && eintrittsDatum && stadt.trim();
 
   const inputClass =
-    'w-full py-3 px-4 border border-border rounded-sm font-sans text-[0.92rem] text-ink bg-white transition-all outline-none focus:border-secondary focus:shadow-[0_0_0_3px_rgba(22,163,74,0.1)] placeholder:text-ink-muted';
+    'w-full py-3 px-4 border border-border rounded-sm font-sans text-[0.92rem] text-ink bg-white transition-all outline-none focus:border-green focus:shadow-[0_0_0_3px_rgba(43,76,53,0.1)] placeholder:text-ink-muted';
 
   return (
     <main>
@@ -136,18 +136,18 @@ ${n}`;
       />
 
       {/* Header */}
-      <div className="bg-secondary-50 pt-[120px] pb-[50px] px-8 border-b border-border">
+      <div className="bg-green-bg pt-[120px] pb-[50px] px-8 border-b border-border">
         <div className="max-w-content mx-auto">
           <nav className="text-[0.84rem] text-ink-muted mb-6">
-            <Link href="/" className="text-secondary-700 no-underline hover:underline">Start</Link>
+            <Link href="/" className="text-green no-underline hover:underline">Start</Link>
             <span className="mx-2">/</span>
-            <Link href="/arbeitnehmer" className="text-secondary-700 no-underline hover:underline">Arbeitnehmer</Link>
+            <Link href="/arbeitnehmer" className="text-green no-underline hover:underline">Arbeitnehmer</Link>
             <span className="mx-2">/</span>
-            <Link href="/auskunftsrecht-checker" className="text-secondary-700 no-underline hover:underline">Auskunftsrecht-Checker</Link>
+            <Link href="/auskunftsrecht-checker" className="text-green no-underline hover:underline">Auskunftsrecht-Checker</Link>
             <span className="mx-2">/</span>
             <span>Schreiben-Generator</span>
           </nav>
-          <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-secondary-700 mb-2.5">
+          <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-green mb-2.5">
             Kostenloses Tool
           </div>
           <h1 className="font-serif text-[clamp(1.8rem,4vw,2.4rem)] font-bold leading-[1.2] max-w-[700px]">
@@ -177,9 +177,9 @@ ${n}`;
                     <div
                       className={`w-8 h-8 rounded-full flex items-center justify-center text-[0.85rem] font-bold transition-colors ${
                         s.num === step
-                          ? 'bg-secondary-600 text-white'
+                          ? 'bg-green text-white'
                           : s.num < step
-                            ? 'bg-secondary-100 text-secondary-700'
+                            ? 'bg-green-bg text-green'
                             : 'bg-slate-100 text-ink-muted'
                       }`}
                     >
@@ -191,12 +191,12 @@ ${n}`;
                         s.num
                       )}
                     </div>
-                    <span className={`text-[0.78rem] ${s.num === step ? 'text-secondary-700 font-semibold' : 'text-ink-muted'} max-sm:hidden`}>
+                    <span className={`text-[0.78rem] ${s.num === step ? 'text-green font-semibold' : 'text-ink-muted'} max-sm:hidden`}>
                       {s.label}
                     </span>
                   </div>
                   {i < 2 && (
-                    <div className={`w-8 h-0.5 ${s.num < step ? 'bg-secondary-300' : 'bg-slate-200'}`} />
+                    <div className={`w-8 h-0.5 ${s.num < step ? 'bg-green-bg' : 'bg-slate-200'}`} />
                   )}
                 </div>
               ))}
@@ -215,7 +215,7 @@ ${n}`;
                 <div className="space-y-5">
                   <div>
                     <label className="block text-[0.84rem] font-semibold text-ink mb-1.5">
-                      Ihr Name <span className="text-secondary-700">*</span>
+                      Ihr Name <span className="text-green">*</span>
                     </label>
                     <input
                       type="text"
@@ -227,7 +227,7 @@ ${n}`;
                   </div>
                   <div>
                     <label className="block text-[0.84rem] font-semibold text-ink mb-1.5">
-                      Name des Arbeitgebers <span className="text-secondary-700">*</span>
+                      Name des Arbeitgebers <span className="text-green">*</span>
                     </label>
                     <input
                       type="text"
@@ -239,7 +239,7 @@ ${n}`;
                   </div>
                   <div>
                     <label className="block text-[0.84rem] font-semibold text-ink mb-1.5">
-                      Ihre Stellenbezeichnung <span className="text-secondary-700">*</span>
+                      Ihre Stellenbezeichnung <span className="text-green">*</span>
                     </label>
                     <input
                       type="text"
@@ -251,7 +251,7 @@ ${n}`;
                   </div>
                   <div>
                     <label className="block text-[0.84rem] font-semibold text-ink mb-1.5">
-                      Im Unternehmen seit <span className="text-secondary-700">*</span>
+                      Im Unternehmen seit <span className="text-green">*</span>
                     </label>
                     <input
                       type="date"
@@ -262,7 +262,7 @@ ${n}`;
                   </div>
                   <div>
                     <label className="block text-[0.84rem] font-semibold text-ink mb-1.5">
-                      Stadt <span className="text-secondary-700">*</span>
+                      Stadt <span className="text-green">*</span>
                     </label>
                     <input
                       type="text"
@@ -277,7 +277,7 @@ ${n}`;
                     disabled={!isFormValid}
                     className={`w-full py-3.5 border-none rounded-sm font-sans text-base font-semibold cursor-pointer transition-all mt-2 ${
                       isFormValid
-                        ? 'bg-secondary-600 text-white hover:bg-secondary-700 hover:-translate-y-px hover:shadow-[0_6px_20px_rgba(22,163,74,0.25)]'
+                        ? 'bg-green text-white hover:bg-green hover:-translate-y-px hover:shadow-[0_6px_20px_rgba(43,76,53,0.25)]'
                         : 'bg-slate-200 text-ink-muted cursor-not-allowed'
                     }`}
                   >
@@ -316,7 +316,7 @@ ${n}`;
                       copyToClipboard();
                       setStep(3);
                     }}
-                    className="flex-1 py-3.5 bg-secondary-600 text-white border-none rounded-sm font-sans text-base font-semibold cursor-pointer transition-all hover:bg-secondary-700 hover:-translate-y-px hover:shadow-[0_6px_20px_rgba(22,163,74,0.25)]"
+                    className="flex-1 py-3.5 bg-green text-white border-none rounded-sm font-sans text-base font-semibold cursor-pointer transition-all hover:bg-green hover:-translate-y-px hover:shadow-[0_6px_20px_rgba(43,76,53,0.25)]"
                   >
                     In Zwischenablage kopieren &rarr;
                   </button>
@@ -328,9 +328,9 @@ ${n}`;
             {step === 3 && (
               <div>
                 {/* Success message */}
-                <div className="rounded-sm border-2 border-secondary p-6 bg-secondary-50 text-center mb-6">
-                  <div className="w-14 h-14 rounded-full bg-secondary-100 flex items-center justify-center mx-auto mb-4">
-                    <svg className="text-secondary-700" width="28" height="28" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2.5">
+                <div className="rounded-sm border-2 border-green p-6 bg-green-bg text-center mb-6">
+                  <div className="w-14 h-14 rounded-full bg-green-bg flex items-center justify-center mx-auto mb-4">
+                    <svg className="text-green" width="28" height="28" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2.5">
                       <path d="M5 13l4 4L19 7" strokeLinecap="round" strokeLinejoin="round" />
                     </svg>
                   </div>
@@ -356,13 +356,13 @@ ${n}`;
                 {/* Copy again button */}
                 <button
                   onClick={copyToClipboard}
-                  className="w-full py-3 bg-white text-secondary-700 border-2 border-secondary-600 rounded-sm font-sans text-[0.92rem] font-semibold cursor-pointer transition-all hover:bg-secondary-50 mb-6"
+                  className="w-full py-3 bg-white text-green border-2 border-green rounded-sm font-sans text-[0.92rem] font-semibold cursor-pointer transition-all hover:bg-green-bg mb-6"
                 >
                   {copied ? 'Kopiert!' : 'Erneut in Zwischenablage kopieren'}
                 </button>
 
                 {/* CTA */}
-                <div className="py-6 px-6 bg-slate-50 rounded-sm border-l-[3px] border-secondary">
+                <div className="py-6 px-6 bg-slate-50 rounded-sm border-l-[3px] border-green">
                   <h3 className="font-serif text-[1.1rem] font-bold mb-2">
                     Antwort des Arbeitgebers prüfen lassen
                   </h3>
@@ -372,7 +372,7 @@ ${n}`;
                   </p>
                   <Link
                     href="/kontakt"
-                    className="inline-block py-3 px-6 bg-secondary-600 text-white border-none rounded-sm font-sans text-[0.92rem] font-semibold no-underline transition-all hover:bg-secondary-700"
+                    className="inline-block py-3 px-6 bg-green text-white border-none rounded-sm font-sans text-[0.92rem] font-semibold no-underline transition-all hover:bg-green"
                   >
                     Antwort des Arbeitgebers prüfen lassen &rarr;
                   </Link>
@@ -404,7 +404,7 @@ ${n}`;
                 anwaltliche Beratung. Die Rechtslage kann je nach Unternehmensgröße, Branche und
                 individuellem Fall abweichen. Für eine verbindliche Einschätzung wenden Sie sich
                 an einen{' '}
-                <Link href="/kontakt" className="text-secondary-700 no-underline hover:underline">
+                <Link href="/kontakt" className="text-green no-underline hover:underline">
                   Fachanwalt für Arbeitsrecht
                 </Link>.
               </p>
@@ -417,7 +417,7 @@ ${n}`;
       <section className="py-[70px] px-8 bg-slate-50">
         <div className="max-w-content mx-auto">
           <div className="max-w-[740px]">
-            <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-secondary-700 mb-2.5">
+            <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-green mb-2.5">
               Praxishinweis
             </div>
             <h2 className="font-serif text-[clamp(1.4rem,3vw,1.9rem)] font-bold leading-[1.25] mb-6">
@@ -426,7 +426,7 @@ ${n}`;
             <div className="space-y-5">
               <div className="py-4 px-5 bg-white rounded-sm border border-border">
                 <div className="flex items-start gap-3">
-                  <div className="w-7 h-7 rounded-full bg-secondary-100 text-secondary-700 font-bold text-[0.8rem] flex items-center justify-center mt-0.5 shrink-0">
+                  <div className="w-7 h-7 rounded-full bg-green-bg text-green font-bold text-[0.8rem] flex items-center justify-center mt-0.5 shrink-0">
                     1
                   </div>
                   <div>
@@ -439,7 +439,7 @@ ${n}`;
               </div>
               <div className="py-4 px-5 bg-white rounded-sm border border-border">
                 <div className="flex items-start gap-3">
-                  <div className="w-7 h-7 rounded-full bg-secondary-100 text-secondary-700 font-bold text-[0.8rem] flex items-center justify-center mt-0.5 shrink-0">
+                  <div className="w-7 h-7 rounded-full bg-green-bg text-green font-bold text-[0.8rem] flex items-center justify-center mt-0.5 shrink-0">
                     2
                   </div>
                   <div>
@@ -452,7 +452,7 @@ ${n}`;
               </div>
               <div className="py-4 px-5 bg-white rounded-sm border border-border">
                 <div className="flex items-start gap-3">
-                  <div className="w-7 h-7 rounded-full bg-secondary-100 text-secondary-700 font-bold text-[0.8rem] flex items-center justify-center mt-0.5 shrink-0">
+                  <div className="w-7 h-7 rounded-full bg-green-bg text-green font-bold text-[0.8rem] flex items-center justify-center mt-0.5 shrink-0">
                     3
                   </div>
                   <div>
@@ -470,7 +470,7 @@ ${n}`;
       </section>
 
       {/* CTA */}
-      <section className="py-[60px] px-8 bg-secondary-700 text-white text-center">
+      <section className="py-[60px] px-8 bg-green text-white text-center">
         <div className="max-w-content mx-auto">
           <h2 className="font-serif text-[clamp(1.4rem,3vw,1.8rem)] font-bold mb-3">
             Schreiben verschickt? Wir prüfen die Antwort.
@@ -481,7 +481,7 @@ ${n}`;
           </p>
           <Link
             href="/kontakt"
-            className="inline-block py-3.5 px-8 bg-white text-secondary-700 border-none rounded-sm font-sans text-base font-semibold no-underline transition-all hover:bg-secondary-50 hover:-translate-y-0.5"
+            className="inline-block py-3.5 px-8 bg-white text-green border-none rounded-sm font-sans text-base font-semibold no-underline transition-all hover:bg-green-bg hover:-translate-y-0.5"
           >
             Kostenlose Ersteinschätzung &rarr;
           </Link>
@@ -491,7 +491,7 @@ ${n}`;
       {/* FAQ */}
       <section className="py-[70px] px-8 bg-slate-50">
         <div className="max-w-content mx-auto">
-          <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-secondary-700 mb-2.5">
+          <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-green mb-2.5">
             Häufige Fragen
           </div>
           <h2 className="font-serif text-[clamp(1.4rem,3vw,1.9rem)] font-bold leading-[1.25] mb-6">
@@ -504,7 +504,7 @@ ${n}`;
       {/* Final CTA */}
       <section className="py-[70px] px-8 bg-white">
         <div className="max-w-content mx-auto text-center">
-          <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-secondary-700 mb-2.5">
+          <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-green mb-2.5">
             Weitere Tools
           </div>
           <h2 className="font-serif text-[clamp(1.4rem,3vw,1.8rem)] font-bold mb-3">
@@ -516,7 +516,7 @@ ${n}`;
           </p>
           <Link
             href="/auskunftsrecht-checker"
-            className="inline-block py-3.5 px-8 bg-secondary-600 text-white border-none rounded-sm font-sans text-base font-semibold no-underline transition-all hover:bg-secondary-700 hover:-translate-y-px hover:shadow-[0_6px_20px_rgba(22,163,74,0.25)]"
+            className="inline-block py-3.5 px-8 bg-green text-white border-none rounded-sm font-sans text-base font-semibold no-underline transition-all hover:bg-green hover:-translate-y-px hover:shadow-[0_6px_20px_rgba(43,76,53,0.25)]"
           >
             Auskunftsrecht-Checker starten &rarr;
           </Link>

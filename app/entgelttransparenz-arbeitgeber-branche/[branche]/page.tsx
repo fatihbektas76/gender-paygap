@@ -94,20 +94,20 @@ export default function EntgelttransparenzArbeitgeberBranchePage({ params }: Pro
 
       <main>
         {/* Breadcrumb */}
-        <div className="pt-[130px] px-8 bg-accent-50 max-md:pt-[110px] max-md:px-6">
+        <div className="pt-[130px] px-8 bg-cream-dark max-md:pt-[110px] max-md:px-6">
           <nav className="max-w-content mx-auto text-[0.8rem] text-ink-muted">
-            <a href="/" className="hover:text-primary transition-colors no-underline text-ink-muted">Start</a>
+            <a href="/" className="hover:text-gold transition-colors no-underline text-ink-muted">Start</a>
             <span className="mx-1.5">/</span>
-            <a href="/arbeitgeber" className="hover:text-primary transition-colors no-underline text-ink-muted">Arbeitgeber</a>
+            <a href="/arbeitgeber" className="hover:text-gold transition-colors no-underline text-ink-muted">Arbeitgeber</a>
             <span className="mx-1.5">/</span>
             <span className="text-ink">Entgelttransparenz {b.name}</span>
           </nav>
         </div>
 
         {/* Hero */}
-        <header className="pt-6 pb-[80px] px-8 bg-accent-50 max-md:pb-[60px] max-md:px-6">
+        <header className="pt-6 pb-[80px] px-8 bg-cream-dark max-md:pb-[60px] max-md:px-6">
           <div className="max-w-content mx-auto">
-            <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-accent-700 mb-2.5">Arbeitgeber · {b.name}</div>
+            <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-blue mb-2.5">Arbeitgeber · {b.name}</div>
             <h1 className="font-serif text-[clamp(2rem,4vw,2.8rem)] font-extrabold leading-[1.15] mb-5 tracking-tight max-md:text-[1.8rem]">
               Entgelttransparenz-Pflichten für Arbeitgeber in {b.nameGenitiv}
             </h1>
@@ -125,8 +125,8 @@ export default function EntgelttransparenzArbeitgeberBranchePage({ params }: Pro
           <div className="max-w-content mx-auto">
             <FadeUp>
               <div className="grid grid-cols-3 gap-5 max-md:grid-cols-1">
-                <div className="bg-accent-50 border border-accent/20 rounded p-6 text-center">
-                  <div className="text-[2.5rem] font-extrabold text-accent-700">{b.gpgProzent}%</div>
+                <div className="bg-cream-dark border border-blue/20 rounded p-6 text-center">
+                  <div className="text-[2.5rem] font-extrabold text-blue">{b.gpgProzent}%</div>
                   <div className="text-[0.85rem] text-ink-muted mt-1">Gender Pay Gap in {b.nameGenitiv}</div>
                   <div className="text-[0.75rem] text-ink-muted mt-0.5">Destatis 2025</div>
                 </div>
@@ -219,7 +219,7 @@ export default function EntgelttransparenzArbeitgeberBranchePage({ params }: Pro
                   'Personalabteilung zu Entgelttransparenz schulen',
                 ].map((item, i) => (
                   <div key={i} className="flex gap-3 items-start">
-                    <div className="w-6 h-6 min-w-[24px] rounded-full bg-accent-50 border border-accent/30 flex items-center justify-center text-accent-700 text-[0.75rem] font-bold mt-0.5">
+                    <div className="w-6 h-6 min-w-[24px] rounded-full bg-cream-dark border border-blue/30 flex items-center justify-center text-blue text-[0.75rem] font-bold mt-0.5">
                       &#10003;
                     </div>
                     <p className="text-[0.95rem] text-ink-light leading-relaxed m-0">{item}</p>
@@ -271,7 +271,7 @@ export default function EntgelttransparenzArbeitgeberBranchePage({ params }: Pro
         <ContactForm />
 
         {/* CTA */}
-        <section className="py-[70px] px-8 bg-accent-700 text-white text-center max-md:py-12 max-md:px-6">
+        <section className="py-[70px] px-8 bg-blue text-white text-center max-md:py-12 max-md:px-6">
           <div className="max-w-[700px] mx-auto">
             <h2 className="font-serif text-[clamp(1.5rem,3vw,2rem)] font-bold mb-4">
               Compliance-Audit für {b.typArbeitgeber}
@@ -281,7 +281,7 @@ export default function EntgelttransparenzArbeitgeberBranchePage({ params }: Pro
             </p>
             <a
               href="/kontakt"
-              className="inline-flex items-center gap-2 px-8 py-3.5 rounded-sm text-[0.95rem] font-semibold no-underline transition-all bg-white text-accent-700 hover:bg-accent-50 hover:-translate-y-0.5"
+              className="inline-flex items-center gap-2 px-8 py-3.5 rounded-sm text-[0.95rem] font-semibold no-underline transition-all bg-white text-blue hover:bg-cream-dark hover:-translate-y-0.5"
             >
               Jetzt Compliance-Audit anfragen &rarr;
             </a>

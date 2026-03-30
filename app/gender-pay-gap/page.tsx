@@ -74,7 +74,7 @@ export default function GenderPayGapPage() {
       <main>
         <header className="pt-[150px] pb-[80px] px-8 bg-slate-50 max-md:pt-[120px] max-md:pb-[60px] max-md:px-6">
           <div className="max-w-content mx-auto">
-            <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-primary-700 mb-2.5">Wissen</div>
+            <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-gold mb-2.5">Wissen</div>
             <h1 className="font-serif text-[clamp(2rem,4vw,2.8rem)] font-extrabold leading-[1.15] mb-5 tracking-tight max-md:text-[1.8rem]">
               Gender Pay Gap in Deutschland — Fakten, Ursachen & Rechtslage {new Date().getFullYear()}
             </h1>
@@ -91,22 +91,22 @@ export default function GenderPayGapPage() {
           <div className="max-w-content mx-auto">
             <div className="grid grid-cols-3 gap-6 max-md:grid-cols-1">
               <FadeUp>
-                <div className="bg-primary-50 border border-primary/20 rounded p-7 text-center">
-                  <div className="font-serif text-[2.5rem] font-bold text-primary-700">16%</div>
+                <div className="bg-gold-bg border border-gold/20 rounded p-7 text-center">
+                  <div className="font-serif text-[2.5rem] font-bold text-gold">16%</div>
                   <div className="text-[0.9rem] text-ink-muted mt-1">Unbereinigter GPG</div>
                   <div className="text-[0.78rem] text-ink-muted mt-0.5">Destatis, Dezember 2025</div>
                 </div>
               </FadeUp>
               <FadeUp delay={1}>
-                <div className="bg-primary-50 border border-primary/20 rounded p-7 text-center">
-                  <div className="font-serif text-[2.5rem] font-bold text-primary-700">~6%</div>
+                <div className="bg-gold-bg border border-gold/20 rounded p-7 text-center">
+                  <div className="font-serif text-[2.5rem] font-bold text-gold">~6%</div>
                   <div className="text-[0.9rem] text-ink-muted mt-1">Bereinigter GPG</div>
                   <div className="text-[0.78rem] text-ink-muted mt-0.5">Bei vergleichbarer Arbeit</div>
                 </div>
               </FadeUp>
               <FadeUp delay={2}>
-                <div className="bg-primary-50 border border-primary/20 rounded p-7 text-center">
-                  <div className="font-serif text-[2.5rem] font-bold text-primary-700">66 Tage</div>
+                <div className="bg-gold-bg border border-gold/20 rounded p-7 text-center">
+                  <div className="font-serif text-[2.5rem] font-bold text-gold">66 Tage</div>
                   <div className="text-[0.9rem] text-ink-muted mt-1">Equal Pay Day 2026</div>
                   <div className="text-[0.78rem] text-ink-muted mt-0.5">So lange arbeiten Frauen &bdquo;umsonst&ldquo;</div>
                 </div>
@@ -169,13 +169,13 @@ export default function GenderPayGapPage() {
         {/* CTA zu AN/AG */}
         <section className="py-[70px] px-8 bg-slate-50 max-md:py-[50px] max-md:px-6">
           <div className="max-w-content mx-auto grid grid-cols-2 gap-6 max-md:grid-cols-1">
-            <a href="/arbeitnehmer" className="block bg-secondary-50 border border-secondary/20 rounded p-7 no-underline transition-all hover:-translate-y-0.5 hover:shadow-lg">
-              <div className="text-[0.7rem] font-bold tracking-[0.14em] uppercase text-secondary-700 mb-2">Arbeitnehmer</div>
+            <a href="/arbeitnehmer" className="block bg-green-bg border border-green-bg rounded p-7 no-underline transition-all hover:-translate-y-0.5 hover:shadow-lg">
+              <div className="text-[0.7rem] font-bold tracking-[0.14em] uppercase text-green mb-2">Arbeitnehmer</div>
               <div className="font-serif text-[1.2rem] font-bold text-ink mb-2">Ihre Rechte bei Lohndiskriminierung</div>
               <div className="text-[0.88rem] text-ink-muted">Auskunftsrecht, Klage, Entschädigung &rarr;</div>
             </a>
-            <a href="/arbeitgeber" className="block bg-accent-50 border border-accent/20 rounded p-7 no-underline transition-all hover:-translate-y-0.5 hover:shadow-lg">
-              <div className="text-[0.7rem] font-bold tracking-[0.14em] uppercase text-accent-700 mb-2">Arbeitgeber</div>
+            <a href="/arbeitgeber" className="block bg-cream-dark border border-blue/20 rounded p-7 no-underline transition-all hover:-translate-y-0.5 hover:shadow-lg">
+              <div className="text-[0.7rem] font-bold tracking-[0.14em] uppercase text-blue mb-2">Arbeitgeber</div>
               <div className="font-serif text-[1.2rem] font-bold text-ink mb-2">Compliance-Pflichten verstehen</div>
               <div className="text-[0.88rem] text-ink-muted">Berichtspflichten, Audit, Sanktionen &rarr;</div>
             </a>

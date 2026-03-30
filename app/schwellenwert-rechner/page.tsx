@@ -115,11 +115,11 @@ export default function SchwellenwertRechnerPage() {
       <div className="bg-slate-50 pt-[120px] pb-[50px] px-8 border-b border-border">
         <div className="max-w-content mx-auto">
           <nav className="text-[0.84rem] text-ink-muted mb-6">
-            <Link href="/" className="text-primary no-underline hover:underline">Start</Link>
+            <Link href="/" className="text-gold no-underline hover:underline">Start</Link>
             <span className="mx-2">/</span>
             <span>Schwellenwert-Rechner</span>
           </nav>
-          <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-primary-700 mb-2.5">
+          <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-gold mb-2.5">
             Kostenloses Tool
           </div>
           <h1 className="font-serif text-[clamp(1.8rem,4vw,2.4rem)] font-bold leading-[1.2] max-w-[700px]">
@@ -162,7 +162,7 @@ export default function SchwellenwertRechnerPage() {
                     value={vollzeit}
                     onChange={(e) => setVollzeit(e.target.value)}
                     placeholder="z. B. 8"
-                    className="w-full py-3 px-4 border border-border rounded-sm font-sans text-[0.92rem] text-ink bg-white transition-all outline-none focus:border-primary focus:shadow-[0_0_0_3px_rgba(99,102,241,0.1)] placeholder:text-ink-muted"
+                    className="w-full py-3 px-4 border border-border rounded-sm font-sans text-[0.92rem] text-ink bg-white transition-all outline-none focus:border-gold focus:shadow-[0_0_0_3px_rgba(166,139,75,0.1)] placeholder:text-ink-muted"
                   />
                   <p className="text-[0.78rem] text-ink-muted mt-1">Faktor: 1,0 pro Person</p>
                 </div>
@@ -176,7 +176,7 @@ export default function SchwellenwertRechnerPage() {
                     value={teilzeit30}
                     onChange={(e) => setTeilzeit30(e.target.value)}
                     placeholder="z. B. 2"
-                    className="w-full py-3 px-4 border border-border rounded-sm font-sans text-[0.92rem] text-ink bg-white transition-all outline-none focus:border-primary focus:shadow-[0_0_0_3px_rgba(99,102,241,0.1)] placeholder:text-ink-muted"
+                    className="w-full py-3 px-4 border border-border rounded-sm font-sans text-[0.92rem] text-ink bg-white transition-all outline-none focus:border-gold focus:shadow-[0_0_0_3px_rgba(166,139,75,0.1)] placeholder:text-ink-muted"
                   />
                   <p className="text-[0.78rem] text-ink-muted mt-1">Faktor: 0,75 pro Person</p>
                 </div>
@@ -190,7 +190,7 @@ export default function SchwellenwertRechnerPage() {
                     value={teilzeit20}
                     onChange={(e) => setTeilzeit20(e.target.value)}
                     placeholder="z. B. 3"
-                    className="w-full py-3 px-4 border border-border rounded-sm font-sans text-[0.92rem] text-ink bg-white transition-all outline-none focus:border-primary focus:shadow-[0_0_0_3px_rgba(99,102,241,0.1)] placeholder:text-ink-muted"
+                    className="w-full py-3 px-4 border border-border rounded-sm font-sans text-[0.92rem] text-ink bg-white transition-all outline-none focus:border-gold focus:shadow-[0_0_0_3px_rgba(166,139,75,0.1)] placeholder:text-ink-muted"
                   />
                   <p className="text-[0.78rem] text-ink-muted mt-1">Faktor: 0,5 pro Person</p>
                 </div>
@@ -204,7 +204,7 @@ export default function SchwellenwertRechnerPage() {
                     value={minijob}
                     onChange={(e) => setMinijob(e.target.value)}
                     placeholder="z. B. 1"
-                    className="w-full py-3 px-4 border border-border rounded-sm font-sans text-[0.92rem] text-ink bg-white transition-all outline-none focus:border-primary focus:shadow-[0_0_0_3px_rgba(99,102,241,0.1)] placeholder:text-ink-muted"
+                    className="w-full py-3 px-4 border border-border rounded-sm font-sans text-[0.92rem] text-ink bg-white transition-all outline-none focus:border-gold focus:shadow-[0_0_0_3px_rgba(166,139,75,0.1)] placeholder:text-ink-muted"
                   />
                   <p className="text-[0.78rem] text-ink-muted mt-1">
                     Faktor: 0,5 pro Person (bei &le;20 Std.) bzw. 0,75 (bei &gt;20 Std.). Hier vereinfacht als 0,5.
@@ -212,13 +212,13 @@ export default function SchwellenwertRechnerPage() {
                 </div>
                 <button
                   onClick={calculate}
-                  className="w-full py-3.5 bg-primary-700 text-white border-none rounded-sm font-sans text-base font-semibold cursor-pointer transition-all mt-2 hover:bg-[#3730a3] hover:-translate-y-px hover:shadow-[0_6px_20px_rgba(99,102,241,0.25)]"
+                  className="w-full py-3.5 bg-gold text-white border-none rounded-sm font-sans text-base font-semibold cursor-pointer transition-all mt-2 hover:bg-[#3730a3] hover:-translate-y-px hover:shadow-[0_6px_20px_rgba(166,139,75,0.25)]"
                 >
                   Schwellenwert prüfen
                 </button>
               </div>
               <p className="text-[0.75rem] text-ink-muted mt-4 leading-relaxed">
-                <strong>Hinweis:</strong> Dieses Tool dient ausschließlich der unverbindlichen Erstorientierung und ersetzt keine anwaltliche Beratung. Für eine verbindliche Einschätzung Ihres Falls wenden Sie sich bitte an einen <a href="/#kontakt" className="text-primary no-underline hover:underline">Fachanwalt für Arbeitsrecht</a>.
+                <strong>Hinweis:</strong> Dieses Tool dient ausschließlich der unverbindlichen Erstorientierung und ersetzt keine anwaltliche Beratung. Für eine verbindliche Einschätzung Ihres Falls wenden Sie sich bitte an einen <a href="/#kontakt" className="text-gold no-underline hover:underline">Fachanwalt für Arbeitsrecht</a>.
               </p>
             </div>
 
@@ -229,8 +229,8 @@ export default function SchwellenwertRechnerPage() {
                 <div
                   className={`rounded-sm border-2 p-6 text-center ${
                     result.gilt
-                      ? 'border-green bg-secondary-50'
-                      : 'border-primary bg-slate-50'
+                      ? 'border-green bg-green-bg'
+                      : 'border-gold bg-slate-50'
                   }`}
                 >
                   <div className="text-[0.78rem] font-bold tracking-[0.14em] uppercase mb-2 text-ink-muted">
@@ -252,7 +252,7 @@ export default function SchwellenwertRechnerPage() {
                     </div>
                   ) : (
                     <div>
-                      <div className="inline-block py-1.5 px-4 bg-primary-700 text-white rounded-sm text-[0.85rem] font-semibold mb-3">
+                      <div className="inline-block py-1.5 px-4 bg-gold text-white rounded-sm text-[0.85rem] font-semibold mb-3">
                         KSchG gilt nicht
                       </div>
                       <p className="text-[0.92rem] text-ink-light leading-relaxed">
@@ -266,13 +266,13 @@ export default function SchwellenwertRechnerPage() {
                 </div>
 
                 {/* CTA 1 */}
-                <div className="mt-8 py-5 px-6 bg-slate-50 rounded-sm border-l-[3px] border-primary">
+                <div className="mt-8 py-5 px-6 bg-slate-50 rounded-sm border-l-[3px] border-gold">
                   <p className="text-[0.95rem] text-ink mb-3">
                     <strong>Unsicher, ob die Berechnung korrekt ist? Wir prüfen es für Sie.</strong>
                   </p>
                   <a
                     href="/#kontakt"
-                    className="inline-block py-3 px-6 bg-primary-700 text-white border-none rounded-sm font-sans text-[0.92rem] font-semibold no-underline transition-all hover:bg-[#3730a3]"
+                    className="inline-block py-3 px-6 bg-gold text-white border-none rounded-sm font-sans text-[0.92rem] font-semibold no-underline transition-all hover:bg-[#3730a3]"
                   >
                     Kostenlose Ersteinschätzung anfordern &rarr;
                   </a>
@@ -287,7 +287,7 @@ export default function SchwellenwertRechnerPage() {
       <section className="py-[70px] px-8 bg-slate-50">
         <div className="max-w-content mx-auto">
           <div className="max-w-[740px]">
-            <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-primary-700 mb-2.5">
+            <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-gold mb-2.5">
               Hintergrund
             </div>
             <h2 className="font-serif text-[clamp(1.4rem,3vw,1.9rem)] font-bold leading-[1.25] mb-5">
@@ -300,7 +300,7 @@ export default function SchwellenwertRechnerPage() {
             <div className="overflow-x-auto mb-6">
               <table className="w-full border-collapse text-[0.92rem]">
                 <thead>
-                  <tr className="border-b-2 border-primary/30">
+                  <tr className="border-b-2 border-gold/30">
                     <th className="text-left py-3 px-4 font-semibold">Arbeitszeit</th>
                     <th className="text-right py-3 px-4 font-semibold">Faktor</th>
                   </tr>
@@ -342,7 +342,7 @@ export default function SchwellenwertRechnerPage() {
           </p>
           <a
             href="/#kontakt"
-            className="inline-block py-3.5 px-8 bg-primary-700 text-white border-none rounded-sm font-sans text-base font-semibold no-underline transition-all hover:bg-[#3730a3] hover:-translate-y-px hover:shadow-[0_6px_20px_rgba(99,102,241,0.25)]"
+            className="inline-block py-3.5 px-8 bg-gold text-white border-none rounded-sm font-sans text-base font-semibold no-underline transition-all hover:bg-[#3730a3] hover:-translate-y-px hover:shadow-[0_6px_20px_rgba(166,139,75,0.25)]"
           >
             Jetzt kostenlos prüfen lassen &rarr;
           </a>
@@ -353,7 +353,7 @@ export default function SchwellenwertRechnerPage() {
       <section className="py-[70px] px-8 bg-slate-50">
         <div className="max-w-content mx-auto">
           <div className="max-w-[740px]">
-            <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-primary-700 mb-2.5">
+            <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-gold mb-2.5">
               Rechtlicher Hintergrund
             </div>
             <h2 className="font-serif text-[clamp(1.4rem,3vw,1.9rem)] font-bold leading-[1.25] mb-6">
@@ -371,7 +371,7 @@ export default function SchwellenwertRechnerPage() {
               Willkürliche oder treuwidrige Kündigungen sind auch ohne KSchG rechtswidrig.
             </p>
             <p className="text-[0.95rem] text-ink-light leading-relaxed">
-              Besonderer <Link href="/kuendigung" className="text-primary no-underline hover:underline">Kündigungsschutz</Link> gilt
+              Besonderer <Link href="/kuendigung" className="text-gold no-underline hover:underline">Kündigungsschutz</Link> gilt
               betriebsgrößenunabhängig: Schwangere sind nach &sect;17 MuSchG geschützt, Schwerbehinderte nach &sect;168 SGB IX,
               Eltern in Elternzeit nach &sect;18 BEEG und Betriebsratsmitglieder nach &sect;15 KSchG. Diese Schutzvorschriften
               gelten auch in Betrieben mit nur einem Mitarbeiter.
@@ -384,7 +384,7 @@ export default function SchwellenwertRechnerPage() {
       <section className="py-[70px] px-8 bg-white">
         <div className="max-w-content mx-auto">
           <div className="max-w-[740px]">
-            <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-primary-700 mb-2.5">
+            <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-gold mb-2.5">
               Rechtsprechung
             </div>
             <h2 className="font-serif text-[clamp(1.4rem,3vw,1.9rem)] font-bold leading-[1.25] mb-6">
@@ -392,7 +392,7 @@ export default function SchwellenwertRechnerPage() {
             </h2>
             <p className="text-[0.95rem] text-ink-light leading-relaxed mb-5">
               Das Bundesarbeitsgericht hat in seiner Entscheidung{' '}
-              <Link href="/urteile/bag-2-azr-140-12-leiharbeitnehmer-schwellenwert/" className="text-primary no-underline hover:underline">BAG 2 AZR 140/12</Link>{' '}
+              <Link href="/urteile/bag-2-azr-140-12-leiharbeitnehmer-schwellenwert/" className="text-gold no-underline hover:underline">BAG 2 AZR 140/12</Link>{' '}
               klargestellt: <strong>Leiharbeitnehmer zählen bei der Berechnung des Schwellenwerts mit</strong>,
               wenn sie regelmäßig im Betrieb eingesetzt werden. Dies kann dazu führen, dass ein vermeintlicher
               Kleinbetrieb doch unter das KSchG fällt.
@@ -420,17 +420,17 @@ export default function SchwellenwertRechnerPage() {
             </div>
             <ul className="list-none space-y-2 text-[0.88rem]">
               <li>
-                <a href="https://www.gesetze-im-internet.de/kschg/__23.html" target="_blank" rel="noopener noreferrer" className="text-primary no-underline hover:underline">
+                <a href="https://www.gesetze-im-internet.de/kschg/__23.html" target="_blank" rel="noopener noreferrer" className="text-gold no-underline hover:underline">
                   &sect;23 KSchG &mdash; Geltungsbereich des Kündigungsschutzgesetzes &rarr;
                 </a>
               </li>
               <li>
-                <a href="https://www.gesetze-im-internet.de/kschg/__1.html" target="_blank" rel="noopener noreferrer" className="text-primary no-underline hover:underline">
+                <a href="https://www.gesetze-im-internet.de/kschg/__1.html" target="_blank" rel="noopener noreferrer" className="text-gold no-underline hover:underline">
                   &sect;1 KSchG &mdash; Sozial ungerechtfertigte Kündigungen &rarr;
                 </a>
               </li>
               <li>
-                <a href="https://www.bundesarbeitsgericht.de" target="_blank" rel="noopener noreferrer" className="text-primary no-underline hover:underline">
+                <a href="https://www.bundesarbeitsgericht.de" target="_blank" rel="noopener noreferrer" className="text-gold no-underline hover:underline">
                   Bundesarbeitsgericht &mdash; Rechtsprechung zum Schwellenwert &rarr;
                 </a>
               </li>
@@ -442,7 +442,7 @@ export default function SchwellenwertRechnerPage() {
       {/* FAQ */}
       <section className="py-[70px] px-8 bg-white">
         <div className="max-w-content mx-auto">
-          <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-primary-700 mb-2.5">
+          <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-gold mb-2.5">
             Häufige Fragen
           </div>
           <h2 className="font-serif text-[clamp(1.4rem,3vw,1.9rem)] font-bold leading-[1.25] mb-6">
@@ -455,7 +455,7 @@ export default function SchwellenwertRechnerPage() {
       {/* CTA 3 */}
       <section className="py-[70px] px-8 bg-slate-50">
         <div className="max-w-content mx-auto text-center">
-          <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-primary-700 mb-2.5">
+          <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-gold mb-2.5">
             Jetzt handeln
           </div>
           <h2 className="font-serif text-[clamp(1.4rem,3vw,1.8rem)] font-bold mb-3">
@@ -467,7 +467,7 @@ export default function SchwellenwertRechnerPage() {
           </p>
           <a
             href="/#kontakt"
-            className="inline-block py-3.5 px-8 bg-primary-700 text-white border-none rounded-sm font-sans text-base font-semibold no-underline transition-all hover:bg-[#3730a3] hover:-translate-y-px hover:shadow-[0_6px_20px_rgba(99,102,241,0.25)]"
+            className="inline-block py-3.5 px-8 bg-gold text-white border-none rounded-sm font-sans text-base font-semibold no-underline transition-all hover:bg-[#3730a3] hover:-translate-y-px hover:shadow-[0_6px_20px_rgba(166,139,75,0.25)]"
           >
             Kostenlose Ersteinschätzung &rarr;
           </a>

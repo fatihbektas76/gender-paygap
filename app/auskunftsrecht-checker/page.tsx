@@ -71,7 +71,7 @@ export default function AuskunftsrechtCheckerPage() {
   }
 
   const optionBtnClass =
-    'w-full text-left py-4 px-5 bg-white border border-border rounded-sm font-sans text-[0.95rem] text-ink cursor-pointer transition-all hover:border-secondary hover:bg-secondary-50 hover:-translate-y-px hover:shadow-[0_4px_12px_rgba(22,163,74,0.1)]';
+    'w-full text-left py-4 px-5 bg-white border border-border rounded-sm font-sans text-[0.95rem] text-ink cursor-pointer transition-all hover:border-green hover:bg-green-bg hover:-translate-y-px hover:shadow-[0_4px_12px_rgba(43,76,53,0.1)]';
 
   return (
     <main>
@@ -108,16 +108,16 @@ export default function AuskunftsrechtCheckerPage() {
       />
 
       {/* Header */}
-      <div className="bg-secondary-50 pt-[120px] pb-[50px] px-8 border-b border-border">
+      <div className="bg-green-bg pt-[120px] pb-[50px] px-8 border-b border-border">
         <div className="max-w-content mx-auto">
           <nav className="text-[0.84rem] text-ink-muted mb-6">
-            <Link href="/" className="text-secondary-700 no-underline hover:underline">Start</Link>
+            <Link href="/" className="text-green no-underline hover:underline">Start</Link>
             <span className="mx-2">/</span>
-            <Link href="/arbeitnehmer" className="text-secondary-700 no-underline hover:underline">Arbeitnehmer</Link>
+            <Link href="/arbeitnehmer" className="text-green no-underline hover:underline">Arbeitnehmer</Link>
             <span className="mx-2">/</span>
             <span>Auskunftsrecht-Checker</span>
           </nav>
-          <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-secondary-700 mb-2.5">
+          <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-green mb-2.5">
             Kostenloses Tool
           </div>
           <h1 className="font-serif text-[clamp(1.8rem,4vw,2.4rem)] font-bold leading-[1.2] max-w-[700px]">
@@ -129,21 +129,21 @@ export default function AuskunftsrechtCheckerPage() {
           </p>
           <div className="flex flex-wrap gap-5 mt-5 text-[0.88rem] text-ink-light">
             <span className="flex items-center gap-1.5">
-              <svg className="text-secondary-600" width="16" height="16" fill="none" viewBox="0 0 24 24">
+              <svg className="text-green" width="16" height="16" fill="none" viewBox="0 0 24 24">
                 <circle cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="2" />
                 <path d="M8 12l3 3 5-5" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
               </svg>
               3 Fragen
             </span>
             <span className="flex items-center gap-1.5">
-              <svg className="text-secondary-600" width="16" height="16" fill="none" viewBox="0 0 24 24">
+              <svg className="text-green" width="16" height="16" fill="none" viewBox="0 0 24 24">
                 <circle cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="2" />
                 <path d="M8 12l3 3 5-5" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
               </svg>
               Kein Login
             </span>
             <span className="flex items-center gap-1.5">
-              <svg className="text-secondary-600" width="16" height="16" fill="none" viewBox="0 0 24 24">
+              <svg className="text-green" width="16" height="16" fill="none" viewBox="0 0 24 24">
                 <circle cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="2" />
                 <path d="M8 12l3 3 5-5" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
               </svg>
@@ -180,9 +180,9 @@ export default function AuskunftsrechtCheckerPage() {
                     <div
                       className={`w-8 h-8 rounded-full flex items-center justify-center text-[0.85rem] font-bold transition-colors ${
                         s === step
-                          ? 'bg-secondary-600 text-white'
+                          ? 'bg-green text-white'
                           : s < step
-                            ? 'bg-secondary-100 text-secondary-700'
+                            ? 'bg-green-bg text-green'
                             : 'bg-slate-100 text-ink-muted'
                       }`}
                     >
@@ -195,7 +195,7 @@ export default function AuskunftsrechtCheckerPage() {
                       )}
                     </div>
                     {s < 3 && (
-                      <div className={`w-12 h-0.5 ${s < step ? 'bg-secondary-300' : 'bg-slate-200'}`} />
+                      <div className={`w-12 h-0.5 ${s < step ? 'bg-green-bg' : 'bg-slate-200'}`} />
                     )}
                   </div>
                 ))}
@@ -295,9 +295,9 @@ export default function AuskunftsrechtCheckerPage() {
                 <h2 className="font-serif text-[1.4rem] font-bold mb-5">Ihr Ergebnis</h2>
 
                 {result === 'anspruch' && (
-                  <div className="rounded-sm border-2 border-secondary p-6 bg-secondary-50">
+                  <div className="rounded-sm border-2 border-green p-6 bg-green-bg">
                     <div className="text-center mb-4">
-                      <div className="inline-block py-1.5 px-4 bg-secondary-600 text-white rounded-sm text-[0.85rem] font-semibold">
+                      <div className="inline-block py-1.5 px-4 bg-green text-white rounded-sm text-[0.85rem] font-semibold">
                         Sie haben Anspruch auf Auskunft
                       </div>
                     </div>
@@ -319,7 +319,7 @@ export default function AuskunftsrechtCheckerPage() {
                     </div>
                     <p className="text-[0.95rem] text-ink-light leading-relaxed text-center">
                       Ihr Arbeitgeber ist aktuell noch nicht zur Auskunft verpflichtet &mdash; aber
-                      das ändert sich ab Juni 2026. Eine <Link href="/equal-pay-klage" className="text-secondary-700 no-underline hover:underline font-semibold">Equal-Pay-Klage</Link> ist
+                      das ändert sich ab Juni 2026. Eine <Link href="/equal-pay-klage" className="text-green no-underline hover:underline font-semibold">Equal-Pay-Klage</Link> ist
                       dennoch möglich, wenn Sie Anhaltspunkte für Entgeltdiskriminierung haben.
                     </p>
                   </div>
@@ -344,13 +344,13 @@ export default function AuskunftsrechtCheckerPage() {
                 <div className="mt-8 space-y-3">
                   <Link
                     href="/auskunftsrecht-checker/schreiben-generator"
-                    className="block w-full py-3.5 bg-secondary-600 text-white border-none rounded-sm font-sans text-base font-semibold no-underline text-center transition-all hover:bg-secondary-700 hover:-translate-y-px hover:shadow-[0_6px_20px_rgba(22,163,74,0.25)]"
+                    className="block w-full py-3.5 bg-green text-white border-none rounded-sm font-sans text-base font-semibold no-underline text-center transition-all hover:bg-green hover:-translate-y-px hover:shadow-[0_6px_20px_rgba(43,76,53,0.25)]"
                   >
                     Muster-Auskunftsschreiben erstellen &rarr;
                   </Link>
                   <Link
                     href="/kontakt"
-                    className="block w-full py-3.5 bg-white text-secondary-700 border-2 border-secondary-600 rounded-sm font-sans text-base font-semibold no-underline text-center transition-all hover:bg-secondary-50 hover:-translate-y-px"
+                    className="block w-full py-3.5 bg-white text-green border-2 border-green rounded-sm font-sans text-base font-semibold no-underline text-center transition-all hover:bg-green-bg hover:-translate-y-px"
                   >
                     Kostenlose Ersteinschätzung &rarr;
                   </Link>
@@ -371,7 +371,7 @@ export default function AuskunftsrechtCheckerPage() {
               <strong>Hinweis:</strong> Dieses Tool dient ausschließlich der unverbindlichen
               Erstorientierung und ersetzt keine anwaltliche Beratung. Für eine verbindliche
               Einschätzung Ihres Falls wenden Sie sich bitte an einen{' '}
-              <Link href="/kontakt" className="text-secondary-700 no-underline hover:underline">
+              <Link href="/kontakt" className="text-green no-underline hover:underline">
                 Fachanwalt für Arbeitsrecht
               </Link>.
             </p>
@@ -383,7 +383,7 @@ export default function AuskunftsrechtCheckerPage() {
       <section className="py-[70px] px-8 bg-slate-50">
         <div className="max-w-content mx-auto">
           <div className="max-w-[740px]">
-            <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-secondary-700 mb-2.5">
+            <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-green mb-2.5">
               Hintergrund
             </div>
             <h2 className="font-serif text-[clamp(1.4rem,3vw,1.9rem)] font-bold leading-[1.25] mb-5">
@@ -404,7 +404,7 @@ export default function AuskunftsrechtCheckerPage() {
             <p className="text-[0.95rem] text-ink-light leading-relaxed">
               Reagiert der Arbeitgeber nicht oder nur unvollständig, greift die <strong>Beweislastumkehr</strong> nach
               Art. 18: Der Arbeitgeber muss dann beweisen, dass keine Entgeltdiskriminierung vorliegt. Ein{' '}
-              <Link href="/auskunftsrecht-entgelttransparenz" className="text-secondary-700 no-underline hover:underline">
+              <Link href="/auskunftsrecht-entgelttransparenz" className="text-green no-underline hover:underline">
                 Benachteiligungsverbot
               </Link>{' '}
               schützt Beschäftigte vor Repressalien.
@@ -414,7 +414,7 @@ export default function AuskunftsrechtCheckerPage() {
       </section>
 
       {/* CTA */}
-      <section className="py-[60px] px-8 bg-secondary-700 text-white text-center">
+      <section className="py-[60px] px-8 bg-green text-white text-center">
         <div className="max-w-content mx-auto">
           <h2 className="font-serif text-[clamp(1.4rem,3vw,1.8rem)] font-bold mb-3">
             Verdacht auf Gehaltsungleichheit? Wir helfen.
@@ -425,7 +425,7 @@ export default function AuskunftsrechtCheckerPage() {
           </p>
           <Link
             href="/kontakt"
-            className="inline-block py-3.5 px-8 bg-white text-secondary-700 border-none rounded-sm font-sans text-base font-semibold no-underline transition-all hover:bg-secondary-50 hover:-translate-y-0.5"
+            className="inline-block py-3.5 px-8 bg-white text-green border-none rounded-sm font-sans text-base font-semibold no-underline transition-all hover:bg-green-bg hover:-translate-y-0.5"
           >
             Kostenlose Ersteinschätzung &rarr;
           </Link>
@@ -441,17 +441,17 @@ export default function AuskunftsrechtCheckerPage() {
             </div>
             <ul className="list-none space-y-2 text-[0.88rem]">
               <li>
-                <a href="https://eur-lex.europa.eu/eli/dir/2023/970/oj" target="_blank" rel="noopener noreferrer" className="text-secondary-700 no-underline hover:underline">
+                <a href="https://eur-lex.europa.eu/eli/dir/2023/970/oj" target="_blank" rel="noopener noreferrer" className="text-green no-underline hover:underline">
                   EU-Richtlinie 2023/970 &mdash; Entgelttransparenzrichtlinie &rarr;
                 </a>
               </li>
               <li>
-                <a href="https://www.gesetze-im-internet.de/entgtranspg/" target="_blank" rel="noopener noreferrer" className="text-secondary-700 no-underline hover:underline">
+                <a href="https://www.gesetze-im-internet.de/entgtranspg/" target="_blank" rel="noopener noreferrer" className="text-green no-underline hover:underline">
                   Entgelttransparenzgesetz (EntgTranspG) &rarr;
                 </a>
               </li>
               <li>
-                <a href="https://www.antidiskriminierungsstelle.de/" target="_blank" rel="noopener noreferrer" className="text-secondary-700 no-underline hover:underline">
+                <a href="https://www.antidiskriminierungsstelle.de/" target="_blank" rel="noopener noreferrer" className="text-green no-underline hover:underline">
                   Antidiskriminierungsstelle des Bundes &rarr;
                 </a>
               </li>
@@ -463,7 +463,7 @@ export default function AuskunftsrechtCheckerPage() {
       {/* FAQ */}
       <section className="py-[70px] px-8 bg-slate-50">
         <div className="max-w-content mx-auto">
-          <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-secondary-700 mb-2.5">
+          <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-green mb-2.5">
             Häufige Fragen
           </div>
           <h2 className="font-serif text-[clamp(1.4rem,3vw,1.9rem)] font-bold leading-[1.25] mb-6">
@@ -476,7 +476,7 @@ export default function AuskunftsrechtCheckerPage() {
       {/* CTA final */}
       <section className="py-[70px] px-8 bg-white">
         <div className="max-w-content mx-auto text-center">
-          <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-secondary-700 mb-2.5">
+          <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-green mb-2.5">
             Jetzt handeln
           </div>
           <h2 className="font-serif text-[clamp(1.4rem,3vw,1.8rem)] font-bold mb-3">
@@ -489,13 +489,13 @@ export default function AuskunftsrechtCheckerPage() {
           <div className="flex flex-wrap justify-center gap-4">
             <Link
               href="/auskunftsrecht-checker/schreiben-generator"
-              className="inline-block py-3.5 px-8 bg-secondary-600 text-white border-none rounded-sm font-sans text-base font-semibold no-underline transition-all hover:bg-secondary-700 hover:-translate-y-px hover:shadow-[0_6px_20px_rgba(22,163,74,0.25)]"
+              className="inline-block py-3.5 px-8 bg-green text-white border-none rounded-sm font-sans text-base font-semibold no-underline transition-all hover:bg-green hover:-translate-y-px hover:shadow-[0_6px_20px_rgba(43,76,53,0.25)]"
             >
               Muster-Schreiben erstellen &rarr;
             </Link>
             <Link
               href="/kontakt"
-              className="inline-block py-3.5 px-8 bg-white text-secondary-700 border-2 border-secondary-600 rounded-sm font-sans text-base font-semibold no-underline transition-all hover:bg-secondary-50 hover:-translate-y-px"
+              className="inline-block py-3.5 px-8 bg-white text-green border-2 border-green rounded-sm font-sans text-base font-semibold no-underline transition-all hover:bg-green-bg hover:-translate-y-px"
             >
               Kostenlose Ersteinschätzung &rarr;
             </Link>

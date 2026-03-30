@@ -54,7 +54,7 @@ function getVerdictColor(verdict: string): { bg: string; border: string; badge: 
   switch (verdict) {
     case 'STARK':
     case 'GERING':
-      return { bg: 'bg-secondary-50', border: 'border-secondary', badge: 'bg-secondary-600' };
+      return { bg: 'bg-green-bg', border: 'border-green', badge: 'bg-green' };
     case 'MITTEL':
       return { bg: 'bg-amber-50', border: 'border-amber-400', badge: 'bg-amber-500' };
     case 'SCHWACH':
@@ -174,14 +174,14 @@ export default function SituationscheckPage() {
       />
 
       {/* Header */}
-      <div className="bg-primary-50 pt-[120px] pb-[50px] px-8 border-b border-border max-md:pt-[100px] max-md:px-6">
+      <div className="bg-gold-bg pt-[120px] pb-[50px] px-8 border-b border-border max-md:pt-[100px] max-md:px-6">
         <div className="max-w-content mx-auto">
           <nav className="text-[0.84rem] text-ink-muted mb-6">
-            <Link href="/" className="text-primary-700 no-underline hover:underline">Start</Link>
+            <Link href="/" className="text-gold no-underline hover:underline">Start</Link>
             <span className="mx-2">/</span>
             <span>Situationscheck</span>
           </nav>
-          <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-primary-700 mb-2.5">
+          <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-gold mb-2.5">
             KI-Tool
           </div>
           <h1 className="font-serif text-[clamp(1.8rem,4vw,2.4rem)] font-bold leading-[1.2] max-w-[700px]">
@@ -193,21 +193,21 @@ export default function SituationscheckPage() {
           </p>
           <div className="flex flex-wrap gap-5 mt-5 text-[0.88rem] text-ink-light">
             <span className="flex items-center gap-1.5">
-              <svg className="text-primary-600" width="16" height="16" fill="none" viewBox="0 0 24 24">
+              <svg className="text-gold" width="16" height="16" fill="none" viewBox="0 0 24 24">
                 <circle cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="2" />
                 <path d="M8 12l3 3 5-5" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
               </svg>
               KI-gestützt
             </span>
             <span className="flex items-center gap-1.5">
-              <svg className="text-primary-600" width="16" height="16" fill="none" viewBox="0 0 24 24">
+              <svg className="text-gold" width="16" height="16" fill="none" viewBox="0 0 24 24">
                 <circle cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="2" />
                 <path d="M8 12l3 3 5-5" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
               </svg>
               Kein Login
             </span>
             <span className="flex items-center gap-1.5">
-              <svg className="text-primary-600" width="16" height="16" fill="none" viewBox="0 0 24 24">
+              <svg className="text-gold" width="16" height="16" fill="none" viewBox="0 0 24 24">
                 <circle cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="2" />
                 <path d="M8 12l3 3 5-5" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
               </svg>
@@ -244,7 +244,7 @@ export default function SituationscheckPage() {
                 }}
                 className={`flex-1 py-3.5 px-4 font-sans text-[0.92rem] font-semibold cursor-pointer transition-all border-none ${
                   audience === 'an'
-                    ? 'bg-secondary-600 text-white'
+                    ? 'bg-green text-white'
                     : 'bg-white text-ink-muted hover:bg-slate-50'
                 }`}
               >
@@ -257,7 +257,7 @@ export default function SituationscheckPage() {
                 }}
                 className={`flex-1 py-3.5 px-4 font-sans text-[0.92rem] font-semibold cursor-pointer transition-all border-none ${
                   audience === 'ag'
-                    ? 'bg-accent-600 text-white'
+                    ? 'bg-blue text-white'
                     : 'bg-white text-ink-muted hover:bg-slate-50'
                 }`}
               >
@@ -266,7 +266,7 @@ export default function SituationscheckPage() {
             </div>
 
             {!result ? (
-              <div className={`border rounded p-8 ${audience === 'an' ? 'bg-secondary-50 border-secondary/20' : 'bg-accent-50 border-accent/20'}`}>
+              <div className={`border rounded p-8 ${audience === 'an' ? 'bg-green-bg border-green-bg' : 'bg-cream-dark border-blue/20'}`}>
                 <h2 className="font-serif text-[1.2rem] font-bold mb-2">
                   {audience === 'an'
                     ? 'Beschreiben Sie Ihre Situation'
@@ -286,8 +286,8 @@ export default function SituationscheckPage() {
                       onClick={() => setSituation(ex)}
                       className={`py-1.5 px-3 text-[0.8rem] rounded-sm border cursor-pointer transition-all font-sans ${
                         audience === 'an'
-                          ? 'bg-white border-secondary/30 text-secondary-700 hover:bg-secondary-50 hover:border-secondary'
-                          : 'bg-white border-accent/30 text-accent-700 hover:bg-accent-50 hover:border-accent'
+                          ? 'bg-white border-green/30 text-green hover:bg-green-bg hover:border-green'
+                          : 'bg-white border-blue/30 text-blue hover:bg-cream-dark hover:border-blue'
                       }`}
                     >
                       {ex}
@@ -308,8 +308,8 @@ export default function SituationscheckPage() {
                   rows={6}
                   className={`w-full py-3 px-4 border rounded-sm font-sans text-[0.92rem] text-ink bg-white transition-all outline-none resize-y placeholder:text-ink-muted ${
                     audience === 'an'
-                      ? 'border-secondary/30 focus:border-secondary focus:shadow-[0_0_0_3px_rgba(22,163,74,0.1)]'
-                      : 'border-accent/30 focus:border-accent focus:shadow-[0_0_0_3px_rgba(59,130,246,0.1)]'
+                      ? 'border-green/30 focus:border-green focus:shadow-[0_0_0_3px_rgba(43,76,53,0.1)]'
+                      : 'border-blue/30 focus:border-blue focus:shadow-[0_0_0_3px_rgba(61,90,128,0.1)]'
                   }`}
                 />
                 <div className="flex justify-between items-center mt-1.5 mb-4">
@@ -338,8 +338,8 @@ export default function SituationscheckPage() {
                     loading || situation.length < 10
                       ? 'bg-slate-200 text-ink-muted cursor-not-allowed'
                       : audience === 'an'
-                        ? 'bg-secondary-600 text-white hover:bg-secondary-700 hover:-translate-y-px hover:shadow-[0_6px_20px_rgba(22,163,74,0.25)]'
-                        : 'bg-accent-600 text-white hover:bg-accent-700 hover:-translate-y-px hover:shadow-[0_6px_20px_rgba(59,130,246,0.25)]'
+                        ? 'bg-green text-white hover:bg-green hover:-translate-y-px hover:shadow-[0_6px_20px_rgba(43,76,53,0.25)]'
+                        : 'bg-blue text-white hover:bg-blue hover:-translate-y-px hover:shadow-[0_6px_20px_rgba(61,90,128,0.25)]'
                   }`}
                 >
                   {loading ? (
@@ -381,8 +381,8 @@ export default function SituationscheckPage() {
                     href="/kontakt"
                     className={`block w-full py-3.5 border-none rounded-sm font-sans text-base font-semibold no-underline text-center transition-all hover:-translate-y-px ${
                       audience === 'an'
-                        ? 'bg-secondary-600 text-white hover:bg-secondary-700 hover:shadow-[0_6px_20px_rgba(22,163,74,0.25)]'
-                        : 'bg-accent-600 text-white hover:bg-accent-700 hover:shadow-[0_6px_20px_rgba(59,130,246,0.25)]'
+                        ? 'bg-green text-white hover:bg-green hover:shadow-[0_6px_20px_rgba(43,76,53,0.25)]'
+                        : 'bg-blue text-white hover:bg-blue hover:shadow-[0_6px_20px_rgba(61,90,128,0.25)]'
                     }`}
                   >
                     Kostenlose Ersteinschätzung anfragen &rarr;
@@ -405,7 +405,7 @@ export default function SituationscheckPage() {
                 <strong>Hinweis:</strong> Keine anwaltliche Beratung &mdash; ersetzt nicht die persönliche
                 Beratung durch einen Fachanwalt. Die KI-Analyse dient ausschließlich der unverbindlichen
                 Erstorientierung. Für eine verbindliche Einschätzung wenden Sie sich an einen{' '}
-                <Link href="/kontakt" className="text-primary-700 no-underline hover:underline">
+                <Link href="/kontakt" className="text-gold no-underline hover:underline">
                   Fachanwalt für Arbeitsrecht
                 </Link>.
               </p>
@@ -418,7 +418,7 @@ export default function SituationscheckPage() {
       <section className="py-[70px] px-8 bg-slate-50 max-md:py-12 max-md:px-6">
         <div className="max-w-content mx-auto">
           <div className="max-w-[740px]">
-            <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-primary-700 mb-2.5">
+            <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-gold mb-2.5">
               So funktioniert es
             </div>
             <h2 className="font-serif text-[clamp(1.4rem,3vw,1.9rem)] font-bold leading-[1.25] mb-6">
@@ -427,7 +427,7 @@ export default function SituationscheckPage() {
             <div className="space-y-5">
               <div className="py-4 px-5 bg-white rounded-sm border border-border">
                 <div className="flex items-start gap-3">
-                  <div className="w-7 h-7 rounded-full bg-primary-100 text-primary-700 font-bold text-[0.8rem] flex items-center justify-center mt-0.5 shrink-0">
+                  <div className="w-7 h-7 rounded-full bg-gold-bg text-gold font-bold text-[0.8rem] flex items-center justify-center mt-0.5 shrink-0">
                     1
                   </div>
                   <div>
@@ -441,7 +441,7 @@ export default function SituationscheckPage() {
               </div>
               <div className="py-4 px-5 bg-white rounded-sm border border-border">
                 <div className="flex items-start gap-3">
-                  <div className="w-7 h-7 rounded-full bg-primary-100 text-primary-700 font-bold text-[0.8rem] flex items-center justify-center mt-0.5 shrink-0">
+                  <div className="w-7 h-7 rounded-full bg-gold-bg text-gold font-bold text-[0.8rem] flex items-center justify-center mt-0.5 shrink-0">
                     2
                   </div>
                   <div>
@@ -455,7 +455,7 @@ export default function SituationscheckPage() {
               </div>
               <div className="py-4 px-5 bg-white rounded-sm border border-border">
                 <div className="flex items-start gap-3">
-                  <div className="w-7 h-7 rounded-full bg-primary-100 text-primary-700 font-bold text-[0.8rem] flex items-center justify-center mt-0.5 shrink-0">
+                  <div className="w-7 h-7 rounded-full bg-gold-bg text-gold font-bold text-[0.8rem] flex items-center justify-center mt-0.5 shrink-0">
                     3
                   </div>
                   <div>
@@ -473,7 +473,7 @@ export default function SituationscheckPage() {
       </section>
 
       {/* CTA */}
-      <section className="py-[60px] px-8 bg-primary-700 text-white text-center max-md:py-12 max-md:px-6">
+      <section className="py-[60px] px-8 bg-gold text-white text-center max-md:py-12 max-md:px-6">
         <div className="max-w-content mx-auto">
           <h2 className="font-serif text-[clamp(1.4rem,3vw,1.8rem)] font-bold mb-3">
             Entgeltdiskriminierung? Wir helfen &mdash; Arbeitnehmern und Arbeitgebern.
@@ -484,7 +484,7 @@ export default function SituationscheckPage() {
           </p>
           <Link
             href="/kontakt"
-            className="inline-block py-3.5 px-8 bg-white text-primary-700 border-none rounded-sm font-sans text-base font-semibold no-underline transition-all hover:bg-primary-50 hover:-translate-y-0.5"
+            className="inline-block py-3.5 px-8 bg-white text-gold border-none rounded-sm font-sans text-base font-semibold no-underline transition-all hover:bg-gold-bg hover:-translate-y-0.5"
           >
             Kostenlose Ersteinschätzung &rarr;
           </Link>
@@ -494,7 +494,7 @@ export default function SituationscheckPage() {
       {/* FAQ */}
       <section className="py-[70px] px-8 bg-slate-50 max-md:py-12 max-md:px-6">
         <div className="max-w-content mx-auto">
-          <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-primary-700 mb-2.5">
+          <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-gold mb-2.5">
             Häufige Fragen
           </div>
           <h2 className="font-serif text-[clamp(1.4rem,3vw,1.9rem)] font-bold leading-[1.25] mb-6">
@@ -513,17 +513,17 @@ export default function SituationscheckPage() {
             </div>
             <ul className="list-none space-y-2 text-[0.88rem]">
               <li>
-                <a href="https://eur-lex.europa.eu/eli/dir/2023/970/oj" target="_blank" rel="noopener noreferrer" className="text-primary-700 no-underline hover:underline">
+                <a href="https://eur-lex.europa.eu/eli/dir/2023/970/oj" target="_blank" rel="noopener noreferrer" className="text-gold no-underline hover:underline">
                   EU-Richtlinie 2023/970 &mdash; Entgelttransparenzrichtlinie &rarr;
                 </a>
               </li>
               <li>
-                <a href="https://www.gesetze-im-internet.de/entgtranspg/" target="_blank" rel="noopener noreferrer" className="text-primary-700 no-underline hover:underline">
+                <a href="https://www.gesetze-im-internet.de/entgtranspg/" target="_blank" rel="noopener noreferrer" className="text-gold no-underline hover:underline">
                   Entgelttransparenzgesetz (EntgTranspG) &rarr;
                 </a>
               </li>
               <li>
-                <a href="https://www.bundesarbeitsgericht.de/" target="_blank" rel="noopener noreferrer" className="text-primary-700 no-underline hover:underline">
+                <a href="https://www.bundesarbeitsgericht.de/" target="_blank" rel="noopener noreferrer" className="text-gold no-underline hover:underline">
                   BAG-Urteil 8 AZR 300/24 &rarr;
                 </a>
               </li>
@@ -535,7 +535,7 @@ export default function SituationscheckPage() {
       {/* Final CTA */}
       <section className="py-[70px] px-8 bg-white max-md:py-12 max-md:px-6">
         <div className="max-w-content mx-auto text-center">
-          <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-primary-700 mb-2.5">
+          <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-gold mb-2.5">
             Weitere Tools
           </div>
           <h2 className="font-serif text-[clamp(1.4rem,3vw,1.8rem)] font-bold mb-3">
@@ -548,13 +548,13 @@ export default function SituationscheckPage() {
           <div className="flex flex-wrap justify-center gap-4">
             <Link
               href="/vergleichsgruppen-finder"
-              className="inline-block py-3.5 px-8 bg-secondary-600 text-white border-none rounded-sm font-sans text-base font-semibold no-underline transition-all hover:bg-secondary-700 hover:-translate-y-px hover:shadow-[0_6px_20px_rgba(22,163,74,0.25)]"
+              className="inline-block py-3.5 px-8 bg-green text-white border-none rounded-sm font-sans text-base font-semibold no-underline transition-all hover:bg-green hover:-translate-y-px hover:shadow-[0_6px_20px_rgba(43,76,53,0.25)]"
             >
               Vergleichsgruppen-Finder &rarr;
             </Link>
             <Link
               href="/kontakt"
-              className="inline-block py-3.5 px-8 bg-white text-primary-700 border-2 border-primary-600 rounded-sm font-sans text-base font-semibold no-underline transition-all hover:bg-primary-50 hover:-translate-y-px"
+              className="inline-block py-3.5 px-8 bg-white text-gold border-2 border-gold rounded-sm font-sans text-base font-semibold no-underline transition-all hover:bg-gold-bg hover:-translate-y-px"
             >
               Kostenlose Ersteinschätzung &rarr;
             </Link>

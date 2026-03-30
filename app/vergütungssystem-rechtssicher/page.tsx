@@ -106,20 +106,20 @@ export default function VerguetungssystemRechtssicherPage() {
 
       <main>
         {/* Breadcrumb */}
-        <div className="pt-[130px] px-8 bg-accent-50 max-md:pt-[110px] max-md:px-6">
+        <div className="pt-[130px] px-8 bg-cream-dark max-md:pt-[110px] max-md:px-6">
           <nav className="max-w-content mx-auto text-[0.8rem] text-ink-muted">
-            <a href="/" className="hover:text-primary transition-colors no-underline text-ink-muted">Start</a>
+            <a href="/" className="hover:text-gold transition-colors no-underline text-ink-muted">Start</a>
             <span className="mx-1.5">/</span>
-            <a href="/arbeitgeber" className="hover:text-primary transition-colors no-underline text-ink-muted">Arbeitgeber</a>
+            <a href="/arbeitgeber" className="hover:text-gold transition-colors no-underline text-ink-muted">Arbeitgeber</a>
             <span className="mx-1.5">/</span>
             <span className="text-ink">Vergütungssystem rechtssicher</span>
           </nav>
         </div>
 
         {/* Hero */}
-        <header className="pt-6 pb-[80px] px-8 bg-accent-50 max-md:pb-[60px] max-md:px-6">
+        <header className="pt-6 pb-[80px] px-8 bg-cream-dark max-md:pb-[60px] max-md:px-6">
           <div className="max-w-content mx-auto">
-            <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-accent-700 mb-2.5">Arbeitgeber · Compliance</div>
+            <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-blue mb-2.5">Arbeitgeber · Compliance</div>
             <h1 className="font-serif text-[clamp(2rem,4vw,2.8rem)] font-extrabold leading-[1.15] mb-5 tracking-tight max-md:text-[1.8rem]">
               Vergütungssystem rechtssicher gestalten — Compliance-Leitfaden
             </h1>
@@ -165,7 +165,7 @@ export default function VerguetungssystemRechtssicherPage() {
               {schritte.map((s, i) => (
                 <FadeUp key={s.nr} delay={Math.min(i, 3) as 0 | 1 | 2 | 3}>
                   <div className="bg-white border border-border-light rounded p-6 flex gap-5 max-md:flex-col">
-                    <div className="text-[1.8rem] font-extrabold text-accent-700 leading-none min-w-[48px]">{s.nr}</div>
+                    <div className="text-[1.8rem] font-extrabold text-blue leading-none min-w-[48px]">{s.nr}</div>
                     <div>
                       <h3 className="font-semibold text-[1rem] text-ink mb-1.5">{s.title}</h3>
                       <p className="text-[0.9rem] text-ink-light leading-relaxed m-0">{s.text}</p>
@@ -188,7 +188,7 @@ export default function VerguetungssystemRechtssicherPage() {
                 <table className="w-full border-collapse text-[0.92rem]">
                   <thead>
                     <tr>
-                      <th className="text-left p-4 bg-accent-50 border border-border font-semibold text-ink">Zulässig (Art. 4 Abs. 4 EU-RL)</th>
+                      <th className="text-left p-4 bg-cream-dark border border-border font-semibold text-ink">Zulässig (Art. 4 Abs. 4 EU-RL)</th>
                       <th className="text-left p-4 bg-red-50 border border-border font-semibold text-ink">Problematisch / riskant</th>
                     </tr>
                   </thead>
@@ -224,7 +224,7 @@ export default function VerguetungssystemRechtssicherPage() {
                 Kompetenzen, Belastungen, Verantwortung und Arbeitsbedingungen (Art. 4 Abs. 4). Vergleichsgruppen
                 müssen diese Dimensionen abbilden — nicht Jobtitel oder Hierarchiestufen.
               </p>
-              <div className="bg-accent-50 border border-accent/20 rounded p-5 mb-4">
+              <div className="bg-cream-dark border border-blue/20 rounded p-5 mb-4">
                 <p className="text-[0.9rem] text-ink-light leading-relaxed m-0">
                   <strong>Praxisbeispiel:</strong> Eine Sachbearbeiterin in der Buchhaltung und ein Sachbearbeiter
                   in der Logistik können dieselbe Vergleichsgruppe bilden, wenn Anforderungsprofil, Verantwortungsumfang
@@ -256,7 +256,7 @@ export default function VerguetungssystemRechtssicherPage() {
                   'Nachweis der regelmäßigen Überprüfung (mindestens alle 3 Jahre)',
                 ].map((item, i) => (
                   <div key={i} className="flex gap-3 items-start">
-                    <div className="w-6 h-6 min-w-[24px] rounded-full bg-accent-50 border border-accent/30 flex items-center justify-center text-accent-700 text-[0.75rem] font-bold mt-0.5">
+                    <div className="w-6 h-6 min-w-[24px] rounded-full bg-cream-dark border border-blue/30 flex items-center justify-center text-blue text-[0.75rem] font-bold mt-0.5">
                       &#10003;
                     </div>
                     <p className="text-[0.95rem] text-ink-light leading-relaxed m-0">{item}</p>
@@ -288,7 +288,7 @@ export default function VerguetungssystemRechtssicherPage() {
         <ContactForm />
 
         {/* CTA */}
-        <section className="py-[70px] px-8 bg-accent-700 text-white text-center max-md:py-12 max-md:px-6">
+        <section className="py-[70px] px-8 bg-blue text-white text-center max-md:py-12 max-md:px-6">
           <div className="max-w-[700px] mx-auto">
             <h2 className="font-serif text-[clamp(1.5rem,3vw,2rem)] font-bold mb-4">
               Vergütungssystem prüfen lassen — kostenlose Ersteinschätzung
@@ -298,7 +298,7 @@ export default function VerguetungssystemRechtssicherPage() {
             </p>
             <a
               href="/kontakt"
-              className="inline-flex items-center gap-2 px-8 py-3.5 rounded-sm text-[0.95rem] font-semibold no-underline transition-all bg-white text-accent-700 hover:bg-accent-50 hover:-translate-y-0.5"
+              className="inline-flex items-center gap-2 px-8 py-3.5 rounded-sm text-[0.95rem] font-semibold no-underline transition-all bg-white text-blue hover:bg-cream-dark hover:-translate-y-0.5"
             >
               Jetzt Compliance-Audit anfragen &rarr;
             </a>

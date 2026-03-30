@@ -109,13 +109,13 @@ export default function GenderPayGapRechnerPage() {
       <div className="bg-slate-50 pt-[120px] pb-[50px] px-8 border-b border-border max-md:pt-[110px] max-md:px-6">
         <div className="max-w-content mx-auto">
           <nav className="text-[0.84rem] text-ink-muted mb-6">
-            <Link href="/" className="text-primary no-underline hover:underline">Start</Link>
+            <Link href="/" className="text-gold no-underline hover:underline">Start</Link>
             <span className="mx-2">/</span>
-            <Link href="/gender-pay-gap" className="text-primary no-underline hover:underline">Gender Pay Gap</Link>
+            <Link href="/gender-pay-gap" className="text-gold no-underline hover:underline">Gender Pay Gap</Link>
             <span className="mx-2">/</span>
             <span>Rechner</span>
           </nav>
-          <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-primary-700 mb-2.5">
+          <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-gold mb-2.5">
             Kostenloses Tool
           </div>
           <h1 className="font-serif text-[clamp(1.8rem,4vw,2.4rem)] font-bold leading-[1.2] max-w-[700px]">
@@ -162,7 +162,7 @@ export default function GenderPayGapRechnerPage() {
                       step="1000"
                       value={gehalt}
                       onChange={(e) => setGehalt(parseInt(e.target.value, 10))}
-                      className="flex-1 accent-primary"
+                      className="flex-1 accent-gold"
                     />
                     <span className="text-[1rem] font-semibold text-ink min-w-[90px] text-right">
                       {fmt(gehalt)} &euro;
@@ -182,7 +182,7 @@ export default function GenderPayGapRechnerPage() {
                   <select
                     value={brancheSlug}
                     onChange={(e) => setBrancheSlug(e.target.value)}
-                    className="w-full py-3 px-4 border border-border rounded-sm font-sans text-[0.92rem] text-ink bg-white transition-all outline-none focus:border-primary focus:shadow-[0_0_0_3px_rgba(99,102,241,0.1)]"
+                    className="w-full py-3 px-4 border border-border rounded-sm font-sans text-[0.92rem] text-ink bg-white transition-all outline-none focus:border-gold focus:shadow-[0_0_0_3px_rgba(166,139,75,0.1)]"
                   >
                     {branchen.map((b) => (
                       <option key={b.slug} value={b.slug}>
@@ -200,7 +200,7 @@ export default function GenderPayGapRechnerPage() {
                   <select
                     value={geschlecht}
                     onChange={(e) => setGeschlecht(e.target.value as 'frau' | 'mann' | 'divers')}
-                    className="w-full py-3 px-4 border border-border rounded-sm font-sans text-[0.92rem] text-ink bg-white transition-all outline-none focus:border-primary focus:shadow-[0_0_0_3px_rgba(99,102,241,0.1)]"
+                    className="w-full py-3 px-4 border border-border rounded-sm font-sans text-[0.92rem] text-ink bg-white transition-all outline-none focus:border-gold focus:shadow-[0_0_0_3px_rgba(166,139,75,0.1)]"
                   >
                     <option value="frau">Frau</option>
                     <option value="mann">Mann</option>
@@ -210,7 +210,7 @@ export default function GenderPayGapRechnerPage() {
 
                 <button
                   onClick={calculate}
-                  className="w-full py-3.5 bg-primary-700 text-white border-none rounded-sm font-sans text-base font-semibold cursor-pointer transition-all mt-2 hover:bg-[#3730a3] hover:-translate-y-px hover:shadow-[0_6px_20px_rgba(99,102,241,0.25)]"
+                  className="w-full py-3.5 bg-gold text-white border-none rounded-sm font-sans text-base font-semibold cursor-pointer transition-all mt-2 hover:bg-[#3730a3] hover:-translate-y-px hover:shadow-[0_6px_20px_rgba(166,139,75,0.25)]"
                 >
                   Gehalt vergleichen
                 </button>
@@ -224,11 +224,11 @@ export default function GenderPayGapRechnerPage() {
             {result && (
               <div className="mt-8 ergebnis-box">
                 {/* Hauptergebnis */}
-                <div className="rounded-sm border-2 border-primary bg-slate-50 p-6 text-center mb-6">
+                <div className="rounded-sm border-2 border-gold bg-slate-50 p-6 text-center mb-6">
                   <div className="text-[0.78rem] font-bold tracking-[0.14em] uppercase mb-2 text-ink-muted">
                     Vergleich zum Median in {result.brancheName}
                   </div>
-                  <div className="font-serif text-[2rem] font-bold text-primary-700 mb-2">
+                  <div className="font-serif text-[2rem] font-bold text-gold mb-2">
                     {result.diffProzent > 0 ? '+' : ''}{result.diffProzent} %
                   </div>
                   <div className="text-[0.9rem] text-ink-muted">
@@ -265,7 +265,7 @@ export default function GenderPayGapRechnerPage() {
                     </div>
                     <div className="h-8 bg-slate-100 rounded-sm overflow-hidden">
                       <div
-                        className="h-full bg-primary-700 rounded-sm transition-all duration-500"
+                        className="h-full bg-gold rounded-sm transition-all duration-500"
                         style={{ width: `${(result.meinGehalt / maxBar) * 100}%` }}
                       />
                     </div>
@@ -306,13 +306,13 @@ export default function GenderPayGapRechnerPage() {
                 </div>
 
                 {/* CTA */}
-                <div className="mt-4 py-5 px-6 bg-slate-50 rounded-sm border-l-[3px] border-primary">
+                <div className="mt-4 py-5 px-6 bg-slate-50 rounded-sm border-l-[3px] border-gold">
                   <p className="text-[0.95rem] text-ink mb-3">
                     <strong>Gehaltslücke entdeckt? Nutzen Sie Ihr Auskunftsrecht.</strong>
                   </p>
                   <Link
                     href="/auskunftsrecht-checker"
-                    className="inline-block py-3 px-6 bg-primary-700 text-white border-none rounded-sm font-sans text-[0.92rem] font-semibold no-underline transition-all hover:bg-[#3730a3]"
+                    className="inline-block py-3 px-6 bg-gold text-white border-none rounded-sm font-sans text-[0.92rem] font-semibold no-underline transition-all hover:bg-[#3730a3]"
                   >
                     Auskunftsrecht nutzen &rarr;
                   </Link>
@@ -327,7 +327,7 @@ export default function GenderPayGapRechnerPage() {
       <section className="py-[70px] px-8 bg-slate-50 max-md:py-10 max-md:px-6">
         <div className="max-w-content mx-auto">
           <div className="max-w-[740px]">
-            <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-primary-700 mb-2.5">
+            <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-gold mb-2.5">
               Hintergrund
             </div>
             <h2 className="font-serif text-[clamp(1.4rem,3vw,1.9rem)] font-bold leading-[1.25] mb-5">
@@ -356,7 +356,7 @@ export default function GenderPayGapRechnerPage() {
       {/* FAQ */}
       <section className="py-[70px] px-8 bg-white max-md:py-10 max-md:px-6">
         <div className="max-w-content mx-auto">
-          <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-primary-700 mb-2.5">
+          <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-gold mb-2.5">
             Häufige Fragen
           </div>
           <h2 className="font-serif text-[clamp(1.4rem,3vw,1.9rem)] font-bold leading-[1.25] mb-6">
@@ -367,7 +367,7 @@ export default function GenderPayGapRechnerPage() {
       </section>
 
       {/* CTA */}
-      <section className="py-[70px] px-8 bg-primary-700 text-white text-center max-md:py-12 max-md:px-6">
+      <section className="py-[70px] px-8 bg-gold text-white text-center max-md:py-12 max-md:px-6">
         <div className="max-w-[700px] mx-auto">
           <h2 className="font-serif text-[clamp(1.5rem,3vw,2rem)] font-bold mb-4">
             Gehaltslücke schließen &mdash; Auskunftsrecht nutzen
@@ -378,7 +378,7 @@ export default function GenderPayGapRechnerPage() {
           </p>
           <Link
             href="/auskunftsrecht-checker"
-            className="inline-flex items-center gap-2 px-8 py-3.5 rounded-sm text-[0.95rem] font-semibold no-underline transition-all bg-white text-primary-700 hover:bg-slate-50 hover:-translate-y-0.5"
+            className="inline-flex items-center gap-2 px-8 py-3.5 rounded-sm text-[0.95rem] font-semibold no-underline transition-all bg-white text-gold hover:bg-slate-50 hover:-translate-y-0.5"
           >
             Auskunftsrecht prüfen &rarr;
           </Link>

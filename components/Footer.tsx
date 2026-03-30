@@ -2,7 +2,7 @@
 
 import Link from 'next/link';
 
-const linkClass = 'text-white/70 no-underline hover:text-primary-400 transition-colors';
+const linkClass = 'text-white/70 no-underline hover:text-gold-light transition-colors';
 const headingClass = 'text-white/90 font-semibold text-[0.75rem] uppercase tracking-[0.12em] mb-3';
 
 export default function Footer({ onOpenCookieSettings }: { onOpenCookieSettings: () => void }) {
@@ -13,7 +13,7 @@ export default function Footer({ onOpenCookieSettings }: { onOpenCookieSettings:
         {/* Brand header */}
         <div className="flex justify-between items-start flex-wrap gap-6 mb-10 pb-10 border-b border-white/[0.08]">
           <div>
-            <div className="font-serif text-primary text-[1.1rem] font-semibold tracking-tight">
+            <div className="font-serif text-gold text-[1.1rem] font-semibold tracking-tight">
               gender-paygap.de
             </div>
             <div className="text-white/70 mt-1.5 text-[0.8rem]">
@@ -28,7 +28,7 @@ export default function Footer({ onOpenCookieSettings }: { onOpenCookieSettings:
               href="https://www.linkedin.com/company/105863455"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-white/70 no-underline hover:text-primary-400 transition-colors text-[0.8rem]"
+              className="text-white/70 no-underline hover:text-gold-light transition-colors text-[0.8rem]"
             >
               LinkedIn
             </a>

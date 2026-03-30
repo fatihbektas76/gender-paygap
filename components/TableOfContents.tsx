@@ -34,7 +34,7 @@ export default function TableOfContents({ headings }: { headings: TocItem[] }) {
             <li key={h.id}>
               <a
                 href={`#${h.id}`}
-                className={`block text-[0.88rem] text-ink-light no-underline hover:text-primary transition-colors leading-relaxed py-[5px] ${
+                className={`block text-[0.88rem] text-ink-light no-underline hover:text-gold transition-colors leading-relaxed py-[5px] ${
                   h.level === 3 ? 'pl-4 text-[0.84rem] text-ink-muted' : ''
                 }`}
               >

@@ -50,7 +50,7 @@ export default function RelatedTopics({ current }: RelatedTopicsProps) {
   return (
     <section className="py-[70px] px-8 bg-slate-50">
       <div className="max-w-content mx-auto">
-        <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-primary-700 mb-2.5">
+        <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-gold mb-2.5">
           Weiterführende Themen
         </div>
         <h2 className="font-serif text-[clamp(1.4rem,3vw,1.9rem)] font-bold leading-[1.25] mb-6">
@@ -61,7 +61,7 @@ export default function RelatedTopics({ current }: RelatedTopicsProps) {
             <Link
               key={t.key}
               href={t.href}
-              className="block py-5 px-5 bg-white border border-border rounded-sm no-underline text-ink hover:border-primary hover:text-primary-700 transition-all"
+              className="block py-5 px-5 bg-white border border-border rounded-sm no-underline text-ink hover:border-gold hover:text-gold transition-all"
             >
               <span className="font-semibold">{t.title}</span>
               <span className="block text-[0.84rem] text-ink-muted mt-1">{t.desc}</span>

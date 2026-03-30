@@ -47,7 +47,7 @@ export default function SidebarToc({ headings }: { headings: TocItem[] }) {
                 href={`#${h.id}`}
                 className={`block text-[0.84rem] no-underline leading-relaxed py-[6px] pl-4 -ml-px border-l-2 transition-colors ${
                   activeId === h.id
-                    ? 'border-l-primary text-primary-700 font-medium'
+                    ? 'border-l-gold text-gold font-medium'
                     : 'border-l-transparent text-ink-muted hover:text-ink-light hover:border-l-border'
                 }`}
               >

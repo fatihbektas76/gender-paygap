@@ -93,10 +93,10 @@ const ampelConfig = {
   gruen: {
     label: 'Gut aufgestellt',
     sublabel: 'Kleiner Feinschliff nötig',
-    bgClass: 'bg-secondary-50',
-    borderClass: 'border-secondary',
-    badgeClass: 'bg-secondary text-white',
-    textClass: 'text-secondary-700',
+    bgClass: 'bg-green-bg',
+    borderClass: 'border-green',
+    badgeClass: 'bg-green text-white',
+    textClass: 'text-green',
   },
   gelb: {
     label: 'Handlungsbedarf',
@@ -201,20 +201,20 @@ export default function ComplianceCheckPage() {
       />
 
       {/* Header */}
-      <div className="bg-accent-50 pt-[120px] pb-[50px] px-8 border-b border-border">
+      <div className="bg-cream-dark pt-[120px] pb-[50px] px-8 border-b border-border">
         <div className="max-w-content mx-auto">
           <nav className="text-[0.84rem] text-ink-muted mb-6">
-            <Link href="/" className="text-accent no-underline hover:underline">
+            <Link href="/" className="text-blue no-underline hover:underline">
               Start
             </Link>
             <span className="mx-2">/</span>
-            <Link href="/arbeitgeber" className="text-accent no-underline hover:underline">
+            <Link href="/arbeitgeber" className="text-blue no-underline hover:underline">
               Arbeitgeber
             </Link>
             <span className="mx-2">/</span>
             <span>Compliance-Check</span>
           </nav>
-          <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-accent-700 mb-2.5">
+          <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-blue mb-2.5">
             Kostenloses Tool
           </div>
           <h1 className="font-serif text-[clamp(1.8rem,4vw,2.4rem)] font-bold leading-[1.2] max-w-[700px]">
@@ -237,7 +237,7 @@ export default function ComplianceCheckPage() {
                   key={q.id}
                   className="bg-slate-50 border border-border-light rounded p-6 sm:p-8"
                 >
-                  <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-accent-700 mb-2">
+                  <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-blue mb-2">
                     Frage {qIdx + 1} von {questions.length}
                   </div>
                   <h2 className="font-serif text-[1.1rem] font-bold mb-4">{q.text}</h2>
@@ -249,8 +249,8 @@ export default function ComplianceCheckPage() {
                           key={oIdx}
                           className={`flex items-center gap-3 p-3.5 rounded-sm border cursor-pointer transition-all ${
                             isSelected
-                              ? 'border-accent bg-accent-50'
-                              : 'border-border bg-white hover:border-accent/50'
+                              ? 'border-blue bg-cream-dark'
+                              : 'border-border bg-white hover:border-blue/50'
                           }`}
                         >
                           <input
@@ -259,7 +259,7 @@ export default function ComplianceCheckPage() {
                             value={oIdx}
                             checked={isSelected}
                             onChange={() => handleSelect(q.id, oIdx)}
-                            className="w-4 h-4 accent-accent-600"
+                            className="w-4 h-4 accent-blue"
                           />
                           <span className="text-[0.92rem] text-ink">{option}</span>
                         </label>
@@ -275,7 +275,7 @@ export default function ComplianceCheckPage() {
               disabled={!allAnswered}
               className={`w-full py-3.5 border-none rounded-sm font-sans text-base font-semibold cursor-pointer transition-all mt-8 ${
                 allAnswered
-                  ? 'bg-accent-700 text-white hover:bg-accent-800 hover:-translate-y-px hover:shadow-[0_6px_20px_rgba(59,130,246,0.25)]'
+                  ? 'bg-blue text-white hover:bg-blue hover:-translate-y-px hover:shadow-[0_6px_20px_rgba(61,90,128,0.25)]'
                   : 'bg-slate-200 text-ink-muted cursor-not-allowed'
               }`}
             >
@@ -286,7 +286,7 @@ export default function ComplianceCheckPage() {
               <strong>Hinweis:</strong> Dieses Tool dient ausschließlich der unverbindlichen
               Erstorientierung und ersetzt keine anwaltliche Beratung. Für eine verbindliche
               Einschätzung wenden Sie sich bitte an einen{' '}
-              <Link href="/kontakt" className="text-accent no-underline hover:underline">
+              <Link href="/kontakt" className="text-blue no-underline hover:underline">
                 Fachanwalt für Arbeitsrecht
               </Link>
               .
@@ -336,7 +336,7 @@ export default function ComplianceCheckPage() {
                     score >= 2 ? '\u2713' : score === 1 ? '\u26A0' : '\u2717';
                   const iconColor =
                     score >= 2
-                      ? 'text-secondary-600'
+                      ? 'text-green'
                       : score === 1
                         ? 'text-amber-600'
                         : 'text-red-600';
@@ -362,7 +362,7 @@ export default function ComplianceCheckPage() {
               </div>
 
               {/* CTA based on result */}
-              <div className="mt-8 py-6 px-6 bg-white rounded-sm border-l-[3px] border-accent">
+              <div className="mt-8 py-6 px-6 bg-white rounded-sm border-l-[3px] border-blue">
                 {ampel === 'gruen' ? (
                   <>
                     <p className="text-[0.95rem] text-ink mb-3">
@@ -373,7 +373,7 @@ export default function ComplianceCheckPage() {
                     </p>
                     <Link
                       href="/kontakt"
-                      className="inline-block py-3 px-6 bg-accent-700 text-white border-none rounded-sm font-sans text-[0.92rem] font-semibold no-underline transition-all hover:bg-accent-800"
+                      className="inline-block py-3 px-6 bg-blue text-white border-none rounded-sm font-sans text-[0.92rem] font-semibold no-underline transition-all hover:bg-blue"
                     >
                       Audit zur Absicherung anfragen &rarr;
                     </Link>
@@ -389,7 +389,7 @@ export default function ComplianceCheckPage() {
                     </p>
                     <Link
                       href="/kontakt"
-                      className="inline-block py-3 px-6 bg-accent-700 text-white border-none rounded-sm font-sans text-[0.92rem] font-semibold no-underline transition-all hover:bg-accent-800"
+                      className="inline-block py-3 px-6 bg-blue text-white border-none rounded-sm font-sans text-[0.92rem] font-semibold no-underline transition-all hover:bg-blue"
                     >
                       Beratungstermin buchen &rarr;
                     </Link>
@@ -404,7 +404,7 @@ export default function ComplianceCheckPage() {
                 </p>
                 <Link
                   href="/compliance-check-arbeitgeber/sanktionsrechner"
-                  className="text-accent font-semibold text-[0.92rem] no-underline hover:underline"
+                  className="text-blue font-semibold text-[0.92rem] no-underline hover:underline"
                 >
                   Berechnen Sie Ihr Sanktionsrisiko &rarr;
                 </Link>
@@ -417,7 +417,7 @@ export default function ComplianceCheckPage() {
       {/* FAQ */}
       <section className="py-[70px] px-8 bg-white">
         <div className="max-w-content mx-auto">
-          <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-accent-700 mb-2.5">
+          <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-blue mb-2.5">
             Häufige Fragen
           </div>
           <h2 className="font-serif text-[clamp(1.4rem,3vw,1.9rem)] font-bold leading-[1.25] mb-6">
@@ -428,7 +428,7 @@ export default function ComplianceCheckPage() {
       </section>
 
       {/* CTA */}
-      <section className="py-[70px] px-8 bg-accent-700 text-white text-center">
+      <section className="py-[70px] px-8 bg-blue text-white text-center">
         <div className="max-w-[700px] mx-auto">
           <h2 className="font-serif text-[clamp(1.4rem,3vw,1.8rem)] font-bold mb-4">
             Compliance-Audit anfragen &mdash; kostenlose Ersteinschätzung
@@ -439,7 +439,7 @@ export default function ComplianceCheckPage() {
           </p>
           <Link
             href="/kontakt"
-            className="inline-flex items-center gap-2 px-8 py-3.5 rounded-sm text-[0.95rem] font-semibold no-underline transition-all bg-white text-accent-700 hover:bg-accent-50 hover:-translate-y-0.5"
+            className="inline-flex items-center gap-2 px-8 py-3.5 rounded-sm text-[0.95rem] font-semibold no-underline transition-all bg-white text-blue hover:bg-cream-dark hover:-translate-y-0.5"
           >
             Jetzt Kontakt aufnehmen &rarr;
           </Link>

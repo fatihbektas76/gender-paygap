@@ -101,12 +101,12 @@ export default function AbfindungPage() {
       <div className="bg-slate-50 pt-[120px] pb-[50px] px-8 border-b border-border">
         <div className="max-w-content mx-auto">
           <nav className="text-[0.84rem] text-ink-muted mb-6">
-            <Link href="/" className="text-primary no-underline hover:underline">Start</Link>
+            <Link href="/" className="text-gold no-underline hover:underline">Start</Link>
             <span className="mx-2">/</span>
             <span>Abfindung</span>
           </nav>
           <StandAnzeige />
-          <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-primary-700 mb-2.5 mt-4">
+          <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-gold mb-2.5 mt-4">
             Ratgeber Abfindung
           </div>
           <h1 className="font-serif text-[clamp(1.8rem,4vw,2.4rem)] font-bold leading-[1.2] max-w-[700px]">
@@ -132,7 +132,7 @@ export default function AbfindungPage() {
             {/* CTA 1 */}
             <a
               href="/#kontakt"
-              className="inline-block py-3.5 px-8 bg-primary-700 text-white border-none rounded-sm font-sans text-base font-semibold no-underline transition-all hover:bg-[#3730a3] hover:-translate-y-px hover:shadow-[0_6px_20px_rgba(99,102,241,0.25)]"
+              className="inline-block py-3.5 px-8 bg-gold text-white border-none rounded-sm font-sans text-base font-semibold no-underline transition-all hover:bg-[#3730a3] hover:-translate-y-px hover:shadow-[0_6px_20px_rgba(166,139,75,0.25)]"
             >
               Kostenlose Ersteinschätzung anfordern &rarr;
             </a>
@@ -143,7 +143,7 @@ export default function AbfindungPage() {
       {/* Abfindungstabelle */}
       <section className="py-[70px] px-8 bg-slate-50">
         <div className="max-w-content mx-auto">
-          <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-primary-700 mb-2.5">
+          <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-gold mb-2.5">
             Abfindungstabelle
           </div>
           <h2 className="font-serif text-[clamp(1.4rem,3vw,1.9rem)] font-bold leading-[1.25] mb-3.5">
@@ -156,21 +156,21 @@ export default function AbfindungPage() {
           <div className="overflow-x-auto">
             <table className="w-full border-collapse text-[0.92rem]">
               <thead>
-                <tr className="border-b-2 border-primary/30">
+                <tr className="border-b-2 border-gold/30">
                   <th className="text-left py-3 px-4 font-semibold text-ink">Jahre</th>
                   <th className="text-right py-3 px-4 font-semibold text-ink">Minimum (0,25&times;)</th>
-                  <th className="text-right py-3 px-4 font-semibold text-primary-700">Regelformel (0,5&times;)</th>
+                  <th className="text-right py-3 px-4 font-semibold text-gold">Regelformel (0,5&times;)</th>
                   <th className="text-right py-3 px-4 font-semibold text-ink">Maximum (1,0&times;)</th>
                 </tr>
               </thead>
               <tbody>
                 {years.map((y) => (
-                  <tr key={y} className="border-b border-border hover:bg-primary-50 transition-colors">
+                  <tr key={y} className="border-b border-border hover:bg-gold-bg transition-colors">
                     <td className="py-3 px-4 font-semibold">{y} {y === 1 ? 'Jahr' : 'Jahre'}</td>
                     <td className="py-3 px-4 text-right text-ink-muted">
                       {(gehalt * 0.25 * y).toLocaleString('de-DE')}&nbsp;&euro;
                     </td>
-                    <td className="py-3 px-4 text-right font-semibold text-primary-700">
+                    <td className="py-3 px-4 text-right font-semibold text-gold">
                       {(gehalt * 0.5 * y).toLocaleString('de-DE')}&nbsp;&euro;
                     </td>
                     <td className="py-3 px-4 text-right text-ink-muted">
@@ -200,7 +200,7 @@ export default function AbfindungPage() {
           </p>
           <a
             href="/#kontakt"
-            className="inline-block py-3.5 px-8 bg-primary-700 text-white border-none rounded-sm font-sans text-base font-semibold no-underline transition-all hover:bg-[#3730a3] hover:-translate-y-px hover:shadow-[0_6px_20px_rgba(99,102,241,0.25)]"
+            className="inline-block py-3.5 px-8 bg-gold text-white border-none rounded-sm font-sans text-base font-semibold no-underline transition-all hover:bg-[#3730a3] hover:-translate-y-px hover:shadow-[0_6px_20px_rgba(166,139,75,0.25)]"
           >
             Jetzt kostenlos prüfen lassen &rarr;
           </a>
@@ -210,7 +210,7 @@ export default function AbfindungPage() {
       {/* Abfindung nach Betriebszugehörigkeit - alle 40 Jahre */}
       <section className="py-[70px] px-8 bg-slate-50">
         <div className="max-w-content mx-auto">
-          <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-primary-700 mb-2.5">
+          <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-gold mb-2.5">
             Nach Betriebszugehörigkeit
           </div>
           <h2 className="font-serif text-[clamp(1.4rem,3vw,1.9rem)] font-bold leading-[1.25] mb-6">
@@ -221,7 +221,7 @@ export default function AbfindungPage() {
               <Link
                 key={e.year}
                 href={`/abfindung-nach-${e.slug}-betriebszugehoerigkeit/`}
-                className="py-2.5 px-5 rounded-full border border-border bg-slate-50 text-[0.85rem] font-semibold text-ink no-underline hover:border-primary hover:text-primary-700 transition-all"
+                className="py-2.5 px-5 rounded-full border border-border bg-slate-50 text-[0.85rem] font-semibold text-ink no-underline hover:border-gold hover:text-gold transition-all"
               >
                 Nach {e.year} {e.year === 1 ? 'Jahr' : 'Jahren'}
               </Link>
@@ -236,7 +236,7 @@ export default function AbfindungPage() {
       {/* FAQ */}
       <section className="py-[70px] px-8 bg-white">
         <div className="max-w-content mx-auto">
-          <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-primary-700 mb-2.5">
+          <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-gold mb-2.5">
             Häufige Fragen
           </div>
           <h2 className="font-serif text-[clamp(1.4rem,3vw,1.9rem)] font-bold leading-[1.25] mb-6">
@@ -263,7 +263,7 @@ export default function AbfindungPage() {
         <div className="max-w-content mx-auto text-center">
           <p className="text-[0.92rem] text-ink-muted">
             Wir vertreten Arbeitnehmer bundesweit &mdash; vollständig digital.{' '}
-            <a href="/arbeitsrecht-anwalt" className="text-primary-700 font-semibold no-underline hover:underline">
+            <a href="/arbeitsrecht-anwalt" className="text-gold font-semibold no-underline hover:underline">
               Fachanwalt für Arbeitsrecht in Ihrer Stadt finden &rarr;
             </a>
           </p>
@@ -273,7 +273,7 @@ export default function AbfindungPage() {
       {/* CTA 3 */}
       <section className="py-[70px] px-8 bg-slate-50">
         <div className="max-w-content mx-auto text-center">
-          <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-primary-700 mb-2.5">
+          <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-gold mb-2.5">
             Jetzt handeln
           </div>
           <h2 className="font-serif text-[clamp(1.4rem,3vw,1.8rem)] font-bold mb-3">
@@ -285,7 +285,7 @@ export default function AbfindungPage() {
           </p>
           <a
             href="/#kontakt"
-            className="inline-block py-3.5 px-8 bg-primary-700 text-white border-none rounded-sm font-sans text-base font-semibold no-underline transition-all hover:bg-[#3730a3] hover:-translate-y-px hover:shadow-[0_6px_20px_rgba(99,102,241,0.25)]"
+            className="inline-block py-3.5 px-8 bg-gold text-white border-none rounded-sm font-sans text-base font-semibold no-underline transition-all hover:bg-[#3730a3] hover:-translate-y-px hover:shadow-[0_6px_20px_rgba(166,139,75,0.25)]"
           >
             Kostenlose Ersteinschätzung &rarr;
           </a>

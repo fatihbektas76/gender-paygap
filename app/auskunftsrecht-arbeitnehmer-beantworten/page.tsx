@@ -93,9 +93,9 @@ export default function AuskunftsrechtBeantwortenPage() {
 
       <main>
         {/* Hero */}
-        <header className="pt-[150px] pb-[80px] px-8 bg-accent-50 max-md:pt-[120px] max-md:pb-[60px] max-md:px-6">
+        <header className="pt-[150px] pb-[80px] px-8 bg-cream-dark max-md:pt-[120px] max-md:pb-[60px] max-md:px-6">
           <div className="max-w-content mx-auto">
-            <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-accent-700 mb-2.5">Arbeitgeber</div>
+            <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-blue mb-2.5">Arbeitgeber</div>
             <h1 className="font-serif text-[clamp(2rem,4vw,2.8rem)] font-extrabold leading-[1.15] mb-5 tracking-tight max-md:text-[1.8rem]">
               Auskunftsanfragen von Arbeitnehmern korrekt beantworten
             </h1>
@@ -117,10 +117,10 @@ export default function AuskunftsrechtBeantwortenPage() {
             <div className="space-y-5">
               {pflichtInhalte.map((item, i) => (
                 <FadeUp key={item.titel} delay={Math.min(i, 3) as 0 | 1 | 2 | 3}>
-                  <div className="bg-accent-50 border-l-4 border-accent rounded p-6">
+                  <div className="bg-cream-dark border-l-4 border-blue rounded p-6">
                     <div className="flex items-start justify-between gap-4 mb-2 flex-wrap">
                       <h3 className="font-serif text-[1.1rem] font-bold text-ink">{item.titel}</h3>
-                      <span className="text-[0.75rem] font-mono bg-accent-700 text-white px-2 py-0.5 rounded shrink-0">{item.basis}</span>
+                      <span className="text-[0.75rem] font-mono bg-blue text-white px-2 py-0.5 rounded shrink-0">{item.basis}</span>
                     </div>
                     <p className="text-[0.9rem] text-ink-muted leading-relaxed m-0">{item.text}</p>
                   </div>
@@ -141,9 +141,9 @@ export default function AuskunftsrechtBeantwortenPage() {
                 <table className="w-full border-collapse text-[0.92rem]">
                   <thead>
                     <tr>
-                      <th className="text-left p-4 bg-accent-50 border border-border font-semibold text-ink w-[180px]">Schritt</th>
-                      <th className="text-left p-4 bg-accent-50 border border-border font-semibold text-ink w-[120px]">Frist</th>
-                      <th className="text-left p-4 bg-accent-50 border border-border font-semibold text-ink">Details</th>
+                      <th className="text-left p-4 bg-cream-dark border border-border font-semibold text-ink w-[180px]">Schritt</th>
+                      <th className="text-left p-4 bg-cream-dark border border-border font-semibold text-ink w-[120px]">Frist</th>
+                      <th className="text-left p-4 bg-cream-dark border border-border font-semibold text-ink">Details</th>
                     </tr>
                   </thead>
                   <tbody>
@@ -156,7 +156,7 @@ export default function AuskunftsrechtBeantwortenPage() {
                     ].map((row) => (
                       <tr key={row.schritt}>
                         <td className="p-4 border border-border font-semibold text-ink">{row.schritt}</td>
-                        <td className="p-4 border border-border text-accent-700 font-semibold whitespace-nowrap">{row.frist}</td>
+                        <td className="p-4 border border-border text-blue font-semibold whitespace-nowrap">{row.frist}</td>
                         <td className="p-4 border border-border text-ink-light">{row.details}</td>
                       </tr>
                     ))}
@@ -174,7 +174,7 @@ export default function AuskunftsrechtBeantwortenPage() {
               Konsequenzen bei Verstoß — Beweislastumkehr und Schadensersatz
             </h2>
             <FadeUp>
-              <div className="bg-accent-50 border border-accent/30 rounded p-7">
+              <div className="bg-cream-dark border border-blue/30 rounded p-7">
                 <p className="text-[0.95rem] text-ink leading-relaxed mb-4">
                   Die EU-Richtlinie sieht <strong>schwerwiegende Konsequenzen</strong> vor, wenn Arbeitgeber das
                   Auskunftsrecht nicht korrekt erfüllen:
@@ -212,7 +212,7 @@ export default function AuskunftsrechtBeantwortenPage() {
         <ContactForm />
 
         {/* CTA */}
-        <section className="py-[70px] px-8 bg-accent-700 text-white text-center max-md:py-12 max-md:px-6">
+        <section className="py-[70px] px-8 bg-blue text-white text-center max-md:py-12 max-md:px-6">
           <div className="max-w-[700px] mx-auto">
             <h2 className="font-serif text-[clamp(1.5rem,3vw,2rem)] font-bold mb-4">
               Auskunftsprozess einrichten — kostenlose Ersteinschätzung
@@ -222,7 +222,7 @@ export default function AuskunftsrechtBeantwortenPage() {
             </p>
             <a
               href="/kontakt"
-              className="inline-flex items-center gap-2 px-8 py-3.5 rounded-sm text-[0.95rem] font-semibold no-underline transition-all bg-white text-accent-700 hover:bg-accent-50 hover:-translate-y-0.5"
+              className="inline-flex items-center gap-2 px-8 py-3.5 rounded-sm text-[0.95rem] font-semibold no-underline transition-all bg-white text-blue hover:bg-cream-dark hover:-translate-y-0.5"
             >
               Jetzt Kontakt aufnehmen &rarr;
             </a>

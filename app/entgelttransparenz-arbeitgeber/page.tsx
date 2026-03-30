@@ -98,9 +98,9 @@ export default function EntgelttransparenzArbeitgeberPage() {
 
       <main>
         {/* Hero */}
-        <header className="pt-[150px] pb-[80px] px-8 bg-accent-50 max-md:pt-[120px] max-md:pb-[60px] max-md:px-6">
+        <header className="pt-[150px] pb-[80px] px-8 bg-cream-dark max-md:pt-[120px] max-md:pb-[60px] max-md:px-6">
           <div className="max-w-content mx-auto">
-            <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-accent-700 mb-2.5">Arbeitgeber</div>
+            <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-blue mb-2.5">Arbeitgeber</div>
             <h1 className="font-serif text-[clamp(2rem,4vw,2.8rem)] font-extrabold leading-[1.15] mb-5 tracking-tight max-md:text-[1.8rem]">
               Entgelttransparenz f&uuml;r Arbeitgeber &mdash; Pflichten ab 2026
             </h1>
@@ -122,7 +122,7 @@ export default function EntgelttransparenzArbeitgeberPage() {
             <div className="space-y-5">
               {pflichten.map((p, i) => (
                 <FadeUp key={p.titel} delay={Math.min(i, 3) as 0 | 1 | 2 | 3}>
-                  <div className="bg-accent-50 border-l-4 border-accent rounded p-6">
+                  <div className="bg-cream-dark border-l-4 border-blue rounded p-6">
                     <h3 className="font-serif text-[1.1rem] font-bold text-ink mb-2">{p.titel}</h3>
                     <p className="text-[0.9rem] text-ink-muted leading-relaxed m-0">{p.text}</p>
                   </div>
@@ -143,9 +143,9 @@ export default function EntgelttransparenzArbeitgeberPage() {
                 <table className="w-full border-collapse text-[0.92rem]">
                   <thead>
                     <tr>
-                      <th className="text-left p-4 bg-accent-50 border border-border font-semibold text-ink w-[140px]">Frist</th>
-                      <th className="text-left p-4 bg-accent-50 border border-border font-semibold text-ink w-[160px]">Unternehmensgröße</th>
-                      <th className="text-left p-4 bg-accent-50 border border-border font-semibold text-ink">Pflicht</th>
+                      <th className="text-left p-4 bg-cream-dark border border-border font-semibold text-ink w-[140px]">Frist</th>
+                      <th className="text-left p-4 bg-cream-dark border border-border font-semibold text-ink w-[160px]">Unternehmensgröße</th>
+                      <th className="text-left p-4 bg-cream-dark border border-border font-semibold text-ink">Pflicht</th>
                     </tr>
                   </thead>
                   <tbody>
@@ -176,7 +176,7 @@ export default function EntgelttransparenzArbeitgeberPage() {
               Risiken bei Nichteinhaltung
             </h2>
             <FadeUp>
-              <div className="bg-accent-50 border border-accent/30 rounded p-7">
+              <div className="bg-cream-dark border border-blue/30 rounded p-7">
                 <p className="text-[0.95rem] text-ink leading-relaxed mb-4">
                   Die EU-Richtlinie sieht erstmals <strong>echte Durchsetzungsmechanismen</strong> vor.
                   Art. 23 verlangt &bdquo;wirksame, verhältnismäßige und abschreckende&ldquo; Sanktionen:
@@ -214,7 +214,7 @@ export default function EntgelttransparenzArbeitgeberPage() {
         <ContactForm />
 
         {/* CTA */}
-        <section className="py-[70px] px-8 bg-accent-700 text-white text-center max-md:py-12 max-md:px-6">
+        <section className="py-[70px] px-8 bg-blue text-white text-center max-md:py-12 max-md:px-6">
           <div className="max-w-[700px] mx-auto">
             <h2 className="font-serif text-[clamp(1.5rem,3vw,2rem)] font-bold mb-4">
               Compliance-Check für Ihr Unternehmen — kostenlose Ersteinschätzung
@@ -224,7 +224,7 @@ export default function EntgelttransparenzArbeitgeberPage() {
             </p>
             <a
               href="/kontakt"
-              className="inline-flex items-center gap-2 px-8 py-3.5 rounded-sm text-[0.95rem] font-semibold no-underline transition-all bg-white text-accent-700 hover:bg-accent-50 hover:-translate-y-0.5"
+              className="inline-flex items-center gap-2 px-8 py-3.5 rounded-sm text-[0.95rem] font-semibold no-underline transition-all bg-white text-blue hover:bg-cream-dark hover:-translate-y-0.5"
             >
               Jetzt Kontakt aufnehmen &rarr;
             </a>

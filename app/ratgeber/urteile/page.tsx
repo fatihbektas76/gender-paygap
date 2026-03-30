@@ -67,13 +67,13 @@ export default function UrteilePage() {
       <div className="bg-slate-50 pt-[120px] pb-[50px] px-8 border-b border-border">
         <div className="max-w-content mx-auto">
           <nav className="text-[0.84rem] text-ink-muted mb-6">
-            <Link href="/" className="text-primary no-underline hover:underline">Start</Link>
+            <Link href="/" className="text-gold no-underline hover:underline">Start</Link>
             <span className="mx-2">/</span>
-            <Link href="/ratgeber" className="text-primary no-underline hover:underline">Ratgeber</Link>
+            <Link href="/ratgeber" className="text-gold no-underline hover:underline">Ratgeber</Link>
             <span className="mx-2">/</span>
             <span>Urteile</span>
           </nav>
-          <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-primary-700 mb-2.5">
+          <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-gold mb-2.5">
             Rechtsprechung
           </div>
           <h1 className="font-serif text-[clamp(1.8rem,4vw,2.4rem)] font-bold leading-[1.2] max-w-[700px]">
@@ -94,11 +94,11 @@ export default function UrteilePage() {
               <Link
                 key={u.az}
                 href={`/urteile/${u.slug}/`}
-                className="block border border-border rounded-sm overflow-hidden no-underline hover:border-primary hover:-translate-y-px hover:shadow-[0_6px_20px_rgba(99,102,241,0.12)] transition-all cursor-pointer"
+                className="block border border-border rounded-sm overflow-hidden no-underline hover:border-gold hover:-translate-y-px hover:shadow-[0_6px_20px_rgba(166,139,75,0.12)] transition-all cursor-pointer"
               >
-                <div className="bg-[#1C1408] p-5 border-b-[3px] border-primary">
+                <div className="bg-[#1C1408] p-5 border-b-[3px] border-gold">
                   <div className="flex items-center justify-between gap-3 mb-2">
-                    <span className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-primary">
+                    <span className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-gold">
                       {u.gericht}
                     </span>
                     <span className="text-[0.72rem] text-white/50">{u.jahr}</span>
@@ -110,8 +110,8 @@ export default function UrteilePage() {
                 <div className="p-5 bg-white">
                   <h3 className="font-serif text-[1.05rem] font-bold text-ink mb-2">{u.titel}</h3>
                   <p className="text-[0.84rem] text-ink-muted leading-relaxed mb-3">{u.kurzfassung}</p>
-                  <div className="py-3 px-4 bg-slate-50 rounded-sm border-l-[3px] border-primary">
-                    <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-primary-700 mb-1">
+                  <div className="py-3 px-4 bg-slate-50 rounded-sm border-l-[3px] border-gold">
+                    <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-gold mb-1">
                       Bedeutung für Sie
                     </div>
                     <p className="text-[0.84rem] text-ink leading-relaxed m-0">{u.bedeutung}</p>
@@ -120,7 +120,7 @@ export default function UrteilePage() {
                     <span className="inline-block py-1 px-3 rounded-full border border-border text-[0.75rem] font-semibold text-ink-muted">
                       {u.kategorie}
                     </span>
-                    <span className="text-[0.88rem] font-semibold text-primary-700">
+                    <span className="text-[0.88rem] font-semibold text-gold">
                       Urteil lesen &rarr;
                     </span>
                   </div>
@@ -143,7 +143,7 @@ export default function UrteilePage() {
           </p>
           <a
             href="/#kontakt"
-            className="inline-block py-3.5 px-8 bg-primary-700 text-white border-none rounded-sm font-sans text-base font-semibold no-underline transition-all hover:bg-[#3730a3] hover:-translate-y-px hover:shadow-[0_6px_20px_rgba(99,102,241,0.25)]"
+            className="inline-block py-3.5 px-8 bg-gold text-white border-none rounded-sm font-sans text-base font-semibold no-underline transition-all hover:bg-[#3730a3] hover:-translate-y-px hover:shadow-[0_6px_20px_rgba(166,139,75,0.25)]"
           >
             Jetzt kostenlos prüfen lassen &rarr;
           </a>
@@ -153,7 +153,7 @@ export default function UrteilePage() {
       {/* FAQ */}
       <section className="py-[70px] px-8 bg-white">
         <div className="max-w-content mx-auto">
-          <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-primary-700 mb-2.5">
+          <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-gold mb-2.5">
             Häufige Fragen
           </div>
           <h2 className="font-serif text-[clamp(1.4rem,3vw,1.9rem)] font-bold leading-[1.25] mb-6">
@@ -175,7 +175,7 @@ export default function UrteilePage() {
       {/* CTA 2 */}
       <section className="py-[70px] px-8 bg-slate-50">
         <div className="max-w-content mx-auto text-center">
-          <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-primary-700 mb-2.5">
+          <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-gold mb-2.5">
             Jetzt handeln
           </div>
           <h2 className="font-serif text-[clamp(1.4rem,3vw,1.8rem)] font-bold mb-3">
@@ -187,7 +187,7 @@ export default function UrteilePage() {
           </p>
           <a
             href="/#kontakt"
-            className="inline-block py-3.5 px-8 bg-primary-700 text-white border-none rounded-sm font-sans text-base font-semibold no-underline transition-all hover:bg-[#3730a3] hover:-translate-y-px hover:shadow-[0_6px_20px_rgba(99,102,241,0.25)]"
+            className="inline-block py-3.5 px-8 bg-gold text-white border-none rounded-sm font-sans text-base font-semibold no-underline transition-all hover:bg-[#3730a3] hover:-translate-y-px hover:shadow-[0_6px_20px_rgba(166,139,75,0.25)]"
           >
             Kostenlose Ersteinschätzung &rarr;
           </a>

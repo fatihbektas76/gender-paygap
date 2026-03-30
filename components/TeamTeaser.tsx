@@ -14,7 +14,7 @@ export default function TeamTeaser() {
   return (
     <section className="py-[90px] px-8 bg-white max-md:py-[60px] max-md:px-6" id="team">
       <div className="max-w-content mx-auto">
-        <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-primary-700 mb-2.5">
+        <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-gold mb-2.5">
           Unser Team
         </div>
         <h2 className="font-serif text-[clamp(1.6rem,3vw,2.2rem)] font-bold leading-[1.25] mb-3.5 max-md:text-2xl">
@@ -41,7 +41,7 @@ export default function TeamTeaser() {
                       if (fallback) (fallback as HTMLElement).style.display = 'flex';
                     }}
                   />
-                  <div className="fallback absolute inset-0 items-center justify-center font-serif text-[2rem] text-primary opacity-40 hidden">
+                  <div className="fallback absolute inset-0 items-center justify-center font-serif text-[2rem] text-gold opacity-40 hidden">
                     &sect;
                   </div>
                 </div>
@@ -54,7 +54,7 @@ export default function TeamTeaser() {
         <div className="mt-10 text-center">
           <Link
             href="/team"
-            className="inline-flex items-center gap-2 text-[0.95rem] font-semibold text-[#8B7332] no-underline hover:text-primary-700 transition-colors"
+            className="inline-flex items-center gap-2 text-[0.95rem] font-semibold text-[#8B7332] no-underline hover:text-gold transition-colors"
           >
             Das gesamte Team kennenlernen &rarr;
           </Link>

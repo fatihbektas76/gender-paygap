@@ -4,7 +4,7 @@ export default function Situations() {
   return (
     <section className="py-[90px] px-8 bg-white max-md:py-[60px] max-md:px-6" id="ihre-situation">
       <div className="max-w-content mx-auto">
-        <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-primary-700 mb-2.5">
+        <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-gold mb-2.5">
           Ihre Situation
         </div>
         <h2 className="font-serif text-[clamp(1.6rem,3vw,2.2rem)] font-bold leading-[1.25] mb-3.5 max-md:text-2xl">
@@ -13,7 +13,7 @@ export default function Situations() {
         <div className="grid grid-cols-2 gap-6 mt-10 max-md:grid-cols-1">
           <FadeUp>
             <article className="bg-slate-50 border border-border-light rounded p-9 px-8 transition-all hover:-translate-y-[3px] hover:shadow-[0_12px_32px_rgba(0,0,0,0.06)]">
-              <div className="w-[52px] h-[52px] rounded-full flex items-center justify-center mb-[18px] text-2xl bg-primary/[0.08] text-primary border border-primary/[0.15]">
+              <div className="w-[52px] h-[52px] rounded-full flex items-center justify-center mb-[18px] text-2xl bg-gold/[0.08] text-gold border border-gold/[0.15]">
                 &#9878;
               </div>
               <h3 className="font-serif text-[1.2rem] font-bold mb-2.5">Sie wurden gekündigt</h3>

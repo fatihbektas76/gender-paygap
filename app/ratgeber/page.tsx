@@ -127,11 +127,11 @@ export default function RatgeberPage() {
       <div className="bg-slate-50 pt-[120px] pb-[50px] px-8 border-b border-border">
         <div className="max-w-content mx-auto">
           <nav className="text-[0.84rem] text-ink-muted mb-6">
-            <Link href="/" className="text-primary no-underline hover:underline">Start</Link>
+            <Link href="/" className="text-gold no-underline hover:underline">Start</Link>
             <span className="mx-2">/</span>
             <span>Ratgeber</span>
           </nav>
-          <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-primary-700 mb-2.5">
+          <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-gold mb-2.5">
             Wissen & Werkzeuge
           </div>
           <h1 className="font-serif text-[clamp(1.8rem,4vw,2.4rem)] font-bold leading-[1.2] max-w-[700px]">
@@ -152,10 +152,10 @@ export default function RatgeberPage() {
               <Link
                 key={cat.href}
                 href={cat.href}
-                className="block border border-border rounded-sm overflow-hidden no-underline hover:border-primary hover:-translate-y-px hover:shadow-[0_6px_20px_rgba(99,102,241,0.12)] transition-all"
+                className="block border border-border rounded-sm overflow-hidden no-underline hover:border-gold hover:-translate-y-px hover:shadow-[0_6px_20px_rgba(166,139,75,0.12)] transition-all"
               >
                 <div className="p-6">
-                  <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-primary-700 mb-2">
+                  <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-gold mb-2">
                     {cat.eyebrow}
                   </div>
                   <h2 className="font-serif text-[1.3rem] font-bold text-ink mb-2">{cat.title}</h2>
@@ -163,12 +163,12 @@ export default function RatgeberPage() {
                   <ul className="list-none space-y-1.5">
                     {cat.items.map((item) => (
                       <li key={item} className="flex items-start gap-2 text-[0.82rem] text-ink-muted">
-                        <span className="text-primary mt-0.5">&#10003;</span>
+                        <span className="text-gold mt-0.5">&#10003;</span>
                         {item}
                       </li>
                     ))}
                   </ul>
-                  <div className="mt-5 text-[0.88rem] font-semibold text-primary-700">
+                  <div className="mt-5 text-[0.88rem] font-semibold text-gold">
                     Mehr erfahren &rarr;
                   </div>
                 </div>
@@ -190,7 +190,7 @@ export default function RatgeberPage() {
       {/* CTA */}
       <section className="py-[70px] px-8 bg-slate-50">
         <div className="max-w-content mx-auto text-center">
-          <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-primary-700 mb-2.5">
+          <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-gold mb-2.5">
             Persönliche Beratung
           </div>
           <h2 className="font-serif text-[clamp(1.4rem,3vw,1.8rem)] font-bold mb-3">
@@ -202,7 +202,7 @@ export default function RatgeberPage() {
           </p>
           <a
             href="/#kontakt"
-            className="inline-block py-3.5 px-8 bg-primary-700 text-white border-none rounded-sm font-sans text-base font-semibold no-underline transition-all hover:bg-[#3730a3] hover:-translate-y-px hover:shadow-[0_6px_20px_rgba(99,102,241,0.25)]"
+            className="inline-block py-3.5 px-8 bg-gold text-white border-none rounded-sm font-sans text-base font-semibold no-underline transition-all hover:bg-[#3730a3] hover:-translate-y-px hover:shadow-[0_6px_20px_rgba(166,139,75,0.25)]"
           >
             Kostenlose Ersteinschätzung &rarr;
           </a>

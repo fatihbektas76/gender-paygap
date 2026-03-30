@@ -89,20 +89,20 @@ export default function EntgelttransparenzGroessePage({ params }: Props) {
 
       <main>
         {/* Breadcrumb */}
-        <div className="pt-[130px] px-8 bg-accent-50 max-md:pt-[110px] max-md:px-6">
+        <div className="pt-[130px] px-8 bg-cream-dark max-md:pt-[110px] max-md:px-6">
           <nav className="max-w-content mx-auto text-[0.8rem] text-ink-muted">
-            <a href="/" className="hover:text-primary transition-colors no-underline text-ink-muted">Start</a>
+            <a href="/" className="hover:text-gold transition-colors no-underline text-ink-muted">Start</a>
             <span className="mx-1.5">/</span>
-            <a href="/arbeitgeber" className="hover:text-primary transition-colors no-underline text-ink-muted">Arbeitgeber</a>
+            <a href="/arbeitgeber" className="hover:text-gold transition-colors no-underline text-ink-muted">Arbeitgeber</a>
             <span className="mx-1.5">/</span>
             <span className="text-ink">{g.bereich}</span>
           </nav>
         </div>
 
         {/* Hero */}
-        <header className="pt-6 pb-[80px] px-8 bg-accent-50 max-md:pb-[60px] max-md:px-6">
+        <header className="pt-6 pb-[80px] px-8 bg-cream-dark max-md:pb-[60px] max-md:px-6">
           <div className="max-w-content mx-auto">
-            <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-accent-700 mb-2.5">Arbeitgeber · {g.bereich}</div>
+            <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-blue mb-2.5">Arbeitgeber · {g.bereich}</div>
             <h1 className="font-serif text-[clamp(2rem,4vw,2.8rem)] font-extrabold leading-[1.15] mb-5 tracking-tight max-md:text-[1.8rem]">
               Entgelttransparenz für Unternehmen mit {g.bereich}
             </h1>
@@ -125,7 +125,7 @@ export default function EntgelttransparenzGroessePage({ params }: Props) {
               <div className="space-y-3 mb-8">
                 {g.pflichten.map((pflicht, i) => (
                   <div key={i} className="flex gap-3 items-start">
-                    <div className="w-6 h-6 min-w-[24px] rounded-full bg-accent-50 border border-accent/30 flex items-center justify-center text-accent-700 text-[0.75rem] font-bold mt-0.5">
+                    <div className="w-6 h-6 min-w-[24px] rounded-full bg-cream-dark border border-blue/30 flex items-center justify-center text-blue text-[0.75rem] font-bold mt-0.5">
                       &#10003;
                     </div>
                     <p className="text-[0.95rem] text-ink-light leading-relaxed m-0">{pflicht}</p>
@@ -145,21 +145,21 @@ export default function EntgelttransparenzGroessePage({ params }: Props) {
               </h2>
               <div className="space-y-4">
                 <div className="flex gap-4 items-start">
-                  <div className="min-w-[90px] text-[0.85rem] font-bold text-accent-700">Juni 2026</div>
+                  <div className="min-w-[90px] text-[0.85rem] font-bold text-blue">Juni 2026</div>
                   <div className="text-[0.95rem] text-ink-light leading-relaxed">
                     <strong>Auskunftsrecht</strong> — Alle Beschäftigten können Auskunft über Vergleichsgehälter verlangen. Antwortfrist: 2 Monate.
                   </div>
                 </div>
                 {g.berichtspflichtAb && (
                   <div className="flex gap-4 items-start">
-                    <div className="min-w-[90px] text-[0.85rem] font-bold text-accent-700">{g.berichtspflichtAb}</div>
+                    <div className="min-w-[90px] text-[0.85rem] font-bold text-blue">{g.berichtspflichtAb}</div>
                     <div className="text-[0.95rem] text-ink-light leading-relaxed">
                       <strong>Berichtspflicht</strong> — Erster Bericht über den Gender Pay Gap fällig. Bei GPG &gt; 5%: gemeinsame Entgeltbewertung mit Betriebsrat.
                     </div>
                   </div>
                 )}
                 <div className="flex gap-4 items-start">
-                  <div className="min-w-[90px] text-[0.85rem] font-bold text-accent-700">Laufend</div>
+                  <div className="min-w-[90px] text-[0.85rem] font-bold text-blue">Laufend</div>
                   <div className="text-[0.95rem] text-ink-light leading-relaxed">
                     <strong>Stellenanzeigen</strong> — Müssen Gehaltsspanne oder Einstiegsgehalt enthalten (Art. 5 EU-RL 2023/970).
                   </div>
@@ -209,7 +209,7 @@ export default function EntgelttransparenzGroessePage({ params }: Props) {
         <ContactForm />
 
         {/* CTA */}
-        <section className="py-[70px] px-8 bg-accent-700 text-white text-center max-md:py-12 max-md:px-6">
+        <section className="py-[70px] px-8 bg-blue text-white text-center max-md:py-12 max-md:px-6">
           <div className="max-w-[700px] mx-auto">
             <h2 className="font-serif text-[clamp(1.5rem,3vw,2rem)] font-bold mb-4">
               Compliance-Audit für Unternehmen mit {g.bereich}
@@ -219,7 +219,7 @@ export default function EntgelttransparenzGroessePage({ params }: Props) {
             </p>
             <a
               href="/kontakt"
-              className="inline-flex items-center gap-2 px-8 py-3.5 rounded-sm text-[0.95rem] font-semibold no-underline transition-all bg-white text-accent-700 hover:bg-accent-50 hover:-translate-y-0.5"
+              className="inline-flex items-center gap-2 px-8 py-3.5 rounded-sm text-[0.95rem] font-semibold no-underline transition-all bg-white text-blue hover:bg-cream-dark hover:-translate-y-0.5"
             >
               Jetzt Compliance-Audit anfragen &rarr;
             </a>

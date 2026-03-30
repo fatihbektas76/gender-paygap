@@ -47,7 +47,7 @@ export default function MobileCTA() {
         </div>
         <a
           href="/kuendigung-pruefen"
-          className="shrink-0 bg-primary-700 text-white text-[0.82rem] font-semibold px-5 py-2.5 rounded-sm no-underline transition-colors hover:bg-[#3730a3]"
+          className="shrink-0 bg-gold text-white text-[0.82rem] font-semibold px-5 py-2.5 rounded-sm no-underline transition-colors hover:bg-[#3730a3]"
         >
           Jetzt prüfen
         </a>

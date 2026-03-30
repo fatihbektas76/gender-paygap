@@ -61,9 +61,9 @@ function anteilUrlaub(eintritt: Date, beendigung: Date, jahresUrlaub: number): n
 }
 
 const inputClass =
-  'w-full py-3 px-4 border border-border rounded-sm font-sans text-[0.92rem] text-ink bg-white transition-all outline-none focus:border-primary focus:shadow-[0_0_0_3px_rgba(99,102,241,0.1)]';
+  'w-full py-3 px-4 border border-border rounded-sm font-sans text-[0.92rem] text-ink bg-white transition-all outline-none focus:border-gold focus:shadow-[0_0_0_3px_rgba(166,139,75,0.1)]';
 const selectClass =
-  'form-select w-full py-3 px-4 border border-border rounded-sm font-sans text-[0.92rem] text-ink bg-white transition-all outline-none focus:border-primary focus:shadow-[0_0_0_3px_rgba(99,102,241,0.1)]';
+  'form-select w-full py-3 px-4 border border-border rounded-sm font-sans text-[0.92rem] text-ink bg-white transition-all outline-none focus:border-gold focus:shadow-[0_0_0_3px_rgba(166,139,75,0.1)]';
 
 export default function UrlaubsabgeltungRechnerPage() {
   const [gehalt, setGehalt] = useState('');
@@ -166,13 +166,13 @@ export default function UrlaubsabgeltungRechnerPage() {
       <div className="bg-slate-50 pt-[120px] pb-[50px] px-8 border-b border-border">
         <div className="max-w-content mx-auto">
           <nav className="text-[0.84rem] text-ink-muted mb-6">
-            <Link href="/" className="text-primary no-underline hover:underline">Start</Link>
+            <Link href="/" className="text-gold no-underline hover:underline">Start</Link>
             <span className="mx-2">/</span>
-            <Link href="/tools" className="text-primary no-underline hover:underline">Tools &amp; Rechner</Link>
+            <Link href="/tools" className="text-gold no-underline hover:underline">Tools &amp; Rechner</Link>
             <span className="mx-2">/</span>
             <span>Urlaubsabgeltung berechnen</span>
           </nav>
-          <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-primary-700 mb-2.5">
+          <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-gold mb-2.5">
             Kostenlos &amp; sofort
           </div>
           <h1 className="font-serif text-[clamp(1.8rem,4vw,2.4rem)] font-bold leading-[1.2] max-w-[700px]">
@@ -191,21 +191,21 @@ export default function UrlaubsabgeltungRechnerPage() {
 
           <div className="flex flex-wrap gap-5 mt-5 text-[0.88rem] text-ink-light">
             <span className="flex items-center gap-1.5">
-              <svg className="text-primary" width="16" height="16" fill="none" viewBox="0 0 24 24">
+              <svg className="text-gold" width="16" height="16" fill="none" viewBox="0 0 24 24">
                 <circle cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="2" />
                 <path d="M8 12l3 3 5-5" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
               </svg>
               Kostenlos
             </span>
             <span className="flex items-center gap-1.5">
-              <svg className="text-primary" width="16" height="16" fill="none" viewBox="0 0 24 24">
+              <svg className="text-gold" width="16" height="16" fill="none" viewBox="0 0 24 24">
                 <circle cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="2" />
                 <path d="M8 12l3 3 5-5" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
               </svg>
               Nach &sect;11 BUrlG
             </span>
             <span className="flex items-center gap-1.5">
-              <svg className="text-primary" width="16" height="16" fill="none" viewBox="0 0 24 24">
+              <svg className="text-gold" width="16" height="16" fill="none" viewBox="0 0 24 24">
                 <circle cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="2" />
                 <path d="M8 12l3 3 5-5" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
               </svg>
@@ -218,13 +218,13 @@ export default function UrlaubsabgeltungRechnerPage() {
       {/* CTA #1 */}
       <section className="py-6 px-8 bg-white">
         <div className="max-w-content mx-auto">
-          <div className="border-2 border-primary/30 rounded-sm p-5 bg-primary-50 flex items-center justify-between gap-6 flex-wrap">
+          <div className="border-2 border-gold/30 rounded-sm p-5 bg-gold-bg flex items-center justify-between gap-6 flex-wrap">
             <p className="text-[0.95rem] text-ink font-semibold m-0">
               Wurde Ihr Resturlaub nach der Kündigung nicht ausgezahlt? Wir prüfen Ihren Abgeltungsanspruch kostenlos.
             </p>
             <Link
               href="/kuendigung-pruefen"
-              className="inline-block py-2.5 px-6 bg-primary-700 text-white border-none rounded-sm font-sans text-[0.88rem] font-semibold no-underline transition-all hover:bg-[#3730a3] whitespace-nowrap"
+              className="inline-block py-2.5 px-6 bg-gold text-white border-none rounded-sm font-sans text-[0.88rem] font-semibold no-underline transition-all hover:bg-[#3730a3] whitespace-nowrap"
             >
               Jetzt kostenlos prüfen &rarr;
             </Link>
@@ -239,7 +239,7 @@ export default function UrlaubsabgeltungRechnerPage() {
 
             {/* Linke Karte — Eingaben */}
             <div className="bg-white border border-border-light rounded overflow-hidden">
-              <div className="h-2 bg-primary-700" />
+              <div className="h-2 bg-gold" />
               <div className="p-8">
                 <h2 className="font-serif text-[1.3rem] font-bold mb-6">Urlaubsabgeltungsrechner</h2>
 
@@ -247,7 +247,7 @@ export default function UrlaubsabgeltungRechnerPage() {
                 <div className="mb-5">
                   <div className="flex items-center gap-2 mb-1.5">
                     <label className="text-[0.84rem] font-semibold text-ink">
-                      Bruttomonatsgehalt (&Oslash; letzte 13 Wochen) <span className="text-primary-700">*</span>
+                      Bruttomonatsgehalt (&Oslash; letzte 13 Wochen) <span className="text-gold">*</span>
                     </label>
                     <span
                       className="text-ink-muted cursor-help"
@@ -273,7 +273,7 @@ export default function UrlaubsabgeltungRechnerPage() {
                 <div className="mb-5">
                   <div className="flex items-center gap-2 mb-1.5">
                     <label className="text-[0.84rem] font-semibold text-ink">
-                      Arbeitstage pro Woche <span className="text-primary-700">*</span>
+                      Arbeitstage pro Woche <span className="text-gold">*</span>
                     </label>
                     <span
                       className="text-ink-muted cursor-help"
@@ -299,7 +299,7 @@ export default function UrlaubsabgeltungRechnerPage() {
                 <div className="mb-5">
                   <div className="flex items-center gap-2 mb-1.5">
                     <label className="text-[0.84rem] font-semibold text-ink">
-                      Ausstehende Urlaubstage <span className="text-primary-700">*</span>
+                      Ausstehende Urlaubstage <span className="text-gold">*</span>
                     </label>
                     <span
                       className="text-ink-muted cursor-help"
@@ -345,7 +345,7 @@ export default function UrlaubsabgeltungRechnerPage() {
                     <div className="p-4 space-y-4">
                       <div>
                         <label className="block text-[0.84rem] font-semibold text-ink mb-1.5">
-                          Jahresurlaub (Tage) <span className="text-primary-700">*</span>
+                          Jahresurlaub (Tage) <span className="text-gold">*</span>
                         </label>
                         <input
                           type="number"
@@ -366,12 +366,12 @@ export default function UrlaubsabgeltungRechnerPage() {
                       </div>
                       <button
                         onClick={berechneAnteil}
-                        className="w-full py-2.5 bg-slate-50 border border-primary/30 rounded-sm font-sans text-[0.88rem] font-semibold text-ink cursor-pointer transition-all hover:bg-primary-50"
+                        className="w-full py-2.5 bg-slate-50 border border-gold/30 rounded-sm font-sans text-[0.88rem] font-semibold text-ink cursor-pointer transition-all hover:bg-gold-bg"
                       >
                         Anteil berechnen
                       </button>
                       {anteilResult && (
-                        <div className="py-3 px-4 bg-primary-50 border border-primary/20 rounded-sm text-[0.88rem] text-ink">
+                        <div className="py-3 px-4 bg-gold-bg border border-gold/20 rounded-sm text-[0.88rem] text-ink">
                           Ihr anteiliger Urlaubsanspruch: <strong>{anteilResult.anspruch} Tage</strong>
                         </div>
                       )}
@@ -382,7 +382,7 @@ export default function UrlaubsabgeltungRechnerPage() {
                 {/* Berechnen */}
                 <button
                   onClick={berechnen}
-                  className="w-full py-3.5 bg-[#2A1F0E] text-white border-none rounded-sm font-sans text-base font-semibold cursor-pointer transition-all mt-2 hover:bg-[#1a1408] hover:-translate-y-px hover:shadow-[0_6px_20px_rgba(99,102,241,0.25)]"
+                  className="w-full py-3.5 bg-[#2A1F0E] text-white border-none rounded-sm font-sans text-base font-semibold cursor-pointer transition-all mt-2 hover:bg-[#1a1408] hover:-translate-y-px hover:shadow-[0_6px_20px_rgba(166,139,75,0.25)]"
                 >
                   BERECHNEN
                 </button>
@@ -390,7 +390,7 @@ export default function UrlaubsabgeltungRechnerPage() {
                 <p className="text-[0.75rem] text-ink-muted mt-4 leading-relaxed">
                   <strong>Hinweis:</strong> Dieses Tool dient ausschließlich der unverbindlichen Erstorientierung und ersetzt keine anwaltliche Beratung.
                   Für eine verbindliche Einschätzung wenden Sie sich bitte an einen{' '}
-                  <Link href="/kuendigung-pruefen" className="text-primary no-underline hover:underline">Fachanwalt für Arbeitsrecht</Link>.
+                  <Link href="/kuendigung-pruefen" className="text-gold no-underline hover:underline">Fachanwalt für Arbeitsrecht</Link>.
                 </p>
 
                 {/* Hinweis-Accordion */}
@@ -436,7 +436,7 @@ export default function UrlaubsabgeltungRechnerPage() {
             <div id="ergebnis-box" className="bg-slate-50 border border-border-light rounded p-8">
               {!result ? (
                 <div className="text-center py-10">
-                  <div className="w-14 h-14 rounded-full bg-primary-50 border border-primary/[0.12] flex items-center justify-center text-primary mx-auto mb-4">
+                  <div className="w-14 h-14 rounded-full bg-gold-bg border border-gold/[0.12] flex items-center justify-center text-gold mx-auto mb-4">
                     <svg width="24" height="24" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
                       <path d="M20 6L9 17l-5-5" />
                     </svg>
@@ -449,10 +449,10 @@ export default function UrlaubsabgeltungRechnerPage() {
                 <div>
                   {/* Hauptergebnis */}
                   <div className="text-center mb-6 pb-6 border-b border-border">
-                    <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-primary-700 mb-2">
+                    <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-gold mb-2">
                       Ihr Urlaubsabgeltungsanspruch
                     </div>
-                    <div className="font-serif text-[2rem] font-bold text-primary-700">
+                    <div className="font-serif text-[2rem] font-bold text-gold">
                       {euro(result.abgeltungBrutto)} brutto
                     </div>
                   </div>
@@ -484,9 +484,9 @@ export default function UrlaubsabgeltungRechnerPage() {
                   </p>
 
                   {/* Warnung */}
-                  <div className="py-4 px-5 bg-white rounded-sm border-l-[3px] border-primary mb-6">
+                  <div className="py-4 px-5 bg-white rounded-sm border-l-[3px] border-gold mb-6">
                     <div className="flex items-start gap-2">
-                      <span className="text-primary-700 text-[1.1rem] mt-0.5">&#9888;</span>
+                      <span className="text-gold text-[1.1rem] mt-0.5">&#9888;</span>
                       <div>
                         <div className="text-[0.84rem] font-semibold text-ink mb-1">
                           Ausschlussfrist beachten
@@ -502,7 +502,7 @@ export default function UrlaubsabgeltungRechnerPage() {
                   {/* CTA */}
                   <Link
                     href="/kuendigung-pruefen"
-                    className="block w-full py-3.5 bg-primary-700 text-white border-none rounded-sm font-sans text-base font-semibold no-underline text-center transition-all hover:bg-[#3730a3] hover:-translate-y-px hover:shadow-[0_6px_20px_rgba(99,102,241,0.25)]"
+                    className="block w-full py-3.5 bg-gold text-white border-none rounded-sm font-sans text-base font-semibold no-underline text-center transition-all hover:bg-[#3730a3] hover:-translate-y-px hover:shadow-[0_6px_20px_rgba(166,139,75,0.25)]"
                   >
                     Anspruch jetzt kostenlos prüfen &rarr;
                   </Link>
@@ -517,7 +517,7 @@ export default function UrlaubsabgeltungRechnerPage() {
       <section className="py-[70px] px-8 bg-slate-50">
         <div className="max-w-content mx-auto">
           <div className="max-w-[740px]">
-            <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-primary-700 mb-2.5">
+            <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-gold mb-2.5">
               Hintergrund
             </div>
             <h2 className="font-serif text-[clamp(1.4rem,3vw,1.9rem)] font-bold leading-[1.25] mb-6">
@@ -530,8 +530,8 @@ export default function UrlaubsabgeltungRechnerPage() {
             </p>
             <p className="text-[0.95rem] text-ink-light leading-relaxed">
               Kann dieser Resturlaub aufgrund einer{' '}
-              <Link href="/kuendigung" className="text-primary no-underline hover:underline">Kündigung</Link>,
-              eines <Link href="/aufhebungsvertrag" className="text-primary no-underline hover:underline">Aufhebungsvertrags</Link>{' '}
+              <Link href="/kuendigung" className="text-gold no-underline hover:underline">Kündigung</Link>,
+              eines <Link href="/aufhebungsvertrag" className="text-gold no-underline hover:underline">Aufhebungsvertrags</Link>{' '}
               oder einer sonstigen Beendigung des Arbeitsverhältnisses nicht mehr genommen werden, sieht
               <strong> &sect;7 Abs. 4 BUrlG</strong> eine finanzielle Abgeltung vor &mdash; den sogenannten Urlaubsabgeltungsanspruch.
               Dieser Anspruch entsteht kraft Gesetzes und kann nicht abbedungen werden.
@@ -544,7 +544,7 @@ export default function UrlaubsabgeltungRechnerPage() {
       <section className="py-[70px] px-8 bg-white">
         <div className="max-w-content mx-auto">
           <div className="max-w-[740px]">
-            <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-primary-700 mb-2.5">
+            <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-gold mb-2.5">
               Berechnungsformel
             </div>
             <h2 className="font-serif text-[clamp(1.4rem,3vw,1.9rem)] font-bold leading-[1.25] mb-6">
@@ -559,8 +559,8 @@ export default function UrlaubsabgeltungRechnerPage() {
             </p>
 
             {/* Formel-Box */}
-            <div className="my-8 py-6 px-8 bg-slate-50 border-2 border-primary/30 rounded-sm text-center">
-              <div className="text-[0.82rem] font-bold tracking-[0.1em] uppercase text-primary-700 mb-4">Formel nach &sect;11 BUrlG</div>
+            <div className="my-8 py-6 px-8 bg-slate-50 border-2 border-gold/30 rounded-sm text-center">
+              <div className="text-[0.82rem] font-bold tracking-[0.1em] uppercase text-gold mb-4">Formel nach &sect;11 BUrlG</div>
               <div className="font-serif text-[1.1rem] leading-[1.8] text-ink">
                 <strong>Urlaubsabgeltung</strong> =<br />
                 <span className="inline-block border-b-2 border-ink/30 px-2">
@@ -588,7 +588,7 @@ export default function UrlaubsabgeltungRechnerPage() {
               </li>
             </ol>
 
-            <div className="py-4 px-5 bg-slate-50 rounded-sm border-l-[3px] border-primary">
+            <div className="py-4 px-5 bg-slate-50 rounded-sm border-l-[3px] border-gold">
               <p className="text-[0.88rem] text-ink-muted leading-relaxed m-0">
                 Diese Formel berücksichtigt, dass Verdienstausfälle durch Kurzarbeit, unverschuldetes Fehlen
                 oder Arbeitsausfälle außer Betracht bleiben (&sect;11 Abs. 1 Satz 3 BUrlG).
@@ -602,7 +602,7 @@ export default function UrlaubsabgeltungRechnerPage() {
       <section className="py-[70px] px-8 bg-slate-50">
         <div className="max-w-content mx-auto">
           <div className="max-w-[740px]">
-            <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-primary-700 mb-2.5">
+            <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-gold mb-2.5">
               Gesetzliche Grundlage
             </div>
             <h2 className="font-serif text-[clamp(1.4rem,3vw,1.9rem)] font-bold leading-[1.25] mb-6">
@@ -611,7 +611,7 @@ export default function UrlaubsabgeltungRechnerPage() {
             <div className="overflow-x-auto mb-5">
               <table className="w-full border-collapse text-[0.92rem]">
                 <thead>
-                  <tr className="border-b-2 border-primary/30">
+                  <tr className="border-b-2 border-gold/30">
                     <th className="text-left py-3 px-4 font-semibold">Arbeitstage/Woche</th>
                     <th className="text-right py-3 px-4 font-semibold">Werktage (gesetzl.)</th>
                     <th className="text-right py-3 px-4 font-semibold">Arbeitstage</th>
@@ -640,7 +640,7 @@ export default function UrlaubsabgeltungRechnerPage() {
       <section className="py-[70px] px-8 bg-white">
         <div className="max-w-content mx-auto">
           <div className="max-w-[740px]">
-            <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-primary-700 mb-2.5">
+            <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-gold mb-2.5">
               Praxishinweis
             </div>
             <h2 className="font-serif text-[clamp(1.4rem,3vw,1.9rem)] font-bold leading-[1.25] mb-6">
@@ -664,11 +664,11 @@ export default function UrlaubsabgeltungRechnerPage() {
               hingewiesen hat, dass nicht genommener Urlaub verfällt. Fehlt dieser Hinweis, können sich Urlaubsansprüche
               über mehrere Jahre ansammeln &mdash; und müssen bei Beendigung vollständig abgegolten werden.
               Auch{' '}
-              <Link href="/ueberstundenrechner" className="text-primary no-underline hover:underline">Überstunden</Link>{' '}
+              <Link href="/ueberstundenrechner" className="text-gold no-underline hover:underline">Überstunden</Link>{' '}
               sollten Sie in diesem Zusammenhang prüfen. Berechnen Sie außerdem Ihre mögliche{' '}
-              <Link href="/abfindungsrechner" className="text-primary no-underline hover:underline">Abfindung</Link>{' '}
+              <Link href="/abfindungsrechner" className="text-gold no-underline hover:underline">Abfindung</Link>{' '}
               und prüfen Sie Ihre{' '}
-              <Link href="/kuendigungsfrist-rechner" className="text-primary no-underline hover:underline">Kündigungsfrist</Link>.
+              <Link href="/kuendigungsfrist-rechner" className="text-gold no-underline hover:underline">Kündigungsfrist</Link>.
             </p>
           </div>
         </div>
@@ -686,7 +686,7 @@ export default function UrlaubsabgeltungRechnerPage() {
           </p>
           <Link
             href="/kuendigung-pruefen"
-            className="inline-block py-3.5 px-8 bg-primary text-white border-none rounded-sm font-sans text-base font-semibold no-underline transition-all hover:bg-primary-700 hover:-translate-y-px hover:shadow-[0_6px_20px_rgba(99,102,241,0.35)]"
+            className="inline-block py-3.5 px-8 bg-gold text-white border-none rounded-sm font-sans text-base font-semibold no-underline transition-all hover:bg-gold hover:-translate-y-px hover:shadow-[0_6px_20px_rgba(166,139,75,0.35)]"
           >
             Jetzt kostenlos anfragen &rarr;
           </Link>
@@ -707,17 +707,17 @@ export default function UrlaubsabgeltungRechnerPage() {
             </div>
             <ul className="list-none space-y-2 text-[0.88rem]">
               <li>
-                <a href="https://www.gesetze-im-internet.de/burlg/__7.html" target="_blank" rel="noopener noreferrer" className="text-primary no-underline hover:underline">
+                <a href="https://www.gesetze-im-internet.de/burlg/__7.html" target="_blank" rel="noopener noreferrer" className="text-gold no-underline hover:underline">
                   &sect;7 BUrlG &mdash; Zeitpunkt, Übertragbarkeit und Abgeltung des Urlaubs &rarr;
                 </a>
               </li>
               <li>
-                <a href="https://www.gesetze-im-internet.de/burlg/__11.html" target="_blank" rel="noopener noreferrer" className="text-primary no-underline hover:underline">
+                <a href="https://www.gesetze-im-internet.de/burlg/__11.html" target="_blank" rel="noopener noreferrer" className="text-gold no-underline hover:underline">
                   &sect;11 BUrlG &mdash; Urlaubsentgelt &rarr;
                 </a>
               </li>
               <li>
-                <a href="https://www.bundesarbeitsgericht.de" target="_blank" rel="noopener noreferrer" className="text-primary no-underline hover:underline">
+                <a href="https://www.bundesarbeitsgericht.de" target="_blank" rel="noopener noreferrer" className="text-gold no-underline hover:underline">
                   Bundesarbeitsgericht &mdash; Rechtsprechung zur Urlaubsabgeltung &rarr;
                 </a>
               </li>
@@ -734,7 +734,7 @@ export default function UrlaubsabgeltungRechnerPage() {
       {/* FAQ */}
       <section className="py-[70px] px-8 bg-slate-50">
         <div className="max-w-content mx-auto">
-          <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-primary-700 mb-2.5">
+          <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-gold mb-2.5">
             Häufige Fragen
           </div>
           <h2 className="font-serif text-[clamp(1.4rem,3vw,1.9rem)] font-bold leading-[1.25] mb-6">
@@ -747,7 +747,7 @@ export default function UrlaubsabgeltungRechnerPage() {
       {/* CTA #3 */}
       <section className="py-[70px] px-8 bg-white">
         <div className="max-w-content mx-auto">
-          <div className="border-2 border-primary/20 rounded-sm p-8 bg-slate-50 text-center max-w-[640px] mx-auto">
+          <div className="border-2 border-gold/20 rounded-sm p-8 bg-slate-50 text-center max-w-[640px] mx-auto">
             <h2 className="font-serif text-[1.3rem] font-bold mb-3">
               Ergebnis berechnet &mdash; was jetzt?
             </h2>
@@ -757,7 +757,7 @@ export default function UrlaubsabgeltungRechnerPage() {
             </p>
             <Link
               href="/kuendigung-pruefen"
-              className="inline-block py-3.5 px-8 bg-primary-700 text-white border-none rounded-sm font-sans text-base font-semibold no-underline transition-all hover:bg-[#3730a3] hover:-translate-y-px hover:shadow-[0_6px_20px_rgba(99,102,241,0.25)]"
+              className="inline-block py-3.5 px-8 bg-gold text-white border-none rounded-sm font-sans text-base font-semibold no-underline transition-all hover:bg-[#3730a3] hover:-translate-y-px hover:shadow-[0_6px_20px_rgba(166,139,75,0.25)]"
             >
               Kostenlose Ersteinschätzung vom Fachanwalt &rarr;
             </Link>

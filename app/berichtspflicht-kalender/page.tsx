@@ -162,16 +162,16 @@ export default function BerichtspflichtKalenderPage() {
       />
 
       {/* Hero */}
-      <div className="bg-accent-50 pt-[120px] pb-[50px] px-8 border-b border-border">
+      <div className="bg-cream-dark pt-[120px] pb-[50px] px-8 border-b border-border">
         <div className="max-w-content mx-auto">
           <nav className="text-[0.84rem] text-ink-muted mb-6">
-            <Link href="/" className="text-accent-700 no-underline hover:underline">Start</Link>
+            <Link href="/" className="text-blue no-underline hover:underline">Start</Link>
             <span className="mx-2">/</span>
-            <Link href="/arbeitgeber" className="text-accent-700 no-underline hover:underline">Arbeitgeber</Link>
+            <Link href="/arbeitgeber" className="text-blue no-underline hover:underline">Arbeitgeber</Link>
             <span className="mx-2">/</span>
             <span>Berichtspflicht-Kalender</span>
           </nav>
-          <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-accent-700 mb-2.5">
+          <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-blue mb-2.5">
             Kostenloses Tool
           </div>
           <h1 className="font-serif text-[clamp(1.8rem,4vw,2.4rem)] font-bold leading-[1.2] max-w-[700px]">
@@ -184,21 +184,21 @@ export default function BerichtspflichtKalenderPage() {
           </p>
           <div className="flex flex-wrap gap-5 mt-5 text-[0.88rem] text-ink-light">
             <span className="flex items-center gap-1.5">
-              <svg className="text-accent-600" width="16" height="16" fill="none" viewBox="0 0 24 24">
+              <svg className="text-blue" width="16" height="16" fill="none" viewBox="0 0 24 24">
                 <circle cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="2" />
                 <path d="M8 12l3 3 5-5" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
               </svg>
               Personalisiert
             </span>
             <span className="flex items-center gap-1.5">
-              <svg className="text-accent-600" width="16" height="16" fill="none" viewBox="0 0 24 24">
+              <svg className="text-blue" width="16" height="16" fill="none" viewBox="0 0 24 24">
                 <circle cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="2" />
                 <path d="M8 12l3 3 5-5" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
               </svg>
               ICS-Download
             </span>
             <span className="flex items-center gap-1.5">
-              <svg className="text-accent-600" width="16" height="16" fill="none" viewBox="0 0 24 24">
+              <svg className="text-blue" width="16" height="16" fill="none" viewBox="0 0 24 24">
                 <circle cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="2" />
                 <path d="M8 12l3 3 5-5" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
               </svg>
@@ -226,7 +226,7 @@ export default function BerichtspflichtKalenderPage() {
       <section className="py-[70px] px-8 bg-white">
         <div className="max-w-content mx-auto">
           <div className="max-w-[740px]">
-            <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-accent-700 mb-2.5">
+            <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-blue mb-2.5">
               Unternehmensgröße wählen
             </div>
             <h2 className="font-serif text-[clamp(1.4rem,3vw,1.9rem)] font-bold leading-[1.25] mb-5">
@@ -240,8 +240,8 @@ export default function BerichtspflichtKalenderPage() {
                   onClick={() => setSelectedSize(size)}
                   className={`py-3.5 px-4 border rounded-sm font-sans text-[0.9rem] cursor-pointer transition-all ${
                     selectedSize === size
-                      ? 'bg-accent-600 text-white border-accent-600'
-                      : 'bg-white text-ink border-border hover:border-accent-400 hover:bg-accent-50'
+                      ? 'bg-blue text-white border-blue'
+                      : 'bg-white text-ink border-border hover:border-blue/60 hover:bg-cream-dark'
                   }`}
                 >
                   {companySizeLabels[size]}
@@ -258,7 +258,7 @@ export default function BerichtspflichtKalenderPage() {
                   </h3>
                   <button
                     onClick={handleDownloadICS}
-                    className="inline-flex items-center gap-2 py-2.5 px-5 bg-accent-600 text-white border-none rounded-sm text-[0.88rem] font-semibold cursor-pointer transition-all hover:bg-accent-700 hover:-translate-y-px hover:shadow-[0_4px_12px_rgba(37,99,235,0.2)]"
+                    className="inline-flex items-center gap-2 py-2.5 px-5 bg-blue text-white border-none rounded-sm text-[0.88rem] font-semibold cursor-pointer transition-all hover:bg-blue hover:-translate-y-px hover:shadow-[0_4px_12px_rgba(61,90,128,0.2)]"
                   >
                     <svg width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
                       <path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4M7 10l5 5 5-5M12 15V3" strokeLinecap="round" strokeLinejoin="round" />
@@ -268,21 +268,21 @@ export default function BerichtspflichtKalenderPage() {
                 </div>
 
                 {/* Vertical timeline */}
-                <div className="relative pl-8 border-l-2 border-accent-200">
+                <div className="relative pl-8 border-l-2 border-blue/30">
                   {sortedDeadlines.map((dl, i) => {
                     const past = isInPast(dl.datum);
                     const upcoming = isWithinSixMonths(dl.datum);
-                    let dotColor = 'bg-accent-200';
-                    let cardBorder = 'border-accent-100';
+                    let dotColor = 'bg-cream-dark';
+                    let cardBorder = 'border-blue/20';
                     let cardBg = 'bg-white';
                     if (past) {
                       dotColor = 'bg-ink-muted';
                       cardBorder = 'border-slate-200';
                       cardBg = 'bg-slate-50';
                     } else if (upcoming) {
-                      dotColor = 'bg-accent-700';
-                      cardBorder = 'border-accent-400';
-                      cardBg = 'bg-accent-50';
+                      dotColor = 'bg-blue';
+                      cardBorder = 'border-blue/60';
+                      cardBg = 'bg-cream-dark';
                     }
 
                     return (
@@ -297,14 +297,14 @@ export default function BerichtspflichtKalenderPage() {
                           <div className="flex items-start justify-between gap-4 flex-wrap">
                             <div>
                               <div className={`text-[0.78rem] font-semibold mb-1 ${
-                                past ? 'text-ink-muted' : upcoming ? 'text-accent-700' : 'text-accent-600'
+                                past ? 'text-ink-muted' : upcoming ? 'text-blue' : 'text-blue'
                               }`}>
                                 {formatDateDE(dl.datum)}
                                 {past && (
                                   <span className="ml-2 text-[0.72rem] font-normal text-ink-muted">(vergangen)</span>
                                 )}
                                 {upcoming && (
-                                  <span className="ml-2 text-[0.72rem] font-normal text-accent-600">(bevorstehend)</span>
+                                  <span className="ml-2 text-[0.72rem] font-normal text-blue">(bevorstehend)</span>
                                 )}
                               </div>
                               <h4 className={`font-serif text-[1rem] font-bold mb-1.5 ${
@@ -343,7 +343,7 @@ export default function BerichtspflichtKalenderPage() {
       {/* FAQ */}
       <section className="py-[70px] px-8 bg-slate-50">
         <div className="max-w-content mx-auto">
-          <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-accent-700 mb-2.5">
+          <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-blue mb-2.5">
             Häufige Fragen
           </div>
           <h2 className="font-serif text-[clamp(1.4rem,3vw,1.9rem)] font-bold leading-[1.25] mb-6">
@@ -354,7 +354,7 @@ export default function BerichtspflichtKalenderPage() {
       </section>
 
       {/* CTA */}
-      <section className="py-[60px] px-8 bg-accent-700 text-white text-center">
+      <section className="py-[60px] px-8 bg-blue text-white text-center">
         <div className="max-w-content mx-auto">
           <h2 className="font-serif text-[clamp(1.4rem,3vw,1.8rem)] font-bold mb-3">
             Compliance sicherstellen &mdash; Beratung anfragen
@@ -366,7 +366,7 @@ export default function BerichtspflichtKalenderPage() {
           </p>
           <Link
             href="/kontakt"
-            className="inline-block py-3.5 px-8 bg-white text-accent-700 border-none rounded-sm font-sans text-base font-semibold no-underline transition-all hover:bg-accent-50 hover:-translate-y-0.5"
+            className="inline-block py-3.5 px-8 bg-white text-blue border-none rounded-sm font-sans text-base font-semibold no-underline transition-all hover:bg-cream-dark hover:-translate-y-0.5"
           >
             Compliance-Beratung anfragen &rarr;
           </Link>
@@ -383,7 +383,7 @@ export default function BerichtspflichtKalenderPage() {
               Umsetzung kann abweichende oder zusätzliche Fristen vorsehen. Dieses Tool dient der
               Information und ersetzt keine anwaltliche Beratung. Für eine verbindliche Einschätzung
               wenden Sie sich an einen{' '}
-              <Link href="/kontakt" className="text-accent-700 no-underline hover:underline">
+              <Link href="/kontakt" className="text-blue no-underline hover:underline">
                 Fachanwalt für Arbeitsrecht
               </Link>.
             </p>

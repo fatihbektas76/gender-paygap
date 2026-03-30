@@ -19,7 +19,7 @@ export default function StandortTeaser() {
   return (
     <section className="py-[70px] px-8 bg-slate-50 max-md:py-[50px] max-md:px-6">
       <div className="max-w-content mx-auto">
-        <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-primary-700 mb-2.5">
+        <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-gold mb-2.5">
           Bundesweit für Sie da
         </div>
         <h2 className="font-serif text-[clamp(1.4rem,3vw,1.9rem)] font-bold leading-[1.25] mb-3">
@@ -36,7 +36,7 @@ export default function StandortTeaser() {
             <Link
               key={stadt.slug}
               href={`/arbeitsrecht-anwalt/${stadt.slug}`}
-              className="bg-white border border-border rounded-sm py-3 px-4 text-[0.88rem] font-medium text-ink no-underline transition-all hover:border-primary hover:text-primary-700 hover:bg-primary-50"
+              className="bg-white border border-border rounded-sm py-3 px-4 text-[0.88rem] font-medium text-ink no-underline transition-all hover:border-gold hover:text-gold hover:bg-gold-bg"
             >
               {stadt.name}
             </Link>
@@ -45,7 +45,7 @@ export default function StandortTeaser() {
 
         <Link
           href="/arbeitsrecht-anwalt"
-          className="inline-flex items-center gap-2 text-[0.92rem] font-semibold text-primary-700 no-underline hover:underline"
+          className="inline-flex items-center gap-2 text-[0.92rem] font-semibold text-gold no-underline hover:underline"
         >
           Alle {106} Orte anzeigen &rarr;
         </Link>

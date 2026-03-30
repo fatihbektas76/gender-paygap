@@ -115,16 +115,16 @@ export default function EqualPaySchnellcheckPage() {
       />
 
       {/* Header */}
-      <div className="bg-secondary-50 pt-[120px] pb-[50px] px-8 border-b border-border max-md:pt-[100px] max-md:px-6">
+      <div className="bg-green-bg pt-[120px] pb-[50px] px-8 border-b border-border max-md:pt-[100px] max-md:px-6">
         <div className="max-w-content mx-auto">
           <nav className="text-[0.84rem] text-ink-muted mb-6">
-            <Link href="/" className="text-secondary-700 no-underline hover:underline">Start</Link>
+            <Link href="/" className="text-green no-underline hover:underline">Start</Link>
             <span className="mx-2">/</span>
-            <Link href="/arbeitnehmer" className="text-secondary-700 no-underline hover:underline">Arbeitnehmer</Link>
+            <Link href="/arbeitnehmer" className="text-green no-underline hover:underline">Arbeitnehmer</Link>
             <span className="mx-2">/</span>
             <span>Equal-Pay-Schnellcheck</span>
           </nav>
-          <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-secondary-700 mb-2.5">
+          <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-green mb-2.5">
             Kostenloses Tool
           </div>
           <h1 className="font-serif text-[clamp(1.8rem,4vw,2.4rem)] font-bold leading-[1.2] max-w-[700px]">
@@ -156,7 +156,7 @@ export default function EqualPaySchnellcheckPage() {
         <div className="max-w-content mx-auto">
           <div className="max-w-[600px]">
             {!showResult ? (
-              <div className="bg-secondary-50 border border-secondary/20 rounded p-8">
+              <div className="bg-green-bg border border-green-bg rounded p-8">
                 {/* Step Indicator */}
                 <div className="flex items-center gap-2 mb-6">
                   {questions.map((_, i) => (
@@ -164,10 +164,10 @@ export default function EqualPaySchnellcheckPage() {
                       <div
                         className={`w-8 h-8 rounded-full flex items-center justify-center text-[0.85rem] font-bold transition-colors ${
                           i < step
-                            ? 'bg-secondary-600 text-white'
+                            ? 'bg-green text-white'
                             : i === step
-                              ? 'bg-secondary-700 text-white'
-                              : 'bg-white border border-secondary/30 text-ink-muted'
+                              ? 'bg-green text-white'
+                              : 'bg-white border border-green/30 text-ink-muted'
                         }`}
                       >
                         {i + 1}
@@ -175,7 +175,7 @@ export default function EqualPaySchnellcheckPage() {
                       {i < questions.length - 1 && (
                         <div
                           className={`w-6 h-0.5 ${
-                            i < step ? 'bg-secondary-600' : 'bg-secondary/20'
+                            i < step ? 'bg-green' : 'bg-green-bg'
                           }`}
                         />
                       )}
@@ -183,7 +183,7 @@ export default function EqualPaySchnellcheckPage() {
                   ))}
                 </div>
 
-                <div className="text-[0.78rem] font-bold tracking-[0.14em] uppercase text-secondary-700 mb-2">
+                <div className="text-[0.78rem] font-bold tracking-[0.14em] uppercase text-green mb-2">
                   Frage {step + 1} von {questions.length}
                 </div>
 
@@ -196,7 +196,7 @@ export default function EqualPaySchnellcheckPage() {
                     <button
                       key={option}
                       onClick={() => handleAnswer(option)}
-                      className="w-full py-3.5 px-5 bg-white border border-secondary/30 rounded-sm font-sans text-[0.95rem] text-ink cursor-pointer transition-all text-left hover:border-secondary-600 hover:bg-secondary-50 hover:shadow-[0_2px_8px_rgba(22,163,74,0.1)]"
+                      className="w-full py-3.5 px-5 bg-white border border-green/30 rounded-sm font-sans text-[0.95rem] text-ink cursor-pointer transition-all text-left hover:border-green hover:bg-green-bg hover:shadow-[0_2px_8px_rgba(43,76,53,0.1)]"
                     >
                       {option}
                     </button>
@@ -209,7 +209,7 @@ export default function EqualPaySchnellcheckPage() {
                       setStep(step - 1);
                       setAnswers(answers.slice(0, -1));
                     }}
-                    className="mt-4 text-[0.85rem] text-ink-muted bg-transparent border-none cursor-pointer hover:text-secondary-700 transition-colors font-sans"
+                    className="mt-4 text-[0.85rem] text-ink-muted bg-transparent border-none cursor-pointer hover:text-green transition-colors font-sans"
                   >
                     &larr; Zurück
                   </button>
@@ -220,8 +220,8 @@ export default function EqualPaySchnellcheckPage() {
                 <h2 className="font-serif text-[1.4rem] font-bold mb-5">Ergebnis</h2>
 
                 {result === 'strong' && (
-                  <div className="rounded-sm border-2 border-secondary bg-secondary-50 p-6 text-center">
-                    <div className="inline-block py-1.5 px-4 bg-secondary-600 text-white rounded-sm text-[0.85rem] font-semibold mb-4">
+                  <div className="rounded-sm border-2 border-green bg-green-bg p-6 text-center">
+                    <div className="inline-block py-1.5 px-4 bg-green text-white rounded-sm text-[0.85rem] font-semibold mb-4">
                       Starke Anzeichen für einen Equal-Pay-Anspruch
                     </div>
                     <p className="text-[0.95rem] text-ink-light leading-relaxed">
@@ -259,13 +259,13 @@ export default function EqualPaySchnellcheckPage() {
                 <div className="mt-8 flex flex-col sm:flex-row gap-3">
                   <Link
                     href="/auskunftsrecht-checker/schreiben-generator"
-                    className="inline-flex items-center justify-center py-3.5 px-6 bg-secondary-700 text-white border-none rounded-sm font-sans text-[0.92rem] font-semibold no-underline transition-all hover:bg-secondary-800 hover:-translate-y-px hover:shadow-[0_6px_20px_rgba(22,163,74,0.25)]"
+                    className="inline-flex items-center justify-center py-3.5 px-6 bg-green text-white border-none rounded-sm font-sans text-[0.92rem] font-semibold no-underline transition-all hover:bg-green hover:-translate-y-px hover:shadow-[0_6px_20px_rgba(43,76,53,0.25)]"
                   >
                     Auskunftsschreiben erstellen &rarr;
                   </Link>
                   <Link
                     href="/kontakt"
-                    className="inline-flex items-center justify-center py-3.5 px-6 bg-white text-secondary-700 border-2 border-secondary-700 rounded-sm font-sans text-[0.92rem] font-semibold no-underline transition-all hover:bg-secondary-50 hover:-translate-y-px"
+                    className="inline-flex items-center justify-center py-3.5 px-6 bg-white text-green border-2 border-green rounded-sm font-sans text-[0.92rem] font-semibold no-underline transition-all hover:bg-green-bg hover:-translate-y-px"
                   >
                     Kostenlose Ersteinschätzung &rarr;
                   </Link>
@@ -289,7 +289,7 @@ export default function EqualPaySchnellcheckPage() {
                 {/* Reset */}
                 <button
                   onClick={reset}
-                  className="mt-4 text-[0.85rem] text-ink-muted bg-transparent border-none cursor-pointer hover:text-secondary-700 transition-colors font-sans"
+                  className="mt-4 text-[0.85rem] text-ink-muted bg-transparent border-none cursor-pointer hover:text-green transition-colors font-sans"
                 >
                   Schnellcheck wiederholen &rarr;
                 </button>
@@ -301,7 +301,7 @@ export default function EqualPaySchnellcheckPage() {
               <strong>Hinweis:</strong> Dieses Tool dient ausschließlich der unverbindlichen Erstorientierung und
               ersetzt keine anwaltliche Beratung. Für eine verbindliche Einschätzung Ihres Falls wenden Sie sich
               bitte an einen{' '}
-              <Link href="/kontakt" className="text-secondary-700 no-underline hover:underline">
+              <Link href="/kontakt" className="text-green no-underline hover:underline">
                 Fachanwalt für Arbeitsrecht
               </Link>.
             </p>
@@ -312,7 +312,7 @@ export default function EqualPaySchnellcheckPage() {
       {/* FAQ */}
       <section className="py-[70px] px-8 bg-slate-50 max-md:py-12 max-md:px-6">
         <div className="max-w-content mx-auto">
-          <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-secondary-700 mb-2.5">
+          <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-green mb-2.5">
             Häufige Fragen
           </div>
           <h2 className="font-serif text-[clamp(1.4rem,3vw,1.9rem)] font-bold leading-[1.25] mb-6">
@@ -323,7 +323,7 @@ export default function EqualPaySchnellcheckPage() {
       </section>
 
       {/* CTA */}
-      <section className="py-[70px] px-8 bg-secondary-700 text-white text-center max-md:py-12 max-md:px-6">
+      <section className="py-[70px] px-8 bg-green text-white text-center max-md:py-12 max-md:px-6">
         <div className="max-w-[700px] mx-auto">
           <h2 className="font-serif text-[clamp(1.4rem,3vw,1.8rem)] font-bold mb-4">
             Gleicher Lohn ist Ihr Recht &mdash; wir setzen es durch
@@ -334,7 +334,7 @@ export default function EqualPaySchnellcheckPage() {
           </p>
           <Link
             href="/kontakt"
-            className="inline-flex items-center gap-2 px-8 py-3.5 rounded-sm text-[0.95rem] font-semibold no-underline transition-all bg-white text-secondary-700 hover:bg-secondary-50 hover:-translate-y-0.5"
+            className="inline-flex items-center gap-2 px-8 py-3.5 rounded-sm text-[0.95rem] font-semibold no-underline transition-all bg-white text-green hover:bg-green-bg hover:-translate-y-0.5"
           >
             Jetzt Kontakt aufnehmen &rarr;
           </Link>

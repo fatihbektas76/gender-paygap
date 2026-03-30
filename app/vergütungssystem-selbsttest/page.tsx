@@ -169,16 +169,16 @@ export default function VergütungssystemSelbsttestPage() {
       />
 
       {/* Header */}
-      <div className="bg-accent-50 pt-[120px] pb-[50px] px-8 border-b border-border max-md:pt-[100px] max-md:px-6">
+      <div className="bg-cream-dark pt-[120px] pb-[50px] px-8 border-b border-border max-md:pt-[100px] max-md:px-6">
         <div className="max-w-content mx-auto">
           <nav className="text-[0.84rem] text-ink-muted mb-6">
-            <Link href="/" className="text-accent-700 no-underline hover:underline">Start</Link>
+            <Link href="/" className="text-blue no-underline hover:underline">Start</Link>
             <span className="mx-2">/</span>
-            <Link href="/arbeitgeber" className="text-accent-700 no-underline hover:underline">Arbeitgeber</Link>
+            <Link href="/arbeitgeber" className="text-blue no-underline hover:underline">Arbeitgeber</Link>
             <span className="mx-2">/</span>
             <span>Vergütungssystem-Selbsttest</span>
           </nav>
-          <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-accent-700 mb-2.5">
+          <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-blue mb-2.5">
             Kostenloses Tool
           </div>
           <h1 className="font-serif text-[clamp(1.8rem,4vw,2.4rem)] font-bold leading-[1.2] max-w-[700px]">
@@ -216,7 +216,7 @@ export default function VergütungssystemSelbsttestPage() {
               <div
                 className={`rounded-sm border-2 p-6 text-center mb-8 ${
                   resultLevel === 'green'
-                    ? 'border-secondary bg-secondary-50'
+                    ? 'border-green bg-green-bg'
                     : resultLevel === 'yellow'
                       ? 'border-yellow-400 bg-yellow-50'
                       : 'border-red-400 bg-red-50'
@@ -231,7 +231,7 @@ export default function VergütungssystemSelbsttestPage() {
                 <div
                   className={`inline-block py-1.5 px-4 text-white rounded-sm text-[0.85rem] font-semibold mb-3 ${
                     resultLevel === 'green'
-                      ? 'bg-secondary-600'
+                      ? 'bg-green'
                       : resultLevel === 'yellow'
                         ? 'bg-yellow-500'
                         : 'bg-red-500'
@@ -255,13 +255,13 @@ export default function VergütungssystemSelbsttestPage() {
               <h3 className="font-serif text-[1.1rem] font-bold mb-4">Ergebnis nach Kategorie</h3>
               <div className="space-y-4 mb-8">
                 {categoryScores.map((cat) => (
-                  <div key={cat.title} className="bg-accent-50 border border-accent/20 rounded p-5">
+                  <div key={cat.title} className="bg-cream-dark border border-blue/20 rounded p-5">
                     <div className="flex items-center justify-between mb-2">
                       <h4 className="font-serif text-[0.95rem] font-bold text-ink">{cat.title}</h4>
                       <span
                         className={`text-[0.85rem] font-bold ${
                           cat.score === cat.total
-                            ? 'text-secondary-700'
+                            ? 'text-green'
                             : cat.score >= cat.total * 0.6
                               ? 'text-yellow-600'
                               : 'text-red-600'
@@ -272,11 +272,11 @@ export default function VergütungssystemSelbsttestPage() {
                     </div>
 
                     {/* Progress bar */}
-                    <div className="w-full h-2 bg-accent-100 rounded-full overflow-hidden mb-3">
+                    <div className="w-full h-2 bg-cream-dark rounded-full overflow-hidden mb-3">
                       <div
                         className={`h-full rounded-full transition-all ${
                           cat.score === cat.total
-                            ? 'bg-secondary-500'
+                            ? 'bg-green'
                             : cat.score >= cat.total * 0.6
                               ? 'bg-yellow-400'
                               : 'bg-red-400'
@@ -306,7 +306,7 @@ export default function VergütungssystemSelbsttestPage() {
               </div>
 
               {/* CTA */}
-              <div className="py-5 px-6 bg-accent-50 rounded-sm border-l-[3px] border-accent">
+              <div className="py-5 px-6 bg-cream-dark rounded-sm border-l-[3px] border-blue">
                 <p className="text-[0.95rem] text-ink mb-3">
                   <strong>Vollständiges Audit anfragen &mdash; wir schließen die Lücken</strong>
                 </p>
@@ -316,7 +316,7 @@ export default function VergütungssystemSelbsttestPage() {
                 </p>
                 <Link
                   href="/kontakt"
-                  className="inline-block py-3 px-6 bg-accent-700 text-white border-none rounded-sm font-sans text-[0.92rem] font-semibold no-underline transition-all hover:bg-accent-800 hover:-translate-y-px hover:shadow-[0_6px_20px_rgba(37,99,235,0.25)]"
+                  className="inline-block py-3 px-6 bg-blue text-white border-none rounded-sm font-sans text-[0.92rem] font-semibold no-underline transition-all hover:bg-blue hover:-translate-y-px hover:shadow-[0_6px_20px_rgba(61,90,128,0.25)]"
                 >
                   Audit anfragen &rarr;
                 </Link>
@@ -325,7 +325,7 @@ export default function VergütungssystemSelbsttestPage() {
               {/* Reset */}
               <button
                 onClick={reset}
-                className="mt-6 text-[0.85rem] text-ink-muted bg-transparent border-none cursor-pointer hover:text-accent-700 transition-colors font-sans"
+                className="mt-6 text-[0.85rem] text-ink-muted bg-transparent border-none cursor-pointer hover:text-blue transition-colors font-sans"
               >
                 Selbsttest wiederholen &rarr;
               </button>
@@ -338,13 +338,13 @@ export default function VergütungssystemSelbsttestPage() {
           <div className="max-w-content mx-auto">
             <div className="max-w-[740px]">
               {/* Progress indicator */}
-              <div className="mb-8 bg-accent-50 rounded-sm p-4 flex items-center justify-between">
+              <div className="mb-8 bg-cream-dark rounded-sm p-4 flex items-center justify-between">
                 <span className="text-[0.85rem] text-ink-muted font-semibold">
                   Beantwortet: {answeredCount} / {totalQuestions}
                 </span>
-                <div className="w-48 h-2 bg-accent-100 rounded-full overflow-hidden">
+                <div className="w-48 h-2 bg-cream-dark rounded-full overflow-hidden">
                   <div
-                    className="h-full bg-accent-600 rounded-full transition-all"
+                    className="h-full bg-blue rounded-full transition-all"
                     style={{ width: `${(answeredCount / totalQuestions) * 100}%` }}
                   />
                 </div>
@@ -356,7 +356,7 @@ export default function VergütungssystemSelbsttestPage() {
                   const startIndex = qIndex;
                   const categoryBlock = (
                     <div key={cat.ref} className="mb-10">
-                      <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-accent-700 mb-2">
+                      <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-blue mb-2">
                         {cat.title}
                       </div>
                       <div className="space-y-4">
@@ -368,7 +368,7 @@ export default function VergütungssystemSelbsttestPage() {
                               className="bg-slate-50 border border-border-light rounded p-5 flex flex-col sm:flex-row sm:items-center gap-4"
                             >
                               <div className="flex gap-3 items-start flex-1">
-                                <span className="text-[0.85rem] font-bold text-accent-700 min-w-[28px] mt-0.5">
+                                <span className="text-[0.85rem] font-bold text-blue min-w-[28px] mt-0.5">
                                   {idx + 1}.
                                 </span>
                                 <span className="text-[0.92rem] text-ink leading-relaxed">{q}</span>
@@ -378,8 +378,8 @@ export default function VergütungssystemSelbsttestPage() {
                                   onClick={() => handleAnswer(idx, true)}
                                   className={`py-2 px-5 rounded-sm text-[0.85rem] font-semibold cursor-pointer transition-all border ${
                                     answers[idx] === true
-                                      ? 'bg-accent-700 text-white border-accent-700'
-                                      : 'bg-white text-ink border-border hover:border-accent-600 hover:text-accent-700'
+                                      ? 'bg-blue text-white border-blue'
+                                      : 'bg-white text-ink border-border hover:border-blue hover:text-blue'
                                   }`}
                                 >
                                   Ja
@@ -412,7 +412,7 @@ export default function VergütungssystemSelbsttestPage() {
                 disabled={!allAnswered}
                 className={`w-full py-3.5 rounded-sm font-sans text-base font-semibold cursor-pointer transition-all border-none ${
                   allAnswered
-                    ? 'bg-accent-700 text-white hover:bg-accent-800 hover:-translate-y-px hover:shadow-[0_6px_20px_rgba(37,99,235,0.25)]'
+                    ? 'bg-blue text-white hover:bg-blue hover:-translate-y-px hover:shadow-[0_6px_20px_rgba(61,90,128,0.25)]'
                     : 'bg-gray-200 text-gray-500 cursor-not-allowed'
                 }`}
               >
@@ -426,7 +426,7 @@ export default function VergütungssystemSelbsttestPage() {
                 <strong>Hinweis:</strong> Dieses Tool dient ausschließlich der unverbindlichen Erstorientierung und
                 ersetzt kein vollständiges Compliance-Audit. Für eine verbindliche Einschätzung wenden Sie sich
                 bitte an einen{' '}
-                <Link href="/kontakt" className="text-accent-700 no-underline hover:underline">
+                <Link href="/kontakt" className="text-blue no-underline hover:underline">
                   Fachanwalt für Arbeitsrecht
                 </Link>.
               </p>
@@ -438,7 +438,7 @@ export default function VergütungssystemSelbsttestPage() {
       {/* FAQ */}
       <section className="py-[70px] px-8 bg-slate-50 max-md:py-12 max-md:px-6">
         <div className="max-w-content mx-auto">
-          <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-accent-700 mb-2.5">
+          <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-blue mb-2.5">
             Häufige Fragen
           </div>
           <h2 className="font-serif text-[clamp(1.4rem,3vw,1.9rem)] font-bold leading-[1.25] mb-6">
@@ -449,7 +449,7 @@ export default function VergütungssystemSelbsttestPage() {
       </section>
 
       {/* CTA */}
-      <section className="py-[70px] px-8 bg-accent-700 text-white text-center max-md:py-12 max-md:px-6">
+      <section className="py-[70px] px-8 bg-blue text-white text-center max-md:py-12 max-md:px-6">
         <div className="max-w-[700px] mx-auto">
           <h2 className="font-serif text-[clamp(1.4rem,3vw,1.8rem)] font-bold mb-4">
             Compliance sichern &mdash; bevor die Berichtspflicht greift
@@ -460,7 +460,7 @@ export default function VergütungssystemSelbsttestPage() {
           </p>
           <Link
             href="/kontakt"
-            className="inline-flex items-center gap-2 px-8 py-3.5 rounded-sm text-[0.95rem] font-semibold no-underline transition-all bg-white text-accent-700 hover:bg-accent-50 hover:-translate-y-0.5"
+            className="inline-flex items-center gap-2 px-8 py-3.5 rounded-sm text-[0.95rem] font-semibold no-underline transition-all bg-white text-blue hover:bg-cream-dark hover:-translate-y-0.5"
           >
             Jetzt Kontakt aufnehmen &rarr;
           </Link>

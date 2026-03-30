@@ -97,7 +97,7 @@ export default function CookieBanner() {
               <p className="text-[0.84rem] text-ink-muted leading-relaxed m-0">
                 Wir verwenden Cookies um die Nutzererfahrung zu verbessern. Analyse- und
                 Marketing-Cookies werden nur mit Ihrer Zustimmung gesetzt.{' '}
-                <a href="/privacy-policy" className="text-primary-700 underline">
+                <a href="/privacy-policy" className="text-gold underline">
                   Datenschutzerklärung
                 </a>
               </p>
@@ -105,13 +105,13 @@ export default function CookieBanner() {
             <div className="flex gap-2.5 items-center flex-wrap max-md:w-full">
               <button
                 onClick={acceptAll}
-                className="py-2.5 px-[22px] rounded-sm text-[0.85rem] font-semibold cursor-pointer border-none font-sans transition-all bg-primary-700 text-white hover:bg-[#3730a3] max-md:flex-1"
+                className="py-2.5 px-[22px] rounded-sm text-[0.85rem] font-semibold cursor-pointer border-none font-sans transition-all bg-gold text-white hover:bg-[#3730a3] max-md:flex-1"
               >
                 Akzeptieren
               </button>
               <button
                 onClick={rejectOptional}
-                className="py-2.5 px-[22px] rounded-sm text-[0.85rem] font-semibold cursor-pointer font-sans transition-all bg-transparent text-ink-light border border-border hover:border-primary hover:text-primary max-md:flex-1"
+                className="py-2.5 px-[22px] rounded-sm text-[0.85rem] font-semibold cursor-pointer font-sans transition-all bg-transparent text-ink-light border border-border hover:border-gold hover:text-gold max-md:flex-1"
               >
                 Ablehnen
               </button>
@@ -120,7 +120,7 @@ export default function CookieBanner() {
                   setShowBanner(false);
                   openSettings();
                 }}
-                className="bg-none border-none text-ink-muted text-[0.82rem] cursor-pointer underline p-0 hover:text-primary"
+                className="bg-none border-none text-ink-muted text-[0.82rem] cursor-pointer underline p-0 hover:text-gold"
               >
                 Anpassen
               </button>
@@ -198,13 +198,13 @@ export default function CookieBanner() {
             <div className="flex gap-2.5 mt-5">
               <button
                 onClick={saveCustom}
-                className="flex-1 py-2.5 px-[22px] rounded-sm text-[0.85rem] font-semibold cursor-pointer font-sans transition-all bg-transparent text-ink-light border border-border hover:border-primary hover:text-primary"
+                className="flex-1 py-2.5 px-[22px] rounded-sm text-[0.85rem] font-semibold cursor-pointer font-sans transition-all bg-transparent text-ink-light border border-border hover:border-gold hover:text-gold"
               >
                 Auswahl speichern
               </button>
               <button
                 onClick={acceptAll}
-                className="flex-1 py-2.5 px-[22px] rounded-sm text-[0.85rem] font-semibold cursor-pointer border-none font-sans transition-all bg-primary-700 text-white hover:bg-[#3730a3]"
+                className="flex-1 py-2.5 px-[22px] rounded-sm text-[0.85rem] font-semibold cursor-pointer border-none font-sans transition-all bg-gold text-white hover:bg-[#3730a3]"
               >
                 Alle akzeptieren
               </button>

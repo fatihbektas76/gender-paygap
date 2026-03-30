@@ -137,20 +137,20 @@ export default function GehaltsverhandlungVorbereiterPage() {
       />
 
       {/* Header */}
-      <div className="bg-secondary-50 pt-[120px] pb-[50px] px-8 border-b border-border max-md:pt-[100px] max-md:px-6">
+      <div className="bg-green-bg pt-[120px] pb-[50px] px-8 border-b border-border max-md:pt-[100px] max-md:px-6">
         <div className="max-w-content mx-auto">
           <nav className="text-[0.84rem] text-ink-muted mb-6">
-            <Link href="/" className="text-secondary-700 no-underline hover:underline">
+            <Link href="/" className="text-green no-underline hover:underline">
               Start
             </Link>
             <span className="mx-2">/</span>
-            <Link href="/arbeitnehmer" className="text-secondary-700 no-underline hover:underline">
+            <Link href="/arbeitnehmer" className="text-green no-underline hover:underline">
               Arbeitnehmer
             </Link>
             <span className="mx-2">/</span>
             <span>Gehaltsverhandlung vorbereiten</span>
           </nav>
-          <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-secondary-700 mb-2.5">
+          <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-green mb-2.5">
             Kostenloses Tool
           </div>
           <h1 className="font-serif text-[clamp(1.8rem,4vw,2.4rem)] font-bold leading-[1.2] max-w-[700px]">
@@ -162,7 +162,7 @@ export default function GehaltsverhandlungVorbereiterPage() {
           </p>
           <div className="flex flex-wrap gap-5 mt-5 text-[0.88rem] text-ink-light">
             <span className="flex items-center gap-1.5">
-              <svg className="text-secondary-600" width="16" height="16" fill="none" viewBox="0 0 24 24">
+              <svg className="text-green" width="16" height="16" fill="none" viewBox="0 0 24 24">
                 <circle cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="2" />
                 <path
                   d="M8 12l3 3 5-5"
@@ -175,7 +175,7 @@ export default function GehaltsverhandlungVorbereiterPage() {
               5-Schritte-Leitfaden
             </span>
             <span className="flex items-center gap-1.5">
-              <svg className="text-secondary-600" width="16" height="16" fill="none" viewBox="0 0 24 24">
+              <svg className="text-green" width="16" height="16" fill="none" viewBox="0 0 24 24">
                 <circle cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="2" />
                 <path
                   d="M8 12l3 3 5-5"
@@ -188,7 +188,7 @@ export default function GehaltsverhandlungVorbereiterPage() {
               Kein Login
             </span>
             <span className="flex items-center gap-1.5">
-              <svg className="text-secondary-600" width="16" height="16" fill="none" viewBox="0 0 24 24">
+              <svg className="text-green" width="16" height="16" fill="none" viewBox="0 0 24 24">
                 <circle cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="2" />
                 <path
                   d="M8 12l3 3 5-5"
@@ -221,11 +221,11 @@ export default function GehaltsverhandlungVorbereiterPage() {
       </section>
 
       {/* Prerequisite Note */}
-      <section className="py-5 px-8 bg-secondary-50 border-b border-secondary-100 max-md:px-6">
+      <section className="py-5 px-8 bg-green-bg border-b border-green/20 max-md:px-6">
         <div className="max-w-content mx-auto">
           <div className="max-w-[740px] flex gap-3 items-start">
             <svg
-              className="text-secondary-600 shrink-0 mt-0.5"
+              className="text-green shrink-0 mt-0.5"
               width="20"
               height="20"
               fill="none"
@@ -234,19 +234,19 @@ export default function GehaltsverhandlungVorbereiterPage() {
               <circle cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="2" />
               <path d="M12 8v4m0 4h.01" stroke="currentColor" strokeWidth="2" strokeLinecap="round" />
             </svg>
-            <p className="text-[0.88rem] text-secondary-800 leading-relaxed m-0">
+            <p className="text-[0.88rem] text-green leading-relaxed m-0">
               <strong>Voraussetzung:</strong> Sie haben bereits von Ihrem Arbeitgeber Auskunft
               über das Vergleichsgehalt (Median) erhalten. Falls nicht, nutzen Sie zuerst den{' '}
               <Link
                 href="/auskunftsrecht-checker"
-                className="text-secondary-700 font-semibold no-underline hover:underline"
+                className="text-green font-semibold no-underline hover:underline"
               >
                 Auskunftsrecht-Checker
               </Link>{' '}
               und erstellen Sie ein{' '}
               <Link
                 href="/auskunftsrecht-checker/schreiben-generator"
-                className="text-secondary-700 font-semibold no-underline hover:underline"
+                className="text-green font-semibold no-underline hover:underline"
               >
                 Muster-Auskunftsschreiben
               </Link>
@@ -285,7 +285,7 @@ export default function GehaltsverhandlungVorbereiterPage() {
                     setShowResult(false);
                   }}
                   placeholder="z.B. 4500"
-                  className="w-full p-3 border border-border rounded-sm text-[0.92rem] text-ink font-sans bg-white focus:outline-none focus:border-secondary-600 focus:ring-1 focus:ring-secondary-600 transition-colors"
+                  className="w-full p-3 border border-border rounded-sm text-[0.92rem] text-ink font-sans bg-white focus:outline-none focus:border-green focus:ring-1 focus:ring-green transition-colors"
                 />
               </div>
 
@@ -308,7 +308,7 @@ export default function GehaltsverhandlungVorbereiterPage() {
                     setShowResult(false);
                   }}
                   placeholder="z.B. 5200"
-                  className="w-full p-3 border border-border rounded-sm text-[0.92rem] text-ink font-sans bg-white focus:outline-none focus:border-secondary-600 focus:ring-1 focus:ring-secondary-600 transition-colors"
+                  className="w-full p-3 border border-border rounded-sm text-[0.92rem] text-ink font-sans bg-white focus:outline-none focus:border-green focus:ring-1 focus:ring-green transition-colors"
                 />
               </div>
 
@@ -327,7 +327,7 @@ export default function GehaltsverhandlungVorbereiterPage() {
                     setDauer(e.target.value as DauerOption);
                     setShowResult(false);
                   }}
-                  className="w-full p-3 border border-border rounded-sm text-[0.92rem] text-ink font-sans bg-white focus:outline-none focus:border-secondary-600 focus:ring-1 focus:ring-secondary-600 transition-colors"
+                  className="w-full p-3 border border-border rounded-sm text-[0.92rem] text-ink font-sans bg-white focus:outline-none focus:border-green focus:ring-1 focus:ring-green transition-colors"
                 >
                   <option value="">Bitte wählen</option>
                   <option value="1-6">1-6 Monate</option>
@@ -353,7 +353,7 @@ export default function GehaltsverhandlungVorbereiterPage() {
                     setLeistung(e.target.value as LeistungOption);
                     setShowResult(false);
                   }}
-                  className="w-full p-3 border border-border rounded-sm text-[0.92rem] text-ink font-sans bg-white focus:outline-none focus:border-secondary-600 focus:ring-1 focus:ring-secondary-600 transition-colors"
+                  className="w-full p-3 border border-border rounded-sm text-[0.92rem] text-ink font-sans bg-white focus:outline-none focus:border-green focus:ring-1 focus:ring-green transition-colors"
                 >
                   <option value="">Bitte wählen</option>
                   <option value="Sehr gut">Sehr gut</option>
@@ -377,7 +377,7 @@ export default function GehaltsverhandlungVorbereiterPage() {
                     setGrund(e.target.value as GrundOption);
                     setShowResult(false);
                   }}
-                  className="w-full p-3 border border-border rounded-sm text-[0.92rem] text-ink font-sans bg-white focus:outline-none focus:border-secondary-600 focus:ring-1 focus:ring-secondary-600 transition-colors"
+                  className="w-full p-3 border border-border rounded-sm text-[0.92rem] text-ink font-sans bg-white focus:outline-none focus:border-green focus:ring-1 focus:ring-green transition-colors"
                 >
                   <option value="">Bitte wählen</option>
                   <option value="Erfahrung">Erfahrung</option>
@@ -394,7 +394,7 @@ export default function GehaltsverhandlungVorbereiterPage() {
               disabled={!allFilled}
               className={`w-full py-3.5 border-none rounded-sm font-sans text-base font-semibold cursor-pointer transition-all mt-6 ${
                 allFilled
-                  ? 'bg-secondary-600 text-white hover:bg-secondary-700 hover:-translate-y-px hover:shadow-[0_6px_20px_rgba(22,163,74,0.25)]'
+                  ? 'bg-green text-white hover:bg-green hover:-translate-y-px hover:shadow-[0_6px_20px_rgba(43,76,53,0.25)]'
                   : 'bg-slate-200 text-ink-muted cursor-not-allowed'
               }`}
             >
@@ -406,7 +406,7 @@ export default function GehaltsverhandlungVorbereiterPage() {
               <strong>Hinweis:</strong> Dieses Tool dient ausschließlich der unverbindlichen
               Erstorientierung und ersetzt keine anwaltliche Beratung. Für eine verbindliche
               Einschätzung Ihres Falls wenden Sie sich bitte an einen{' '}
-              <Link href="/kontakt" className="text-secondary-700 no-underline hover:underline">
+              <Link href="/kontakt" className="text-green no-underline hover:underline">
                 Fachanwalt für Arbeitsrecht
               </Link>
               .
@@ -420,7 +420,7 @@ export default function GehaltsverhandlungVorbereiterPage() {
         <section id="leitfaden-result" className="py-[70px] px-8 bg-slate-50 max-md:py-12 max-md:px-6">
           <div className="max-w-content mx-auto">
             <div className="max-w-[740px]">
-              <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-secondary-700 mb-2.5">
+              <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-green mb-2.5">
                 Ihr Leitfaden
               </div>
               <h2 className="font-serif text-[clamp(1.4rem,3vw,1.9rem)] font-bold leading-[1.25] mb-2">
@@ -434,7 +434,7 @@ export default function GehaltsverhandlungVorbereiterPage() {
               {/* Section 1: Eröffnung */}
               <div className="bg-white border border-border-light rounded-sm p-6 mb-4">
                 <div className="flex gap-4 items-start">
-                  <div className="w-8 h-8 rounded-full bg-secondary-600 text-white flex items-center justify-center text-[0.85rem] font-bold shrink-0">
+                  <div className="w-8 h-8 rounded-full bg-green text-white flex items-center justify-center text-[0.85rem] font-bold shrink-0">
                     1
                   </div>
                   <div className="flex-1">
@@ -455,7 +455,7 @@ export default function GehaltsverhandlungVorbereiterPage() {
               {/* Section 2: Rechtliche Grundlage */}
               <div className="bg-white border border-border-light rounded-sm p-6 mb-4">
                 <div className="flex gap-4 items-start">
-                  <div className="w-8 h-8 rounded-full bg-secondary-600 text-white flex items-center justify-center text-[0.85rem] font-bold shrink-0">
+                  <div className="w-8 h-8 rounded-full bg-green text-white flex items-center justify-center text-[0.85rem] font-bold shrink-0">
                     2
                   </div>
                   <div className="flex-1">
@@ -476,7 +476,7 @@ export default function GehaltsverhandlungVorbereiterPage() {
               {/* Section 3: Argument gegen Arbeitgeber-Begründung */}
               <div className="bg-white border border-border-light rounded-sm p-6 mb-4">
                 <div className="flex gap-4 items-start">
-                  <div className="w-8 h-8 rounded-full bg-secondary-600 text-white flex items-center justify-center text-[0.85rem] font-bold shrink-0">
+                  <div className="w-8 h-8 rounded-full bg-green text-white flex items-center justify-center text-[0.85rem] font-bold shrink-0">
                     3
                   </div>
                   <div className="flex-1">
@@ -499,19 +499,19 @@ export default function GehaltsverhandlungVorbereiterPage() {
               {/* Section 4: Zielgehalt */}
               <div className="bg-white border border-border-light rounded-sm p-6 mb-4">
                 <div className="flex gap-4 items-start">
-                  <div className="w-8 h-8 rounded-full bg-secondary-600 text-white flex items-center justify-center text-[0.85rem] font-bold shrink-0">
+                  <div className="w-8 h-8 rounded-full bg-green text-white flex items-center justify-center text-[0.85rem] font-bold shrink-0">
                     4
                   </div>
                   <div className="flex-1">
                     <h3 className="font-serif text-[1.05rem] font-bold mb-3">Zielgehalt</h3>
-                    <div className="rounded-sm border-2 border-secondary p-5 bg-secondary-50 text-center mb-3">
-                      <div className="text-[0.78rem] font-bold tracking-[0.14em] uppercase text-secondary-700 mb-1">
+                    <div className="rounded-sm border-2 border-green p-5 bg-green-bg text-center mb-3">
+                      <div className="text-[0.78rem] font-bold tracking-[0.14em] uppercase text-green mb-1">
                         Zielgehalt
                       </div>
-                      <div className="font-serif text-[2rem] font-bold text-secondary-800">
+                      <div className="font-serif text-[2rem] font-bold text-green">
                         {formatEuro(vergleichNum)}
                       </div>
-                      <div className="text-[0.85rem] text-secondary-700">
+                      <div className="text-[0.85rem] text-green">
                         brutto / Monat
                       </div>
                     </div>
@@ -528,7 +528,7 @@ export default function GehaltsverhandlungVorbereiterPage() {
               {/* Section 5: Eskalation */}
               <div className="bg-white border border-border-light rounded-sm p-6 mb-8">
                 <div className="flex gap-4 items-start">
-                  <div className="w-8 h-8 rounded-full bg-secondary-600 text-white flex items-center justify-center text-[0.85rem] font-bold shrink-0">
+                  <div className="w-8 h-8 rounded-full bg-green text-white flex items-center justify-center text-[0.85rem] font-bold shrink-0">
                     5
                   </div>
                   <div className="flex-1">
@@ -555,7 +555,7 @@ export default function GehaltsverhandlungVorbereiterPage() {
               </div>
 
               {/* CTA */}
-              <div className="py-5 px-6 bg-white rounded-sm border-l-[3px] border-secondary">
+              <div className="py-5 px-6 bg-white rounded-sm border-l-[3px] border-green">
                 <p className="text-[0.95rem] text-ink mb-3">
                   <strong>
                     Antwort des Arbeitgebers anwaltlich prüfen lassen?
@@ -567,7 +567,7 @@ export default function GehaltsverhandlungVorbereiterPage() {
                 </p>
                 <Link
                   href="/kontakt"
-                  className="inline-block py-3 px-6 bg-secondary-600 text-white border-none rounded-sm font-sans text-[0.92rem] font-semibold no-underline transition-all hover:bg-secondary-700 hover:-translate-y-px hover:shadow-[0_6px_20px_rgba(22,163,74,0.25)]"
+                  className="inline-block py-3 px-6 bg-green text-white border-none rounded-sm font-sans text-[0.92rem] font-semibold no-underline transition-all hover:bg-green hover:-translate-y-px hover:shadow-[0_6px_20px_rgba(43,76,53,0.25)]"
                 >
                   Antwort des Arbeitgebers anwaltlich prüfen lassen &rarr;
                 </Link>
@@ -576,7 +576,7 @@ export default function GehaltsverhandlungVorbereiterPage() {
               {/* Reset */}
               <button
                 onClick={handleReset}
-                className="mt-6 text-[0.85rem] text-ink-muted bg-transparent border-none cursor-pointer hover:text-secondary-700 transition-colors font-sans"
+                className="mt-6 text-[0.85rem] text-ink-muted bg-transparent border-none cursor-pointer hover:text-green transition-colors font-sans"
               >
                 Neuen Leitfaden erstellen &rarr;
               </button>
@@ -588,7 +588,7 @@ export default function GehaltsverhandlungVorbereiterPage() {
       {/* FAQ */}
       <section className="py-[70px] px-8 bg-white max-md:py-12 max-md:px-6">
         <div className="max-w-content mx-auto">
-          <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-secondary-700 mb-2.5">
+          <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-green mb-2.5">
             Häufige Fragen
           </div>
           <h2 className="font-serif text-[clamp(1.4rem,3vw,1.9rem)] font-bold leading-[1.25] mb-6">
@@ -599,7 +599,7 @@ export default function GehaltsverhandlungVorbereiterPage() {
       </section>
 
       {/* CTA */}
-      <section className="py-[70px] px-8 bg-secondary-700 text-white text-center max-md:py-12 max-md:px-6">
+      <section className="py-[70px] px-8 bg-green text-white text-center max-md:py-12 max-md:px-6">
         <div className="max-w-[700px] mx-auto">
           <h2 className="font-serif text-[clamp(1.4rem,3vw,1.8rem)] font-bold mb-4">
             Gehaltsanspruch durchsetzen &mdash; mit anwaltlicher Unterstützung
@@ -610,7 +610,7 @@ export default function GehaltsverhandlungVorbereiterPage() {
           </p>
           <Link
             href="/kontakt"
-            className="inline-flex items-center gap-2 px-8 py-3.5 rounded-sm text-[0.95rem] font-semibold no-underline transition-all bg-white text-secondary-700 hover:bg-secondary-50 hover:-translate-y-0.5"
+            className="inline-flex items-center gap-2 px-8 py-3.5 rounded-sm text-[0.95rem] font-semibold no-underline transition-all bg-white text-green hover:bg-green-bg hover:-translate-y-0.5"
           >
             Kostenlose Ersteinschätzung &rarr;
           </Link>

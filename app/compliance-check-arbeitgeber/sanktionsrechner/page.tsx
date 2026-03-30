@@ -23,10 +23,10 @@ function getRiskLevel(gesamtrisiko: number): RiskLevel {
 const riskConfig = {
   gruen: {
     label: 'Moderates Risiko',
-    bgClass: 'bg-secondary-50',
-    borderClass: 'border-secondary',
-    barClass: 'bg-secondary',
-    textClass: 'text-secondary-700',
+    bgClass: 'bg-green-bg',
+    borderClass: 'border-green',
+    barClass: 'bg-green',
+    textClass: 'text-green',
   },
   gelb: {
     label: 'Erhebliches Risiko',
@@ -140,27 +140,27 @@ export default function SanktionsrechnerPage() {
       />
 
       {/* Header */}
-      <div className="bg-accent-50 pt-[120px] pb-[50px] px-8 border-b border-border">
+      <div className="bg-cream-dark pt-[120px] pb-[50px] px-8 border-b border-border">
         <div className="max-w-content mx-auto">
           <nav className="text-[0.84rem] text-ink-muted mb-6">
-            <Link href="/" className="text-accent no-underline hover:underline">
+            <Link href="/" className="text-blue no-underline hover:underline">
               Start
             </Link>
             <span className="mx-2">/</span>
-            <Link href="/arbeitgeber" className="text-accent no-underline hover:underline">
+            <Link href="/arbeitgeber" className="text-blue no-underline hover:underline">
               Arbeitgeber
             </Link>
             <span className="mx-2">/</span>
             <Link
               href="/compliance-check-arbeitgeber"
-              className="text-accent no-underline hover:underline"
+              className="text-blue no-underline hover:underline"
             >
               Compliance-Check
             </Link>
             <span className="mx-2">/</span>
             <span>Sanktionsrechner</span>
           </nav>
-          <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-accent-700 mb-2.5">
+          <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-blue mb-2.5">
             Kostenloses Tool
           </div>
           <h1 className="font-serif text-[clamp(1.8rem,4vw,2.4rem)] font-bold leading-[1.2] max-w-[700px]">
@@ -189,7 +189,7 @@ export default function SanktionsrechnerPage() {
                     <label className="text-[0.84rem] font-semibold text-ink">
                       Mitarbeiterzahl
                     </label>
-                    <span className="text-[0.95rem] font-bold text-accent-700">
+                    <span className="text-[0.95rem] font-bold text-blue">
                       {ma.toLocaleString('de-DE')}
                     </span>
                   </div>
@@ -200,7 +200,7 @@ export default function SanktionsrechnerPage() {
                     step={10}
                     value={ma}
                     onChange={(e) => setMa(Number(e.target.value))}
-                    className="w-full h-2 rounded-full appearance-none cursor-pointer bg-accent-200 accent-accent-600"
+                    className="w-full h-2 rounded-full appearance-none cursor-pointer bg-cream-dark accent-blue"
                   />
                   <div className="flex justify-between text-[0.75rem] text-ink-muted mt-1">
                     <span>50</span>
@@ -214,7 +214,7 @@ export default function SanktionsrechnerPage() {
                     <label className="text-[0.84rem] font-semibold text-ink">
                       Geschätzter Gender Pay Gap
                     </label>
-                    <span className="text-[0.95rem] font-bold text-accent-700">{gpg} %</span>
+                    <span className="text-[0.95rem] font-bold text-blue">{gpg} %</span>
                   </div>
                   <input
                     type="range"
@@ -223,7 +223,7 @@ export default function SanktionsrechnerPage() {
                     step={1}
                     value={gpg}
                     onChange={(e) => setGpg(Number(e.target.value))}
-                    className="w-full h-2 rounded-full appearance-none cursor-pointer bg-accent-200 accent-accent-600"
+                    className="w-full h-2 rounded-full appearance-none cursor-pointer bg-cream-dark accent-blue"
                   />
                   <div className="flex justify-between text-[0.75rem] text-ink-muted mt-1">
                     <span>0 %</span>
@@ -237,7 +237,7 @@ export default function SanktionsrechnerPage() {
                     <label className="text-[0.84rem] font-semibold text-ink">
                       Durchschn. Jahresgehalt Frauen
                     </label>
-                    <span className="text-[0.95rem] font-bold text-accent-700">
+                    <span className="text-[0.95rem] font-bold text-blue">
                       {formatEuro(salary)}
                     </span>
                   </div>
@@ -248,7 +248,7 @@ export default function SanktionsrechnerPage() {
                     step={1000}
                     value={salary}
                     onChange={(e) => setSalary(Number(e.target.value))}
-                    className="w-full h-2 rounded-full appearance-none cursor-pointer bg-accent-200 accent-accent-600"
+                    className="w-full h-2 rounded-full appearance-none cursor-pointer bg-cream-dark accent-blue"
                   />
                   <div className="flex justify-between text-[0.75rem] text-ink-muted mt-1">
                     <span>30.000 &euro;</span>
@@ -262,7 +262,7 @@ export default function SanktionsrechnerPage() {
                     <label className="text-[0.84rem] font-semibold text-ink">
                       Anteil weiblicher Mitarbeiter
                     </label>
-                    <span className="text-[0.95rem] font-bold text-accent-700">{anteil} %</span>
+                    <span className="text-[0.95rem] font-bold text-blue">{anteil} %</span>
                   </div>
                   <input
                     type="range"
@@ -271,7 +271,7 @@ export default function SanktionsrechnerPage() {
                     step={1}
                     value={anteil}
                     onChange={(e) => setAnteil(Number(e.target.value))}
-                    className="w-full h-2 rounded-full appearance-none cursor-pointer bg-accent-200 accent-accent-600"
+                    className="w-full h-2 rounded-full appearance-none cursor-pointer bg-cream-dark accent-blue"
                   />
                   <div className="flex justify-between text-[0.75rem] text-ink-muted mt-1">
                     <span>10 %</span>
@@ -399,9 +399,9 @@ export default function SanktionsrechnerPage() {
                       {formatEuro(result.bussgeld)}
                     </span>
                   </div>
-                  <div className="flex justify-between items-center py-3 bg-accent-50 rounded-sm px-3 mt-2">
+                  <div className="flex justify-between items-center py-3 bg-cream-dark rounded-sm px-3 mt-2">
                     <span className="text-[0.92rem] font-bold text-ink">Gesamtrisiko</span>
-                    <span className="font-serif text-[1.2rem] font-bold text-accent-700">
+                    <span className="font-serif text-[1.2rem] font-bold text-blue">
                       {formatEuro(result.gesamtrisiko)}
                     </span>
                   </div>
@@ -409,7 +409,7 @@ export default function SanktionsrechnerPage() {
               </div>
 
               {/* CTA */}
-              <div className="mt-8 py-6 px-6 bg-white rounded-sm border-l-[3px] border-accent">
+              <div className="mt-8 py-6 px-6 bg-white rounded-sm border-l-[3px] border-blue">
                 <p className="text-[1rem] text-ink mb-1">
                   <strong>
                     Ihr Gesamtrisiko liegt bei ca. {formatEuro(result.gesamtrisiko)}
@@ -420,7 +420,7 @@ export default function SanktionsrechnerPage() {
                 </p>
                 <Link
                   href="/kontakt"
-                  className="inline-block py-3 px-6 bg-accent-700 text-white border-none rounded-sm font-sans text-[0.92rem] font-semibold no-underline transition-all hover:bg-accent-800"
+                  className="inline-block py-3 px-6 bg-blue text-white border-none rounded-sm font-sans text-[0.92rem] font-semibold no-underline transition-all hover:bg-blue"
                 >
                   Audit anfragen &rarr;
                 </Link>
@@ -433,7 +433,7 @@ export default function SanktionsrechnerPage() {
                 </p>
                 <Link
                   href="/compliance-check-arbeitgeber"
-                  className="text-accent font-semibold text-[0.92rem] no-underline hover:underline"
+                  className="text-blue font-semibold text-[0.92rem] no-underline hover:underline"
                 >
                   Zum Compliance-Check &rarr;
                 </Link>
@@ -444,7 +444,7 @@ export default function SanktionsrechnerPage() {
       </section>
 
       {/* CTA */}
-      <section className="py-[70px] px-8 bg-accent-700 text-white text-center">
+      <section className="py-[70px] px-8 bg-blue text-white text-center">
         <div className="max-w-[700px] mx-auto">
           <h2 className="font-serif text-[clamp(1.4rem,3vw,1.8rem)] font-bold mb-4">
             Non-Compliance ist teurer als Compliance
@@ -455,7 +455,7 @@ export default function SanktionsrechnerPage() {
           </p>
           <Link
             href="/kontakt"
-            className="inline-flex items-center gap-2 px-8 py-3.5 rounded-sm text-[0.95rem] font-semibold no-underline transition-all bg-white text-accent-700 hover:bg-accent-50 hover:-translate-y-0.5"
+            className="inline-flex items-center gap-2 px-8 py-3.5 rounded-sm text-[0.95rem] font-semibold no-underline transition-all bg-white text-blue hover:bg-cream-dark hover:-translate-y-0.5"
           >
             Jetzt Kontakt aufnehmen &rarr;
           </Link>

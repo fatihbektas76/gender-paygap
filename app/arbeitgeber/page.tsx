@@ -75,9 +75,9 @@ export default function ArbeitgeberPage() {
 
       <main>
         {/* Hero */}
-        <header className="pt-[150px] pb-[80px] px-8 bg-accent-50 max-md:pt-[120px] max-md:pb-[60px] max-md:px-6">
+        <header className="pt-[150px] pb-[80px] px-8 bg-cream-dark max-md:pt-[120px] max-md:pb-[60px] max-md:px-6">
           <div className="max-w-content mx-auto">
-            <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-accent-700 mb-2.5">Arbeitgeber</div>
+            <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-blue mb-2.5">Arbeitgeber</div>
             <h1 className="font-serif text-[clamp(2rem,4vw,2.8rem)] font-extrabold leading-[1.15] mb-5 tracking-tight max-md:text-[1.8rem]">
               Entgelttransparenz-Compliance für Ihr Unternehmen
             </h1>
@@ -100,8 +100,8 @@ export default function ArbeitgeberPage() {
                 <table className="w-full border-collapse text-[0.92rem]">
                   <thead>
                     <tr>
-                      <th className="text-left p-4 bg-accent-50 border border-border font-semibold text-ink w-[180px]">Unternehmensgröße</th>
-                      <th className="text-left p-4 bg-accent-50 border border-border font-semibold text-ink">Pflichten ab Juni 2026</th>
+                      <th className="text-left p-4 bg-cream-dark border border-border font-semibold text-ink w-[180px]">Unternehmensgröße</th>
+                      <th className="text-left p-4 bg-cream-dark border border-border font-semibold text-ink">Pflichten ab Juni 2026</th>
                     </tr>
                   </thead>
                   <tbody>
@@ -129,7 +129,7 @@ export default function ArbeitgeberPage() {
                 <FadeUp key={t.href} delay={Math.min(i, 3) as 0 | 1 | 2 | 3}>
                   <a
                     href={t.href}
-                    className="block bg-white border border-border-light rounded p-6 no-underline transition-all hover:border-accent hover:shadow-[0_4px_16px_rgba(59,130,246,0.1)] hover:-translate-y-0.5 h-full"
+                    className="block bg-white border border-border-light rounded p-6 no-underline transition-all hover:border-blue hover:shadow-[0_4px_16px_rgba(61,90,128,0.1)] hover:-translate-y-0.5 h-full"
                   >
                     <h3 className="font-serif text-[1.1rem] font-bold text-ink mb-2">{t.title}</h3>
                     <p className="text-[0.88rem] text-ink-muted leading-relaxed m-0">{t.desc}</p>
@@ -141,7 +141,7 @@ export default function ArbeitgeberPage() {
         </section>
 
         {/* Tools */}
-        <section className="py-[90px] px-8 bg-accent-50 max-md:py-[60px] max-md:px-6">
+        <section className="py-[90px] px-8 bg-cream-dark max-md:py-[60px] max-md:px-6">
           <div className="max-w-content mx-auto">
             <h2 className="font-serif text-[clamp(1.5rem,3vw,2rem)] font-bold leading-tight mb-3">
               Interaktive Tools für Arbeitgeber
@@ -162,7 +162,7 @@ export default function ArbeitgeberPage() {
                 <FadeUp key={t.href} delay={Math.min(i, 3) as 0 | 1 | 2 | 3}>
                   <a
                     href={t.href}
-                    className="block bg-white border border-border-light rounded p-6 no-underline transition-all hover:border-accent hover:shadow-[0_4px_16px_rgba(59,130,246,0.1)] hover:-translate-y-0.5 h-full"
+                    className="block bg-white border border-border-light rounded p-6 no-underline transition-all hover:border-blue hover:shadow-[0_4px_16px_rgba(61,90,128,0.1)] hover:-translate-y-0.5 h-full"
                   >
                     <h3 className="font-serif text-[1.1rem] font-bold text-ink mb-2">{t.title}</h3>
                     <p className="text-[0.88rem] text-ink-muted leading-relaxed m-0">{t.desc}</p>
@@ -194,7 +194,7 @@ export default function ArbeitgeberPage() {
         <ContactForm />
 
         {/* CTA */}
-        <section className="py-[70px] px-8 bg-accent-700 text-white text-center max-md:py-12 max-md:px-6">
+        <section className="py-[70px] px-8 bg-blue text-white text-center max-md:py-12 max-md:px-6">
           <div className="max-w-[700px] mx-auto">
             <h2 className="font-serif text-[clamp(1.5rem,3vw,2rem)] font-bold mb-4">
               Compliance-Audit anfragen — kostenlose Ersteinschätzung
@@ -204,7 +204,7 @@ export default function ArbeitgeberPage() {
             </p>
             <a
               href="/kontakt"
-              className="inline-flex items-center gap-2 px-8 py-3.5 rounded-sm text-[0.95rem] font-semibold no-underline transition-all bg-white text-accent-700 hover:bg-accent-50 hover:-translate-y-0.5"
+              className="inline-flex items-center gap-2 px-8 py-3.5 rounded-sm text-[0.95rem] font-semibold no-underline transition-all bg-white text-blue hover:bg-cream-dark hover:-translate-y-0.5"
             >
               Jetzt Kontakt aufnehmen &rarr;
             </a>

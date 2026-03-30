@@ -105,18 +105,18 @@ export default function EntschaedigungBerechnenPage() {
       />
 
       {/* Header */}
-      <div className="bg-secondary-50 pt-[120px] pb-[50px] px-8 border-b border-border max-md:pt-[110px] max-md:px-6">
+      <div className="bg-green-bg pt-[120px] pb-[50px] px-8 border-b border-border max-md:pt-[110px] max-md:px-6">
         <div className="max-w-content mx-auto">
           <nav className="text-[0.84rem] text-ink-muted mb-6">
-            <Link href="/" className="text-secondary no-underline hover:underline">Start</Link>
+            <Link href="/" className="text-green no-underline hover:underline">Start</Link>
             <span className="mx-2">/</span>
-            <Link href="/arbeitnehmer" className="text-secondary no-underline hover:underline">Arbeitnehmer</Link>
+            <Link href="/arbeitnehmer" className="text-green no-underline hover:underline">Arbeitnehmer</Link>
             <span className="mx-2">/</span>
-            <Link href="/equal-pay-klage" className="text-secondary no-underline hover:underline">Equal-Pay-Klage</Link>
+            <Link href="/equal-pay-klage" className="text-green no-underline hover:underline">Equal-Pay-Klage</Link>
             <span className="mx-2">/</span>
             <span>Entschädigung berechnen</span>
           </nav>
-          <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-secondary-700 mb-2.5">
+          <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-green mb-2.5">
             Arbeitnehmer &middot; Tool
           </div>
           <h1 className="font-serif text-[clamp(1.8rem,4vw,2.4rem)] font-bold leading-[1.2] max-w-[700px]">
@@ -147,7 +147,7 @@ export default function EntschaedigungBerechnenPage() {
       <section className="py-[70px] px-8 bg-white max-md:py-10 max-md:px-6">
         <div className="max-w-content mx-auto">
           <div className="max-w-[600px]">
-            <div className="bg-secondary-50 border border-secondary/20 rounded p-8">
+            <div className="bg-green-bg border border-green-bg rounded p-8">
               <h2 className="font-serif text-[1.2rem] font-bold mb-5">Ihre Angaben</h2>
               <div className="space-y-5">
                 {/* Mein Bruttogehalt */}
@@ -162,7 +162,7 @@ export default function EntschaedigungBerechnenPage() {
                     value={meins}
                     onChange={(e) => setMeins(e.target.value)}
                     placeholder="z. B. 3.500"
-                    className="w-full py-3 px-4 border border-border rounded-sm font-sans text-[0.92rem] text-ink bg-white transition-all outline-none focus:border-secondary focus:shadow-[0_0_0_3px_rgba(22,163,74,0.1)] placeholder:text-ink-muted"
+                    className="w-full py-3 px-4 border border-border rounded-sm font-sans text-[0.92rem] text-ink bg-white transition-all outline-none focus:border-green focus:shadow-[0_0_0_3px_rgba(43,76,53,0.1)] placeholder:text-ink-muted"
                   />
                 </div>
 
@@ -179,7 +179,7 @@ export default function EntschaedigungBerechnenPage() {
                     onChange={(e) => setVergleichInput(e.target.value)}
                     placeholder="z. B. 4.200"
                     disabled={unbekannt}
-                    className={`w-full py-3 px-4 border border-border rounded-sm font-sans text-[0.92rem] text-ink bg-white transition-all outline-none focus:border-secondary focus:shadow-[0_0_0_3px_rgba(22,163,74,0.1)] placeholder:text-ink-muted ${
+                    className={`w-full py-3 px-4 border border-border rounded-sm font-sans text-[0.92rem] text-ink bg-white transition-all outline-none focus:border-green focus:shadow-[0_0_0_3px_rgba(43,76,53,0.1)] placeholder:text-ink-muted ${
                       unbekannt ? 'opacity-50 cursor-not-allowed' : ''
                     }`}
                   />
@@ -188,7 +188,7 @@ export default function EntschaedigungBerechnenPage() {
                       type="checkbox"
                       checked={unbekannt}
                       onChange={(e) => setUnbekannt(e.target.checked)}
-                      className="accent-secondary"
+                      className="accent-green"
                     />
                     Ich kenne es nicht (Schätzung: 110 % meines Gehalts)
                   </label>
@@ -202,7 +202,7 @@ export default function EntschaedigungBerechnenPage() {
                   <select
                     value={jahre}
                     onChange={(e) => setJahre(e.target.value)}
-                    className="w-full py-3 px-4 border border-border rounded-sm font-sans text-[0.92rem] text-ink bg-white transition-all outline-none focus:border-secondary focus:shadow-[0_0_0_3px_rgba(22,163,74,0.1)]"
+                    className="w-full py-3 px-4 border border-border rounded-sm font-sans text-[0.92rem] text-ink bg-white transition-all outline-none focus:border-green focus:shadow-[0_0_0_3px_rgba(43,76,53,0.1)]"
                   >
                     <option value="1">1 Jahr</option>
                     <option value="2">2 Jahre</option>
@@ -224,13 +224,13 @@ export default function EntschaedigungBerechnenPage() {
                     value={betriebszugehoerigkeit}
                     onChange={(e) => setBetriebszugehoerigkeit(e.target.value)}
                     placeholder="z. B. 5"
-                    className="w-full py-3 px-4 border border-border rounded-sm font-sans text-[0.92rem] text-ink bg-white transition-all outline-none focus:border-secondary focus:shadow-[0_0_0_3px_rgba(22,163,74,0.1)] placeholder:text-ink-muted"
+                    className="w-full py-3 px-4 border border-border rounded-sm font-sans text-[0.92rem] text-ink bg-white transition-all outline-none focus:border-green focus:shadow-[0_0_0_3px_rgba(43,76,53,0.1)] placeholder:text-ink-muted"
                   />
                 </div>
 
                 <button
                   onClick={calculate}
-                  className="w-full py-3.5 bg-secondary-700 text-white border-none rounded-sm font-sans text-base font-semibold cursor-pointer transition-all mt-2 hover:bg-secondary-800 hover:-translate-y-px hover:shadow-[0_6px_20px_rgba(22,163,74,0.25)]"
+                  className="w-full py-3.5 bg-green text-white border-none rounded-sm font-sans text-base font-semibold cursor-pointer transition-all mt-2 hover:bg-green hover:-translate-y-px hover:shadow-[0_6px_20px_rgba(43,76,53,0.25)]"
                 >
                   Entschädigung berechnen
                 </button>
@@ -244,11 +244,11 @@ export default function EntschaedigungBerechnenPage() {
             {result && (
               <div className="mt-8 ergebnis-box">
                 {/* Hauptergebnis */}
-                <div className="rounded-sm border-2 border-secondary bg-secondary-50 p-6 text-center mb-6">
+                <div className="rounded-sm border-2 border-green bg-green-bg p-6 text-center mb-6">
                   <div className="text-[0.78rem] font-bold tracking-[0.14em] uppercase mb-2 text-ink-muted">
                     Mögliche Entschädigung
                   </div>
-                  <div className="font-serif text-[2.4rem] font-bold text-secondary-700 mb-2">
+                  <div className="font-serif text-[2.4rem] font-bold text-green mb-2">
                     ca. {fmt(result.gesamt)} &euro;
                   </div>
                   <div className="text-[0.85rem] text-ink-muted">
@@ -294,18 +294,18 @@ export default function EntschaedigungBerechnenPage() {
                 </div>
 
                 {/* Rechtsgrundlage Badge */}
-                <div className="bg-secondary-50 border border-secondary/30 rounded-sm px-4 py-3 mb-8 text-[0.82rem] text-secondary-700 inline-block">
+                <div className="bg-green-bg border border-green/30 rounded-sm px-4 py-3 mb-8 text-[0.82rem] text-green inline-block">
                   Grundlage: Art. 21 EU-RL 2023/970 + BAG Az. 8 AZR 300/24
                 </div>
 
                 {/* CTA */}
-                <div className="mt-4 py-5 px-6 bg-secondary-50 rounded-sm border-l-[3px] border-secondary">
+                <div className="mt-4 py-5 px-6 bg-green-bg rounded-sm border-l-[3px] border-green">
                   <p className="text-[0.95rem] text-ink mb-3">
                     <strong>Möchten Sie wissen, wie hoch Ihre Erfolgsaussichten sind?</strong>
                   </p>
                   <Link
                     href="/kontakt"
-                    className="inline-block py-3 px-6 bg-secondary-700 text-white border-none rounded-sm font-sans text-[0.92rem] font-semibold no-underline transition-all hover:bg-secondary-800"
+                    className="inline-block py-3 px-6 bg-green text-white border-none rounded-sm font-sans text-[0.92rem] font-semibold no-underline transition-all hover:bg-green"
                   >
                     Klage-Chancen prüfen lassen &rarr;
                   </Link>
@@ -320,7 +320,7 @@ export default function EntschaedigungBerechnenPage() {
       <section className="py-[70px] px-8 bg-slate-50 max-md:py-10 max-md:px-6">
         <div className="max-w-content mx-auto">
           <div className="max-w-[740px]">
-            <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-secondary-700 mb-2.5">
+            <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-green mb-2.5">
               Hintergrund
             </div>
             <h2 className="font-serif text-[clamp(1.4rem,3vw,1.9rem)] font-bold leading-[1.25] mb-5">
@@ -356,17 +356,17 @@ export default function EntschaedigungBerechnenPage() {
             </div>
             <ul className="list-none space-y-2 text-[0.88rem]">
               <li>
-                <a href="https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:32023L0970" target="_blank" rel="noopener noreferrer" className="text-secondary no-underline hover:underline">
+                <a href="https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:32023L0970" target="_blank" rel="noopener noreferrer" className="text-green no-underline hover:underline">
                   EU-Richtlinie 2023/970 Art. 21 &mdash; Entschädigung bei Entgeltdiskriminierung &rarr;
                 </a>
               </li>
               <li>
-                <a href="https://www.gesetze-im-internet.de/agg/__15.html" target="_blank" rel="noopener noreferrer" className="text-secondary no-underline hover:underline">
+                <a href="https://www.gesetze-im-internet.de/agg/__15.html" target="_blank" rel="noopener noreferrer" className="text-green no-underline hover:underline">
                   &sect; 15 AGG &mdash; Entschädigung und Schadensersatz &rarr;
                 </a>
               </li>
               <li>
-                <a href="https://www.gesetze-im-internet.de/bgb/__288.html" target="_blank" rel="noopener noreferrer" className="text-secondary no-underline hover:underline">
+                <a href="https://www.gesetze-im-internet.de/bgb/__288.html" target="_blank" rel="noopener noreferrer" className="text-green no-underline hover:underline">
                   &sect; 288 BGB &mdash; Verzugszinsen &rarr;
                 </a>
               </li>
@@ -378,7 +378,7 @@ export default function EntschaedigungBerechnenPage() {
       {/* FAQ */}
       <section className="py-[70px] px-8 bg-slate-50 max-md:py-10 max-md:px-6">
         <div className="max-w-content mx-auto">
-          <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-secondary-700 mb-2.5">
+          <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-green mb-2.5">
             Häufige Fragen
           </div>
           <h2 className="font-serif text-[clamp(1.4rem,3vw,1.9rem)] font-bold leading-[1.25] mb-6">
@@ -389,7 +389,7 @@ export default function EntschaedigungBerechnenPage() {
       </section>
 
       {/* CTA */}
-      <section className="py-[70px] px-8 bg-secondary-700 text-white text-center max-md:py-12 max-md:px-6">
+      <section className="py-[70px] px-8 bg-green text-white text-center max-md:py-12 max-md:px-6">
         <div className="max-w-[700px] mx-auto">
           <h2 className="font-serif text-[clamp(1.5rem,3vw,2rem)] font-bold mb-4">
             Kostenlose Ersteinschätzung &mdash; Entschädigung prüfen lassen
@@ -399,7 +399,7 @@ export default function EntschaedigungBerechnenPage() {
           </p>
           <Link
             href="/kontakt"
-            className="inline-flex items-center gap-2 px-8 py-3.5 rounded-sm text-[0.95rem] font-semibold no-underline transition-all bg-white text-secondary-700 hover:bg-secondary-50 hover:-translate-y-0.5"
+            className="inline-flex items-center gap-2 px-8 py-3.5 rounded-sm text-[0.95rem] font-semibold no-underline transition-all bg-white text-green hover:bg-green-bg hover:-translate-y-0.5"
           >
             Jetzt Kontakt aufnehmen &rarr;
           </Link>

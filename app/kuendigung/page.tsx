@@ -111,12 +111,12 @@ export default function KuendigungPage() {
       <div className="bg-slate-50 pt-[120px] pb-[50px] px-8 border-b border-border">
         <div className="max-w-content mx-auto">
           <nav className="text-[0.84rem] text-ink-muted mb-6">
-            <Link href="/" className="text-primary no-underline hover:underline">Start</Link>
+            <Link href="/" className="text-gold no-underline hover:underline">Start</Link>
             <span className="mx-2">/</span>
             <span>Kündigung</span>
           </nav>
           <StandAnzeige />
-          <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-primary-700 mb-2.5 mt-4">
+          <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-gold mb-2.5 mt-4">
             Ratgeber Kündigung
           </div>
           <h1 className="font-serif text-[clamp(1.8rem,4vw,2.4rem)] font-bold leading-[1.2] max-w-[700px]">
@@ -130,7 +130,7 @@ export default function KuendigungPage() {
         <div className="max-w-content mx-auto">
           <div className="max-w-[740px]">
             {/* Urgency box */}
-            <div className="py-5 px-6 bg-slate-50 rounded-sm border-l-[3px] border-primary mb-8">
+            <div className="py-5 px-6 bg-slate-50 rounded-sm border-l-[3px] border-gold mb-8">
               <p className="text-[0.95rem] font-semibold text-ink m-0">
                 Wichtig: Die Klagefrist beträgt nur 3 Wochen ab Zugang der Kündigung (&sect;4 KSchG).
                 Handeln Sie sofort.
@@ -150,7 +150,7 @@ export default function KuendigungPage() {
             {/* CTA 1 */}
             <a
               href="/#kontakt"
-              className="inline-block py-3.5 px-8 bg-primary-700 text-white border-none rounded-sm font-sans text-base font-semibold no-underline transition-all hover:bg-[#3730a3] hover:-translate-y-px hover:shadow-[0_6px_20px_rgba(99,102,241,0.25)]"
+              className="inline-block py-3.5 px-8 bg-gold text-white border-none rounded-sm font-sans text-base font-semibold no-underline transition-all hover:bg-[#3730a3] hover:-translate-y-px hover:shadow-[0_6px_20px_rgba(166,139,75,0.25)]"
             >
               Kündigung kostenlos prüfen lassen &rarr;
             </a>
@@ -161,7 +161,7 @@ export default function KuendigungPage() {
       {/* Kündigungsfristen-Tabelle */}
       <section className="py-[70px] px-8 bg-slate-50">
         <div className="max-w-content mx-auto">
-          <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-primary-700 mb-2.5">
+          <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-gold mb-2.5">
             Kündigungsfristen
           </div>
           <h2 className="font-serif text-[clamp(1.4rem,3vw,1.9rem)] font-bold leading-[1.25] mb-3.5">
@@ -174,7 +174,7 @@ export default function KuendigungPage() {
           <div className="overflow-x-auto">
             <table className="w-full border-collapse text-[0.92rem]">
               <thead>
-                <tr className="border-b-2 border-primary/30">
+                <tr className="border-b-2 border-gold/30">
                   <th className="text-left py-3 px-4 font-semibold text-ink">Betriebszugehörigkeit</th>
                   <th className="text-left py-3 px-4 font-semibold text-ink">Kündigungsfrist</th>
                   <th className="text-left py-3 px-4 font-semibold text-ink-muted">Rechtsgrundlage</th>
@@ -182,7 +182,7 @@ export default function KuendigungPage() {
               </thead>
               <tbody>
                 {fristen.map((f, i) => (
-                  <tr key={i} className="border-b border-border hover:bg-primary-50 transition-colors">
+                  <tr key={i} className="border-b border-border hover:bg-gold-bg transition-colors">
                     <td className="py-3 px-4 font-semibold">{f.jahre}</td>
                     <td className="py-3 px-4">{f.frist}</td>
                     <td className="py-3 px-4 text-ink-muted text-[0.84rem]">{f.basis}</td>
@@ -210,7 +210,7 @@ export default function KuendigungPage() {
           </p>
           <a
             href="/#kontakt"
-            className="inline-block py-3.5 px-8 bg-primary-700 text-white border-none rounded-sm font-sans text-base font-semibold no-underline transition-all hover:bg-[#3730a3] hover:-translate-y-px hover:shadow-[0_6px_20px_rgba(99,102,241,0.25)]"
+            className="inline-block py-3.5 px-8 bg-gold text-white border-none rounded-sm font-sans text-base font-semibold no-underline transition-all hover:bg-[#3730a3] hover:-translate-y-px hover:shadow-[0_6px_20px_rgba(166,139,75,0.25)]"
           >
             Jetzt kostenlos prüfen lassen &rarr;
           </a>
@@ -220,7 +220,7 @@ export default function KuendigungPage() {
       {/* Kündigung nach Betriebszugehörigkeit - Links */}
       <section className="py-[70px] px-8 bg-slate-50">
         <div className="max-w-content mx-auto">
-          <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-primary-700 mb-2.5">
+          <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-gold mb-2.5">
             Nach Betriebszugehörigkeit
           </div>
           <h2 className="font-serif text-[clamp(1.4rem,3vw,1.9rem)] font-bold leading-[1.25] mb-3">
@@ -235,7 +235,7 @@ export default function KuendigungPage() {
               <Link
                 key={e.year}
                 href={`/gekuendigt-nach-${e.slug}-betriebszugehoerigkeit/`}
-                className="py-2 px-4 rounded-full border border-border text-[0.85rem] font-semibold text-ink no-underline hover:border-primary hover:text-primary-700 transition-all bg-white"
+                className="py-2 px-4 rounded-full border border-border text-[0.85rem] font-semibold text-ink no-underline hover:border-gold hover:text-gold transition-all bg-white"
               >
                 {e.year} {e.year === 1 ? 'Jahr' : 'Jahre'}
               </Link>
@@ -247,7 +247,7 @@ export default function KuendigungPage() {
       {/* Fristlose Kündigung nach Betriebszugehörigkeit - Links */}
       <section className="py-[70px] px-8 bg-white">
         <div className="max-w-content mx-auto">
-          <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-primary-700 mb-2.5">
+          <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-gold mb-2.5">
             Nach Betriebszugehörigkeit
           </div>
           <h2 className="font-serif text-[clamp(1.4rem,3vw,1.9rem)] font-bold leading-[1.25] mb-3">
@@ -262,7 +262,7 @@ export default function KuendigungPage() {
               <Link
                 key={e.year}
                 href={`/fristlose-kuendigung-nach-${e.slug}-betriebszugehoerigkeit/`}
-                className="py-2 px-4 rounded-full border border-border text-[0.85rem] font-semibold text-ink no-underline hover:border-primary hover:text-primary-700 transition-all bg-white"
+                className="py-2 px-4 rounded-full border border-border text-[0.85rem] font-semibold text-ink no-underline hover:border-gold hover:text-gold transition-all bg-white"
               >
                 {e.year} {e.year === 1 ? 'Jahr' : 'Jahre'}
               </Link>
@@ -275,7 +275,7 @@ export default function KuendigungPage() {
       <section className="py-[50px] px-8 bg-slate-50">
         <div className="max-w-content mx-auto">
           <div className="max-w-[740px]">
-            <div className="flex items-center justify-between gap-6 py-5 px-6 bg-slate-50 rounded-sm border-l-[3px] border-primary max-md:flex-col max-md:items-start">
+            <div className="flex items-center justify-between gap-6 py-5 px-6 bg-slate-50 rounded-sm border-l-[3px] border-gold max-md:flex-col max-md:items-start">
               <div>
                 <p className="text-[1rem] font-semibold text-ink m-0">Fristlose Kündigung erhalten?</p>
                 <p className="text-[0.84rem] text-ink-muted mt-1 m-0">
@@ -284,7 +284,7 @@ export default function KuendigungPage() {
               </div>
               <Link
                 href="/fristlose-kuendigung/"
-                className="inline-block py-3 px-6 bg-primary-700 text-white border-none rounded-sm font-sans text-[0.92rem] font-semibold no-underline whitespace-nowrap transition-all hover:bg-[#3730a3]"
+                className="inline-block py-3 px-6 bg-gold text-white border-none rounded-sm font-sans text-[0.92rem] font-semibold no-underline whitespace-nowrap transition-all hover:bg-[#3730a3]"
               >
                 Zum Ratgeber &rarr;
               </Link>
@@ -296,7 +296,7 @@ export default function KuendigungPage() {
       {/* Kündigung nach Ihrer Situation */}
       <section className="py-[70px] px-8 bg-slate-50">
         <div className="max-w-content mx-auto">
-          <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-primary-700 mb-2.5">
+          <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-gold mb-2.5">
             Nach Ihrer Situation
           </div>
           <h2 className="font-serif text-[clamp(1.4rem,3vw,1.9rem)] font-bold leading-[1.25] mb-3">
@@ -311,7 +311,7 @@ export default function KuendigungPage() {
               <Link
                 key={e.slug}
                 href={`/kuendigung/${e.slug}/`}
-                className="py-2 px-4 rounded-full border border-border text-[0.85rem] font-semibold text-ink no-underline hover:border-primary hover:text-primary-700 transition-all bg-white"
+                className="py-2 px-4 rounded-full border border-border text-[0.85rem] font-semibold text-ink no-underline hover:border-gold hover:text-gold transition-all bg-white"
               >
                 {e.h1.replace(/ — .*$/, '')}
               </Link>
@@ -324,7 +324,7 @@ export default function KuendigungPage() {
       <section className="py-[50px] px-8 bg-white">
         <div className="max-w-content mx-auto">
           <div className="max-w-[740px]">
-            <div className="flex items-center justify-between gap-6 py-5 px-6 bg-slate-50 rounded-sm border-l-[3px] border-primary max-md:flex-col max-md:items-start">
+            <div className="flex items-center justify-between gap-6 py-5 px-6 bg-slate-50 rounded-sm border-l-[3px] border-gold max-md:flex-col max-md:items-start">
               <div>
                 <p className="text-[1rem] font-semibold text-ink m-0">Abmahnung erhalten?</p>
                 <p className="text-[0.84rem] text-ink-muted mt-1 m-0">
@@ -333,7 +333,7 @@ export default function KuendigungPage() {
               </div>
               <Link
                 href="/abmahnung/"
-                className="inline-block py-3 px-6 bg-primary-700 text-white border-none rounded-sm font-sans text-[0.92rem] font-semibold no-underline whitespace-nowrap transition-all hover:bg-[#3730a3]"
+                className="inline-block py-3 px-6 bg-gold text-white border-none rounded-sm font-sans text-[0.92rem] font-semibold no-underline whitespace-nowrap transition-all hover:bg-[#3730a3]"
               >
                 Zum Ratgeber Abmahnung &rarr;
               </Link>
@@ -348,7 +348,7 @@ export default function KuendigungPage() {
       {/* FAQ */}
       <section className="py-[70px] px-8 bg-white">
         <div className="max-w-content mx-auto">
-          <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-primary-700 mb-2.5">
+          <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-gold mb-2.5">
             Häufige Fragen
           </div>
           <h2 className="font-serif text-[clamp(1.4rem,3vw,1.9rem)] font-bold leading-[1.25] mb-6">
@@ -375,7 +375,7 @@ export default function KuendigungPage() {
         <div className="max-w-content mx-auto text-center">
           <p className="text-[0.92rem] text-ink-muted">
             Wir vertreten Arbeitnehmer bundesweit &mdash; vollständig digital.{' '}
-            <a href="/arbeitsrecht-anwalt" className="text-primary-700 font-semibold no-underline hover:underline">
+            <a href="/arbeitsrecht-anwalt" className="text-gold font-semibold no-underline hover:underline">
               Fachanwalt für Arbeitsrecht in Ihrer Stadt finden &rarr;
             </a>
           </p>
@@ -385,7 +385,7 @@ export default function KuendigungPage() {
       {/* CTA 3 */}
       <section className="py-[70px] px-8 bg-slate-50">
         <div className="max-w-content mx-auto text-center">
-          <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-primary-700 mb-2.5">
+          <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-gold mb-2.5">
             Jetzt handeln
           </div>
           <h2 className="font-serif text-[clamp(1.4rem,3vw,1.8rem)] font-bold mb-3">
@@ -397,7 +397,7 @@ export default function KuendigungPage() {
           </p>
           <a
             href="/#kontakt"
-            className="inline-block py-3.5 px-8 bg-primary-700 text-white border-none rounded-sm font-sans text-base font-semibold no-underline transition-all hover:bg-[#3730a3] hover:-translate-y-px hover:shadow-[0_6px_20px_rgba(99,102,241,0.25)]"
+            className="inline-block py-3.5 px-8 bg-gold text-white border-none rounded-sm font-sans text-base font-semibold no-underline transition-all hover:bg-[#3730a3] hover:-translate-y-px hover:shadow-[0_6px_20px_rgba(166,139,75,0.25)]"
           >
             Kostenlose Ersteinschätzung &rarr;
           </a>

@@ -43,7 +43,7 @@ export default function FAQ() {
   return (
     <section className="py-[90px] px-8 bg-slate-50 max-md:py-[60px] max-md:px-6" id="faq">
       <div className="max-w-content mx-auto">
-        <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-primary-700 mb-2.5">
+        <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-gold mb-2.5">
           Häufige Fragen
         </div>
         <h2 className="font-serif text-[clamp(1.6rem,3vw,2.2rem)] font-bold leading-[1.25] mb-3.5 max-md:text-2xl">
@@ -53,7 +53,7 @@ export default function FAQ() {
           {faqs.map((faq, i) => (
             <div key={i} className="border-b border-border">
               <button
-                className="w-full bg-none border-none cursor-pointer py-[22px] font-sans text-base font-semibold text-ink text-left flex justify-between items-center gap-4 hover:text-primary transition-colors"
+                className="w-full bg-none border-none cursor-pointer py-[22px] font-sans text-base font-semibold text-ink text-left flex justify-between items-center gap-4 hover:text-gold transition-colors"
                 onClick={() => setOpenIndex(openIndex === i ? null : i)}
               >
                 {faq.q}

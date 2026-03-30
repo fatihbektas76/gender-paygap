@@ -92,9 +92,9 @@ export default function StellenanzeigenGehaltsspannePage() {
 
       <main>
         {/* Hero */}
-        <header className="pt-[150px] pb-[80px] px-8 bg-accent-50 max-md:pt-[120px] max-md:pb-[60px] max-md:px-6">
+        <header className="pt-[150px] pb-[80px] px-8 bg-cream-dark max-md:pt-[120px] max-md:pb-[60px] max-md:px-6">
           <div className="max-w-content mx-auto">
-            <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-accent-700 mb-2.5">Arbeitgeber</div>
+            <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-blue mb-2.5">Arbeitgeber</div>
             <h1 className="font-serif text-[clamp(2rem,4vw,2.8rem)] font-extrabold leading-[1.15] mb-5 tracking-tight max-md:text-[1.8rem]">
               Gehaltsspanne in Stellenanzeigen &mdash; Pflicht ab 2026
             </h1>
@@ -114,27 +114,27 @@ export default function StellenanzeigenGehaltsspannePage() {
               Was Art. 5 EU-RL 2023/970 verlangt
             </h2>
             <FadeUp>
-              <div className="bg-accent-50 border border-accent/30 rounded p-7 mb-8">
+              <div className="bg-cream-dark border border-blue/30 rounded p-7 mb-8">
                 <p className="text-[0.95rem] text-ink leading-relaxed mb-4">
                   Art. 5 enth&auml;lt drei zentrale Verpflichtungen f&uuml;r Arbeitgeber im Bewerbungsverfahren:
                 </p>
                 <div className="space-y-4">
                   <div className="flex gap-4 items-start">
-                    <div className="w-8 h-8 rounded-full bg-accent-700 text-white font-bold text-[0.85rem] flex items-center justify-center shrink-0">1</div>
+                    <div className="w-8 h-8 rounded-full bg-blue text-white font-bold text-[0.85rem] flex items-center justify-center shrink-0">1</div>
                     <div>
                       <div className="font-semibold text-ink text-[0.95rem] mb-1">Gehaltstransparenz vor dem Gespräch (Abs. 1)</div>
                       <div className="text-[0.88rem] text-ink-muted">Bewerber:innen müssen über das anfängliche Entgelt oder die Entgeltspanne informiert werden — in der Stellenanzeige oder auf andere Weise vor dem Vorstellungsgespräch.</div>
                     </div>
                   </div>
                   <div className="flex gap-4 items-start">
-                    <div className="w-8 h-8 rounded-full bg-accent-700 text-white font-bold text-[0.85rem] flex items-center justify-center shrink-0">2</div>
+                    <div className="w-8 h-8 rounded-full bg-blue text-white font-bold text-[0.85rem] flex items-center justify-center shrink-0">2</div>
                     <div>
                       <div className="font-semibold text-ink text-[0.95rem] mb-1">Salary History Ban (Abs. 2)</div>
                       <div className="text-[0.88rem] text-ink-muted">Es ist verboten, Bewerber:innen nach ihrer aktuellen oder früheren Vergütung zu fragen — direkt oder über Dritte.</div>
                     </div>
                   </div>
                   <div className="flex gap-4 items-start">
-                    <div className="w-8 h-8 rounded-full bg-accent-700 text-white font-bold text-[0.85rem] flex items-center justify-center shrink-0">3</div>
+                    <div className="w-8 h-8 rounded-full bg-blue text-white font-bold text-[0.85rem] flex items-center justify-center shrink-0">3</div>
                     <div>
                       <div className="font-semibold text-ink text-[0.95rem] mb-1">Geschlechtsneutrale Gestaltung (Abs. 3)</div>
                       <div className="text-[0.88rem] text-ink-muted">Stellenanzeigen und Stellenbezeichnungen müssen geschlechtsneutral formuliert sein. Das Einstellungsverfahren darf keine Diskriminierung begründen.</div>
@@ -155,11 +155,11 @@ export default function StellenanzeigenGehaltsspannePage() {
             <div className="grid grid-cols-2 gap-6 max-md:grid-cols-1">
               <FadeUp>
                 <div className="bg-white border border-border-light rounded p-6 h-full">
-                  <h3 className="font-serif text-[1.1rem] font-bold text-accent-700 mb-4">So machen Sie es richtig</h3>
+                  <h3 className="font-serif text-[1.1rem] font-bold text-blue mb-4">So machen Sie es richtig</h3>
                   <ul className="space-y-3 text-[0.88rem] text-ink-muted">
                     {dosAndDonts.dos.map((item) => (
                       <li key={item} className="flex gap-2 items-start">
-                        <span className="text-accent-700 font-bold mt-0.5 shrink-0">+</span>
+                        <span className="text-blue font-bold mt-0.5 shrink-0">+</span>
                         <span>{item}</span>
                       </li>
                     ))}
@@ -190,8 +190,8 @@ export default function StellenanzeigenGehaltsspannePage() {
               Beispiel: Konforme Gehaltsangabe in der Stellenanzeige
             </h2>
             <FadeUp>
-              <div className="bg-accent-50 border-l-4 border-accent rounded p-6">
-                <div className="text-[0.85rem] text-accent-700 font-bold uppercase tracking-wider mb-3">Muster-Formulierung</div>
+              <div className="bg-cream-dark border-l-4 border-blue rounded p-6">
+                <div className="text-[0.85rem] text-blue font-bold uppercase tracking-wider mb-3">Muster-Formulierung</div>
                 <p className="text-[0.95rem] text-ink leading-relaxed mb-2">
                   <strong>Vergütung:</strong> Das Jahresgehalt für diese Position liegt zwischen 52.000 und 62.000 EUR brutto.
                   Die Einordnung innerhalb der Spanne richtet sich nach Berufserfahrung und einschlägiger Qualifikation.
@@ -225,7 +225,7 @@ export default function StellenanzeigenGehaltsspannePage() {
         <ContactForm />
 
         {/* CTA */}
-        <section className="py-[70px] px-8 bg-accent-700 text-white text-center max-md:py-12 max-md:px-6">
+        <section className="py-[70px] px-8 bg-blue text-white text-center max-md:py-12 max-md:px-6">
           <div className="max-w-[700px] mx-auto">
             <h2 className="font-serif text-[clamp(1.5rem,3vw,2rem)] font-bold mb-4">
               Stellenanzeigen prüfen lassen — kostenlose Ersteinschätzung
@@ -235,7 +235,7 @@ export default function StellenanzeigenGehaltsspannePage() {
             </p>
             <a
               href="/kontakt"
-              className="inline-flex items-center gap-2 px-8 py-3.5 rounded-sm text-[0.95rem] font-semibold no-underline transition-all bg-white text-accent-700 hover:bg-accent-50 hover:-translate-y-0.5"
+              className="inline-flex items-center gap-2 px-8 py-3.5 rounded-sm text-[0.95rem] font-semibold no-underline transition-all bg-white text-blue hover:bg-cream-dark hover:-translate-y-0.5"
             >
               Jetzt Kontakt aufnehmen &rarr;
             </a>

@@ -118,11 +118,11 @@ body {
 }
 
 .prose a {
-  @apply text-primary hover:underline;
+  @apply text-gold hover:underline;
 }
 
 .prose blockquote {
-  @apply border-l-[3px] border-primary bg-slate-50 rounded-r-sm pl-5 pr-5 py-4 my-6 italic text-ink-light;
+  @apply border-l-[3px] border-gold bg-slate-50 rounded-r-sm pl-5 pr-5 py-4 my-6 italic text-ink-light;
 }
 
 .prose table {

@@ -25,7 +25,7 @@ function CopyButton({ text }: { text: string }) {
         setCopied(true);
         setTimeout(() => setCopied(false), 2000);
       }}
-      className="inline-flex items-center gap-1.5 py-2 px-4 bg-white border border-border rounded-sm text-[0.82rem] font-semibold text-ink cursor-pointer hover:border-primary hover:text-primary-700 transition-all"
+      className="inline-flex items-center gap-1.5 py-2 px-4 bg-white border border-border rounded-sm text-[0.82rem] font-semibold text-ink cursor-pointer hover:border-gold hover:text-gold transition-all"
     >
       {copied ? (
         <>
@@ -54,16 +54,16 @@ export default function MusterPageContent({ entry, original, generated, faqs }: 
       <div className="bg-slate-50 pt-[120px] pb-[50px] px-8 border-b border-border">
         <div className="max-w-content mx-auto">
           <nav className="text-[0.84rem] text-ink-muted mb-6">
-            <Link href="/" className="text-primary no-underline hover:underline">Start</Link>
+            <Link href="/" className="text-gold no-underline hover:underline">Start</Link>
             <span className="mx-2">/</span>
-            <Link href="/ratgeber" className="text-primary no-underline hover:underline">Ratgeber</Link>
+            <Link href="/ratgeber" className="text-gold no-underline hover:underline">Ratgeber</Link>
             <span className="mx-2">/</span>
-            <Link href="/ratgeber/muster" className="text-primary no-underline hover:underline">Muster</Link>
+            <Link href="/ratgeber/muster" className="text-gold no-underline hover:underline">Muster</Link>
             <span className="mx-2">/</span>
             <span>{entry.h1}</span>
           </nav>
           <StandAnzeige />
-          <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-primary-700 mb-2.5">
+          <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-gold mb-2.5">
             {isMuster ? 'Kostenlose Vorlage' : 'Kostenlose Checkliste'}
           </div>
           <h1 className="font-serif text-[clamp(1.8rem,4vw,2.4rem)] font-bold leading-[1.2] max-w-[700px]">
@@ -91,7 +91,7 @@ export default function MusterPageContent({ entry, original, generated, faqs }: 
       <section className="py-[60px] px-8 bg-white">
         <div className="max-w-content mx-auto">
           <div className="max-w-[740px]">
-            <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-primary-700 mb-2.5">
+            <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-gold mb-2.5">
               Anwendungsbereich
             </div>
             <h2 className="font-serif text-[clamp(1.3rem,3vw,1.7rem)] font-bold leading-[1.25] mb-4">
@@ -108,7 +108,7 @@ export default function MusterPageContent({ entry, original, generated, faqs }: 
       <section className="py-[60px] px-8 bg-slate-50">
         <div className="max-w-content mx-auto">
           <div className="max-w-[740px]">
-            <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-primary-700 mb-2.5">
+            <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-gold mb-2.5">
               {isMuster ? 'Mustertext' : 'Prüfpunkte'}
             </div>
             <h2 className="font-serif text-[clamp(1.3rem,3vw,1.7rem)] font-bold leading-[1.25] mb-5">
@@ -128,7 +128,7 @@ export default function MusterPageContent({ entry, original, generated, faqs }: 
               <div className="space-y-3">
                 {original.punkte.map((punkt, i) => (
                   <div key={i} className="flex gap-3 py-3 px-4 bg-[#f5f3ee] border border-border rounded-sm">
-                    <div className="w-7 h-7 min-w-[28px] rounded-sm border-2 border-primary flex items-center justify-center font-serif text-[0.85rem] font-bold text-primary-700 mt-0.5">
+                    <div className="w-7 h-7 min-w-[28px] rounded-sm border-2 border-gold flex items-center justify-center font-serif text-[0.85rem] font-bold text-gold mt-0.5">
                       {i + 1}
                     </div>
                     <p className="text-[0.88rem] text-ink leading-relaxed m-0">{punkt}</p>
@@ -144,13 +144,13 @@ export default function MusterPageContent({ entry, original, generated, faqs }: 
       <section className="py-[60px] px-8 bg-white">
         <div className="max-w-content mx-auto">
           <div className="max-w-[740px]">
-            <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-primary-700 mb-2.5">
+            <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-gold mb-2.5">
               Wichtig zu wissen
             </div>
             <h2 className="font-serif text-[clamp(1.3rem,3vw,1.7rem)] font-bold leading-[1.25] mb-4">
               Wichtige Hinweise {isMuster ? 'zum Muster' : 'zur Checkliste'}
             </h2>
-            <div className="py-5 px-6 bg-slate-50 rounded-sm border-l-[3px] border-primary">
+            <div className="py-5 px-6 bg-slate-50 rounded-sm border-l-[3px] border-gold">
               <p className="text-[0.92rem] text-ink leading-relaxed m-0">
                 {generated.wichtigeHinweise}
               </p>
@@ -170,7 +170,7 @@ export default function MusterPageContent({ entry, original, generated, faqs }: 
           </p>
           <a
             href="/#kontakt"
-            className="inline-block py-3 px-6 bg-primary-700 text-white border-none rounded-sm font-sans text-[0.92rem] font-semibold no-underline transition-all hover:bg-[#3730a3] hover:-translate-y-px hover:shadow-[0_6px_20px_rgba(99,102,241,0.25)]"
+            className="inline-block py-3 px-6 bg-gold text-white border-none rounded-sm font-sans text-[0.92rem] font-semibold no-underline transition-all hover:bg-[#3730a3] hover:-translate-y-px hover:shadow-[0_6px_20px_rgba(166,139,75,0.25)]"
           >
             Kostenlose Ersteinschätzung anfordern &rarr;
           </a>
@@ -181,7 +181,7 @@ export default function MusterPageContent({ entry, original, generated, faqs }: 
       <section className="py-[60px] px-8 bg-white">
         <div className="max-w-content mx-auto">
           <div className="max-w-[740px]">
-            <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-primary-700 mb-2.5">
+            <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-gold mb-2.5">
               {isMuster ? 'Ausfüllhilfe' : 'Erklärungen'}
             </div>
             <h2 className="font-serif text-[clamp(1.3rem,3vw,1.7rem)] font-bold leading-[1.25] mb-5">
@@ -190,7 +190,7 @@ export default function MusterPageContent({ entry, original, generated, faqs }: 
             <div className="space-y-4">
               {generated.ausfuellhilfe.map((tipp, i) => (
                 <div key={i} className="flex gap-4 py-4 px-5 bg-slate-50 rounded-sm border border-border">
-                  <div className="w-8 h-8 min-w-[32px] rounded-full bg-primary-700 flex items-center justify-center text-white text-[0.82rem] font-bold mt-0.5">
+                  <div className="w-8 h-8 min-w-[32px] rounded-full bg-gold flex items-center justify-center text-white text-[0.82rem] font-bold mt-0.5">
                     {i + 1}
                   </div>
                   <p className="text-[0.88rem] text-ink leading-relaxed m-0">{tipp}</p>
@@ -204,7 +204,7 @@ export default function MusterPageContent({ entry, original, generated, faqs }: 
       {/* ───── FAQ ───── */}
       <section className="py-[70px] px-8 bg-slate-50">
         <div className="max-w-content mx-auto">
-          <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-primary-700 mb-2.5">
+          <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-gold mb-2.5">
             Häufige Fragen
           </div>
           <h2 className="font-serif text-[clamp(1.4rem,3vw,1.9rem)] font-bold leading-[1.25] mb-6">
@@ -214,7 +214,7 @@ export default function MusterPageContent({ entry, original, generated, faqs }: 
             {faqs.map((faq, i) => (
               <div key={i} className="border-b border-border">
                 <button
-                  className="w-full bg-none border-none cursor-pointer py-[22px] font-sans text-base font-semibold text-ink text-left flex justify-between items-center gap-4 hover:text-primary transition-colors"
+                  className="w-full bg-none border-none cursor-pointer py-[22px] font-sans text-base font-semibold text-ink text-left flex justify-between items-center gap-4 hover:text-gold transition-colors"
                   onClick={() => setFaqOpen(faqOpen === i ? null : i)}
                 >
                   {faq.q}
@@ -238,7 +238,7 @@ export default function MusterPageContent({ entry, original, generated, faqs }: 
           <div className="flex flex-wrap gap-2.5">
             <Link
               href="/ratgeber/muster"
-              className="inline-block py-2 px-4 rounded-full border border-primary bg-primary-50 text-[0.82rem] font-semibold text-primary-700 no-underline hover:bg-primary hover:text-white transition-all"
+              className="inline-block py-2 px-4 rounded-full border border-gold bg-gold-bg text-[0.82rem] font-semibold text-gold no-underline hover:bg-gold hover:text-white transition-all"
             >
               Alle Muster &amp; Vorlagen
             </Link>
@@ -246,7 +246,7 @@ export default function MusterPageContent({ entry, original, generated, faqs }: 
               <Link
                 key={m.slug}
                 href={`/ratgeber/muster/${m.slug}`}
-                className="inline-block py-2 px-4 rounded-full border border-border text-[0.82rem] font-semibold text-ink-muted no-underline hover:border-primary hover:text-primary-700 transition-all"
+                className="inline-block py-2 px-4 rounded-full border border-border text-[0.82rem] font-semibold text-ink-muted no-underline hover:border-gold hover:text-gold transition-all"
               >
                 {m.h1}
               </Link>
@@ -277,7 +277,7 @@ export default function MusterPageContent({ entry, original, generated, faqs }: 
       {/* ───── Final CTA ───── */}
       <section className="py-[70px] px-8 bg-[#1C1408]">
         <div className="max-w-content mx-auto text-center">
-          <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-primary mb-2.5">
+          <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-gold mb-2.5">
             Jetzt handeln
           </div>
           <h2 className="font-serif text-[clamp(1.4rem,3vw,1.8rem)] font-bold text-white mb-3">
@@ -288,7 +288,7 @@ export default function MusterPageContent({ entry, original, generated, faqs }: 
           </p>
           <a
             href="/#kontakt"
-            className="inline-block py-3.5 px-8 bg-primary text-[#1C1408] border-none rounded-sm font-sans text-base font-semibold no-underline transition-all hover:bg-primary-400 hover:-translate-y-px hover:shadow-[0_6px_20px_rgba(99,102,241,0.4)]"
+            className="inline-block py-3.5 px-8 bg-gold text-[#1C1408] border-none rounded-sm font-sans text-base font-semibold no-underline transition-all hover:bg-gold-light hover:-translate-y-px hover:shadow-[0_6px_20px_rgba(166,139,75,0.4)]"
           >
             Kostenlose Ersteinschätzung &rarr;
           </a>
@@ -299,7 +299,7 @@ export default function MusterPageContent({ entry, original, generated, faqs }: 
       <div className="fixed bottom-0 left-0 right-0 z-[90] bg-white border-t border-border py-3 px-8 md:hidden">
         <a
           href="/#kontakt"
-          className="block w-full text-center py-3 bg-primary-700 text-white rounded-sm font-sans text-[0.92rem] font-semibold no-underline"
+          className="block w-full text-center py-3 bg-gold text-white rounded-sm font-sans text-[0.92rem] font-semibold no-underline"
         >
           Kostenlos prüfen lassen &rarr;
         </a>

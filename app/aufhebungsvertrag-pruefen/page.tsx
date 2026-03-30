@@ -75,17 +75,17 @@ function RadioOption({ label, selected, onClick }: { label: string; selected: bo
       onClick={onClick}
       className={`w-full text-left py-4 px-5 rounded-sm border-2 font-sans text-[0.95rem] font-medium cursor-pointer transition-all ${
         selected
-          ? 'border-primary bg-primary-50 text-ink'
-          : 'border-border bg-white text-ink hover:border-primary/50'
+          ? 'border-gold bg-gold-bg text-ink'
+          : 'border-border bg-white text-ink hover:border-gold/50'
       }`}
     >
       <span className="flex items-center gap-3">
         <span
           className={`w-5 h-5 min-w-[20px] rounded-full border-2 flex items-center justify-center transition-all ${
-            selected ? 'border-primary' : 'border-border'
+            selected ? 'border-gold' : 'border-border'
           }`}
         >
-          {selected && <span className="w-2.5 h-2.5 rounded-full bg-primary" />}
+          {selected && <span className="w-2.5 h-2.5 rounded-full bg-gold" />}
         </span>
         {label}
       </span>
@@ -96,7 +96,7 @@ function RadioOption({ label, selected, onClick }: { label: string; selected: bo
 /* ───── Info Box Component ───── */
 function InfoBox({ children }: { children: React.ReactNode }) {
   return (
-    <div className="mt-4 py-4 px-5 bg-primary-50 rounded-sm border-l-[3px] border-primary">
+    <div className="mt-4 py-4 px-5 bg-gold-bg rounded-sm border-l-[3px] border-gold">
       <p className="text-[0.88rem] text-ink leading-relaxed m-0">{children}</p>
     </div>
   );
@@ -280,7 +280,7 @@ export default function AufhebungsvertragPruefenPage() {
       </Link>
 
       <div className="mb-8">
-        <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-primary-700 mb-4">
+        <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-gold mb-4">
           Der Checker prüft
         </div>
         <div className="space-y-3">
@@ -292,9 +292,9 @@ export default function AufhebungsvertragPruefenPage() {
                 <span
                   className={`w-5 h-5 min-w-[20px] rounded-full border-2 flex items-center justify-center text-[0.65rem] font-bold transition-all ${
                     done
-                      ? 'border-primary bg-primary text-white'
+                      ? 'border-gold bg-gold text-white'
                       : active
-                      ? 'border-primary text-primary'
+                      ? 'border-gold text-gold'
                       : 'border-border text-ink-muted'
                   }`}
                 >
@@ -316,14 +316,14 @@ export default function AufhebungsvertragPruefenPage() {
       </div>
 
       <div className="mb-8">
-        <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-primary-700 mb-3">
+        <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-gold mb-3">
           Hilfe und Kontakt
         </div>
         <div className="space-y-2">
-          <a href="tel:+49622295992400" className="block text-[0.88rem] text-ink no-underline hover:text-primary transition-colors">
+          <a href="tel:+49622295992400" className="block text-[0.88rem] text-ink no-underline hover:text-gold transition-colors">
             +49 6222 9599 2400
           </a>
-          <a href="mailto:bektas@apos.legal" className="block text-[0.88rem] text-ink no-underline hover:text-primary transition-colors">
+          <a href="mailto:bektas@apos.legal" className="block text-[0.88rem] text-ink no-underline hover:text-gold transition-colors">
             bektas@apos.legal
           </a>
         </div>
@@ -337,7 +337,7 @@ export default function AufhebungsvertragPruefenPage() {
 
       <div className="mt-auto">
         <StandAnzeige />
-        <div className="flex items-center gap-1 text-primary text-[1rem] mt-3">
+        <div className="flex items-center gap-1 text-gold text-[1rem] mt-3">
           {'★★★★★'}
         </div>
         <div className="text-[0.82rem] text-ink-muted mt-1">
@@ -411,7 +411,7 @@ export default function AufhebungsvertragPruefenPage() {
             <Link href="/" className="flex items-center no-underline">
               <Image src="/logo.png" alt="gender-paygap.de" width={120} height={40} className="h-8 w-auto" priority />
             </Link>
-            <a href="tel:+49622295992400" className="text-[0.82rem] font-semibold text-primary-700 no-underline">
+            <a href="tel:+49622295992400" className="text-[0.82rem] font-semibold text-gold no-underline">
               +49 6222 9599 2400
             </a>
           </div>
@@ -419,7 +419,7 @@ export default function AufhebungsvertragPruefenPage() {
           <div className="flex-1 flex items-start justify-center px-6 py-10">
             <div className="w-full max-w-[600px]">
               {/* Ampel-Ergebnis-Box */}
-              <div className="ergebnis-box py-8 px-7 bg-slate-50 rounded-sm border-2 border-primary text-center animate-[fadeIn_0.5s_ease-out]">
+              <div className="ergebnis-box py-8 px-7 bg-slate-50 rounded-sm border-2 border-gold text-center animate-[fadeIn_0.5s_ease-out]">
                 <div className="flex justify-center mb-4">
                   <AmpelIcon color={ampelColor} size={64} />
                 </div>
@@ -455,7 +455,7 @@ export default function AufhebungsvertragPruefenPage() {
               </div>
 
               {/* CTA */}
-              <div className="mt-6 py-7 px-7 bg-white rounded-sm border-2 border-primary">
+              <div className="mt-6 py-7 px-7 bg-white rounded-sm border-2 border-gold">
                 <h3 className="font-serif text-[1.15rem] font-bold text-ink mb-2">
                   {ctaHeadlines[ampelColor]}
                 </h3>
@@ -488,7 +488,7 @@ export default function AufhebungsvertragPruefenPage() {
               <div className="mt-6 text-center">
                 <button
                   onClick={resetAll}
-                  className="bg-none border-none text-[0.88rem] text-ink-muted cursor-pointer font-sans hover:text-primary transition-colors p-0"
+                  className="bg-none border-none text-[0.88rem] text-ink-muted cursor-pointer font-sans hover:text-gold transition-colors p-0"
                 >
                   &larr; Neue Prüfung starten
                 </button>
@@ -1206,7 +1206,7 @@ export default function AufhebungsvertragPruefenPage() {
           <Link href="/" className="flex items-center no-underline">
             <Image src="/logo.png" alt="gender-paygap.de" width={120} height={40} className="h-8 w-auto" priority />
           </Link>
-          <a href="tel:+49622295992400" className="text-[0.82rem] font-semibold text-primary-700 no-underline">
+          <a href="tel:+49622295992400" className="text-[0.82rem] font-semibold text-gold no-underline">
             +49 6222 9599 2400
           </a>
         </div>
@@ -1215,7 +1215,7 @@ export default function AufhebungsvertragPruefenPage() {
         <div className="bg-white border-b border-border">
           <div className="max-w-[640px] mx-auto px-6 py-4">
             <div className="flex items-center justify-between mb-2">
-              <span className="text-[0.78rem] font-semibold text-primary-700">
+              <span className="text-[0.78rem] font-semibold text-gold">
                 {catName}
               </span>
               <span className="text-[0.78rem] text-ink-muted">
@@ -1224,7 +1224,7 @@ export default function AufhebungsvertragPruefenPage() {
             </div>
             <div className="h-2 bg-border rounded-full overflow-hidden">
               <div
-                className="h-full bg-primary rounded-full transition-all duration-500 ease-out"
+                className="h-full bg-gold rounded-full transition-all duration-500 ease-out"
                 style={{ width: `${progress}%` }}
               />
             </div>
@@ -1239,14 +1239,14 @@ export default function AufhebungsvertragPruefenPage() {
               <>
                 {/* Breadcrumb */}
                 <nav className="text-[0.84rem] text-ink-muted mb-6">
-                  <Link href="/" className="text-primary no-underline hover:underline">Start</Link>
+                  <Link href="/" className="text-gold no-underline hover:underline">Start</Link>
                   <span className="mx-2">/</span>
-                  <Link href="/tools" className="text-primary no-underline hover:underline">Tools &amp; Rechner</Link>
+                  <Link href="/tools" className="text-gold no-underline hover:underline">Tools &amp; Rechner</Link>
                   <span className="mx-2">/</span>
                   <span>Aufhebungsvertrag prüfen</span>
                 </nav>
 
-                <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-primary-700 mb-2.5">
+                <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-gold mb-2.5">
                   Unverbindlich &amp; in 3 Minuten
                 </div>
 
@@ -1278,13 +1278,13 @@ export default function AufhebungsvertragPruefenPage() {
                 </div>
 
                 {/* CTA #1 */}
-                <div className="mb-8 py-5 px-6 bg-primary-50 rounded-sm border-2 border-primary">
+                <div className="mb-8 py-5 px-6 bg-gold-bg rounded-sm border-2 border-gold">
                   <p className="text-[0.95rem] font-semibold text-ink mb-3 m-0">
                     Aufhebungsvertrag erhalten und unsicher? Wir prüfen Ihren Vertrag — kostenlose Erstberatung.
                   </p>
                   <Link
                     href="/#kontakt"
-                    className="inline-block py-2.5 px-6 bg-primary-700 text-white rounded-sm font-sans text-[0.88rem] font-semibold no-underline transition-all hover:bg-[#3730a3] hover:-translate-y-px"
+                    className="inline-block py-2.5 px-6 bg-gold text-white rounded-sm font-sans text-[0.88rem] font-semibold no-underline transition-all hover:bg-[#3730a3] hover:-translate-y-px"
                   >
                     Kostenlose Erstberatung anfragen &rarr;
                   </Link>
@@ -1308,7 +1308,7 @@ export default function AufhebungsvertragPruefenPage() {
                 ) : <span />}
                 <button
                   onClick={continueFromInfo}
-                  className="py-3 px-8 bg-primary-700 text-white border-none rounded-sm font-sans text-[0.92rem] font-semibold cursor-pointer transition-all hover:bg-[#3730a3] hover:-translate-y-px"
+                  className="py-3 px-8 bg-gold text-white border-none rounded-sm font-sans text-[0.92rem] font-semibold cursor-pointer transition-all hover:bg-[#3730a3] hover:-translate-y-px"
                 >
                   Weiter &rarr;
                 </button>
@@ -1341,9 +1341,9 @@ export default function AufhebungsvertragPruefenPage() {
 
                 <p className="text-[0.95rem] text-ink-muted leading-relaxed mb-5">
                   Unser Checker prüft acht zentrale Bereiche: Abfindung und Vergütung (&sect;74a HGB), Resturlaub (&sect;7 Abs. 4 BUrlG), Freistellung, Widerrufsfrist, Sperrzeit beim Arbeitslosengeld (&sect;159 SGB III), Zeugnis (&sect;109 GewO), Wettbewerbsverbot (&sect;74 HGB) und die Verhandlungssituation nach dem Gebot fairen Verhandelns (BAG 6 AZR 75/18, BAG 6 AZR 333/21). Nutzen Sie auch unseren{' '}
-                  <Link href="/abfindungsrechner" className="text-primary no-underline hover:underline">Abfindungsrechner</Link>, um Ihre{' '}
-                  <Link href="/urlaubsabgeltung-rechner" className="text-primary no-underline hover:underline">Urlaubsabgeltung zu berechnen</Link> oder Ihre{' '}
-                  <Link href="/kuendigungsfrist-rechner" className="text-primary no-underline hover:underline">Kündigungsfrist zu prüfen</Link>.
+                  <Link href="/abfindungsrechner" className="text-gold no-underline hover:underline">Abfindungsrechner</Link>, um Ihre{' '}
+                  <Link href="/urlaubsabgeltung-rechner" className="text-gold no-underline hover:underline">Urlaubsabgeltung zu berechnen</Link> oder Ihre{' '}
+                  <Link href="/kuendigungsfrist-rechner" className="text-gold no-underline hover:underline">Kündigungsfrist zu prüfen</Link>.
                 </p>
 
                 <p className="text-[0.95rem] text-ink-muted leading-relaxed mb-8">
@@ -1359,11 +1359,11 @@ export default function AufhebungsvertragPruefenPage() {
                   {faqs.map((faq, i) => (
                     <div key={i} className="border-b border-border">
                       <button
-                        className="w-full text-left py-5 flex justify-between items-center gap-4 bg-none border-none cursor-pointer hover:text-primary transition-colors font-sans font-semibold text-[0.95rem] text-ink"
+                        className="w-full text-left py-5 flex justify-between items-center gap-4 bg-none border-none cursor-pointer hover:text-gold transition-colors font-sans font-semibold text-[0.95rem] text-ink"
                         onClick={() => setOpenFaq(openFaq === i ? null : i)}
                       >
                         {faq.q}
-                        <span className={`text-primary text-[0.85rem] min-w-[16px] transition-transform duration-300 ${openFaq === i ? 'rotate-180' : ''}`}>
+                        <span className={`text-gold text-[0.85rem] min-w-[16px] transition-transform duration-300 ${openFaq === i ? 'rotate-180' : ''}`}>
                           &#9660;
                         </span>
                       </button>
@@ -1378,13 +1378,13 @@ export default function AufhebungsvertragPruefenPage() {
                 <div className="mb-8">
                   <h3 className="font-serif text-[1.1rem] font-bold text-ink mb-3">Rechtsgrundlagen</h3>
                   <div className="space-y-1.5 mb-4">
-                    <a href="https://www.gesetze-im-internet.de/hgb/__74.html" target="_blank" rel="noopener" className="block text-[0.88rem] text-primary no-underline hover:underline">&sect;74 HGB — Wettbewerbsverbot &rarr;</a>
-                    <a href="https://www.gesetze-im-internet.de/gewo/__109.html" target="_blank" rel="noopener" className="block text-[0.88rem] text-primary no-underline hover:underline">&sect;109 GewO — Zeugnis &rarr;</a>
-                    <a href="https://www.gesetze-im-internet.de/bgb/__123.html" target="_blank" rel="noopener" className="block text-[0.88rem] text-primary no-underline hover:underline">&sect;123 BGB — Anfechtung &rarr;</a>
-                    <a href="https://www.gesetze-im-internet.de/sgb_3/__159.html" target="_blank" rel="noopener" className="block text-[0.88rem] text-primary no-underline hover:underline">&sect;159 SGB III — Sperrzeit &rarr;</a>
-                    <a href="https://www.gesetze-im-internet.de/burlg/__7.html" target="_blank" rel="noopener" className="block text-[0.88rem] text-primary no-underline hover:underline">&sect;7 Abs. 4 BUrlG — Urlaubsabgeltung &rarr;</a>
-                    <a href="https://www.bundesarbeitsgericht.de" target="_blank" rel="noopener" className="block text-[0.88rem] text-primary no-underline hover:underline">BAG 6 AZR 75/18 — Gebot fairen Verhandelns &rarr;</a>
-                    <a href="https://www.bundesarbeitsgericht.de" target="_blank" rel="noopener" className="block text-[0.88rem] text-primary no-underline hover:underline">BAG 6 AZR 333/21 — Unterschriftsdruck &rarr;</a>
+                    <a href="https://www.gesetze-im-internet.de/hgb/__74.html" target="_blank" rel="noopener" className="block text-[0.88rem] text-gold no-underline hover:underline">&sect;74 HGB — Wettbewerbsverbot &rarr;</a>
+                    <a href="https://www.gesetze-im-internet.de/gewo/__109.html" target="_blank" rel="noopener" className="block text-[0.88rem] text-gold no-underline hover:underline">&sect;109 GewO — Zeugnis &rarr;</a>
+                    <a href="https://www.gesetze-im-internet.de/bgb/__123.html" target="_blank" rel="noopener" className="block text-[0.88rem] text-gold no-underline hover:underline">&sect;123 BGB — Anfechtung &rarr;</a>
+                    <a href="https://www.gesetze-im-internet.de/sgb_3/__159.html" target="_blank" rel="noopener" className="block text-[0.88rem] text-gold no-underline hover:underline">&sect;159 SGB III — Sperrzeit &rarr;</a>
+                    <a href="https://www.gesetze-im-internet.de/burlg/__7.html" target="_blank" rel="noopener" className="block text-[0.88rem] text-gold no-underline hover:underline">&sect;7 Abs. 4 BUrlG — Urlaubsabgeltung &rarr;</a>
+                    <a href="https://www.bundesarbeitsgericht.de" target="_blank" rel="noopener" className="block text-[0.88rem] text-gold no-underline hover:underline">BAG 6 AZR 75/18 — Gebot fairen Verhandelns &rarr;</a>
+                    <a href="https://www.bundesarbeitsgericht.de" target="_blank" rel="noopener" className="block text-[0.88rem] text-gold no-underline hover:underline">BAG 6 AZR 333/21 — Unterschriftsdruck &rarr;</a>
                   </div>
                   <p className="text-[0.82rem] text-ink-muted italic m-0">
                     Erstellt und geprüft von Fachanwalt Fatih Bektas, Rechtsanwaltskammer Karlsruhe, Fachanwalt für Arbeitsrecht seit 2011. Stand: {new Date().toLocaleDateString('de-DE', { month: 'long', year: 'numeric' })}. Keine Rechtsberatung im Einzelfall.
@@ -1397,7 +1397,7 @@ export default function AufhebungsvertragPruefenPage() {
                 </div>
 
                 {/* CTA #3 */}
-                <div className="py-7 px-7 bg-white rounded-sm border-2 border-primary">
+                <div className="py-7 px-7 bg-white rounded-sm border-2 border-gold">
                   <h3 className="font-serif text-[1.15rem] font-bold text-ink mb-2">
                     Aufhebungsvertrag erhalten — jetzt handeln.
                   </h3>

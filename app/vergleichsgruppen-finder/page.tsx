@@ -169,16 +169,16 @@ export default function VergleichsgruppenFinderPage() {
       />
 
       {/* Header */}
-      <div className="bg-secondary-50 pt-[120px] pb-[50px] px-8 border-b border-border max-md:pt-[100px] max-md:px-6">
+      <div className="bg-green-bg pt-[120px] pb-[50px] px-8 border-b border-border max-md:pt-[100px] max-md:px-6">
         <div className="max-w-content mx-auto">
           <nav className="text-[0.84rem] text-ink-muted mb-6">
-            <Link href="/" className="text-secondary-700 no-underline hover:underline">Start</Link>
+            <Link href="/" className="text-green no-underline hover:underline">Start</Link>
             <span className="mx-2">/</span>
-            <Link href="/arbeitnehmer" className="text-secondary-700 no-underline hover:underline">Arbeitnehmer</Link>
+            <Link href="/arbeitnehmer" className="text-green no-underline hover:underline">Arbeitnehmer</Link>
             <span className="mx-2">/</span>
             <span>Vergleichsgruppen-Finder</span>
           </nav>
-          <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-secondary-700 mb-2.5">
+          <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-green mb-2.5">
             KI-Tool
           </div>
           <h1 className="font-serif text-[clamp(1.8rem,4vw,2.4rem)] font-bold leading-[1.2] max-w-[700px]">
@@ -190,21 +190,21 @@ export default function VergleichsgruppenFinderPage() {
           </p>
           <div className="flex flex-wrap gap-5 mt-5 text-[0.88rem] text-ink-light">
             <span className="flex items-center gap-1.5">
-              <svg className="text-secondary-600" width="16" height="16" fill="none" viewBox="0 0 24 24">
+              <svg className="text-green" width="16" height="16" fill="none" viewBox="0 0 24 24">
                 <circle cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="2" />
                 <path d="M8 12l3 3 5-5" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
               </svg>
               KI-gestützt
             </span>
             <span className="flex items-center gap-1.5">
-              <svg className="text-secondary-600" width="16" height="16" fill="none" viewBox="0 0 24 24">
+              <svg className="text-green" width="16" height="16" fill="none" viewBox="0 0 24 24">
                 <circle cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="2" />
                 <path d="M8 12l3 3 5-5" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
               </svg>
               4-Kriterien-Analyse
             </span>
             <span className="flex items-center gap-1.5">
-              <svg className="text-secondary-600" width="16" height="16" fill="none" viewBox="0 0 24 24">
+              <svg className="text-green" width="16" height="16" fill="none" viewBox="0 0 24 24">
                 <circle cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="2" />
                 <path d="M8 12l3 3 5-5" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
               </svg>
@@ -234,7 +234,7 @@ export default function VergleichsgruppenFinderPage() {
         <div className="max-w-content mx-auto">
           <div className="max-w-[660px]">
             {!result ? (
-              <div className="bg-secondary-50 border border-secondary/20 rounded p-8">
+              <div className="bg-green-bg border border-green-bg rounded p-8">
                 <h2 className="font-serif text-[1.2rem] font-bold mb-2">
                   Beschreiben Sie Ihre Tätigkeit
                 </h2>
@@ -250,7 +250,7 @@ export default function VergleichsgruppenFinderPage() {
                   placeholder="z. B. Ich arbeite als Projektleiterin in der IT-Abteilung eines Konzerns mit 2.000 Mitarbeitern. Ich leite ein Team von 8 Entwicklern, berichte an den CTO und bin verantwortlich für Budget-Planung (ca. 1,5 Mio. Euro). Ich habe einen Master in Informatik und 10 Jahre Berufserfahrung..."
                   maxLength={3000}
                   rows={8}
-                  className="w-full py-3 px-4 border border-secondary/30 rounded-sm font-sans text-[0.92rem] text-ink bg-white transition-all outline-none resize-y focus:border-secondary focus:shadow-[0_0_0_3px_rgba(22,163,74,0.1)] placeholder:text-ink-muted"
+                  className="w-full py-3 px-4 border border-green/30 rounded-sm font-sans text-[0.92rem] text-ink bg-white transition-all outline-none resize-y focus:border-green focus:shadow-[0_0_0_3px_rgba(43,76,53,0.1)] placeholder:text-ink-muted"
                 />
                 <div className="flex justify-between items-center mt-1.5 mb-4">
                   <span className="text-[0.78rem] text-ink-muted">
@@ -277,7 +277,7 @@ export default function VergleichsgruppenFinderPage() {
                   className={`w-full py-3.5 border-none rounded-sm font-sans text-base font-semibold cursor-pointer transition-all ${
                     loading || beschreibung.length < 20
                       ? 'bg-slate-200 text-ink-muted cursor-not-allowed'
-                      : 'bg-secondary-600 text-white hover:bg-secondary-700 hover:-translate-y-px hover:shadow-[0_6px_20px_rgba(22,163,74,0.25)]'
+                      : 'bg-green text-white hover:bg-green hover:-translate-y-px hover:shadow-[0_6px_20px_rgba(43,76,53,0.25)]'
                   }`}
                 >
                   {loading ? (
@@ -305,13 +305,13 @@ export default function VergleichsgruppenFinderPage() {
                         key={i}
                         className={`rounded-sm border p-5 ${
                           s.section === 'HINWEIS'
-                            ? 'bg-secondary-50 border-secondary/30'
+                            ? 'bg-green-bg border-green/30'
                             : 'bg-white border-border'
                         }`}
                       >
                         <div className="flex items-start gap-3">
                           <div className="mt-0.5 shrink-0">
-                            <svg className="text-secondary-600" width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="1.5">
+                            <svg className="text-green" width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="1.5">
                               <path d={getSectionIcon(s.section)} strokeLinecap="round" strokeLinejoin="round" />
                             </svg>
                           </div>
@@ -337,9 +337,9 @@ export default function VergleichsgruppenFinderPage() {
                 )}
 
                 {/* BAG Reference Card */}
-                <div className="mt-6 py-5 px-6 bg-secondary-50 rounded-sm border-l-[3px] border-secondary">
+                <div className="mt-6 py-5 px-6 bg-green-bg rounded-sm border-l-[3px] border-green">
                   <div className="flex items-start gap-3">
-                    <svg className="text-secondary-700 shrink-0 mt-0.5" width="22" height="22" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="1.5">
+                    <svg className="text-green shrink-0 mt-0.5" width="22" height="22" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="1.5">
                       <path d="M3 6l3 1m0 0l-3 9a5.002 5.002 0 006.001 0M6 7l3 9M6 7l6-2m6 2l3-1m-3 1l-3 9a5.002 5.002 0 006.001 0M18 7l3 9m-3-9l-6-2m0-2v2m0 16V5m0 16H9m3 0h3" strokeLinecap="round" strokeLinejoin="round" />
                     </svg>
                     <div>
@@ -360,13 +360,13 @@ export default function VergleichsgruppenFinderPage() {
                 <div className="mt-8 space-y-3">
                   <Link
                     href="/kontakt"
-                    className="block w-full py-3.5 bg-secondary-600 text-white border-none rounded-sm font-sans text-base font-semibold no-underline text-center transition-all hover:bg-secondary-700 hover:-translate-y-px hover:shadow-[0_6px_20px_rgba(22,163,74,0.25)]"
+                    className="block w-full py-3.5 bg-green text-white border-none rounded-sm font-sans text-base font-semibold no-underline text-center transition-all hover:bg-green hover:-translate-y-px hover:shadow-[0_6px_20px_rgba(43,76,53,0.25)]"
                   >
                     Klage-Chancen prüfen lassen &rarr;
                   </Link>
                   <Link
                     href="/auskunftsrecht-checker/schreiben-generator"
-                    className="block w-full py-3.5 bg-white text-secondary-700 border-2 border-secondary-600 rounded-sm font-sans text-base font-semibold no-underline text-center transition-all hover:bg-secondary-50 hover:-translate-y-px"
+                    className="block w-full py-3.5 bg-white text-green border-2 border-green rounded-sm font-sans text-base font-semibold no-underline text-center transition-all hover:bg-green-bg hover:-translate-y-px"
                   >
                     Auskunftsschreiben erstellen &rarr;
                   </Link>
@@ -388,7 +388,7 @@ export default function VergleichsgruppenFinderPage() {
                 <strong>Hinweis:</strong> Keine anwaltliche Beratung &mdash; ersetzt nicht die persönliche
                 Beratung durch einen Fachanwalt. Die KI-Analyse dient ausschließlich der unverbindlichen
                 Erstorientierung. Für eine verbindliche Einschätzung wenden Sie sich an einen{' '}
-                <Link href="/kontakt" className="text-secondary-700 no-underline hover:underline">
+                <Link href="/kontakt" className="text-green no-underline hover:underline">
                   Fachanwalt für Arbeitsrecht
                 </Link>.
               </p>
@@ -401,7 +401,7 @@ export default function VergleichsgruppenFinderPage() {
       <section className="py-[70px] px-8 bg-slate-50 max-md:py-12 max-md:px-6">
         <div className="max-w-content mx-auto">
           <div className="max-w-[740px]">
-            <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-secondary-700 mb-2.5">
+            <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-green mb-2.5">
               Hintergrund
             </div>
             <h2 className="font-serif text-[clamp(1.4rem,3vw,1.9rem)] font-bold leading-[1.25] mb-6">
@@ -409,7 +409,7 @@ export default function VergleichsgruppenFinderPage() {
             </h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               <div className="py-5 px-5 bg-white rounded-sm border border-border">
-                <div className="w-10 h-10 rounded-full bg-secondary-100 text-secondary-700 flex items-center justify-center mb-3">
+                <div className="w-10 h-10 rounded-full bg-green-bg text-green flex items-center justify-center mb-3">
                   <svg width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="1.5">
                     <path d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" strokeLinecap="round" strokeLinejoin="round" />
                   </svg>
@@ -421,7 +421,7 @@ export default function VergleichsgruppenFinderPage() {
                 </p>
               </div>
               <div className="py-5 px-5 bg-white rounded-sm border border-border">
-                <div className="w-10 h-10 rounded-full bg-secondary-100 text-secondary-700 flex items-center justify-center mb-3">
+                <div className="w-10 h-10 rounded-full bg-green-bg text-green flex items-center justify-center mb-3">
                   <svg width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="1.5">
                     <path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" strokeLinecap="round" strokeLinejoin="round" />
                   </svg>
@@ -433,7 +433,7 @@ export default function VergleichsgruppenFinderPage() {
                 </p>
               </div>
               <div className="py-5 px-5 bg-white rounded-sm border border-border">
-                <div className="w-10 h-10 rounded-full bg-secondary-100 text-secondary-700 flex items-center justify-center mb-3">
+                <div className="w-10 h-10 rounded-full bg-green-bg text-green flex items-center justify-center mb-3">
                   <svg width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="1.5">
                     <path d="M13 10V3L4 14h7v7l9-11h-7z" strokeLinecap="round" strokeLinejoin="round" />
                   </svg>
@@ -445,7 +445,7 @@ export default function VergleichsgruppenFinderPage() {
                 </p>
               </div>
               <div className="py-5 px-5 bg-white rounded-sm border border-border">
-                <div className="w-10 h-10 rounded-full bg-secondary-100 text-secondary-700 flex items-center justify-center mb-3">
+                <div className="w-10 h-10 rounded-full bg-green-bg text-green flex items-center justify-center mb-3">
                   <svg width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="1.5">
                     <path d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" strokeLinecap="round" strokeLinejoin="round" />
                   </svg>
@@ -462,7 +462,7 @@ export default function VergleichsgruppenFinderPage() {
       </section>
 
       {/* CTA */}
-      <section className="py-[60px] px-8 bg-secondary-700 text-white text-center max-md:py-12 max-md:px-6">
+      <section className="py-[60px] px-8 bg-green text-white text-center max-md:py-12 max-md:px-6">
         <div className="max-w-content mx-auto">
           <h2 className="font-serif text-[clamp(1.4rem,3vw,1.8rem)] font-bold mb-3">
             Gleicher Lohn für gleichwertige Arbeit &mdash; wir setzen es durch
@@ -473,7 +473,7 @@ export default function VergleichsgruppenFinderPage() {
           </p>
           <Link
             href="/kontakt"
-            className="inline-block py-3.5 px-8 bg-white text-secondary-700 border-none rounded-sm font-sans text-base font-semibold no-underline transition-all hover:bg-secondary-50 hover:-translate-y-0.5"
+            className="inline-block py-3.5 px-8 bg-white text-green border-none rounded-sm font-sans text-base font-semibold no-underline transition-all hover:bg-green-bg hover:-translate-y-0.5"
           >
             Kostenlose Ersteinschätzung &rarr;
           </Link>
@@ -483,7 +483,7 @@ export default function VergleichsgruppenFinderPage() {
       {/* FAQ */}
       <section className="py-[70px] px-8 bg-slate-50 max-md:py-12 max-md:px-6">
         <div className="max-w-content mx-auto">
-          <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-secondary-700 mb-2.5">
+          <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-green mb-2.5">
             Häufige Fragen
           </div>
           <h2 className="font-serif text-[clamp(1.4rem,3vw,1.9rem)] font-bold leading-[1.25] mb-6">
@@ -502,17 +502,17 @@ export default function VergleichsgruppenFinderPage() {
             </div>
             <ul className="list-none space-y-2 text-[0.88rem]">
               <li>
-                <a href="https://eur-lex.europa.eu/eli/dir/2023/970/oj" target="_blank" rel="noopener noreferrer" className="text-secondary-700 no-underline hover:underline">
+                <a href="https://eur-lex.europa.eu/eli/dir/2023/970/oj" target="_blank" rel="noopener noreferrer" className="text-green no-underline hover:underline">
                   EU-Richtlinie 2023/970 &mdash; Art. 4: Gleichwertige Arbeit &rarr;
                 </a>
               </li>
               <li>
-                <a href="https://www.bundesarbeitsgericht.de/" target="_blank" rel="noopener noreferrer" className="text-secondary-700 no-underline hover:underline">
+                <a href="https://www.bundesarbeitsgericht.de/" target="_blank" rel="noopener noreferrer" className="text-green no-underline hover:underline">
                   BAG-Urteil 8 AZR 300/24 &mdash; Paarvergleich &rarr;
                 </a>
               </li>
               <li>
-                <a href="https://www.gesetze-im-internet.de/entgtranspg/" target="_blank" rel="noopener noreferrer" className="text-secondary-700 no-underline hover:underline">
+                <a href="https://www.gesetze-im-internet.de/entgtranspg/" target="_blank" rel="noopener noreferrer" className="text-green no-underline hover:underline">
                   Entgelttransparenzgesetz (EntgTranspG) &rarr;
                 </a>
               </li>
@@ -524,7 +524,7 @@ export default function VergleichsgruppenFinderPage() {
       {/* Final CTA */}
       <section className="py-[70px] px-8 bg-white max-md:py-12 max-md:px-6">
         <div className="max-w-content mx-auto text-center">
-          <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-secondary-700 mb-2.5">
+          <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-green mb-2.5">
             Weitere Tools
           </div>
           <h2 className="font-serif text-[clamp(1.4rem,3vw,1.8rem)] font-bold mb-3">
@@ -537,13 +537,13 @@ export default function VergleichsgruppenFinderPage() {
           <div className="flex flex-wrap justify-center gap-4">
             <Link
               href="/situationscheck"
-              className="inline-block py-3.5 px-8 bg-primary-600 text-white border-none rounded-sm font-sans text-base font-semibold no-underline transition-all hover:bg-primary-700 hover:-translate-y-px hover:shadow-[0_6px_20px_rgba(99,102,241,0.25)]"
+              className="inline-block py-3.5 px-8 bg-gold text-white border-none rounded-sm font-sans text-base font-semibold no-underline transition-all hover:bg-gold hover:-translate-y-px hover:shadow-[0_6px_20px_rgba(166,139,75,0.25)]"
             >
               KI-Situationscheck &rarr;
             </Link>
             <Link
               href="/kontakt"
-              className="inline-block py-3.5 px-8 bg-white text-secondary-700 border-2 border-secondary-600 rounded-sm font-sans text-base font-semibold no-underline transition-all hover:bg-secondary-50 hover:-translate-y-px"
+              className="inline-block py-3.5 px-8 bg-white text-green border-2 border-green rounded-sm font-sans text-base font-semibold no-underline transition-all hover:bg-green-bg hover:-translate-y-px"
             >
               Kostenlose Ersteinschätzung &rarr;
             </Link>

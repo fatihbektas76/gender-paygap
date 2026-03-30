@@ -4,7 +4,7 @@ import { useState } from 'react';
 import Link from 'next/link';
 
 const selectClass =
-  'form-select w-full py-3 px-4 border border-border rounded-sm font-sans text-[0.92rem] text-ink bg-white transition-all outline-none focus:border-primary focus:shadow-[0_0_0_3px_rgba(99,102,241,0.1)]';
+  'form-select w-full py-3 px-4 border border-border rounded-sm font-sans text-[0.92rem] text-ink bg-white transition-all outline-none focus:border-gold focus:shadow-[0_0_0_3px_rgba(166,139,75,0.1)]';
 
 export default function TeilzeitRechnerClient() {
   const [vollzeitUrlaub, setVollzeitUrlaub] = useState(30);
@@ -23,7 +23,7 @@ export default function TeilzeitRechnerClient() {
 
           {/* Linke Karte — Eingaben + Ergebnis */}
           <div className="bg-white border border-border-light rounded overflow-hidden">
-            <div className="h-2 bg-primary-700" />
+            <div className="h-2 bg-gold" />
             <div className="p-8">
               <h2 className="font-serif text-[1.3rem] font-bold mb-6">Urlaubsrechner Teilzeit</h2>
 
@@ -52,7 +52,7 @@ export default function TeilzeitRechnerClient() {
                   onChange={(e) => setVollzeitUrlaub(Number(e.target.value))}
                   className="w-full h-2 rounded-full appearance-none cursor-pointer bg-border accent-[#4338ca]"
                 />
-                <div className="text-[0.92rem] font-semibold text-primary-700 mt-2">{vollzeitUrlaub} Tage</div>
+                <div className="text-[0.92rem] font-semibold text-gold mt-2">{vollzeitUrlaub} Tage</div>
               </div>
 
               {/* Feld 2: Toggle — Arbeitswoche des Unternehmens */}
@@ -77,7 +77,7 @@ export default function TeilzeitRechnerClient() {
                     className={`flex-1 py-3 font-sans text-[0.88rem] font-semibold border-none cursor-pointer transition-all ${
                       unternehmensWoche === 5
                         ? 'bg-[#2A1F0E] text-white'
-                        : 'bg-primary text-white'
+                        : 'bg-gold text-white'
                     }`}
                   >
                     5 TAGE
@@ -87,7 +87,7 @@ export default function TeilzeitRechnerClient() {
                     className={`flex-1 py-3 font-sans text-[0.88rem] font-semibold border-none cursor-pointer transition-all ${
                       unternehmensWoche === 6
                         ? 'bg-[#2A1F0E] text-white'
-                        : 'bg-primary text-white'
+                        : 'bg-gold text-white'
                     }`}
                   >
                     6 TAGE
@@ -130,9 +130,9 @@ export default function TeilzeitRechnerClient() {
                 <div className="text-[0.84rem] font-semibold text-ink mb-3">Ihr Urlaubsanspruch:</div>
                 <div
                   id="ergebnis-box"
-                  className="py-5 px-6 bg-slate-50 border-2 border-primary/30 rounded-sm text-center"
+                  className="py-5 px-6 bg-slate-50 border-2 border-gold/30 rounded-sm text-center"
                 >
-                  <div className="font-serif text-[2rem] font-bold text-primary-700">
+                  <div className="font-serif text-[2rem] font-bold text-gold">
                     {urlaubTeilzeit} Tage
                   </div>
                 </div>
@@ -192,7 +192,7 @@ export default function TeilzeitRechnerClient() {
               <strong>Hinweis:</strong> Dieses Tool dient ausschließlich der unverbindlichen
               Erstorientierung und ersetzt keine anwaltliche Beratung. Für eine verbindliche
               Einschätzung wenden Sie sich bitte an einen{' '}
-              <Link href="/kuendigung-pruefen" className="text-primary no-underline hover:underline">
+              <Link href="/kuendigung-pruefen" className="text-gold no-underline hover:underline">
                 Fachanwalt für Arbeitsrecht
               </Link>.
             </p>
@@ -200,7 +200,7 @@ export default function TeilzeitRechnerClient() {
         </div>
 
         {/* CTA #2 — nach Rechner */}
-        <div className="mt-10 border-2 border-primary/20 rounded-sm p-7 bg-slate-50 max-w-[640px] mx-auto text-center">
+        <div className="mt-10 border-2 border-gold/20 rounded-sm p-7 bg-slate-50 max-w-[640px] mx-auto text-center">
           <h3 className="font-serif text-[1.15rem] font-bold mb-2">
             Ergebnis berechnet &mdash; nächster Schritt?
           </h3>
@@ -210,7 +210,7 @@ export default function TeilzeitRechnerClient() {
           </p>
           <Link
             href="/kuendigung-pruefen"
-            className="block w-full py-3.5 bg-[#2A1F0E] text-white border-none rounded-sm font-sans text-base font-semibold no-underline text-center transition-all hover:bg-[#1a1408] hover:-translate-y-px hover:shadow-[0_6px_20px_rgba(99,102,241,0.25)]"
+            className="block w-full py-3.5 bg-[#2A1F0E] text-white border-none rounded-sm font-sans text-base font-semibold no-underline text-center transition-all hover:bg-[#1a1408] hover:-translate-y-px hover:shadow-[0_6px_20px_rgba(166,139,75,0.25)]"
           >
             Anspruch kostenlos prüfen &rarr;
           </Link>

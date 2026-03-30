@@ -69,7 +69,7 @@ export default function ShareButtons({ url, title }: ShareButtonsProps) {
             target={ch.label === 'E-Mail' ? undefined : '_blank'}
             rel={ch.label === 'E-Mail' ? undefined : 'noopener noreferrer'}
             aria-label={`Auf ${ch.label} teilen`}
-            className="w-9 h-9 flex items-center justify-center rounded-sm border border-border text-ink-muted transition-colors hover:border-primary hover:text-primary-700 hover:bg-primary-50"
+            className="w-9 h-9 flex items-center justify-center rounded-sm border border-border text-ink-muted transition-colors hover:border-gold hover:text-gold hover:bg-gold-bg"
           >
             {ch.icon}
           </a>

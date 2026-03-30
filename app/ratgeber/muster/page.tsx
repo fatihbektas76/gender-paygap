@@ -67,13 +67,13 @@ export default function MusterOverviewPage() {
       <div className="bg-slate-50 pt-[120px] pb-[50px] px-8 border-b border-border">
         <div className="max-w-content mx-auto">
           <nav className="text-[0.84rem] text-ink-muted mb-6">
-            <Link href="/" className="text-primary no-underline hover:underline">Start</Link>
+            <Link href="/" className="text-gold no-underline hover:underline">Start</Link>
             <span className="mx-2">/</span>
-            <Link href="/ratgeber" className="text-primary no-underline hover:underline">Ratgeber</Link>
+            <Link href="/ratgeber" className="text-gold no-underline hover:underline">Ratgeber</Link>
             <span className="mx-2">/</span>
             <span>Muster &amp; Vorlagen</span>
           </nav>
-          <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-primary-700 mb-2.5">
+          <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-gold mb-2.5">
             Kostenlose Vorlagen
           </div>
           <h1 className="font-serif text-[clamp(1.8rem,4vw,2.4rem)] font-bold leading-[1.2] max-w-[700px]">
@@ -89,7 +89,7 @@ export default function MusterOverviewPage() {
       {/* Disclaimer */}
       <section className="py-6 px-8 bg-white">
         <div className="max-w-content mx-auto">
-          <div className="py-4 px-5 bg-slate-50 rounded-sm border-l-[3px] border-primary max-w-[740px]">
+          <div className="py-4 px-5 bg-slate-50 rounded-sm border-l-[3px] border-gold max-w-[740px]">
             <p className="text-[0.88rem] text-ink-muted leading-relaxed m-0">
               <strong>Hinweis:</strong> Diese Muster dienen ausschließlich zur Orientierung und ersetzen
               keine individuelle Rechtsberatung. Passen Sie die Texte an Ihren konkreten Fall an. Bei
@@ -109,9 +109,9 @@ export default function MusterOverviewPage() {
                 <Link
                   key={entry.slug}
                   href={`/ratgeber/muster/${entry.slug}`}
-                  className="block border border-border rounded-sm p-6 no-underline hover:border-primary hover:-translate-y-px hover:shadow-[0_6px_20px_rgba(99,102,241,0.12)] transition-all"
+                  className="block border border-border rounded-sm p-6 no-underline hover:border-gold hover:-translate-y-px hover:shadow-[0_6px_20px_rgba(166,139,75,0.12)] transition-all"
                 >
-                  <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-primary-700 mb-2">
+                  <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-gold mb-2">
                     {entry.type === 'muster' ? `Vorlage ${i + 1}` : `Checkliste ${i - 2}`}
                   </div>
                   <h2 className="font-serif text-[1.15rem] font-bold text-ink mb-2">
@@ -120,7 +120,7 @@ export default function MusterOverviewPage() {
                   <p className="text-[0.84rem] text-ink-muted leading-relaxed mb-3">
                     {content?.intro ? content.intro.slice(0, 150) + '...' : entry.description}
                   </p>
-                  <span className="text-[0.84rem] font-semibold text-primary-700">
+                  <span className="text-[0.84rem] font-semibold text-gold">
                     {entry.type === 'muster' ? 'Muster ansehen' : 'Checkliste ansehen'} &rarr;
                   </span>
                 </Link>
@@ -133,7 +133,7 @@ export default function MusterOverviewPage() {
       {/* FAQ */}
       <section className="py-[70px] px-8 bg-slate-50">
         <div className="max-w-content mx-auto">
-          <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-primary-700 mb-2.5">
+          <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-gold mb-2.5">
             Häufige Fragen
           </div>
           <h2 className="font-serif text-[clamp(1.4rem,3vw,1.9rem)] font-bold leading-[1.25] mb-6">
@@ -143,7 +143,7 @@ export default function MusterOverviewPage() {
             {faqs.map((faq, i) => (
               <div key={i} className="border-b border-border">
                 <button
-                  className="w-full bg-none border-none cursor-pointer py-[22px] font-sans text-base font-semibold text-ink text-left flex justify-between items-center gap-4 hover:text-primary transition-colors"
+                  className="w-full bg-none border-none cursor-pointer py-[22px] font-sans text-base font-semibold text-ink text-left flex justify-between items-center gap-4 hover:text-gold transition-colors"
                   onClick={() => setFaqOpen(faqOpen === i ? null : i)}
                 >
                   {faq.q}
@@ -194,7 +194,7 @@ export default function MusterOverviewPage() {
           </p>
           <a
             href="/#kontakt"
-            className="inline-block py-3.5 px-8 bg-primary-700 text-white border-none rounded-sm font-sans text-base font-semibold no-underline transition-all hover:bg-[#3730a3] hover:-translate-y-px hover:shadow-[0_6px_20px_rgba(99,102,241,0.25)]"
+            className="inline-block py-3.5 px-8 bg-gold text-white border-none rounded-sm font-sans text-base font-semibold no-underline transition-all hover:bg-[#3730a3] hover:-translate-y-px hover:shadow-[0_6px_20px_rgba(166,139,75,0.25)]"
           >
             Kostenlose Ersteinschätzung &rarr;
           </a>

@@ -14,7 +14,7 @@ export default function DejureText({ text, className }: { text: string; classNam
             href={seg.href}
             target="_blank"
             rel="noopener noreferrer"
-            className="text-primary no-underline hover:underline"
+            className="text-gold no-underline hover:underline"
           >
             {seg.content}
           </a>

@@ -130,13 +130,13 @@ export default function UrlaubTeilzeitRechnerPage() {
       <div className="bg-slate-50 pt-[120px] pb-[50px] px-8 border-b border-border">
         <div className="max-w-content mx-auto">
           <nav className="text-[0.84rem] text-ink-muted mb-6">
-            <Link href="/" className="text-primary no-underline hover:underline">Start</Link>
+            <Link href="/" className="text-gold no-underline hover:underline">Start</Link>
             <span className="mx-2">/</span>
-            <Link href="/tools" className="text-primary no-underline hover:underline">Tools &amp; Rechner</Link>
+            <Link href="/tools" className="text-gold no-underline hover:underline">Tools &amp; Rechner</Link>
             <span className="mx-2">/</span>
             <span>Urlaub Teilzeit berechnen</span>
           </nav>
-          <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-primary-700 mb-2.5">
+          <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-gold mb-2.5">
             Kostenlos &amp; sofort
           </div>
           <h1 className="font-serif text-[clamp(1.8rem,4vw,2.4rem)] font-bold leading-[1.2] max-w-[700px]">
@@ -156,21 +156,21 @@ export default function UrlaubTeilzeitRechnerPage() {
 
           <div className="flex flex-wrap gap-5 mt-5 text-[0.88rem] text-ink-light">
             <span className="flex items-center gap-1.5">
-              <svg className="text-primary" width="16" height="16" fill="none" viewBox="0 0 24 24">
+              <svg className="text-gold" width="16" height="16" fill="none" viewBox="0 0 24 24">
                 <circle cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="2" />
                 <path d="M8 12l3 3 5-5" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
               </svg>
               Kostenlos
             </span>
             <span className="flex items-center gap-1.5">
-              <svg className="text-primary" width="16" height="16" fill="none" viewBox="0 0 24 24">
+              <svg className="text-gold" width="16" height="16" fill="none" viewBox="0 0 24 24">
                 <circle cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="2" />
                 <path d="M8 12l3 3 5-5" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
               </svg>
               Nach &sect;3 BUrlG
             </span>
             <span className="flex items-center gap-1.5">
-              <svg className="text-primary" width="16" height="16" fill="none" viewBox="0 0 24 24">
+              <svg className="text-gold" width="16" height="16" fill="none" viewBox="0 0 24 24">
                 <circle cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="2" />
                 <path d="M8 12l3 3 5-5" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
               </svg>
@@ -183,13 +183,13 @@ export default function UrlaubTeilzeitRechnerPage() {
       {/* CTA #1 */}
       <section className="py-6 px-8 bg-white">
         <div className="max-w-content mx-auto">
-          <div className="border-2 border-primary/30 rounded-sm p-5 bg-primary-50 flex items-center justify-between gap-6 flex-wrap">
+          <div className="border-2 border-gold/30 rounded-sm p-5 bg-gold-bg flex items-center justify-between gap-6 flex-wrap">
             <p className="text-[0.95rem] text-ink font-semibold m-0">
               Urlaubsanspruch nicht gewährt oder falsch berechnet? Wir prüfen Ihre Ansprüche kostenlos.
             </p>
             <Link
               href="/kuendigung-pruefen"
-              className="inline-block py-2.5 px-6 bg-primary-700 text-white border-none rounded-sm font-sans text-[0.88rem] font-semibold no-underline transition-all hover:bg-[#3730a3] whitespace-nowrap"
+              className="inline-block py-2.5 px-6 bg-gold text-white border-none rounded-sm font-sans text-[0.88rem] font-semibold no-underline transition-all hover:bg-[#3730a3] whitespace-nowrap"
             >
               Jetzt kostenlos prüfen &rarr;
             </Link>
@@ -204,7 +204,7 @@ export default function UrlaubTeilzeitRechnerPage() {
       <section className="py-[70px] px-8 bg-slate-50">
         <div className="max-w-content mx-auto">
           <div className="max-w-[740px]">
-            <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-primary-700 mb-2.5">
+            <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-gold mb-2.5">
               Berechnungsformel
             </div>
             <h2 className="font-serif text-[clamp(1.4rem,3vw,1.9rem)] font-bold leading-[1.25] mb-6">
@@ -225,8 +225,8 @@ export default function UrlaubTeilzeitRechnerPage() {
             </p>
 
             {/* Formel-Box */}
-            <div className="my-8 py-6 px-8 bg-white border-2 border-primary/30 rounded-sm text-center">
-              <div className="text-[0.82rem] font-bold tracking-[0.1em] uppercase text-primary-700 mb-4">
+            <div className="my-8 py-6 px-8 bg-white border-2 border-gold/30 rounded-sm text-center">
+              <div className="text-[0.82rem] font-bold tracking-[0.1em] uppercase text-gold mb-4">
                 Pro-rata-temporis-Formel
               </div>
               <div className="font-serif text-[1.1rem] leading-[1.8] text-ink">
@@ -247,7 +247,7 @@ export default function UrlaubTeilzeitRechnerPage() {
       {/* Urlaubstabelle */}
       <section className="py-[70px] px-8 bg-white">
         <div className="max-w-content mx-auto">
-          <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-primary-700 mb-2.5">
+          <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-gold mb-2.5">
             Übersicht
           </div>
           <h2 className="font-serif text-[clamp(1.4rem,3vw,1.9rem)] font-bold leading-[1.25] mb-8">
@@ -261,7 +261,7 @@ export default function UrlaubTeilzeitRechnerPage() {
               <div className="overflow-x-auto">
                 <table className="w-full border-collapse text-[0.88rem]">
                   <thead>
-                    <tr className="border-b-2 border-primary/30">
+                    <tr className="border-b-2 border-gold/30">
                       <th className="text-left py-2.5 px-3 font-semibold">Arbeitstage/Woche</th>
                       <th className="text-right py-2.5 px-3 font-semibold">20 Tage</th>
                       <th className="text-right py-2.5 px-3 font-semibold">25 Tage</th>
@@ -288,7 +288,7 @@ export default function UrlaubTeilzeitRechnerPage() {
               <div className="overflow-x-auto">
                 <table className="w-full border-collapse text-[0.88rem]">
                   <thead>
-                    <tr className="border-b-2 border-primary/30">
+                    <tr className="border-b-2 border-gold/30">
                       <th className="text-left py-2.5 px-3 font-semibold">Arbeitstage/Woche</th>
                       <th className="text-right py-2.5 px-3 font-semibold">24 Tage</th>
                       <th className="text-right py-2.5 px-3 font-semibold">28 Tage</th>
@@ -321,7 +321,7 @@ export default function UrlaubTeilzeitRechnerPage() {
       <section className="py-[70px] px-8 bg-slate-50">
         <div className="max-w-content mx-auto">
           <div className="max-w-[740px]">
-            <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-primary-700 mb-2.5">
+            <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-gold mb-2.5">
               Sonderfall
             </div>
             <h2 className="font-serif text-[clamp(1.4rem,3vw,1.9rem)] font-bold leading-[1.25] mb-6">
@@ -334,7 +334,7 @@ export default function UrlaubTeilzeitRechnerPage() {
               Das <strong>Bundesarbeitsgericht</strong> hat mit Urteil vom 10.02.2015 (9 AZR 53/14) klargestellt,
               dass ein übertragener Vollzeiturlaubsanspruch auch nach dem Wechsel in Teilzeit in voller Höhe erhalten
               bleibt. Prüfen Sie auch Ihre{' '}
-              <Link href="/kuendigungsfrist-rechner" className="text-primary no-underline hover:underline">Kündigungsfrist</Link>
+              <Link href="/kuendigungsfrist-rechner" className="text-gold no-underline hover:underline">Kündigungsfrist</Link>
               , falls ein Wechsel im Zusammenhang mit einer Kündigung steht.
             </p>
           </div>
@@ -345,7 +345,7 @@ export default function UrlaubTeilzeitRechnerPage() {
       <section className="py-[70px] px-8 bg-white">
         <div className="max-w-content mx-auto">
           <div className="max-w-[740px]">
-            <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-primary-700 mb-2.5">
+            <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-gold mb-2.5">
               Praxishinweis
             </div>
             <h2 className="font-serif text-[clamp(1.4rem,3vw,1.9rem)] font-bold leading-[1.25] mb-6">
@@ -369,9 +369,9 @@ export default function UrlaubTeilzeitRechnerPage() {
               angerechnet (<strong>&sect;9 BUrlG</strong>) &mdash; genau wie bei Vollzeitbeschäftigten. Der Urlaub gilt
               als nicht genommen und kann nachgeholt werden. Wurde Ihr Resturlaub bei Beendigung des Arbeitsverhältnisses
               nicht gewährt? Berechnen Sie Ihre{' '}
-              <Link href="/urlaubsabgeltung-rechner" className="text-primary no-underline hover:underline">Urlaubsabgeltung</Link>.
+              <Link href="/urlaubsabgeltung-rechner" className="text-gold no-underline hover:underline">Urlaubsabgeltung</Link>.
               Prüfen Sie außerdem, ob Ihnen{' '}
-              <Link href="/ueberstundenrechner" className="text-primary no-underline hover:underline">Überstundenvergütung</Link>{' '}
+              <Link href="/ueberstundenrechner" className="text-gold no-underline hover:underline">Überstundenvergütung</Link>{' '}
               zusteht.
             </p>
           </div>
@@ -381,7 +381,7 @@ export default function UrlaubTeilzeitRechnerPage() {
       {/* CTA #3 — Dark Banner */}
       <section className="py-[70px] px-8 bg-[#2A1F0E]">
         <div className="max-w-content mx-auto text-center">
-          <h2 className="font-serif text-[clamp(1.4rem,3vw,1.8rem)] font-bold text-primary mb-3">
+          <h2 className="font-serif text-[clamp(1.4rem,3vw,1.8rem)] font-bold text-gold mb-3">
             Urlaubsanspruch nicht gewährt?
           </h2>
           <p className="text-[1rem] text-white/70 max-w-[520px] mx-auto mb-6">
@@ -390,7 +390,7 @@ export default function UrlaubTeilzeitRechnerPage() {
           </p>
           <Link
             href="/kuendigung-pruefen"
-            className="inline-block py-3.5 px-8 bg-primary text-white border-none rounded-sm font-sans text-base font-semibold no-underline transition-all hover:bg-primary-700 hover:-translate-y-px hover:shadow-[0_6px_20px_rgba(99,102,241,0.35)]"
+            className="inline-block py-3.5 px-8 bg-gold text-white border-none rounded-sm font-sans text-base font-semibold no-underline transition-all hover:bg-gold hover:-translate-y-px hover:shadow-[0_6px_20px_rgba(166,139,75,0.35)]"
           >
             Jetzt kostenlos anfragen &rarr;
           </Link>
@@ -415,7 +415,7 @@ export default function UrlaubTeilzeitRechnerPage() {
                   href="https://www.gesetze-im-internet.de/burlg/__3.html"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-primary no-underline hover:underline"
+                  className="text-gold no-underline hover:underline"
                 >
                   &sect;3 BUrlG &mdash; Dauer des Urlaubs &rarr;
                 </a>
@@ -425,7 +425,7 @@ export default function UrlaubTeilzeitRechnerPage() {
                   href="https://www.gesetze-im-internet.de/tzbfg/__4.html"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-primary no-underline hover:underline"
+                  className="text-gold no-underline hover:underline"
                 >
                   &sect;4 TzBfG &mdash; Verbot der Diskriminierung &rarr;
                 </a>
@@ -435,7 +435,7 @@ export default function UrlaubTeilzeitRechnerPage() {
                   href="https://www.gesetze-im-internet.de/burlg/__9.html"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-primary no-underline hover:underline"
+                  className="text-gold no-underline hover:underline"
                 >
                   &sect;9 BUrlG &mdash; Erkrankung während des Urlaubs &rarr;
                 </a>
@@ -445,7 +445,7 @@ export default function UrlaubTeilzeitRechnerPage() {
                   href="https://www.bundesarbeitsgericht.de"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-primary no-underline hover:underline"
+                  className="text-gold no-underline hover:underline"
                 >
                   BAG 9 AZR 53/14 (10.02.2015) &mdash; Urlaubsanspruch bei Teilzeitwechsel &rarr;
                 </a>
@@ -464,7 +464,7 @@ export default function UrlaubTeilzeitRechnerPage() {
       {/* FAQ */}
       <section className="py-[70px] px-8 bg-slate-50">
         <div className="max-w-content mx-auto">
-          <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-primary-700 mb-2.5">
+          <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-gold mb-2.5">
             Häufige Fragen
           </div>
           <h2 className="font-serif text-[clamp(1.4rem,3vw,1.9rem)] font-bold leading-[1.25] mb-6">
@@ -477,7 +477,7 @@ export default function UrlaubTeilzeitRechnerPage() {
       {/* CTA #4 */}
       <section className="py-[70px] px-8 bg-white">
         <div className="max-w-content mx-auto">
-          <div className="border-2 border-primary/20 rounded-sm p-8 bg-slate-50 text-center max-w-[640px] mx-auto">
+          <div className="border-2 border-gold/20 rounded-sm p-8 bg-slate-50 text-center max-w-[640px] mx-auto">
             <h2 className="font-serif text-[1.3rem] font-bold mb-3">
               Ergebnis berechnet &mdash; weitere Ansprüche prüfen?
             </h2>
@@ -487,7 +487,7 @@ export default function UrlaubTeilzeitRechnerPage() {
             </p>
             <Link
               href="/kuendigung-pruefen"
-              className="inline-block py-3.5 px-8 bg-primary-700 text-white border-none rounded-sm font-sans text-base font-semibold no-underline transition-all hover:bg-[#3730a3] hover:-translate-y-px hover:shadow-[0_6px_20px_rgba(99,102,241,0.25)]"
+              className="inline-block py-3.5 px-8 bg-gold text-white border-none rounded-sm font-sans text-base font-semibold no-underline transition-all hover:bg-[#3730a3] hover:-translate-y-px hover:shadow-[0_6px_20px_rgba(166,139,75,0.25)]"
             >
               Kostenlose Ersteinschätzung vom Fachanwalt &rarr;
             </Link>

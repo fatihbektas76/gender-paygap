@@ -99,20 +99,20 @@ export default function GenderPayGapBranchePage({ params }: Props) {
 
       <main>
         {/* Breadcrumb */}
-        <div className="pt-[130px] px-8 bg-primary-50 max-md:pt-[110px] max-md:px-6">
+        <div className="pt-[130px] px-8 bg-gold-bg max-md:pt-[110px] max-md:px-6">
           <nav className="max-w-content mx-auto text-[0.8rem] text-ink-muted">
-            <a href="/" className="hover:text-primary transition-colors no-underline text-ink-muted">Start</a>
+            <a href="/" className="hover:text-gold transition-colors no-underline text-ink-muted">Start</a>
             <span className="mx-1.5">/</span>
-            <a href="/gender-pay-gap" className="hover:text-primary transition-colors no-underline text-ink-muted">Gender Pay Gap</a>
+            <a href="/gender-pay-gap" className="hover:text-gold transition-colors no-underline text-ink-muted">Gender Pay Gap</a>
             <span className="mx-1.5">/</span>
             <span className="text-ink">{b.name}</span>
           </nav>
         </div>
 
         {/* Hero */}
-        <header className="pt-6 pb-[80px] px-8 bg-primary-50 max-md:pb-[60px] max-md:px-6">
+        <header className="pt-6 pb-[80px] px-8 bg-gold-bg max-md:pb-[60px] max-md:px-6">
           <div className="max-w-content mx-auto">
-            <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-primary-700 mb-2.5">Gender Pay Gap · {b.name}</div>
+            <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-gold mb-2.5">Gender Pay Gap · {b.name}</div>
             <h1 className="font-serif text-[clamp(2rem,4vw,2.8rem)] font-extrabold leading-[1.15] mb-5 tracking-tight max-md:text-[1.8rem]">
               Gender Pay Gap in {b.nameGenitiv} — aktuelle Zahlen &amp; Rechtslage {new Date().getFullYear()}
             </h1>
@@ -129,8 +129,8 @@ export default function GenderPayGapBranchePage({ params }: Props) {
           <div className="max-w-content mx-auto">
             <FadeUp>
               <div className="grid grid-cols-4 gap-5 max-md:grid-cols-2 max-sm:grid-cols-1">
-                <div className="bg-primary-50 border border-primary/20 rounded p-6 text-center">
-                  <div className="text-[2.5rem] font-extrabold text-primary-700">{b.gpgProzent}%</div>
+                <div className="bg-gold-bg border border-gold/20 rounded p-6 text-center">
+                  <div className="text-[2.5rem] font-extrabold text-gold">{b.gpgProzent}%</div>
                   <div className="text-[0.85rem] text-ink-muted mt-1">Gender Pay Gap</div>
                   <div className="text-[0.75rem] text-ink-muted mt-0.5">{b.name}</div>
                 </div>
@@ -146,8 +146,8 @@ export default function GenderPayGapBranchePage({ params }: Props) {
                     </div>
                   </>
                 )}
-                <div className="bg-primary-50 border border-primary/20 rounded p-6 text-center">
-                  <div className="text-[2.2rem] font-extrabold text-primary-700">{tageDifferenz}</div>
+                <div className="bg-gold-bg border border-gold/20 rounded p-6 text-center">
+                  <div className="text-[2.2rem] font-extrabold text-gold">{tageDifferenz}</div>
                   <div className="text-[0.85rem] text-ink-muted mt-1">Tage unbezahlt</div>
                   <div className="text-[0.75rem] text-ink-muted mt-0.5">Equal Pay Day</div>
                 </div>
@@ -192,29 +192,29 @@ export default function GenderPayGapBranchePage({ params }: Props) {
 
               <div className="grid grid-cols-2 gap-5 mb-6 max-md:grid-cols-1">
                 {/* AN-Karte */}
-                <div className="bg-secondary-50 border border-secondary/20 rounded p-6 border-t-[3px] border-t-secondary">
-                  <h3 className="font-serif text-[1.1rem] font-bold text-secondary-700 mb-3">Für Arbeitnehmer</h3>
+                <div className="bg-green-bg border border-green-bg rounded p-6 border-t-[3px] border-t-green">
+                  <h3 className="font-serif text-[1.1rem] font-bold text-green mb-3">Für Arbeitnehmer</h3>
                   <ul className="list-disc pl-5 space-y-1.5 text-[0.9rem] text-ink-light leading-relaxed">
                     <li>Auskunftsrecht ab 7. Juni 2026 (Art. 7 EU-RL)</li>
                     <li>Entschädigung bis zu 3 Jahre rückwirkend</li>
                     <li>Beweislastumkehr zu Ihrem Vorteil (Art. 18)</li>
                     <li>Paarvergleich reicht aus (BAG Az. 8 AZR 300/24)</li>
                   </ul>
-                  <a href="/arbeitnehmer" className="inline-block mt-4 text-[0.9rem] font-semibold text-secondary-700 no-underline hover:text-secondary transition-colors">
+                  <a href="/arbeitnehmer" className="inline-block mt-4 text-[0.9rem] font-semibold text-green no-underline hover:text-green transition-colors">
                     Rechte als Arbeitnehmer &rarr;
                   </a>
                 </div>
 
                 {/* AG-Karte */}
-                <div className="bg-accent-50 border border-accent/20 rounded p-6 border-t-[3px] border-t-accent">
-                  <h3 className="font-serif text-[1.1rem] font-bold text-accent-700 mb-3">Für Arbeitgeber</h3>
+                <div className="bg-cream-dark border border-blue/20 rounded p-6 border-t-[3px] border-t-blue">
+                  <h3 className="font-serif text-[1.1rem] font-bold text-blue mb-3">Für Arbeitgeber</h3>
                   <ul className="list-disc pl-5 space-y-1.5 text-[0.9rem] text-ink-light leading-relaxed">
                     <li>Auskunftspflicht ab Juni 2026</li>
                     <li>Berichtspflicht ab 2027 (250+ MA)</li>
                     <li>Gehaltsspanne in Stellenanzeigen (Art. 5)</li>
                     <li>Bußgelder bei Verstößen (Art. 23)</li>
                   </ul>
-                  <a href="/arbeitgeber" className="inline-block mt-4 text-[0.9rem] font-semibold text-accent-700 no-underline hover:text-accent transition-colors">
+                  <a href="/arbeitgeber" className="inline-block mt-4 text-[0.9rem] font-semibold text-blue no-underline hover:text-blue transition-colors">
                     Pflichten als Arbeitgeber &rarr;
                   </a>
                 </div>
@@ -244,7 +244,7 @@ export default function GenderPayGapBranchePage({ params }: Props) {
         <ContactForm />
 
         {/* CTA */}
-        <section className="py-[70px] px-8 bg-primary-700 text-white text-center max-md:py-12 max-md:px-6">
+        <section className="py-[70px] px-8 bg-gold text-white text-center max-md:py-12 max-md:px-6">
           <div className="max-w-[700px] mx-auto">
             <h2 className="font-serif text-[clamp(1.5rem,3vw,2rem)] font-bold mb-4">
               Gender Pay Gap in {b.nameGenitiv} — Handeln Sie jetzt
@@ -254,7 +254,7 @@ export default function GenderPayGapBranchePage({ params }: Props) {
             </p>
             <a
               href="/kontakt"
-              className="inline-flex items-center gap-2 px-8 py-3.5 rounded-sm text-[0.95rem] font-semibold no-underline transition-all bg-white text-primary-700 hover:bg-primary-50 hover:-translate-y-0.5"
+              className="inline-flex items-center gap-2 px-8 py-3.5 rounded-sm text-[0.95rem] font-semibold no-underline transition-all bg-white text-gold hover:bg-gold-bg hover:-translate-y-0.5"
             >
               Kostenlose Ersteinschätzung &rarr;
             </a>

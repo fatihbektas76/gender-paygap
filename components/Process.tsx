@@ -27,7 +27,7 @@ export default function Process() {
   return (
     <section className="py-[90px] px-8 bg-white max-md:py-[60px] max-md:px-6" id="ablauf">
       <div className="max-w-content mx-auto">
-        <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-primary-700 mb-2.5">
+        <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-gold mb-2.5">
           So funktioniert es
         </div>
         <h2 className="font-serif text-[clamp(1.6rem,3vw,2.2rem)] font-bold leading-[1.25] mb-3.5 max-md:text-2xl">
@@ -42,7 +42,7 @@ export default function Process() {
               {i < steps.length - 1 && (
                 <div className="absolute top-7 -right-3 w-6 h-0.5 bg-border max-md:hidden" />
               )}
-              <div className="w-14 h-14 rounded-full bg-primary-50 border-2 border-primary/[0.15] flex items-center justify-center mx-auto mb-4 font-serif text-[1.2rem] font-bold text-primary">
+              <div className="w-14 h-14 rounded-full bg-gold-bg border-2 border-gold/[0.15] flex items-center justify-center mx-auto mb-4 font-serif text-[1.2rem] font-bold text-gold">
                 {step.num}
               </div>
               <h3 className="text-[0.95rem] font-bold mb-1.5">{step.title}</h3>

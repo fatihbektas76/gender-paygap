@@ -207,12 +207,12 @@ export default function ToolsPage() {
       <div className="bg-slate-50 pt-[120px] pb-[50px] px-8 border-b border-border">
         <div className="max-w-content mx-auto">
           <nav className="text-[0.84rem] text-ink-muted mb-6">
-            <Link href="/" className="text-primary no-underline hover:underline">Start</Link>
+            <Link href="/" className="text-gold no-underline hover:underline">Start</Link>
             <span className="mx-2">/</span>
             <span>Tools &amp; Rechner</span>
           </nav>
           <StandAnzeige />
-          <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-primary-700 mb-2.5 mt-4">
+          <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-gold mb-2.5 mt-4">
             Kostenlos &amp; unverbindlich
           </div>
           <h1 className="font-serif text-[clamp(1.8rem,4vw,2.4rem)] font-bold leading-[1.2] max-w-[700px]">
@@ -233,12 +233,12 @@ export default function ToolsPage() {
               <Link
                 key={tool.title}
                 href={tool.href}
-                className="group block bg-slate-50 border border-border-light rounded p-7 no-underline transition-all hover:border-primary hover:-translate-y-px hover:shadow-[0_6px_20px_rgba(99,102,241,0.12)]"
+                className="group block bg-slate-50 border border-border-light rounded p-7 no-underline transition-all hover:border-gold hover:-translate-y-px hover:shadow-[0_6px_20px_rgba(166,139,75,0.12)]"
               >
-                <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-primary-700 mb-2.5">
+                <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-gold mb-2.5">
                   {tool.label}
                 </div>
-                <h2 className="font-serif text-[1.25rem] font-bold text-ink mb-3 group-hover:text-primary-700 transition-colors">
+                <h2 className="font-serif text-[1.25rem] font-bold text-ink mb-3 group-hover:text-gold transition-colors">
                   {tool.title}
                 </h2>
                 <p className="text-[0.88rem] text-ink-light leading-relaxed mb-4">
@@ -247,7 +247,7 @@ export default function ToolsPage() {
                 <ul className="space-y-2 mb-5">
                   {tool.checks.map((check) => (
                     <li key={check} className="flex items-start gap-2 text-[0.84rem] text-ink-light">
-                      <svg className="min-w-[16px] text-primary mt-0.5" width="16" height="16" fill="none" viewBox="0 0 24 24">
+                      <svg className="min-w-[16px] text-gold mt-0.5" width="16" height="16" fill="none" viewBox="0 0 24 24">
                         <circle cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="2" />
                         <path d="M8 12l3 3 5-5" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
                       </svg>
@@ -255,7 +255,7 @@ export default function ToolsPage() {
                     </li>
                   ))}
                 </ul>
-                <span className="text-[0.88rem] font-semibold text-primary-700 group-hover:underline">
+                <span className="text-[0.88rem] font-semibold text-gold group-hover:underline">
                   {tool.linkText} &rarr;
                 </span>
               </Link>
@@ -267,7 +267,7 @@ export default function ToolsPage() {
       {/* Warum diese Tools? */}
       <section className="py-[70px] px-8 bg-slate-50">
         <div className="max-w-content mx-auto">
-          <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-primary-700 mb-2.5">
+          <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-gold mb-2.5">
             Ihre Vorteile
           </div>
           <h2 className="font-serif text-[clamp(1.4rem,3vw,1.9rem)] font-bold leading-[1.25] mb-8">
@@ -275,7 +275,7 @@ export default function ToolsPage() {
           </h2>
           <div className="grid grid-cols-3 gap-8 max-md:grid-cols-1">
             <div className="flex items-start gap-4">
-              <div className="w-11 h-11 min-w-[44px] rounded-[10px] bg-primary-50 border border-primary/[0.12] flex items-center justify-center text-primary">
+              <div className="w-11 h-11 min-w-[44px] rounded-[10px] bg-gold-bg border border-gold/[0.12] flex items-center justify-center text-gold">
                 <svg width="20" height="20" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
                   <circle cx="12" cy="12" r="10" />
                   <polyline points="12 6 12 12 16 14" />
@@ -289,7 +289,7 @@ export default function ToolsPage() {
               </div>
             </div>
             <div className="flex items-start gap-4">
-              <div className="w-11 h-11 min-w-[44px] rounded-[10px] bg-primary-50 border border-primary/[0.12] flex items-center justify-center text-primary">
+              <div className="w-11 h-11 min-w-[44px] rounded-[10px] bg-gold-bg border border-gold/[0.12] flex items-center justify-center text-gold">
                 <svg width="20" height="20" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
                   <rect x="3" y="11" width="18" height="10" rx="2" />
                   <path d="M7 11V7a5 5 0 0110 0v4" />
@@ -303,7 +303,7 @@ export default function ToolsPage() {
               </div>
             </div>
             <div className="flex items-start gap-4">
-              <div className="w-11 h-11 min-w-[44px] rounded-[10px] bg-primary-50 border border-primary/[0.12] flex items-center justify-center text-primary">
+              <div className="w-11 h-11 min-w-[44px] rounded-[10px] bg-gold-bg border border-gold/[0.12] flex items-center justify-center text-gold">
                 <svg width="20" height="20" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
                   <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
                   <circle cx="12" cy="7" r="4" />
@@ -324,7 +324,7 @@ export default function ToolsPage() {
       <section className="py-[70px] px-8 bg-white">
         <div className="max-w-content mx-auto">
           <div className="max-w-[740px]">
-            <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-primary-700 mb-2.5">
+            <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-gold mb-2.5">
               Hintergrund
             </div>
             <h2 className="font-serif text-[clamp(1.4rem,3vw,1.9rem)] font-bold leading-[1.25] mb-6">
@@ -333,14 +333,14 @@ export default function ToolsPage() {
             <p className="text-[0.95rem] text-ink-light leading-relaxed mb-5">
               Unsere Tools sind keine einfachen Rechner &mdash; sie bilden die tatsächliche rechtliche Prüflogik ab,
               die ein Fachanwalt im Erstgespräch anwendet. Der{' '}
-              <Link href="/kuendigung-pruefen" className="text-primary no-underline hover:underline">Kündigungscheck</Link>{' '}
+              <Link href="/kuendigung-pruefen" className="text-gold no-underline hover:underline">Kündigungscheck</Link>{' '}
               fragt zum Beispiel gezielt nach Betriebsgröße, Beschäftigungsdauer und besonderen
               Schutztatbeständen wie Schwerbehinderung oder Elternzeit &mdash; denn genau diese Faktoren bestimmen,
               ob das Kündigungsschutzgesetz greift.
             </p>
             <p className="text-[0.95rem] text-ink-light leading-relaxed mb-5">
               Der{' '}
-              <Link href="/abfindungsrechner" className="text-primary no-underline hover:underline">Abfindungsrechner</Link>{' '}
+              <Link href="/abfindungsrechner" className="text-gold no-underline hover:underline">Abfindungsrechner</Link>{' '}
               basiert auf der in der Praxis anerkannten Faustformel: 0,5 Bruttomonatsgehälter pro
               Beschäftigungsjahr als Ausgangspunkt. Je nach Verhandlungsgeschick, Kündigungsschutzlage und
               wirtschaftlicher Situation des Arbeitgebers sind Abweichungen nach oben oder unten möglich &mdash; das
@@ -348,7 +348,7 @@ export default function ToolsPage() {
             </p>
             <p className="text-[0.95rem] text-ink-light leading-relaxed mb-5">
               Der{' '}
-              <Link href="/schwellenwert-rechner" className="text-primary no-underline hover:underline">Schwellenwert-Rechner</Link>{' '}
+              <Link href="/schwellenwert-rechner" className="text-gold no-underline hover:underline">Schwellenwert-Rechner</Link>{' '}
               beantwortet eine der häufigsten Fragen im Arbeitsrecht: Gilt das Kündigungsschutzgesetz überhaupt für
               meinen Betrieb? Er berechnet die Vollzeitäquivalente (FTE) nach &sect;23 KSchG und zeigt Ihnen sofort,
               ob der Schwellenwert von 10 überschritten wird.
@@ -357,7 +357,7 @@ export default function ToolsPage() {
               Wichtig: Kein Online-Tool ersetzt eine individuelle anwaltliche Beratung. Die Tools geben Ihnen eine
               fundierte Orientierung &mdash; damit Sie informiert in ein Erstgespräch gehen oder einschätzen können,
               ob sich weiteres Handeln lohnt. Die persönliche Ersteinschätzung durch{' '}
-              <Link href="/arbeitsrecht-anwalt" className="text-primary no-underline hover:underline">Fachanwalt Fatih Bektas</Link>{' '}
+              <Link href="/arbeitsrecht-anwalt" className="text-gold no-underline hover:underline">Fachanwalt Fatih Bektas</Link>{' '}
               ist in jedem Fall kostenlos und unverbindlich.
             </p>
           </div>
@@ -367,7 +367,7 @@ export default function ToolsPage() {
       {/* FAQ */}
       <section className="py-[70px] px-8 bg-slate-50">
         <div className="max-w-content mx-auto">
-          <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-primary-700 mb-2.5">
+          <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-gold mb-2.5">
             Häufige Fragen
           </div>
           <h2 className="font-serif text-[clamp(1.4rem,3vw,1.9rem)] font-bold leading-[1.25] mb-6">
@@ -380,7 +380,7 @@ export default function ToolsPage() {
       {/* CTA */}
       <section className="py-[70px] px-8 bg-white">
         <div className="max-w-content mx-auto text-center">
-          <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-primary-700 mb-2.5">
+          <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-gold mb-2.5">
             Jetzt handeln
           </div>
           <h2 className="font-serif text-[clamp(1.4rem,3vw,1.8rem)] font-bold mb-3">
@@ -392,7 +392,7 @@ export default function ToolsPage() {
           </p>
           <Link
             href="/kuendigung-pruefen"
-            className="inline-block py-3.5 px-8 bg-primary-700 text-white border-none rounded-sm font-sans text-base font-semibold no-underline transition-all hover:bg-[#3730a3] hover:-translate-y-px hover:shadow-[0_6px_20px_rgba(99,102,241,0.25)]"
+            className="inline-block py-3.5 px-8 bg-gold text-white border-none rounded-sm font-sans text-base font-semibold no-underline transition-all hover:bg-[#3730a3] hover:-translate-y-px hover:shadow-[0_6px_20px_rgba(166,139,75,0.25)]"
           >
             Jetzt kostenlos anfragen &rarr;
           </Link>

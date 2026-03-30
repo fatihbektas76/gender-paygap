@@ -38,9 +38,9 @@ const faqs = [
 const ampelConfig = {
   gruen: {
     label: 'EU-konform',
-    bgClass: 'bg-secondary-50',
-    borderClass: 'border-secondary',
-    badgeClass: 'bg-secondary-600 text-white',
+    bgClass: 'bg-green-bg',
+    borderClass: 'border-green',
+    badgeClass: 'bg-green text-white',
   },
   gelb: {
     label: 'Nachbesserung empfohlen',
@@ -137,20 +137,20 @@ export default function StellenanzeigenCheckerPage() {
       />
 
       {/* Header */}
-      <div className="bg-accent-50 pt-[120px] pb-[50px] px-8 border-b border-border max-md:pt-[100px] max-md:px-6">
+      <div className="bg-cream-dark pt-[120px] pb-[50px] px-8 border-b border-border max-md:pt-[100px] max-md:px-6">
         <div className="max-w-content mx-auto">
           <nav className="text-[0.84rem] text-ink-muted mb-6">
-            <Link href="/" className="text-accent-700 no-underline hover:underline">
+            <Link href="/" className="text-blue no-underline hover:underline">
               Start
             </Link>
             <span className="mx-2">/</span>
-            <Link href="/arbeitgeber" className="text-accent-700 no-underline hover:underline">
+            <Link href="/arbeitgeber" className="text-blue no-underline hover:underline">
               Arbeitgeber
             </Link>
             <span className="mx-2">/</span>
             <span>Stellenanzeigen-Checker</span>
           </nav>
-          <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-accent-700 mb-2.5">
+          <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-blue mb-2.5">
             Kostenloses Tool
           </div>
           <h1 className="font-serif text-[clamp(1.8rem,4vw,2.4rem)] font-bold leading-[1.2] max-w-[700px]">
@@ -162,7 +162,7 @@ export default function StellenanzeigenCheckerPage() {
           </p>
           <div className="flex flex-wrap gap-5 mt-5 text-[0.88rem] text-ink-light">
             <span className="flex items-center gap-1.5">
-              <svg className="text-accent-600" width="16" height="16" fill="none" viewBox="0 0 24 24">
+              <svg className="text-blue" width="16" height="16" fill="none" viewBox="0 0 24 24">
                 <circle cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="2" />
                 <path
                   d="M8 12l3 3 5-5"
@@ -175,7 +175,7 @@ export default function StellenanzeigenCheckerPage() {
               4 Kriterien
             </span>
             <span className="flex items-center gap-1.5">
-              <svg className="text-accent-600" width="16" height="16" fill="none" viewBox="0 0 24 24">
+              <svg className="text-blue" width="16" height="16" fill="none" viewBox="0 0 24 24">
                 <circle cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="2" />
                 <path
                   d="M8 12l3 3 5-5"
@@ -188,7 +188,7 @@ export default function StellenanzeigenCheckerPage() {
               KI-gestützt
             </span>
             <span className="flex items-center gap-1.5">
-              <svg className="text-accent-600" width="16" height="16" fill="none" viewBox="0 0 24 24">
+              <svg className="text-blue" width="16" height="16" fill="none" viewBox="0 0 24 24">
                 <circle cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="2" />
                 <path
                   d="M8 12l3 3 5-5"
@@ -245,7 +245,7 @@ export default function StellenanzeigenCheckerPage() {
                 placeholder="Fügen Sie den Text Ihrer Stellenanzeige ein..."
                 rows={12}
                 maxLength={5000}
-                className="w-full p-4 border border-border rounded-sm text-[0.92rem] text-ink leading-relaxed font-sans resize-y bg-white focus:outline-none focus:border-accent-600 focus:ring-1 focus:ring-accent-600 transition-colors"
+                className="w-full p-4 border border-border rounded-sm text-[0.92rem] text-ink leading-relaxed font-sans resize-y bg-white focus:outline-none focus:border-blue focus:ring-1 focus:ring-blue transition-colors"
               />
               <div className="flex items-center justify-between mt-2">
                 <span className="text-[0.78rem] text-ink-muted">
@@ -264,7 +264,7 @@ export default function StellenanzeigenCheckerPage() {
                 className={`w-full py-3.5 border-none rounded-sm font-sans text-base font-semibold cursor-pointer transition-all mt-5 ${
                   loading || text.length < 30
                     ? 'bg-slate-200 text-ink-muted cursor-not-allowed'
-                    : 'bg-accent-700 text-white hover:bg-accent-800 hover:-translate-y-px hover:shadow-[0_6px_20px_rgba(59,130,246,0.25)]'
+                    : 'bg-blue text-white hover:bg-blue hover:-translate-y-px hover:shadow-[0_6px_20px_rgba(61,90,128,0.25)]'
                 }`}
               >
                 {loading ? (
@@ -328,7 +328,7 @@ export default function StellenanzeigenCheckerPage() {
                     >
                       <span
                         className={`text-[1.3rem] font-bold shrink-0 mt-0.5 ${
-                          check.erfuellt ? 'text-secondary-600' : 'text-red-600'
+                          check.erfuellt ? 'text-green' : 'text-red-600'
                         }`}
                       >
                         {check.erfuellt ? '\u2713' : '\u2717'}
@@ -338,7 +338,7 @@ export default function StellenanzeigenCheckerPage() {
                           <span className="text-[0.92rem] font-semibold text-ink">
                             {check.label}
                           </span>
-                          <span className="text-[0.72rem] font-bold tracking-wider uppercase py-0.5 px-2 rounded-sm bg-accent-100 text-accent-700">
+                          <span className="text-[0.72rem] font-bold tracking-wider uppercase py-0.5 px-2 rounded-sm bg-cream-dark text-blue">
                             Pflicht: {check.pflicht}
                           </span>
                         </div>
@@ -361,7 +361,7 @@ export default function StellenanzeigenCheckerPage() {
                 </div>
 
                 {/* CTA */}
-                <div className="py-5 px-6 bg-accent-50 rounded-sm border-l-[3px] border-accent">
+                <div className="py-5 px-6 bg-cream-dark rounded-sm border-l-[3px] border-blue">
                   <p className="text-[0.95rem] text-ink mb-3">
                     <strong>
                       Alle Stellenanzeigen auf einmal prüfen lassen?
@@ -373,7 +373,7 @@ export default function StellenanzeigenCheckerPage() {
                   </p>
                   <Link
                     href="/kontakt"
-                    className="inline-block py-3 px-6 bg-accent-700 text-white border-none rounded-sm font-sans text-[0.92rem] font-semibold no-underline transition-all hover:bg-accent-800 hover:-translate-y-px hover:shadow-[0_6px_20px_rgba(59,130,246,0.25)]"
+                    className="inline-block py-3 px-6 bg-blue text-white border-none rounded-sm font-sans text-[0.92rem] font-semibold no-underline transition-all hover:bg-blue hover:-translate-y-px hover:shadow-[0_6px_20px_rgba(61,90,128,0.25)]"
                   >
                     Stellenanzeigen-Paket prüfen lassen &rarr;
                   </Link>
@@ -398,7 +398,7 @@ export default function StellenanzeigenCheckerPage() {
               Erstorientierung und ersetzt keine anwaltliche Beratung. Die KI-Analyse kann
               Fehler enthalten. Für eine verbindliche Einschätzung wenden Sie sich bitte an
               einen{' '}
-              <Link href="/kontakt" className="text-accent-700 no-underline hover:underline">
+              <Link href="/kontakt" className="text-blue no-underline hover:underline">
                 Fachanwalt für Arbeitsrecht
               </Link>
               .
@@ -410,7 +410,7 @@ export default function StellenanzeigenCheckerPage() {
       {/* FAQ */}
       <section className="py-[70px] px-8 bg-slate-50 max-md:py-12 max-md:px-6">
         <div className="max-w-content mx-auto">
-          <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-accent-700 mb-2.5">
+          <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-blue mb-2.5">
             Häufige Fragen
           </div>
           <h2 className="font-serif text-[clamp(1.4rem,3vw,1.9rem)] font-bold leading-[1.25] mb-6">
@@ -421,7 +421,7 @@ export default function StellenanzeigenCheckerPage() {
       </section>
 
       {/* CTA */}
-      <section className="py-[70px] px-8 bg-accent-700 text-white text-center max-md:py-12 max-md:px-6">
+      <section className="py-[70px] px-8 bg-blue text-white text-center max-md:py-12 max-md:px-6">
         <div className="max-w-[700px] mx-auto">
           <h2 className="font-serif text-[clamp(1.4rem,3vw,1.8rem)] font-bold mb-4">
             Stellenanzeigen rechtssicher gestalten &mdash; bevor die Pflicht greift
@@ -432,7 +432,7 @@ export default function StellenanzeigenCheckerPage() {
           </p>
           <Link
             href="/kontakt"
-            className="inline-flex items-center gap-2 px-8 py-3.5 rounded-sm text-[0.95rem] font-semibold no-underline transition-all bg-white text-accent-700 hover:bg-accent-50 hover:-translate-y-0.5"
+            className="inline-flex items-center gap-2 px-8 py-3.5 rounded-sm text-[0.95rem] font-semibold no-underline transition-all bg-white text-blue hover:bg-cream-dark hover:-translate-y-0.5"
           >
             Jetzt Kontakt aufnehmen &rarr;
           </Link>

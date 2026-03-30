@@ -44,7 +44,7 @@ export default function Testimonials() {
   return (
     <section className="py-[90px] px-8 bg-slate-50 max-md:py-[60px] max-md:px-6">
       <div className="max-w-content mx-auto">
-        <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-primary-700 mb-2.5">
+        <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-gold mb-2.5">
           Mandantenstimmen
         </div>
         <h2 className="font-serif text-[clamp(1.6rem,3vw,2.2rem)] font-bold leading-[1.25] mb-3.5 max-md:text-2xl">
@@ -57,8 +57,8 @@ export default function Testimonials() {
         <div className="grid grid-cols-3 gap-5 max-md:grid-cols-1">
           {testimonials.map((t, i) => (
             <FadeUp key={t.name} delay={i}>
-              <article className="bg-white border border-border-light rounded py-8 px-7 transition-all hover:border-primary hover:-translate-y-1 h-full flex flex-col">
-                <div className="flex gap-0.5 text-primary-700 mb-4">
+              <article className="bg-white border border-border-light rounded py-8 px-7 transition-all hover:border-gold hover:-translate-y-1 h-full flex flex-col">
+                <div className="flex gap-0.5 text-gold mb-4">
                   <Star />
                   <Star />
                   <Star />
@@ -82,7 +82,7 @@ export default function Testimonials() {
         <FadeUp className="flex gap-10 justify-center mt-12 pt-9 border-t border-border max-md:gap-5 max-md:flex-wrap">
           {stats.map((s) => (
             <div key={s.label}>
-              <div className="font-serif text-[1.6rem] font-bold text-primary-700">{s.value}</div>
+              <div className="font-serif text-[1.6rem] font-bold text-gold">{s.value}</div>
               <div className="text-[0.82rem] text-ink-muted mt-0.5">{s.label}</div>
             </div>
           ))}

@@ -11,13 +11,13 @@ export default function PrivacyPolicyPage() {
     <main>
       <div className="bg-slate-50 pt-[120px] pb-[50px] px-8 border-b border-border">
         <div className="max-w-[720px] mx-auto">
-          <Link href="/" className="text-primary no-underline text-[0.88rem] font-medium hover:underline">
+          <Link href="/" className="text-gold no-underline text-[0.88rem] font-medium hover:underline">
             &larr; Zurück zur Startseite
           </Link>
           <h1 className="font-serif text-[2rem] font-bold mt-4">Datenschutzerklärung</h1>
         </div>
       </div>
-      <div className="max-w-[720px] mx-auto pt-12 pb-20 px-8 [&_h2]:font-serif [&_h2]:text-[1.25rem] [&_h2]:font-bold [&_h2]:mt-9 [&_h2]:mb-3 [&_h2]:text-ink [&_h3]:text-base [&_h3]:font-semibold [&_h3]:mt-6 [&_h3]:mb-2 [&_h3]:text-ink [&_p]:text-[0.92rem] [&_p]:text-ink-light [&_p]:mb-3 [&_a]:text-primary [&_ul]:my-2 [&_ul]:ml-5 [&_ul]:text-[0.92rem] [&_ul]:text-ink-light [&_li]:mb-1.5 [&_table]:w-full [&_table]:border-collapse [&_table]:my-3 [&_table]:text-[0.88rem] [&_th]:text-left [&_th]:p-2.5 [&_th]:px-3.5 [&_th]:border [&_th]:border-border [&_th]:bg-slate-50 [&_th]:font-semibold [&_th]:text-ink [&_td]:text-left [&_td]:p-2.5 [&_td]:px-3.5 [&_td]:border [&_td]:border-border [&_td]:text-ink-light">
+      <div className="max-w-[720px] mx-auto pt-12 pb-20 px-8 [&_h2]:font-serif [&_h2]:text-[1.25rem] [&_h2]:font-bold [&_h2]:mt-9 [&_h2]:mb-3 [&_h2]:text-ink [&_h3]:text-base [&_h3]:font-semibold [&_h3]:mt-6 [&_h3]:mb-2 [&_h3]:text-ink [&_p]:text-[0.92rem] [&_p]:text-ink-light [&_p]:mb-3 [&_a]:text-gold [&_ul]:my-2 [&_ul]:ml-5 [&_ul]:text-[0.92rem] [&_ul]:text-ink-light [&_li]:mb-1.5 [&_table]:w-full [&_table]:border-collapse [&_table]:my-3 [&_table]:text-[0.88rem] [&_th]:text-left [&_th]:p-2.5 [&_th]:px-3.5 [&_th]:border [&_th]:border-border [&_th]:bg-slate-50 [&_th]:font-semibold [&_th]:text-ink [&_td]:text-left [&_td]:p-2.5 [&_td]:px-3.5 [&_td]:border [&_td]:border-border [&_td]:text-ink-light">
         <p>
           <strong>Stand:</strong> Februar 2026
         </p>

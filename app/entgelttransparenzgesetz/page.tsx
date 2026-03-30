@@ -66,7 +66,7 @@ export default function EntgelttransparenzgesetzPage() {
       <main>
         <header className="pt-[150px] pb-[80px] px-8 bg-slate-50 max-md:pt-[120px] max-md:pb-[60px] max-md:px-6">
           <div className="max-w-content mx-auto">
-            <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-primary-700 mb-2.5">Das Gesetz</div>
+            <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-gold mb-2.5">Das Gesetz</div>
             <h1 className="font-serif text-[clamp(2rem,4vw,2.8rem)] font-extrabold leading-[1.15] mb-5 tracking-tight max-md:text-[1.8rem]">
               Entgelttransparenzgesetz & EU-Richtlinie 2023/970
             </h1>
@@ -94,7 +94,7 @@ export default function EntgelttransparenzgesetzPage() {
               ].map((item, i) => (
                 <FadeUp key={item.num} delay={Math.min(i, 3) as 0 | 1 | 2 | 3}>
                   <div className="bg-slate-50 border border-border-light rounded p-6 h-full">
-                    <div className="w-8 h-8 rounded-full bg-primary-100 text-primary-700 font-bold text-[0.9rem] flex items-center justify-center mb-3">{item.num}</div>
+                    <div className="w-8 h-8 rounded-full bg-gold-bg text-gold font-bold text-[0.9rem] flex items-center justify-center mb-3">{item.num}</div>
                     <h3 className="font-serif text-[1.1rem] font-bold text-ink mb-2">{item.title}</h3>
                     <p className="text-[0.88rem] text-ink-muted leading-relaxed m-0">{item.text}</p>
                   </div>
@@ -114,7 +114,7 @@ export default function EntgelttransparenzgesetzPage() {
               {timeline.map((t, i) => (
                 <FadeUp key={t.year} delay={Math.min(i, 3) as 0 | 1 | 2 | 3}>
                   <div className="flex gap-5 items-start bg-white rounded p-5 border border-border-light">
-                    <div className="min-w-[100px] font-serif text-[1rem] font-bold text-primary-700 pt-0.5">{t.year}</div>
+                    <div className="min-w-[100px] font-serif text-[1rem] font-bold text-gold pt-0.5">{t.year}</div>
                     <div>
                       <div className="font-semibold text-ink text-[0.95rem] mb-1">{t.event}</div>
                       <div className="text-[0.88rem] text-ink-muted">{t.detail}</div>
@@ -129,13 +129,13 @@ export default function EntgelttransparenzgesetzPage() {
         {/* Vergleich AN vs AG */}
         <section className="py-[70px] px-8 bg-white max-md:py-[50px] max-md:px-6">
           <div className="max-w-content mx-auto grid grid-cols-2 gap-6 max-md:grid-cols-1">
-            <a href="/arbeitnehmer" className="block bg-secondary-50 border border-secondary/20 rounded p-7 no-underline transition-all hover:-translate-y-0.5 hover:shadow-lg">
-              <div className="text-[0.7rem] font-bold tracking-[0.14em] uppercase text-secondary-700 mb-2">Arbeitnehmer</div>
+            <a href="/arbeitnehmer" className="block bg-green-bg border border-green-bg rounded p-7 no-underline transition-all hover:-translate-y-0.5 hover:shadow-lg">
+              <div className="text-[0.7rem] font-bold tracking-[0.14em] uppercase text-green mb-2">Arbeitnehmer</div>
               <div className="font-serif text-[1.2rem] font-bold text-ink mb-2">Was bedeutet das Gesetz für mich?</div>
               <div className="text-[0.88rem] text-ink-muted">Auskunftsrecht, Klage, Entschädigung &rarr;</div>
             </a>
-            <a href="/arbeitgeber" className="block bg-accent-50 border border-accent/20 rounded p-7 no-underline transition-all hover:-translate-y-0.5 hover:shadow-lg">
-              <div className="text-[0.7rem] font-bold tracking-[0.14em] uppercase text-accent-700 mb-2">Arbeitgeber</div>
+            <a href="/arbeitgeber" className="block bg-cream-dark border border-blue/20 rounded p-7 no-underline transition-all hover:-translate-y-0.5 hover:shadow-lg">
+              <div className="text-[0.7rem] font-bold tracking-[0.14em] uppercase text-blue mb-2">Arbeitgeber</div>
               <div className="font-serif text-[1.2rem] font-bold text-ink mb-2">Welche Pflichten hat mein Unternehmen?</div>
               <div className="text-[0.88rem] text-ink-muted">Compliance, Berichtspflichten, Audit &rarr;</div>
             </a>

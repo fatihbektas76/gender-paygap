@@ -84,17 +84,17 @@ function RadioOption({ label, selected, onClick }: { label: string; selected: bo
       onClick={onClick}
       className={`w-full text-left py-4 px-5 rounded-sm border-2 font-sans text-[0.95rem] font-medium cursor-pointer transition-all ${
         selected
-          ? 'border-primary bg-primary-50 text-ink'
-          : 'border-border bg-white text-ink hover:border-primary/50'
+          ? 'border-gold bg-gold-bg text-ink'
+          : 'border-border bg-white text-ink hover:border-gold/50'
       }`}
     >
       <span className="flex items-center gap-3">
         <span
           className={`w-5 h-5 min-w-[20px] rounded-full border-2 flex items-center justify-center transition-all ${
-            selected ? 'border-primary' : 'border-border'
+            selected ? 'border-gold' : 'border-border'
           }`}
         >
-          {selected && <span className="w-2.5 h-2.5 rounded-full bg-primary" />}
+          {selected && <span className="w-2.5 h-2.5 rounded-full bg-gold" />}
         </span>
         {label}
       </span>
@@ -285,12 +285,12 @@ export default function KuendigungPruefenPage() {
       </Link>
 
       <div className="mb-8">
-        <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-primary-700 mb-4">
+        <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-gold mb-4">
           Unsere Vorteile
         </div>
         <div className="space-y-4">
           <div className="flex items-start gap-3">
-            <svg className="min-w-[20px] text-primary mt-0.5" width="20" height="20" fill="none" viewBox="0 0 24 24">
+            <svg className="min-w-[20px] text-gold mt-0.5" width="20" height="20" fill="none" viewBox="0 0 24 24">
               <circle cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="2" />
               <path d="M8 12l3 3 5-5" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
             </svg>
@@ -300,7 +300,7 @@ export default function KuendigungPruefenPage() {
             </div>
           </div>
           <div className="flex items-start gap-3">
-            <svg className="min-w-[20px] text-primary mt-0.5" width="20" height="20" fill="none" viewBox="0 0 24 24">
+            <svg className="min-w-[20px] text-gold mt-0.5" width="20" height="20" fill="none" viewBox="0 0 24 24">
               <circle cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="2" />
               <path d="M12 6v6l4 2" stroke="currentColor" strokeWidth="2" strokeLinecap="round" />
             </svg>
@@ -310,7 +310,7 @@ export default function KuendigungPruefenPage() {
             </div>
           </div>
           <div className="flex items-start gap-3">
-            <svg className="min-w-[20px] text-primary mt-0.5" width="20" height="20" fill="none" viewBox="0 0 24 24">
+            <svg className="min-w-[20px] text-gold mt-0.5" width="20" height="20" fill="none" viewBox="0 0 24 24">
               <rect x="3" y="11" width="18" height="10" rx="2" stroke="currentColor" strokeWidth="2" />
               <path d="M7 11V7a5 5 0 0110 0v4" stroke="currentColor" strokeWidth="2" />
             </svg>
@@ -323,14 +323,14 @@ export default function KuendigungPruefenPage() {
       </div>
 
       <div className="mb-8">
-        <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-primary-700 mb-3">
+        <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-gold mb-3">
           Hilfe und Kontakt
         </div>
         <div className="space-y-2">
-          <a href="tel:+49622295992400" className="block text-[0.88rem] text-ink no-underline hover:text-primary transition-colors">
+          <a href="tel:+49622295992400" className="block text-[0.88rem] text-ink no-underline hover:text-gold transition-colors">
             +49 6222 9599 2400
           </a>
-          <a href="mailto:bektas@apos.legal" className="block text-[0.88rem] text-ink no-underline hover:text-primary transition-colors">
+          <a href="mailto:bektas@apos.legal" className="block text-[0.88rem] text-ink no-underline hover:text-gold transition-colors">
             bektas@apos.legal
           </a>
         </div>
@@ -344,7 +344,7 @@ export default function KuendigungPruefenPage() {
 
       <div className="mt-auto">
         <StandAnzeige />
-        <div className="flex items-center gap-1 text-primary text-[1rem] mt-3">
+        <div className="flex items-center gap-1 text-gold text-[1rem] mt-3">
           {'★★★★★'}
         </div>
         <div className="text-[0.82rem] text-ink-muted mt-1">
@@ -361,7 +361,7 @@ export default function KuendigungPruefenPage() {
         {sidebar}
         <div className="flex-1 flex items-center justify-center p-8">
           <div className="max-w-[520px] text-center">
-            <div className="w-16 h-16 mx-auto mb-6 rounded-full bg-primary/10 flex items-center justify-center">
+            <div className="w-16 h-16 mx-auto mb-6 rounded-full bg-gold-bg flex items-center justify-center">
               <svg width="32" height="32" fill="none" stroke="#6366f1" strokeWidth="2" viewBox="0 0 24 24">
                 <polyline points="20 6 9 17 4 12" />
               </svg>
@@ -374,7 +374,7 @@ export default function KuendigungPruefenPage() {
             </p>
             {abfindungMin > 0 && (
               <div className="py-5 px-6 bg-white rounded-sm border border-border mb-6">
-                <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-primary-700 mb-2">
+                <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-gold mb-2">
                   Ihre geschätzte Abfindung
                 </div>
                 <div className="font-serif text-[1.4rem] font-bold text-ink">
@@ -389,12 +389,12 @@ export default function KuendigungPruefenPage() {
               href="https://meet.brevo.com/fatih-bektas/erstberatung-per-telefon-kuendigung-arbeitsrechtde"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-block py-3.5 px-8 bg-primary-700 text-white rounded-sm font-sans text-[0.92rem] font-semibold no-underline transition-all hover:bg-[#3730a3] hover:-translate-y-px"
+              className="inline-block py-3.5 px-8 bg-gold text-white rounded-sm font-sans text-[0.92rem] font-semibold no-underline transition-all hover:bg-[#3730a3] hover:-translate-y-px"
             >
               Telefontermin buchen &rarr;
             </a>
             <div className="mt-4">
-              <Link href="/" className="text-[0.88rem] text-ink-muted no-underline hover:text-primary transition-colors">
+              <Link href="/" className="text-[0.88rem] text-ink-muted no-underline hover:text-gold transition-colors">
                 Zur Startseite
               </Link>
             </div>
@@ -504,7 +504,7 @@ export default function KuendigungPruefenPage() {
               type="date"
               value={answers.kuendigungsDatum}
               onChange={(e) => set('kuendigungsDatum', e.target.value)}
-              className="w-full py-3 px-4 border border-border rounded-sm font-sans text-[0.95rem] text-ink bg-white outline-none focus:border-primary focus:shadow-[0_0_0_3px_rgba(99,102,241,0.1)] transition-all"
+              className="w-full py-3 px-4 border border-border rounded-sm font-sans text-[0.95rem] text-ink bg-white outline-none focus:border-gold focus:shadow-[0_0_0_3px_rgba(166,139,75,0.1)] transition-all"
             />
             {answers.kuendigungsDatum && (
               <div
@@ -513,11 +513,11 @@ export default function KuendigungPruefenPage() {
                     ? 'bg-red-50 border-red-500'
                     : fristTage <= 7
                     ? 'bg-red-50 border-red-500'
-                    : 'bg-primary-50 border-primary'
+                    : 'bg-gold-bg border-gold'
                 }`}
               >
                 {fristTage > 0 ? (
-                  <p className={`text-[0.92rem] font-semibold m-0 ${fristTage <= 7 ? 'text-red-700' : 'text-primary-700'}`}>
+                  <p className={`text-[0.92rem] font-semibold m-0 ${fristTage <= 7 ? 'text-red-700' : 'text-gold'}`}>
                     Nur noch {fristTage} {fristTage === 1 ? 'Tag' : 'Tage'} Zeit Einreichung einer Kündigungsschutzklage!
                   </p>
                 ) : (
@@ -622,7 +622,7 @@ export default function KuendigungPruefenPage() {
               />
             </div>
             {answers.umstandBekannt === 'Nein, ist nicht bekannt' && (
-              <div className="mt-4 py-4 px-5 bg-primary-50 rounded-sm border-l-[3px] border-primary">
+              <div className="mt-4 py-4 px-5 bg-gold-bg rounded-sm border-l-[3px] border-gold">
                 <p className="text-[0.88rem] text-ink m-0">
                   Wichtig: Teilen Sie diesen Umstand Ihrem Arbeitgeber unverzüglich mit, um den Sonderschutz zu sichern.
                 </p>
@@ -700,7 +700,7 @@ export default function KuendigungPruefenPage() {
                 <select
                   value={answers.arbeitsBeginnMonat}
                   onChange={(e) => set('arbeitsBeginnMonat', e.target.value)}
-                  className="w-full py-3 px-4 border border-border rounded-sm font-sans text-[0.95rem] text-ink bg-white outline-none focus:border-primary focus:shadow-[0_0_0_3px_rgba(99,102,241,0.1)] transition-all"
+                  className="w-full py-3 px-4 border border-border rounded-sm font-sans text-[0.95rem] text-ink bg-white outline-none focus:border-gold focus:shadow-[0_0_0_3px_rgba(166,139,75,0.1)] transition-all"
                 >
                   <option value="">&mdash;</option>
                   {MONATE.map((m) => (
@@ -715,7 +715,7 @@ export default function KuendigungPruefenPage() {
                 <select
                   value={answers.arbeitsBeginnJahr}
                   onChange={(e) => set('arbeitsBeginnJahr', e.target.value)}
-                  className="w-full py-3 px-4 border border-border rounded-sm font-sans text-[0.95rem] text-ink bg-white outline-none focus:border-primary focus:shadow-[0_0_0_3px_rgba(99,102,241,0.1)] transition-all"
+                  className="w-full py-3 px-4 border border-border rounded-sm font-sans text-[0.95rem] text-ink bg-white outline-none focus:border-gold focus:shadow-[0_0_0_3px_rgba(166,139,75,0.1)] transition-all"
                 >
                   <option value="">&mdash;</option>
                   {jahre.map((j) => (
@@ -741,7 +741,7 @@ export default function KuendigungPruefenPage() {
                 value={answers.gehalt}
                 onChange={(e) => set('gehalt', e.target.value)}
                 placeholder="z. B. 4.000"
-                className="w-full py-3 px-4 pr-10 border border-border rounded-sm font-sans text-[0.95rem] text-ink bg-white outline-none focus:border-primary focus:shadow-[0_0_0_3px_rgba(99,102,241,0.1)] transition-all"
+                className="w-full py-3 px-4 pr-10 border border-border rounded-sm font-sans text-[0.95rem] text-ink bg-white outline-none focus:border-gold focus:shadow-[0_0_0_3px_rgba(166,139,75,0.1)] transition-all"
               />
               <span className="absolute right-4 top-1/2 -translate-y-1/2 text-ink-muted text-[0.92rem]">&euro;</span>
             </div>
@@ -750,11 +750,11 @@ export default function KuendigungPruefenPage() {
                 gehaltNum > 0 ? 'max-h-[200px] opacity-100 mt-4' : 'max-h-0 opacity-0 mt-0'
               }`}
             >
-              <div className="py-5 px-5 bg-primary-50 rounded-sm border-2 border-primary">
-                <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-primary-700 mb-2">
+              <div className="py-5 px-5 bg-gold-bg rounded-sm border-2 border-gold">
+                <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-gold mb-2">
                   Mögliche Abfindung
                 </div>
-                <div className="font-serif text-[1.4rem] font-bold text-primary-700">
+                <div className="font-serif text-[1.4rem] font-bold text-gold">
                   {fmt(abfindungMin)} &ndash; {fmt(abfindungMax)}
                 </div>
                 <div className="text-[0.78rem] text-ink-muted mt-1">
@@ -782,7 +782,7 @@ export default function KuendigungPruefenPage() {
                 />
               ))}
             </div>
-            <div className="mt-4 py-4 px-5 bg-primary-50 rounded-sm border-l-[3px] border-primary">
+            <div className="mt-4 py-4 px-5 bg-gold-bg rounded-sm border-l-[3px] border-gold">
               <p className="text-[0.88rem] text-ink m-0">
                 Kein Problem, auch wenn Sie keine Rechtsschutzversicherung haben &mdash; wir unterstützen Sie trotzdem und finden gemeinsam eine passende Lösung für Sie.
               </p>
@@ -794,7 +794,7 @@ export default function KuendigungPruefenPage() {
       case 'S10':
         return (
           <div>
-            <div className="inline-block py-1 px-3 bg-primary-50 border border-primary/20 rounded-full text-[0.78rem] font-semibold text-primary-700 mb-4">
+            <div className="inline-block py-1 px-3 bg-gold-bg border border-gold/20 rounded-full text-[0.78rem] font-semibold text-gold mb-4">
               Fast geschafft!
             </div>
             <h2 className="font-serif text-[clamp(1.3rem,3vw,1.6rem)] font-bold text-ink mb-6">
@@ -808,39 +808,39 @@ export default function KuendigungPruefenPage() {
               <div className="grid grid-cols-2 gap-4 max-sm:grid-cols-1">
                 <div>
                   <label className="block text-[0.84rem] font-semibold text-ink mb-1.5">
-                    Vorname <span className="text-primary-700">*</span>
+                    Vorname <span className="text-gold">*</span>
                   </label>
                   <input
                     type="text"
                     value={answers.vorname}
                     onChange={(e) => set('vorname', e.target.value)}
                     placeholder="Max"
-                    className="w-full py-3 px-4 border border-border rounded-sm font-sans text-[0.95rem] text-ink bg-white outline-none focus:border-primary focus:shadow-[0_0_0_3px_rgba(99,102,241,0.1)] transition-all"
+                    className="w-full py-3 px-4 border border-border rounded-sm font-sans text-[0.95rem] text-ink bg-white outline-none focus:border-gold focus:shadow-[0_0_0_3px_rgba(166,139,75,0.1)] transition-all"
                   />
                 </div>
                 <div>
                   <label className="block text-[0.84rem] font-semibold text-ink mb-1.5">
-                    Nachname <span className="text-primary-700">*</span>
+                    Nachname <span className="text-gold">*</span>
                   </label>
                   <input
                     type="text"
                     value={answers.nachname}
                     onChange={(e) => set('nachname', e.target.value)}
                     placeholder="Mustermann"
-                    className="w-full py-3 px-4 border border-border rounded-sm font-sans text-[0.95rem] text-ink bg-white outline-none focus:border-primary focus:shadow-[0_0_0_3px_rgba(99,102,241,0.1)] transition-all"
+                    className="w-full py-3 px-4 border border-border rounded-sm font-sans text-[0.95rem] text-ink bg-white outline-none focus:border-gold focus:shadow-[0_0_0_3px_rgba(166,139,75,0.1)] transition-all"
                   />
                 </div>
               </div>
               <div>
                 <label className="block text-[0.84rem] font-semibold text-ink mb-1.5">
-                  E-Mail <span className="text-primary-700">*</span>
+                  E-Mail <span className="text-gold">*</span>
                 </label>
                 <input
                   type="email"
                   value={answers.email}
                   onChange={(e) => set('email', e.target.value)}
                   placeholder="max@beispiel.de"
-                  className="w-full py-3 px-4 border border-border rounded-sm font-sans text-[0.95rem] text-ink bg-white outline-none focus:border-primary focus:shadow-[0_0_0_3px_rgba(99,102,241,0.1)] transition-all"
+                  className="w-full py-3 px-4 border border-border rounded-sm font-sans text-[0.95rem] text-ink bg-white outline-none focus:border-gold focus:shadow-[0_0_0_3px_rgba(166,139,75,0.1)] transition-all"
                 />
               </div>
               <div>
@@ -852,7 +852,7 @@ export default function KuendigungPruefenPage() {
                   value={answers.telefon}
                   onChange={(e) => set('telefon', e.target.value)}
                   placeholder="+49 151 ..."
-                  className="w-full py-3 px-4 border border-border rounded-sm font-sans text-[0.95rem] text-ink bg-white outline-none focus:border-primary focus:shadow-[0_0_0_3px_rgba(99,102,241,0.1)] transition-all"
+                  className="w-full py-3 px-4 border border-border rounded-sm font-sans text-[0.95rem] text-ink bg-white outline-none focus:border-gold focus:shadow-[0_0_0_3px_rgba(166,139,75,0.1)] transition-all"
                 />
               </div>
               <label className="flex items-start gap-3 cursor-pointer">
@@ -860,14 +860,14 @@ export default function KuendigungPruefenPage() {
                   type="checkbox"
                   checked={answers.datenschutz}
                   onChange={(e) => set('datenschutz', e.target.checked)}
-                  className="mt-1 w-4 h-4 accent-primary"
+                  className="mt-1 w-4 h-4 accent-gold"
                 />
                 <span className="text-[0.82rem] text-ink-muted leading-relaxed">
                   Ich habe die{' '}
-                  <Link href="/privacy-policy" className="text-primary no-underline hover:underline" target="_blank">
+                  <Link href="/privacy-policy" className="text-gold no-underline hover:underline" target="_blank">
                     Datenschutzerklärung
                   </Link>{' '}
-                  gelesen und stimme der Verarbeitung meiner Daten zu. <span className="text-primary-700">*</span>
+                  gelesen und stimme der Verarbeitung meiner Daten zu. <span className="text-gold">*</span>
                 </span>
               </label>
             </div>
@@ -875,7 +875,7 @@ export default function KuendigungPruefenPage() {
             <button
               onClick={handleSubmit}
               disabled={!answers.email || !answers.datenschutz || !answers.vorname || !answers.nachname || loading}
-              className="w-full mt-6 py-4 bg-primary-700 text-white border-none rounded-sm font-sans text-base font-semibold cursor-pointer transition-all hover:bg-[#3730a3] hover:-translate-y-px hover:shadow-[0_6px_20px_rgba(99,102,241,0.25)] disabled:opacity-40 disabled:cursor-not-allowed disabled:hover:translate-y-0 disabled:hover:shadow-none"
+              className="w-full mt-6 py-4 bg-gold text-white border-none rounded-sm font-sans text-base font-semibold cursor-pointer transition-all hover:bg-[#3730a3] hover:-translate-y-px hover:shadow-[0_6px_20px_rgba(166,139,75,0.25)] disabled:opacity-40 disabled:cursor-not-allowed disabled:hover:translate-y-0 disabled:hover:shadow-none"
             >
               {loading ? 'Wird gesendet...' : 'Jetzt Ergebnis anfordern \u2192'}
             </button>
@@ -912,7 +912,7 @@ export default function KuendigungPruefenPage() {
             </p>
             <button
               onClick={() => goTo('S10')}
-              className="w-full py-4 bg-primary-700 text-white border-none rounded-sm font-sans text-base font-semibold cursor-pointer transition-all hover:bg-[#3730a3] hover:-translate-y-px hover:shadow-[0_6px_20px_rgba(99,102,241,0.25)]"
+              className="w-full py-4 bg-gold text-white border-none rounded-sm font-sans text-base font-semibold cursor-pointer transition-all hover:bg-[#3730a3] hover:-translate-y-px hover:shadow-[0_6px_20px_rgba(166,139,75,0.25)]"
             >
               Trotzdem kostenlos prüfen lassen &rarr;
             </button>
@@ -1000,7 +1000,7 @@ export default function KuendigungPruefenPage() {
           <Link href="/" className="flex items-center no-underline">
             <Image src="/logo.png" alt="gender-paygap.de" width={120} height={40} className="h-8 w-auto" priority />
           </Link>
-          <a href="tel:+49622295992400" className="text-[0.82rem] font-semibold text-primary-700 no-underline">
+          <a href="tel:+49622295992400" className="text-[0.82rem] font-semibold text-gold no-underline">
             +49 6222 9599 2400
           </a>
         </div>
@@ -1010,7 +1010,7 @@ export default function KuendigungPruefenPage() {
           <div className="max-w-[640px] mx-auto px-6 py-4">
             <h1 className="sr-only">Kündigung kostenlos prüfen lassen — Ersteinschätzung in 2 Minuten</h1>
             <div className="flex items-center justify-between mb-2">
-              <span className="text-[0.78rem] font-semibold text-primary-700">
+              <span className="text-[0.78rem] font-semibold text-gold">
                 {cat}
               </span>
               <span className="text-[0.78rem] text-ink-muted">
@@ -1019,7 +1019,7 @@ export default function KuendigungPruefenPage() {
             </div>
             <div className="h-2 bg-border rounded-full overflow-hidden">
               <div
-                className="h-full bg-primary rounded-full transition-all duration-500 ease-out"
+                className="h-full bg-gold rounded-full transition-all duration-500 ease-out"
                 style={{ width: `${progress}%` }}
               />
             </div>
@@ -1043,7 +1043,7 @@ export default function KuendigungPruefenPage() {
                 <button
                   onClick={() => canAdvance() && goTo(getNextManualStep())}
                   disabled={!canAdvance()}
-                  className="py-3 px-8 bg-primary-700 text-white border-none rounded-sm font-sans text-[0.92rem] font-semibold cursor-pointer transition-all hover:bg-[#3730a3] hover:-translate-y-px disabled:opacity-40 disabled:cursor-not-allowed"
+                  className="py-3 px-8 bg-gold text-white border-none rounded-sm font-sans text-[0.92rem] font-semibold cursor-pointer transition-all hover:bg-[#3730a3] hover:-translate-y-px disabled:opacity-40 disabled:cursor-not-allowed"
                 >
                   Weiter &rarr;
                 </button>

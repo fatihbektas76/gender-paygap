@@ -83,9 +83,9 @@ export default function BerichtspflichtenPage() {
 
       <main>
         {/* Hero */}
-        <header className="pt-[150px] pb-[80px] px-8 bg-accent-50 max-md:pt-[120px] max-md:pb-[60px] max-md:px-6">
+        <header className="pt-[150px] pb-[80px] px-8 bg-cream-dark max-md:pt-[120px] max-md:pb-[60px] max-md:px-6">
           <div className="max-w-content mx-auto">
-            <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-accent-700 mb-2.5">Arbeitgeber</div>
+            <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-blue mb-2.5">Arbeitgeber</div>
             <h1 className="font-serif text-[clamp(2rem,4vw,2.8rem)] font-extrabold leading-[1.15] mb-5 tracking-tight max-md:text-[1.8rem]">
               Berichtspflichten zum Gender Pay Gap &mdash; Was Unternehmen wissen m&uuml;ssen
             </h1>
@@ -110,10 +110,10 @@ export default function BerichtspflichtenPage() {
                 <table className="w-full border-collapse text-[0.92rem]">
                   <thead>
                     <tr>
-                      <th className="text-left p-4 bg-accent-50 border border-border font-semibold text-ink w-[160px]">Unternehmensgröße</th>
-                      <th className="text-left p-4 bg-accent-50 border border-border font-semibold text-ink w-[160px]">Erster Bericht</th>
-                      <th className="text-left p-4 bg-accent-50 border border-border font-semibold text-ink w-[140px]">Rhythmus</th>
-                      <th className="text-left p-4 bg-accent-50 border border-border font-semibold text-ink">Rechtsgrundlage</th>
+                      <th className="text-left p-4 bg-cream-dark border border-border font-semibold text-ink w-[160px]">Unternehmensgröße</th>
+                      <th className="text-left p-4 bg-cream-dark border border-border font-semibold text-ink w-[160px]">Erster Bericht</th>
+                      <th className="text-left p-4 bg-cream-dark border border-border font-semibold text-ink w-[140px]">Rhythmus</th>
+                      <th className="text-left p-4 bg-cream-dark border border-border font-semibold text-ink">Rechtsgrundlage</th>
                     </tr>
                   </thead>
                   <tbody>
@@ -146,9 +146,9 @@ export default function BerichtspflichtenPage() {
             <div className="space-y-5">
               {berichtsInhalte.map((item, i) => (
                 <FadeUp key={item.nr} delay={Math.min(i, 3) as 0 | 1 | 2 | 3}>
-                  <div className="bg-white border-l-4 border-accent rounded p-6">
+                  <div className="bg-white border-l-4 border-blue rounded p-6">
                     <div className="flex items-start gap-4">
-                      <div className="w-8 h-8 rounded-full bg-accent-50 text-accent-700 font-bold text-[0.9rem] flex items-center justify-center shrink-0">{item.nr}</div>
+                      <div className="w-8 h-8 rounded-full bg-cream-dark text-blue font-bold text-[0.9rem] flex items-center justify-center shrink-0">{item.nr}</div>
                       <div>
                         <h3 className="font-serif text-[1.05rem] font-bold text-ink mb-1">{item.titel}</h3>
                         <p className="text-[0.88rem] text-ink-muted leading-relaxed m-0">{item.beschreibung}</p>
@@ -168,7 +168,7 @@ export default function BerichtspflichtenPage() {
               Gemeinsame Entgeltbewertung bei GPG &gt; 5 % (Art. 10)
             </h2>
             <FadeUp>
-              <div className="bg-accent-50 border border-accent/30 rounded p-7">
+              <div className="bg-cream-dark border border-blue/30 rounded p-7">
                 <p className="text-[0.95rem] text-ink leading-relaxed mb-4">
                   Wenn der Bericht in einer Vergütungskategorie einen <strong>Gender Pay Gap von mehr als 5 %</strong> ausweist,
                   der nicht durch objektive, geschlechtsneutrale Kriterien gerechtfertigt werden kann, greift Art. 10 der EU-Richtlinie:
@@ -206,7 +206,7 @@ export default function BerichtspflichtenPage() {
         <ContactForm />
 
         {/* CTA */}
-        <section className="py-[70px] px-8 bg-accent-700 text-white text-center max-md:py-12 max-md:px-6">
+        <section className="py-[70px] px-8 bg-blue text-white text-center max-md:py-12 max-md:px-6">
           <div className="max-w-[700px] mx-auto">
             <h2 className="font-serif text-[clamp(1.5rem,3vw,2rem)] font-bold mb-4">
               Ersten Bericht vorbereiten — kostenlose Ersteinschätzung
@@ -216,7 +216,7 @@ export default function BerichtspflichtenPage() {
             </p>
             <a
               href="/kontakt"
-              className="inline-flex items-center gap-2 px-8 py-3.5 rounded-sm text-[0.95rem] font-semibold no-underline transition-all bg-white text-accent-700 hover:bg-accent-50 hover:-translate-y-0.5"
+              className="inline-flex items-center gap-2 px-8 py-3.5 rounded-sm text-[0.95rem] font-semibold no-underline transition-all bg-white text-blue hover:bg-cream-dark hover:-translate-y-0.5"
             >
               Jetzt Kontakt aufnehmen &rarr;
             </a>

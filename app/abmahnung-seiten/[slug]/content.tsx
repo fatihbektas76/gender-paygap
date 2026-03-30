@@ -28,14 +28,14 @@ export default function AbmahnungContent({ entry, prev, next, faqs, uniqueIntro,
       <div className="bg-slate-50 pt-[120px] pb-[50px] px-8 border-b border-border">
         <div className="max-w-content mx-auto">
           <nav className="text-[0.84rem] text-ink-muted mb-6">
-            <Link href="/" className="text-primary no-underline hover:underline">Startseite</Link>
+            <Link href="/" className="text-gold no-underline hover:underline">Startseite</Link>
             <span className="mx-2">/</span>
-            <Link href="/abmahnung" className="text-primary no-underline hover:underline">Abmahnung</Link>
+            <Link href="/abmahnung" className="text-gold no-underline hover:underline">Abmahnung</Link>
             <span className="mx-2">/</span>
             <span>Nach {label}</span>
           </nav>
           <StandAnzeige />
-          <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-primary-700 mb-2.5">
+          <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-gold mb-2.5">
             Kündigung &middot; Abmahnung
           </div>
           <h1 className="font-serif text-[clamp(1.8rem,4vw,2.4rem)] font-bold leading-[1.2] max-w-[700px]">
@@ -50,8 +50,8 @@ export default function AbmahnungContent({ entry, prev, next, faqs, uniqueIntro,
       {/* ───── b. Warning Box ───── */}
       <section className="py-8 px-8 bg-white">
         <div className="max-w-content mx-auto">
-          <div className="flex items-start gap-4 py-5 px-6 bg-slate-50 rounded-sm border-l-[3px] border-primary">
-            <svg className="min-w-[24px] text-primary mt-0.5" width="24" height="24" fill="none" viewBox="0 0 24 24">
+          <div className="flex items-start gap-4 py-5 px-6 bg-slate-50 rounded-sm border-l-[3px] border-gold">
+            <svg className="min-w-[24px] text-gold mt-0.5" width="24" height="24" fill="none" viewBox="0 0 24 24">
               <path d="M12 2L1 21h22L12 2z" fill="none" stroke="currentColor" strokeWidth="2" strokeLinejoin="round" />
               <path d="M12 9v4M12 17h.01" stroke="currentColor" strokeWidth="2" strokeLinecap="round" />
             </svg>
@@ -72,7 +72,7 @@ export default function AbmahnungContent({ entry, prev, next, faqs, uniqueIntro,
       <section className="py-[60px] px-8 bg-slate-50">
         <div className="max-w-content mx-auto">
           <div className="max-w-[740px]">
-            <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-primary-700 mb-2.5">
+            <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-gold mb-2.5">
               Einordnung
             </div>
             <h2 className="font-serif text-[clamp(1.4rem,3vw,1.9rem)] font-bold leading-[1.25] mb-5">
@@ -112,7 +112,7 @@ export default function AbmahnungContent({ entry, prev, next, faqs, uniqueIntro,
       <section className="py-[60px] px-8 bg-white">
         <div className="max-w-content mx-auto">
           <div className="max-w-[740px]">
-            <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-primary-700 mb-2.5">
+            <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-gold mb-2.5">
               Prüfschema
             </div>
             <h2 className="font-serif text-[clamp(1.4rem,3vw,1.9rem)] font-bold leading-[1.25] mb-5">
@@ -131,7 +131,7 @@ export default function AbmahnungContent({ entry, prev, next, faqs, uniqueIntro,
                 { nr: 5, title: 'Androhung von Konsequenzen', check: 'Enthält die Abmahnung den Hinweis, dass bei Wiederholung die Kündigung droht?' },
               ].map((item) => (
                 <div key={item.nr} className="flex items-start gap-4 py-4 px-5 bg-slate-50 rounded-sm border border-border">
-                  <div className="w-8 h-8 min-w-[32px] rounded-sm border-2 border-primary flex items-center justify-center font-serif text-[0.9rem] font-bold text-primary-700">
+                  <div className="w-8 h-8 min-w-[32px] rounded-sm border-2 border-gold flex items-center justify-center font-serif text-[0.9rem] font-bold text-gold">
                     {item.nr}
                   </div>
                   <div>
@@ -149,7 +149,7 @@ export default function AbmahnungContent({ entry, prev, next, faqs, uniqueIntro,
       <section className="py-[60px] px-8 bg-slate-50">
         <div className="max-w-content mx-auto">
           <div className="max-w-[740px]">
-            <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-primary-700 mb-2.5">
+            <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-gold mb-2.5">
               Ihre Optionen
             </div>
             <h2 className="font-serif text-[clamp(1.4rem,3vw,1.9rem)] font-bold leading-[1.25] mb-5">
@@ -185,7 +185,7 @@ export default function AbmahnungContent({ entry, prev, next, faqs, uniqueIntro,
       <section className="py-[60px] px-8 bg-white">
         <div className="max-w-content mx-auto">
           <div className="max-w-[740px]">
-            <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-primary-700 mb-2.5">
+            <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-gold mb-2.5">
               Handlungsempfehlung
             </div>
             <h2 className="font-serif text-[clamp(1.4rem,3vw,1.9rem)] font-bold leading-[1.25] mb-5">
@@ -193,7 +193,7 @@ export default function AbmahnungContent({ entry, prev, next, faqs, uniqueIntro,
             </h2>
             <div className="grid grid-cols-2 gap-4 max-md:grid-cols-1">
               <div className="bg-slate-50 border border-border rounded p-5">
-                <div className="text-primary-700 text-[1.2rem] mb-2">&#10003;</div>
+                <div className="text-gold text-[1.2rem] mb-2">&#10003;</div>
                 <h3 className="font-serif text-[0.95rem] font-bold mb-2">Das sollten Sie tun</h3>
                 <ul className="text-[0.84rem] text-ink-muted leading-relaxed list-disc pl-4 space-y-1.5">
                   <li>Abmahnung als &bdquo;erhalten&ldquo; bestätigen (nicht als inhaltlich richtig)</li>
@@ -223,7 +223,7 @@ export default function AbmahnungContent({ entry, prev, next, faqs, uniqueIntro,
       <section className="py-[50px] px-8 bg-white">
         <div className="max-w-content mx-auto">
           <div className="max-w-[600px]">
-            <div className="border-[1.5px] border-primary rounded bg-slate-50 p-8 text-center">
+            <div className="border-[1.5px] border-gold rounded bg-slate-50 p-8 text-center">
               <h2 className="font-serif text-[1.4rem] font-bold mb-4">Kündigung nach Abmahnung prüfen lassen</h2>
               <p className="text-[0.95rem] text-ink-light leading-relaxed mb-6">
                 Wir prüfen Ihre Kündigung und Ihre Abmahnung(en) kostenlos und geben Ihnen
@@ -231,7 +231,7 @@ export default function AbmahnungContent({ entry, prev, next, faqs, uniqueIntro,
               </p>
               <a
                 href="/#kontakt"
-                className="block w-full py-3.5 bg-primary-700 text-white border-none rounded-sm font-sans text-base font-semibold no-underline text-center transition-all hover:bg-[#3730a3] hover:-translate-y-px hover:shadow-[0_6px_20px_rgba(99,102,241,0.25)]"
+                className="block w-full py-3.5 bg-gold text-white border-none rounded-sm font-sans text-base font-semibold no-underline text-center transition-all hover:bg-[#3730a3] hover:-translate-y-px hover:shadow-[0_6px_20px_rgba(166,139,75,0.25)]"
               >
                 Kündigung jetzt kostenlos prüfen &rarr;
               </a>
@@ -247,13 +247,13 @@ export default function AbmahnungContent({ entry, prev, next, faqs, uniqueIntro,
       <section className="py-[60px] px-8 bg-slate-50">
         <div className="max-w-content mx-auto">
           <div className="max-w-[740px]">
-            <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-primary-700 mb-2.5">
+            <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-gold mb-2.5">
               Rechtliche Grundlagen
             </div>
             <h2 className="font-serif text-[clamp(1.4rem,3vw,1.9rem)] font-bold leading-[1.25] mb-5">
               Abmahnung und Kündigung &mdash; was sagt das Gesetz?
             </h2>
-            <div className="py-5 px-6 bg-white rounded-sm border-l-[3px] border-primary">
+            <div className="py-5 px-6 bg-white rounded-sm border-l-[3px] border-gold">
               <p className="text-[0.95rem] text-ink leading-relaxed m-0">
                 <DejureText text={rechtlicheGrundlagen} />
               </p>
@@ -265,8 +265,8 @@ export default function AbmahnungContent({ entry, prev, next, faqs, uniqueIntro,
       {/* ───── f. Praxistipp ───── */}
       <section className="py-8 px-8 bg-white">
         <div className="max-w-content mx-auto">
-          <div className="max-w-[740px] py-5 px-6 bg-slate-50 rounded-sm border-l-[3px] border-primary">
-            <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-primary-700 mb-2">
+          <div className="max-w-[740px] py-5 px-6 bg-slate-50 rounded-sm border-l-[3px] border-gold">
+            <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-gold mb-2">
               Praxistipp
             </div>
             <p className="text-[0.95rem] text-ink leading-relaxed m-0">
@@ -279,7 +279,7 @@ export default function AbmahnungContent({ entry, prev, next, faqs, uniqueIntro,
       {/* ───── h. 3 Schritte ───── */}
       <section className="py-[70px] px-8 bg-slate-50">
         <div className="max-w-content mx-auto">
-          <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-primary-700 mb-2.5">
+          <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-gold mb-2.5">
             Wie ist der Ablauf?
           </div>
           <h2 className="font-serif text-[clamp(1.4rem,3vw,1.9rem)] font-bold leading-[1.25] mb-8">
@@ -292,7 +292,7 @@ export default function AbmahnungContent({ entry, prev, next, faqs, uniqueIntro,
               { step: 3, title: 'Kanzlei beauftragen', desc: 'Wir übernehmen die gesamte Korrespondenz, reichen fristgerecht Klage ein und verhandeln Ihre Abfindung. Sie lehnen sich zurück.' },
             ].map((s) => (
               <div key={s.step} className="bg-white border border-border rounded p-6">
-                <div className="w-10 h-10 rounded-sm border-2 border-primary flex items-center justify-center font-serif text-[1.1rem] font-bold text-primary-700 mb-4">
+                <div className="w-10 h-10 rounded-sm border-2 border-gold flex items-center justify-center font-serif text-[1.1rem] font-bold text-gold mb-4">
                   {s.step}
                 </div>
                 <h3 className="font-serif text-[1.05rem] font-bold mb-2">{s.title}</h3>
@@ -303,7 +303,7 @@ export default function AbmahnungContent({ entry, prev, next, faqs, uniqueIntro,
           <div className="mt-8 text-center">
             <a
               href="/#kontakt"
-              className="inline-block py-3.5 px-8 bg-primary-700 text-white border-none rounded-sm font-sans text-base font-semibold no-underline transition-all hover:bg-[#3730a3] hover:-translate-y-px hover:shadow-[0_6px_20px_rgba(99,102,241,0.25)]"
+              className="inline-block py-3.5 px-8 bg-gold text-white border-none rounded-sm font-sans text-base font-semibold no-underline transition-all hover:bg-[#3730a3] hover:-translate-y-px hover:shadow-[0_6px_20px_rgba(166,139,75,0.25)]"
             >
               Kündigung kostenlos prüfen lassen &rarr;
             </a>
@@ -314,14 +314,14 @@ export default function AbmahnungContent({ entry, prev, next, faqs, uniqueIntro,
       {/* ───── i. Urgency CTA #2 ───── */}
       <section className="py-[50px] px-8 bg-white">
         <div className="max-w-content mx-auto">
-          <div className="flex items-center justify-between gap-6 py-5 px-6 bg-slate-50 rounded-sm border-l-[3px] border-primary max-md:flex-col max-md:items-start">
+          <div className="flex items-center justify-between gap-6 py-5 px-6 bg-slate-50 rounded-sm border-l-[3px] border-gold max-md:flex-col max-md:items-start">
             <div>
               <p className="text-[1rem] font-semibold text-ink m-0">Nur 3 Wochen Frist &mdash; jetzt handeln.</p>
               <p className="text-[0.84rem] text-ink-muted mt-1 m-0">Kündigung anwaltlich prüfen lassen, bevor die Frist abläuft.</p>
             </div>
             <a
               href="/#kontakt"
-              className="inline-block py-3 px-6 bg-primary-700 text-white border-none rounded-sm font-sans text-[0.92rem] font-semibold no-underline whitespace-nowrap transition-all hover:bg-[#3730a3]"
+              className="inline-block py-3 px-6 bg-gold text-white border-none rounded-sm font-sans text-[0.92rem] font-semibold no-underline whitespace-nowrap transition-all hover:bg-[#3730a3]"
             >
               Jetzt kontaktieren &rarr;
             </a>
@@ -358,7 +358,7 @@ export default function AbmahnungContent({ entry, prev, next, faqs, uniqueIntro,
               },
             ].map((card) => (
               <div key={card.title} className="bg-white border border-border rounded overflow-hidden flex">
-                <div className="w-[56px] min-w-[56px] bg-primary flex items-center justify-center text-white">{card.icon}</div>
+                <div className="w-[56px] min-w-[56px] bg-gold flex items-center justify-center text-white">{card.icon}</div>
                 <div className="p-5">
                   <h3 className="font-serif text-[1rem] font-bold mb-2">{card.title}</h3>
                   <p className="text-[0.84rem] text-ink-muted leading-relaxed">{card.desc}</p>
@@ -372,7 +372,7 @@ export default function AbmahnungContent({ entry, prev, next, faqs, uniqueIntro,
       {/* ───── k. Trust Bar ───── */}
       <section className="py-[40px] px-8 bg-white">
         <div className="max-w-content mx-auto">
-          <div className="grid grid-cols-4 gap-0 border border-primary rounded-sm overflow-hidden bg-slate-50 max-md:grid-cols-2">
+          <div className="grid grid-cols-4 gap-0 border border-gold rounded-sm overflow-hidden bg-slate-50 max-md:grid-cols-2">
             {[
               { value: '2.000+', label: 'Beratungen' },
               { value: '2.000+', label: 'Verfahren' },
@@ -381,9 +381,9 @@ export default function AbmahnungContent({ entry, prev, next, faqs, uniqueIntro,
             ].map((stat, i) => (
               <div
                 key={stat.label}
-                className={`text-center py-5 px-4${i < 3 ? ' border-r border-primary/30 max-md:border-r-0' : ''}${i < 2 ? ' max-md:border-b max-md:border-primary/30' : ''}`}
+                className={`text-center py-5 px-4${i < 3 ? ' border-r border-gold/30 max-md:border-r-0' : ''}${i < 2 ? ' max-md:border-b max-md:border-gold/30' : ''}`}
               >
-                <div className="font-serif text-[1.3rem] font-bold text-primary-700">{stat.value}</div>
+                <div className="font-serif text-[1.3rem] font-bold text-gold">{stat.value}</div>
                 <div className="text-[0.78rem] text-ink-muted mt-0.5">{stat.label}</div>
               </div>
             ))}
@@ -394,7 +394,7 @@ export default function AbmahnungContent({ entry, prev, next, faqs, uniqueIntro,
       {/* ───── l. FAQ Accordion ───── */}
       <section className="py-[70px] px-8 bg-slate-50">
         <div className="max-w-content mx-auto">
-          <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-primary-700 mb-2.5">
+          <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-gold mb-2.5">
             Häufige Fragen
           </div>
           <h2 className="font-serif text-[clamp(1.4rem,3vw,1.9rem)] font-bold leading-[1.25] mb-6">
@@ -404,7 +404,7 @@ export default function AbmahnungContent({ entry, prev, next, faqs, uniqueIntro,
             {faqs.map((faq, i) => (
               <div key={i} className="border-b border-border">
                 <button
-                  className="w-full bg-none border-none cursor-pointer py-[22px] font-sans text-base font-semibold text-ink text-left flex justify-between items-center gap-4 hover:text-primary transition-colors"
+                  className="w-full bg-none border-none cursor-pointer py-[22px] font-sans text-base font-semibold text-ink text-left flex justify-between items-center gap-4 hover:text-gold transition-colors"
                   onClick={() => setFaqOpen(faqOpen === i ? null : i)}
                 >
                   {faq.q}
@@ -426,24 +426,24 @@ export default function AbmahnungContent({ entry, prev, next, faqs, uniqueIntro,
         <div className="max-w-content mx-auto">
           <div className="flex flex-wrap gap-3">
             {prev && (
-              <Link href={`/kuendigung-nach-${prev.slug}/`} className="py-2.5 px-5 rounded-full border border-border text-[0.85rem] font-semibold text-ink no-underline hover:border-primary hover:text-primary-700 transition-all">
+              <Link href={`/kuendigung-nach-${prev.slug}/`} className="py-2.5 px-5 rounded-full border border-border text-[0.85rem] font-semibold text-ink no-underline hover:border-gold hover:text-gold transition-all">
                 &larr; {prev.count} {prev.count === 1 ? 'Abmahnung' : 'Abmahnungen'}
               </Link>
             )}
             {next && (
-              <Link href={`/kuendigung-nach-${next.slug}/`} className="py-2.5 px-5 rounded-full border border-border text-[0.85rem] font-semibold text-ink no-underline hover:border-primary hover:text-primary-700 transition-all">
+              <Link href={`/kuendigung-nach-${next.slug}/`} className="py-2.5 px-5 rounded-full border border-border text-[0.85rem] font-semibold text-ink no-underline hover:border-gold hover:text-gold transition-all">
                 {next.count} Abmahnungen &rarr;
               </Link>
             )}
             {abmahnungEntries.filter((e) => e.count !== entry.count && e.count !== prev?.count && e.count !== next?.count).map((e) => (
-              <Link key={e.count} href={`/kuendigung-nach-${e.slug}/`} className="py-2.5 px-5 rounded-full border border-border text-[0.85rem] font-semibold text-ink no-underline hover:border-primary hover:text-primary-700 transition-all">
+              <Link key={e.count} href={`/kuendigung-nach-${e.slug}/`} className="py-2.5 px-5 rounded-full border border-border text-[0.85rem] font-semibold text-ink no-underline hover:border-gold hover:text-gold transition-all">
                 {e.count} {e.count === 1 ? 'Abmahnung' : 'Abmahnungen'}
               </Link>
             ))}
-            <Link href="/abmahnung" className="py-2.5 px-5 rounded-full border border-border text-[0.85rem] font-semibold text-ink no-underline hover:border-primary hover:text-primary-700 transition-all">
+            <Link href="/abmahnung" className="py-2.5 px-5 rounded-full border border-border text-[0.85rem] font-semibold text-ink no-underline hover:border-gold hover:text-gold transition-all">
               Abmahnung Übersicht
             </Link>
-            <Link href="/kuendigung" className="py-2.5 px-5 rounded-full border border-border text-[0.85rem] font-semibold text-ink no-underline hover:border-primary hover:text-primary-700 transition-all">
+            <Link href="/kuendigung" className="py-2.5 px-5 rounded-full border border-border text-[0.85rem] font-semibold text-ink no-underline hover:border-gold hover:text-gold transition-all">
               Kündigung Übersicht
             </Link>
           </div>
@@ -484,7 +484,7 @@ export default function AbmahnungContent({ entry, prev, next, faqs, uniqueIntro,
           </div>
           <a
             href="/#kontakt"
-            className="inline-block py-4 px-10 bg-primary text-white border-none rounded-sm font-sans text-[1.05rem] font-semibold no-underline transition-all hover:bg-primary-700 hover:-translate-y-px hover:shadow-[0_6px_20px_rgba(99,102,241,0.35)]"
+            className="inline-block py-4 px-10 bg-gold text-white border-none rounded-sm font-sans text-[1.05rem] font-semibold no-underline transition-all hover:bg-gold hover:-translate-y-px hover:shadow-[0_6px_20px_rgba(166,139,75,0.35)]"
           >
             Kündigung kostenlos prüfen lassen &rarr;
           </a>
@@ -492,13 +492,13 @@ export default function AbmahnungContent({ entry, prev, next, faqs, uniqueIntro,
       </section>
 
       {/* ───── o. Sticky CTA Bar ───── */}
-      <div className="fixed bottom-0 left-0 right-0 z-[9998] bg-[#1C1408] border-t-2 border-primary py-3 px-8">
+      <div className="fixed bottom-0 left-0 right-0 z-[9998] bg-[#1C1408] border-t-2 border-gold py-3 px-8">
         <div className="max-w-content mx-auto flex items-center justify-between gap-4">
           <div className="text-white">
             <span className="font-semibold text-[0.92rem]">Kündigung prüfen lassen</span>
             <span className="text-white/50 text-[0.78rem] ml-2 max-md:hidden">Kostenlos &middot; Antwort in 24h</span>
           </div>
-          <a href="/#kontakt" className="inline-block py-2.5 px-6 bg-primary text-white border-none rounded-sm font-sans text-[0.88rem] font-semibold no-underline whitespace-nowrap transition-all hover:bg-primary-700">
+          <a href="/#kontakt" className="inline-block py-2.5 px-6 bg-gold text-white border-none rounded-sm font-sans text-[0.88rem] font-semibold no-underline whitespace-nowrap transition-all hover:bg-gold">
             Jetzt prüfen &rarr;
           </a>
         </div>

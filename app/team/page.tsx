@@ -183,10 +183,10 @@ export default function TeamPage() {
 
       <div className="bg-slate-50 pt-[120px] pb-[50px] px-8 border-b border-border">
         <div className="max-w-content mx-auto">
-          <Link href="/" className="text-primary no-underline text-[0.88rem] font-medium hover:underline">
+          <Link href="/" className="text-gold no-underline text-[0.88rem] font-medium hover:underline">
             &larr; Zurück zur Startseite
           </Link>
-          <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-primary-700 mt-6 mb-2.5">
+          <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-gold mt-6 mb-2.5">
             Unsere Kanzlei
           </div>
           <h1 className="font-serif text-[2rem] font-bold">Unser Team</h1>

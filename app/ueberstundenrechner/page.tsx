@@ -117,13 +117,13 @@ export default function UeberstundenrechnerPage() {
       <div className="bg-slate-50 pt-[120px] pb-[50px] px-8 border-b border-border">
         <div className="max-w-content mx-auto">
           <nav className="text-[0.84rem] text-ink-muted mb-6">
-            <Link href="/" className="text-primary no-underline hover:underline">Start</Link>
+            <Link href="/" className="text-gold no-underline hover:underline">Start</Link>
             <span className="mx-2">/</span>
-            <Link href="/tools" className="text-primary no-underline hover:underline">Tools &amp; Rechner</Link>
+            <Link href="/tools" className="text-gold no-underline hover:underline">Tools &amp; Rechner</Link>
             <span className="mx-2">/</span>
             <span>Überstundenrechner</span>
           </nav>
-          <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-primary-700 mb-2.5">
+          <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-gold mb-2.5">
             Kostenlos &amp; sofort
           </div>
           <h1 className="font-serif text-[clamp(1.8rem,4vw,2.4rem)] font-bold leading-[1.2] max-w-[700px]">
@@ -135,21 +135,21 @@ export default function UeberstundenrechnerPage() {
           </p>
           <div className="flex flex-wrap gap-5 mt-5 text-[0.88rem] text-ink-light">
             <span className="flex items-center gap-1.5">
-              <svg className="text-primary" width="16" height="16" fill="none" viewBox="0 0 24 24">
+              <svg className="text-gold" width="16" height="16" fill="none" viewBox="0 0 24 24">
                 <circle cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="2" />
                 <path d="M8 12l3 3 5-5" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
               </svg>
               Kostenlos
             </span>
             <span className="flex items-center gap-1.5">
-              <svg className="text-primary" width="16" height="16" fill="none" viewBox="0 0 24 24">
+              <svg className="text-gold" width="16" height="16" fill="none" viewBox="0 0 24 24">
                 <circle cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="2" />
                 <path d="M8 12l3 3 5-5" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
               </svg>
               Kein Login
             </span>
             <span className="flex items-center gap-1.5">
-              <svg className="text-primary" width="16" height="16" fill="none" viewBox="0 0 24 24">
+              <svg className="text-gold" width="16" height="16" fill="none" viewBox="0 0 24 24">
                 <circle cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="2" />
                 <path d="M8 12l3 3 5-5" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
               </svg>
@@ -175,13 +175,13 @@ export default function UeberstundenrechnerPage() {
       {/* CTA #1 */}
       <section className="py-6 px-8 bg-white">
         <div className="max-w-content mx-auto">
-          <div className="border-2 border-primary/30 rounded-sm p-5 bg-primary-50 flex items-center justify-between gap-6 flex-wrap">
+          <div className="border-2 border-gold/30 rounded-sm p-5 bg-gold-bg flex items-center justify-between gap-6 flex-wrap">
             <p className="text-[0.95rem] text-ink font-semibold m-0">
               Haben Sie unbezahlte Überstunden? Wir prüfen Ihre Ansprüche kostenlos.
             </p>
             <Link
               href="/kuendigung-pruefen"
-              className="inline-block py-2.5 px-6 bg-primary-700 text-white border-none rounded-sm font-sans text-[0.88rem] font-semibold no-underline transition-all hover:bg-[#3730a3] whitespace-nowrap"
+              className="inline-block py-2.5 px-6 bg-gold text-white border-none rounded-sm font-sans text-[0.88rem] font-semibold no-underline transition-all hover:bg-[#3730a3] whitespace-nowrap"
             >
               Jetzt kostenlos prüfen &rarr;
             </Link>
@@ -215,7 +215,7 @@ export default function UeberstundenrechnerPage() {
                   step={100}
                   value={gehalt}
                   onChange={(e) => setGehalt(Number(e.target.value))}
-                  className="w-full accent-primary-700"
+                  className="w-full accent-gold"
                 />
                 <div className="text-[0.92rem] font-semibold text-ink mt-1">
                   {gehalt.toLocaleString('de-DE')} &euro;
@@ -240,7 +240,7 @@ export default function UeberstundenrechnerPage() {
                   step={1}
                   value={wochenstunden}
                   onChange={(e) => setWochenstunden(Number(e.target.value))}
-                  className="w-full accent-primary-700"
+                  className="w-full accent-gold"
                 />
                 <div className="text-[0.92rem] font-semibold text-ink mt-1">
                   {wochenstunden} Std.
@@ -265,7 +265,7 @@ export default function UeberstundenrechnerPage() {
                   step={1}
                   value={ueberstunden}
                   onChange={(e) => setUeberstunden(Number(e.target.value))}
-                  className="w-full accent-primary-700"
+                  className="w-full accent-gold"
                 />
                 <div className="text-[0.92rem] font-semibold text-ink mt-1">
                   {ueberstunden} Std.
@@ -280,7 +280,7 @@ export default function UeberstundenrechnerPage() {
                     role="switch"
                     aria-checked={zuschlagAktiv}
                     onClick={() => setZuschlagAktiv(!zuschlagAktiv)}
-                    className={`relative w-11 h-6 rounded-full transition-colors ${zuschlagAktiv ? 'bg-primary-700' : 'bg-border'}`}
+                    className={`relative w-11 h-6 rounded-full transition-colors ${zuschlagAktiv ? 'bg-gold' : 'bg-border'}`}
                   >
                     <span
                       className={`absolute top-0.5 left-0.5 w-5 h-5 bg-white rounded-full transition-transform shadow-sm ${zuschlagAktiv ? 'translate-x-5' : 'translate-x-0'}`}
@@ -300,7 +300,7 @@ export default function UeberstundenrechnerPage() {
                       step={5}
                       value={zuschlag}
                       onChange={(e) => setZuschlag(Number(e.target.value))}
-                      className="w-full accent-primary-700"
+                      className="w-full accent-gold"
                     />
                     <div className="text-[0.92rem] font-semibold text-ink mt-1">{zuschlag} %</div>
                   </div>
@@ -310,13 +310,13 @@ export default function UeberstundenrechnerPage() {
               {/* Berechnen-Button */}
               <button
                 onClick={berechnen}
-                className="w-full py-3.5 bg-primary-700 text-white border-none rounded-sm font-sans text-base font-semibold cursor-pointer transition-all mt-2 hover:bg-[#3730a3] hover:-translate-y-px hover:shadow-[0_6px_20px_rgba(99,102,241,0.25)]"
+                className="w-full py-3.5 bg-gold text-white border-none rounded-sm font-sans text-base font-semibold cursor-pointer transition-all mt-2 hover:bg-[#3730a3] hover:-translate-y-px hover:shadow-[0_6px_20px_rgba(166,139,75,0.25)]"
               >
                 BERECHNEN
               </button>
               <p className="text-[0.75rem] text-ink-muted mt-4 leading-relaxed">
                 <strong>Hinweis:</strong> Dieses Tool dient ausschließlich der unverbindlichen Erstorientierung und ersetzt keine anwaltliche Beratung. Für eine verbindliche Einschätzung Ihres Falls wenden Sie sich bitte an einen{' '}
-                <Link href="/kuendigung-pruefen" className="text-primary no-underline hover:underline">Fachanwalt für Arbeitsrecht</Link>.
+                <Link href="/kuendigung-pruefen" className="text-gold no-underline hover:underline">Fachanwalt für Arbeitsrecht</Link>.
               </p>
             </div>
 
@@ -324,7 +324,7 @@ export default function UeberstundenrechnerPage() {
             <div className="ergebnis-box bg-slate-50 border border-border-light rounded p-8">
               {!result ? (
                 <div className="text-center py-10">
-                  <div className="w-14 h-14 rounded-full bg-primary-50 border border-primary/[0.12] flex items-center justify-center text-primary mx-auto mb-4">
+                  <div className="w-14 h-14 rounded-full bg-gold-bg border border-gold/[0.12] flex items-center justify-center text-gold mx-auto mb-4">
                     <svg width="24" height="24" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
                       <circle cx="12" cy="12" r="10" />
                       <polyline points="12 6 12 12 16 14" />
@@ -340,7 +340,7 @@ export default function UeberstundenrechnerPage() {
 
                   {/* Stundenlohn */}
                   <div className="mb-5 pb-5 border-b border-border">
-                    <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-primary-700 mb-1">
+                    <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-gold mb-1">
                       Ihr Bruttostundenlohn
                     </div>
                     <div className="font-serif text-[1.6rem] font-bold text-ink">
@@ -350,10 +350,10 @@ export default function UeberstundenrechnerPage() {
 
                   {/* Überstundenvergütung */}
                   <div className="mb-5 pb-5 border-b border-border">
-                    <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-primary-700 mb-1">
+                    <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-gold mb-1">
                       Mögliche Vergütung
                     </div>
-                    <div className="font-serif text-[2rem] font-bold text-primary-700">
+                    <div className="font-serif text-[2rem] font-bold text-gold">
                       {euro(result.verguetung)}
                     </div>
                     {zuschlagAktiv && (
@@ -365,7 +365,7 @@ export default function UeberstundenrechnerPage() {
 
                   {/* Tageswert */}
                   <div className="mb-5 pb-5 border-b border-border">
-                    <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-primary-700 mb-1">
+                    <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-gold mb-1">
                       Tageswert
                     </div>
                     <div className="font-serif text-[1.3rem] font-bold text-ink">
@@ -376,7 +376,7 @@ export default function UeberstundenrechnerPage() {
                   {/* Jahreshochrechnung */}
                   {ueberstunden > 0 && (
                     <div className="mb-6">
-                      <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-primary-700 mb-1">
+                      <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-gold mb-1">
                         Jahreshochrechnung
                       </div>
                       <div className="font-serif text-[1.3rem] font-bold text-ink">
@@ -389,13 +389,13 @@ export default function UeberstundenrechnerPage() {
                   )}
 
                   {/* CTA in Ergebnis */}
-                  <div className="mt-6 py-4 px-5 bg-white rounded-sm border-l-[3px] border-primary">
+                  <div className="mt-6 py-4 px-5 bg-white rounded-sm border-l-[3px] border-gold">
                     <p className="text-[0.88rem] font-semibold text-ink mb-3 m-0">
                       Stehen Ihnen diese Überstunden noch zu?
                     </p>
                     <Link
                       href="/kuendigung-pruefen"
-                      className="inline-block py-2.5 px-5 bg-primary-700 text-white border-none rounded-sm font-sans text-[0.85rem] font-semibold no-underline transition-all hover:bg-[#3730a3]"
+                      className="inline-block py-2.5 px-5 bg-gold text-white border-none rounded-sm font-sans text-[0.85rem] font-semibold no-underline transition-all hover:bg-[#3730a3]"
                     >
                       Kostenlos prüfen &rarr;
                     </Link>
@@ -411,7 +411,7 @@ export default function UeberstundenrechnerPage() {
       <section className="py-[70px] px-8 bg-slate-50">
         <div className="max-w-content mx-auto">
           <div className="max-w-[740px]">
-            <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-primary-700 mb-2.5">
+            <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-gold mb-2.5">
               Hintergrund
             </div>
             <h2 className="font-serif text-[clamp(1.4rem,3vw,1.9rem)] font-bold leading-[1.25] mb-6">
@@ -435,9 +435,9 @@ export default function UeberstundenrechnerPage() {
             </p>
             <p className="text-[0.95rem] text-ink-light leading-relaxed">
               Wurden Sie gekündigt? Berechnen Sie auch Ihre mögliche Abfindung mit unserem{' '}
-              <Link href="/abfindungsrechner" className="text-primary no-underline hover:underline">Abfindungsrechner</Link>.
+              <Link href="/abfindungsrechner" className="text-gold no-underline hover:underline">Abfindungsrechner</Link>.
               Oder nutzen Sie unsere{' '}
-              <Link href="/tools" className="text-primary no-underline hover:underline">weiteren kostenlosen Tools</Link>{' '}
+              <Link href="/tools" className="text-gold no-underline hover:underline">weiteren kostenlosen Tools</Link>{' '}
               für eine umfassende Einschätzung Ihrer arbeitsrechtlichen Situation.
             </p>
           </div>
@@ -448,7 +448,7 @@ export default function UeberstundenrechnerPage() {
       <section className="py-[70px] px-8 bg-white">
         <div className="max-w-content mx-auto">
           <div className="max-w-[740px]">
-            <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-primary-700 mb-2.5">
+            <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-gold mb-2.5">
               Praxishinweis
             </div>
             <h2 className="font-serif text-[clamp(1.4rem,3vw,1.9rem)] font-bold leading-[1.25] mb-6">
@@ -457,12 +457,12 @@ export default function UeberstundenrechnerPage() {
             <p className="text-[0.95rem] text-ink-light leading-relaxed mb-5">
               Werden Sie gekündigt, stellt sich die Frage: Was passiert mit angesammelten Überstunden?
               Grundsätzlich hat der Arbeitgeber das Recht, Ihnen die Überstunden während der{' '}
-              <Link href="/kuendigungsfrist-rechner" className="text-primary no-underline hover:underline">Kündigungsfrist</Link>{' '}
+              <Link href="/kuendigungsfrist-rechner" className="text-gold no-underline hover:underline">Kündigungsfrist</Link>{' '}
               als Freizeitausgleich zu gewähren. Ist das aufgrund der Restarbeitszeit nicht mehr möglich,
               entsteht ein <strong>Auszahlungsanspruch</strong>.
             </p>
             <p className="text-[0.95rem] text-ink-light leading-relaxed mb-5">
-              Bei einem <Link href="/aufhebungsvertrag" className="text-primary no-underline hover:underline">Aufhebungsvertrag</Link>{' '}
+              Bei einem <Link href="/aufhebungsvertrag" className="text-gold no-underline hover:underline">Aufhebungsvertrag</Link>{' '}
               sollten offene Überstunden unbedingt in die Verhandlung einbezogen werden. In der Praxis werden
               Überstundenansprüche häufig in die Abfindungssumme eingerechnet — achten Sie darauf, dass dies
               im Aufhebungsvertrag klar geregelt ist, damit keine Ansprüche untergehen.
@@ -480,7 +480,7 @@ export default function UeberstundenrechnerPage() {
       <section className="py-[70px] px-8 bg-slate-50">
         <div className="max-w-content mx-auto">
           <div className="max-w-[740px]">
-            <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-primary-700 mb-2.5">
+            <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-gold mb-2.5">
               Rechtlicher Hintergrund
             </div>
             <h2 className="font-serif text-[clamp(1.4rem,3vw,1.9rem)] font-bold leading-[1.25] mb-6">
@@ -502,7 +502,7 @@ export default function UeberstundenrechnerPage() {
               Unabhängig von der vertraglichen Regelung gilt: Unterschreitet die effektive Vergütung pro Stunde
               den gesetzlichen Mindestlohn, ist die Abgeltungsklausel insoweit unwirksam. Lassen Sie Ihre
               Vertragsklausel von einem{' '}
-              <Link href="/kuendigung-pruefen" className="text-primary no-underline hover:underline">Fachanwalt prüfen</Link> —
+              <Link href="/kuendigung-pruefen" className="text-gold no-underline hover:underline">Fachanwalt prüfen</Link> —
               oft ist deutlich mehr möglich, als der Arbeitsvertrag vermuten lässt.
             </p>
           </div>
@@ -520,7 +520,7 @@ export default function UeberstundenrechnerPage() {
           </p>
           <Link
             href="/kuendigung-pruefen"
-            className="inline-block py-3.5 px-8 bg-primary text-white border-none rounded-sm font-sans text-base font-semibold no-underline transition-all hover:bg-primary-700 hover:-translate-y-px hover:shadow-[0_6px_20px_rgba(99,102,241,0.35)]"
+            className="inline-block py-3.5 px-8 bg-gold text-white border-none rounded-sm font-sans text-base font-semibold no-underline transition-all hover:bg-gold hover:-translate-y-px hover:shadow-[0_6px_20px_rgba(166,139,75,0.35)]"
           >
             Jetzt kostenlos anfragen &rarr;
           </Link>
@@ -541,17 +541,17 @@ export default function UeberstundenrechnerPage() {
             </div>
             <ul className="list-none space-y-2 text-[0.88rem]">
               <li>
-                <a href="https://www.gesetze-im-internet.de/bgb/__612.html" target="_blank" rel="noopener noreferrer" className="text-primary no-underline hover:underline">
+                <a href="https://www.gesetze-im-internet.de/bgb/__612.html" target="_blank" rel="noopener noreferrer" className="text-gold no-underline hover:underline">
                   &sect;612 BGB &mdash; Vergütungspflicht für geleistete Dienste &rarr;
                 </a>
               </li>
               <li>
-                <a href="https://www.gesetze-im-internet.de/bgb/__305.html" target="_blank" rel="noopener noreferrer" className="text-primary no-underline hover:underline">
+                <a href="https://www.gesetze-im-internet.de/bgb/__305.html" target="_blank" rel="noopener noreferrer" className="text-gold no-underline hover:underline">
                   &sect;&sect;305&thinsp;ff. BGB &mdash; AGB-Kontrolle (Abgeltungsklauseln) &rarr;
                 </a>
               </li>
               <li>
-                <a href="https://www.gesetze-im-internet.de/arbzg/" target="_blank" rel="noopener noreferrer" className="text-primary no-underline hover:underline">
+                <a href="https://www.gesetze-im-internet.de/arbzg/" target="_blank" rel="noopener noreferrer" className="text-gold no-underline hover:underline">
                   Arbeitszeitgesetz (ArbZG) &mdash; Höchstarbeitszeiten &rarr;
                 </a>
               </li>
@@ -563,7 +563,7 @@ export default function UeberstundenrechnerPage() {
       {/* FAQ */}
       <section className="py-[70px] px-8 bg-slate-50">
         <div className="max-w-content mx-auto">
-          <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-primary-700 mb-2.5">
+          <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-gold mb-2.5">
             Häufige Fragen
           </div>
           <h2 className="font-serif text-[clamp(1.4rem,3vw,1.9rem)] font-bold leading-[1.25] mb-6">
@@ -576,7 +576,7 @@ export default function UeberstundenrechnerPage() {
       {/* CTA #3 */}
       <section className="py-[70px] px-8 bg-slate-50">
         <div className="max-w-content mx-auto">
-          <div className="border-2 border-primary/20 rounded-sm p-8 bg-white text-center max-w-[640px] mx-auto">
+          <div className="border-2 border-gold/20 rounded-sm p-8 bg-white text-center max-w-[640px] mx-auto">
             <h2 className="font-serif text-[1.3rem] font-bold mb-3">
               Ihr Ergebnis liegt vor — was jetzt?
             </h2>
@@ -586,7 +586,7 @@ export default function UeberstundenrechnerPage() {
             </p>
             <Link
               href="/kuendigung-pruefen"
-              className="inline-block py-3.5 px-8 bg-primary-700 text-white border-none rounded-sm font-sans text-base font-semibold no-underline transition-all hover:bg-[#3730a3] hover:-translate-y-px hover:shadow-[0_6px_20px_rgba(99,102,241,0.25)]"
+              className="inline-block py-3.5 px-8 bg-gold text-white border-none rounded-sm font-sans text-base font-semibold no-underline transition-all hover:bg-[#3730a3] hover:-translate-y-px hover:shadow-[0_6px_20px_rgba(166,139,75,0.25)]"
             >
               Kostenlose Ersteinschätzung &rarr;
             </Link>

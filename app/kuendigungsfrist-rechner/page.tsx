@@ -102,9 +102,9 @@ function formatWochentag(d: Date): string {
 }
 
 const inputClass =
-  'w-full py-3 px-4 border border-border rounded-sm font-sans text-[0.92rem] text-ink bg-white transition-all outline-none focus:border-primary focus:shadow-[0_0_0_3px_rgba(99,102,241,0.1)]';
+  'w-full py-3 px-4 border border-border rounded-sm font-sans text-[0.92rem] text-ink bg-white transition-all outline-none focus:border-gold focus:shadow-[0_0_0_3px_rgba(166,139,75,0.1)]';
 const selectClass =
-  'form-select w-full py-3 px-4 border border-border rounded-sm font-sans text-[0.92rem] text-ink bg-white transition-all outline-none focus:border-primary focus:shadow-[0_0_0_3px_rgba(99,102,241,0.1)]';
+  'form-select w-full py-3 px-4 border border-border rounded-sm font-sans text-[0.92rem] text-ink bg-white transition-all outline-none focus:border-gold focus:shadow-[0_0_0_3px_rgba(166,139,75,0.1)]';
 
 export default function KuendigungsfristRechnerPage() {
   const [kuendigungsDatum, setKuendigungsDatum] = useState('');
@@ -192,13 +192,13 @@ export default function KuendigungsfristRechnerPage() {
       <div className="bg-slate-50 pt-[120px] pb-[50px] px-8 border-b border-border">
         <div className="max-w-content mx-auto">
           <nav className="text-[0.84rem] text-ink-muted mb-6">
-            <Link href="/" className="text-primary no-underline hover:underline">Start</Link>
+            <Link href="/" className="text-gold no-underline hover:underline">Start</Link>
             <span className="mx-2">/</span>
-            <Link href="/tools" className="text-primary no-underline hover:underline">Tools &amp; Rechner</Link>
+            <Link href="/tools" className="text-gold no-underline hover:underline">Tools &amp; Rechner</Link>
             <span className="mx-2">/</span>
             <span>Kündigungsfrist berechnen</span>
           </nav>
-          <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-primary-700 mb-2.5">
+          <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-gold mb-2.5">
             Kostenlos &amp; sofort
           </div>
           <h1 className="font-serif text-[clamp(1.8rem,4vw,2.4rem)] font-bold leading-[1.2] max-w-[700px]">
@@ -210,21 +210,21 @@ export default function KuendigungsfristRechnerPage() {
           </p>
           <div className="flex flex-wrap gap-5 mt-5 text-[0.88rem] text-ink-light">
             <span className="flex items-center gap-1.5">
-              <svg className="text-primary" width="16" height="16" fill="none" viewBox="0 0 24 24">
+              <svg className="text-gold" width="16" height="16" fill="none" viewBox="0 0 24 24">
                 <circle cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="2" />
                 <path d="M8 12l3 3 5-5" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
               </svg>
               Kostenlos
             </span>
             <span className="flex items-center gap-1.5">
-              <svg className="text-primary" width="16" height="16" fill="none" viewBox="0 0 24 24">
+              <svg className="text-gold" width="16" height="16" fill="none" viewBox="0 0 24 24">
                 <circle cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="2" />
                 <path d="M8 12l3 3 5-5" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
               </svg>
               Kein Login
             </span>
             <span className="flex items-center gap-1.5">
-              <svg className="text-primary" width="16" height="16" fill="none" viewBox="0 0 24 24">
+              <svg className="text-gold" width="16" height="16" fill="none" viewBox="0 0 24 24">
                 <circle cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="2" />
                 <path d="M8 12l3 3 5-5" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
               </svg>
@@ -251,13 +251,13 @@ export default function KuendigungsfristRechnerPage() {
       {/* CTA #1 */}
       <section className="py-6 px-8 bg-white">
         <div className="max-w-content mx-auto">
-          <div className="border-2 border-primary/30 rounded-sm p-5 bg-primary-50 flex items-center justify-between gap-6 flex-wrap">
+          <div className="border-2 border-gold/30 rounded-sm p-5 bg-gold-bg flex items-center justify-between gap-6 flex-wrap">
             <p className="text-[0.95rem] text-ink font-semibold m-0">
               Kündigung erhalten und Frist unklar? Wir prüfen Ihre Kündigung kostenlos — inkl. Abfindungschancen.
             </p>
             <Link
               href="/kuendigung-pruefen"
-              className="inline-block py-2.5 px-6 bg-primary-700 text-white border-none rounded-sm font-sans text-[0.88rem] font-semibold no-underline transition-all hover:bg-[#3730a3] whitespace-nowrap"
+              className="inline-block py-2.5 px-6 bg-gold text-white border-none rounded-sm font-sans text-[0.88rem] font-semibold no-underline transition-all hover:bg-[#3730a3] whitespace-nowrap"
             >
               Jetzt kostenlos prüfen &rarr;
             </Link>
@@ -271,7 +271,7 @@ export default function KuendigungsfristRechnerPage() {
           <div className="grid grid-cols-2 gap-8 items-start max-lg:grid-cols-1">
             {/* Linke Karte — Eingaben */}
             <div className="bg-white border border-border-light rounded overflow-hidden">
-              <div className="h-2 bg-primary-700" />
+              <div className="h-2 bg-gold" />
               <div className="p-8">
                 <h2 className="font-serif text-[1.3rem] font-bold mb-6">Kündigungsfrist-Rechner</h2>
 
@@ -279,7 +279,7 @@ export default function KuendigungsfristRechnerPage() {
                 <div className="mb-5">
                   <div className="flex items-center gap-2 mb-1.5">
                     <label className="text-[0.84rem] font-semibold text-ink">
-                      Kündigung zugegangen am <span className="text-primary-700">*</span>
+                      Kündigung zugegangen am <span className="text-gold">*</span>
                     </label>
                     <span
                       className="text-ink-muted cursor-help"
@@ -303,7 +303,7 @@ export default function KuendigungsfristRechnerPage() {
                 <div className="mb-5">
                   <div className="flex items-center gap-2 mb-1.5">
                     <label className="text-[0.84rem] font-semibold text-ink">
-                      Kündigungsfrist <span className="text-primary-700">*</span>
+                      Kündigungsfrist <span className="text-gold">*</span>
                     </label>
                     <span
                       className="text-ink-muted cursor-help"
@@ -340,7 +340,7 @@ export default function KuendigungsfristRechnerPage() {
                 <div className="mb-6">
                   <div className="flex items-center gap-2 mb-1.5">
                     <label className="text-[0.84rem] font-semibold text-ink">
-                      Kündigung erfolgt zum <span className="text-primary-700">*</span>
+                      Kündigung erfolgt zum <span className="text-gold">*</span>
                     </label>
                     <span
                       className="text-ink-muted cursor-help"
@@ -369,14 +369,14 @@ export default function KuendigungsfristRechnerPage() {
                 {/* Berechnen */}
                 <button
                   onClick={berechnen}
-                  className="w-full py-3.5 bg-primary-700 text-white border-none rounded-sm font-sans text-base font-semibold cursor-pointer transition-all mt-2 hover:bg-[#3730a3] hover:-translate-y-px hover:shadow-[0_6px_20px_rgba(99,102,241,0.25)]"
+                  className="w-full py-3.5 bg-gold text-white border-none rounded-sm font-sans text-base font-semibold cursor-pointer transition-all mt-2 hover:bg-[#3730a3] hover:-translate-y-px hover:shadow-[0_6px_20px_rgba(166,139,75,0.25)]"
                 >
                   BERECHNEN
                 </button>
 
                 <p className="text-[0.75rem] text-ink-muted mt-4 leading-relaxed">
                   <strong>Hinweis:</strong> Dieses Tool dient ausschließlich der unverbindlichen Erstorientierung und ersetzt keine anwaltliche Beratung. Für eine verbindliche Einschätzung wenden Sie sich bitte an einen{' '}
-                  <Link href="/kuendigung-pruefen" className="text-primary no-underline hover:underline">Fachanwalt für Arbeitsrecht</Link>.
+                  <Link href="/kuendigung-pruefen" className="text-gold no-underline hover:underline">Fachanwalt für Arbeitsrecht</Link>.
                 </p>
 
                 {/* Aufklappbarer Hinweis */}
@@ -425,7 +425,7 @@ export default function KuendigungsfristRechnerPage() {
             <div className="ergebnis-box bg-slate-50 border border-border-light rounded p-8">
               {!result ? (
                 <div className="text-center py-10">
-                  <div className="w-14 h-14 rounded-full bg-primary-50 border border-primary/[0.12] flex items-center justify-center text-primary mx-auto mb-4">
+                  <div className="w-14 h-14 rounded-full bg-gold-bg border border-gold/[0.12] flex items-center justify-center text-gold mx-auto mb-4">
                     <svg width="24" height="24" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
                       <rect x="3" y="4" width="18" height="18" rx="2" />
                       <path d="M16 2v4M8 2v4M3 10h18" />
@@ -439,10 +439,10 @@ export default function KuendigungsfristRechnerPage() {
                 <div>
                   {/* Hauptergebnis */}
                   <div className="text-center mb-6 pb-6 border-b border-border">
-                    <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-primary-700 mb-2">
+                    <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-gold mb-2">
                       Ihr Arbeitsverhältnis endet am
                     </div>
-                    <div className="font-serif text-[2rem] font-bold text-primary-700">
+                    <div className="font-serif text-[2rem] font-bold text-gold">
                       {formatDatum(result.enddatum)}
                     </div>
                     <div className="text-[0.92rem] text-ink-muted mt-1">
@@ -473,9 +473,9 @@ export default function KuendigungsfristRechnerPage() {
                   </div>
 
                   {/* Klagefrist-Warnung */}
-                  <div className="py-4 px-5 bg-white rounded-sm border-l-[3px] border-primary mb-6">
+                  <div className="py-4 px-5 bg-white rounded-sm border-l-[3px] border-gold mb-6">
                     <div className="flex items-start gap-2">
-                      <span className="text-primary-700 text-[1.1rem] mt-0.5">&#9888;</span>
+                      <span className="text-gold text-[1.1rem] mt-0.5">&#9888;</span>
                       <div>
                         <div className="text-[0.84rem] font-semibold text-ink mb-1">
                           3-Wochen-Frist für Kündigungsschutzklage
@@ -490,7 +490,7 @@ export default function KuendigungsfristRechnerPage() {
                   {/* CTA */}
                   <Link
                     href="/kuendigung-pruefen"
-                    className="block w-full py-3.5 bg-primary-700 text-white border-none rounded-sm font-sans text-base font-semibold no-underline text-center transition-all hover:bg-[#3730a3] hover:-translate-y-px hover:shadow-[0_6px_20px_rgba(99,102,241,0.25)]"
+                    className="block w-full py-3.5 bg-gold text-white border-none rounded-sm font-sans text-base font-semibold no-underline text-center transition-all hover:bg-[#3730a3] hover:-translate-y-px hover:shadow-[0_6px_20px_rgba(166,139,75,0.25)]"
                   >
                     Kündigung kostenlos prüfen &rarr;
                   </Link>
@@ -505,7 +505,7 @@ export default function KuendigungsfristRechnerPage() {
       <section className="py-[70px] px-8 bg-slate-50">
         <div className="max-w-content mx-auto">
           <div className="max-w-[740px]">
-            <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-primary-700 mb-2.5">
+            <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-gold mb-2.5">
               Gesetzliche Grundlage
             </div>
             <h2 className="font-serif text-[clamp(1.4rem,3vw,1.9rem)] font-bold leading-[1.25] mb-6">
@@ -514,7 +514,7 @@ export default function KuendigungsfristRechnerPage() {
             <div className="overflow-x-auto mb-5">
               <table className="w-full border-collapse text-[0.92rem]">
                 <thead>
-                  <tr className="border-b-2 border-primary/30">
+                  <tr className="border-b-2 border-gold/30">
                     <th className="text-left py-3 px-4 font-semibold">Betriebszugehörigkeit</th>
                     <th className="text-left py-3 px-4 font-semibold">Gesetzliche Mindestkündigungsfrist</th>
                   </tr>
@@ -543,7 +543,7 @@ export default function KuendigungsfristRechnerPage() {
       <section className="py-[70px] px-8 bg-white">
         <div className="max-w-content mx-auto">
           <div className="max-w-[740px]">
-            <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-primary-700 mb-2.5">
+            <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-gold mb-2.5">
               Hintergrund
             </div>
             <h2 className="font-serif text-[clamp(1.4rem,3vw,1.9rem)] font-bold leading-[1.25] mb-6">
@@ -568,11 +568,11 @@ export default function KuendigungsfristRechnerPage() {
             </p>
             <p className="text-[0.95rem] text-ink-light leading-relaxed">
               Berechnen Sie auch Ihre mögliche Abfindung mit unserem{' '}
-              <Link href="/abfindungsrechner" className="text-primary no-underline hover:underline">Abfindungsrechner</Link>{' '}
+              <Link href="/abfindungsrechner" className="text-gold no-underline hover:underline">Abfindungsrechner</Link>{' '}
               oder prüfen Sie ausstehende Vergütung mit dem{' '}
-              <Link href="/ueberstundenrechner" className="text-primary no-underline hover:underline">Überstundenrechner</Link>.
+              <Link href="/ueberstundenrechner" className="text-gold no-underline hover:underline">Überstundenrechner</Link>.
               Alle unsere{' '}
-              <Link href="/tools" className="text-primary no-underline hover:underline">kostenlosen Tools</Link>{' '}
+              <Link href="/tools" className="text-gold no-underline hover:underline">kostenlosen Tools</Link>{' '}
               finden Sie auf der Übersichtsseite.
             </p>
           </div>
@@ -583,7 +583,7 @@ export default function KuendigungsfristRechnerPage() {
       <section className="py-[70px] px-8 bg-slate-50">
         <div className="max-w-content mx-auto">
           <div className="max-w-[740px]">
-            <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-primary-700 mb-2.5">
+            <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-gold mb-2.5">
               Rechtlicher Hintergrund
             </div>
             <h2 className="font-serif text-[clamp(1.4rem,3vw,1.9rem)] font-bold leading-[1.25] mb-6">
@@ -591,7 +591,7 @@ export default function KuendigungsfristRechnerPage() {
             </h2>
             <p className="text-[0.95rem] text-ink-light leading-relaxed mb-5">
               Neben den gesetzlichen Fristen nach &sect;622 BGB gibt es Personengruppen, die einen besonderen{' '}
-              <Link href="/kuendigung" className="text-primary no-underline hover:underline">Kündigungsschutz</Link> genießen.
+              <Link href="/kuendigung" className="text-gold no-underline hover:underline">Kündigungsschutz</Link> genießen.
               Bei diesen Arbeitnehmern ist eine ordentliche Kündigung entweder ganz ausgeschlossen oder an
               zusätzliche Voraussetzungen geknüpft — unabhängig von der berechneten Frist.
             </p>
@@ -614,7 +614,7 @@ export default function KuendigungsfristRechnerPage() {
       <section className="py-[70px] px-8 bg-white">
         <div className="max-w-content mx-auto">
           <div className="max-w-[740px]">
-            <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-primary-700 mb-2.5">
+            <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-gold mb-2.5">
               Praxishinweis
             </div>
             <h2 className="font-serif text-[clamp(1.4rem,3vw,1.9rem)] font-bold leading-[1.25] mb-6">
@@ -634,10 +634,10 @@ export default function KuendigungsfristRechnerPage() {
             </p>
             <p className="text-[0.95rem] text-ink-light leading-relaxed">
               <strong>3. Fachanwalt kontaktieren:</strong> Eine{' '}
-              <Link href="/kuendigung-pruefen" className="text-primary no-underline hover:underline">kostenlose Ersteinschätzung</Link>{' '}
+              <Link href="/kuendigung-pruefen" className="text-gold no-underline hover:underline">kostenlose Ersteinschätzung</Link>{' '}
               hilft Ihnen, die Situation einzuordnen: Ist die Kündigung wirksam? Lohnt sich eine Klage?
               Besteht Aussicht auf eine{' '}
-              <Link href="/abfindungsrechner" className="text-primary no-underline hover:underline">Abfindung</Link>?
+              <Link href="/abfindungsrechner" className="text-gold no-underline hover:underline">Abfindung</Link>?
               Handeln Sie schnell — die 3-Wochen-Frist ist nicht verlängerbar.
             </p>
           </div>
@@ -656,7 +656,7 @@ export default function KuendigungsfristRechnerPage() {
           </p>
           <Link
             href="/kuendigung-pruefen"
-            className="inline-block py-3.5 px-8 bg-primary text-white border-none rounded-sm font-sans text-base font-semibold no-underline transition-all hover:bg-primary-700 hover:-translate-y-px hover:shadow-[0_6px_20px_rgba(99,102,241,0.35)]"
+            className="inline-block py-3.5 px-8 bg-gold text-white border-none rounded-sm font-sans text-base font-semibold no-underline transition-all hover:bg-gold hover:-translate-y-px hover:shadow-[0_6px_20px_rgba(166,139,75,0.35)]"
           >
             Jetzt kostenlos anfragen &rarr;
           </Link>
@@ -676,17 +676,17 @@ export default function KuendigungsfristRechnerPage() {
             </div>
             <ul className="list-none space-y-2 text-[0.88rem]">
               <li>
-                <a href="https://www.gesetze-im-internet.de/bgb/__622.html" target="_blank" rel="noopener noreferrer" className="text-primary no-underline hover:underline">
+                <a href="https://www.gesetze-im-internet.de/bgb/__622.html" target="_blank" rel="noopener noreferrer" className="text-gold no-underline hover:underline">
                   &sect;622 BGB &mdash; Kündigungsfristen bei Arbeitsverhältnissen &rarr;
                 </a>
               </li>
               <li>
-                <a href="https://www.gesetze-im-internet.de/kschg/__4.html" target="_blank" rel="noopener noreferrer" className="text-primary no-underline hover:underline">
+                <a href="https://www.gesetze-im-internet.de/kschg/__4.html" target="_blank" rel="noopener noreferrer" className="text-gold no-underline hover:underline">
                   &sect;4 KSchG &mdash; 3-Wochen-Klagefrist &rarr;
                 </a>
               </li>
               <li>
-                <a href="https://www.gesetze-im-internet.de/bgb/__626.html" target="_blank" rel="noopener noreferrer" className="text-primary no-underline hover:underline">
+                <a href="https://www.gesetze-im-internet.de/bgb/__626.html" target="_blank" rel="noopener noreferrer" className="text-gold no-underline hover:underline">
                   &sect;626 BGB &mdash; Fristlose Kündigung aus wichtigem Grund &rarr;
                 </a>
               </li>
@@ -698,7 +698,7 @@ export default function KuendigungsfristRechnerPage() {
       {/* FAQ */}
       <section className="py-[70px] px-8 bg-slate-50">
         <div className="max-w-content mx-auto">
-          <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-primary-700 mb-2.5">
+          <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-gold mb-2.5">
             Häufige Fragen
           </div>
           <h2 className="font-serif text-[clamp(1.4rem,3vw,1.9rem)] font-bold leading-[1.25] mb-6">
@@ -711,7 +711,7 @@ export default function KuendigungsfristRechnerPage() {
       {/* CTA #3 */}
       <section className="py-[70px] px-8 bg-slate-50">
         <div className="max-w-content mx-auto">
-          <div className="border-2 border-primary/20 rounded-sm p-8 bg-white text-center max-w-[640px] mx-auto">
+          <div className="border-2 border-gold/20 rounded-sm p-8 bg-white text-center max-w-[640px] mx-auto">
             <h2 className="font-serif text-[1.3rem] font-bold mb-3">
               Kündigung erhalten — was jetzt konkret tun?
             </h2>
@@ -721,7 +721,7 @@ export default function KuendigungsfristRechnerPage() {
             </p>
             <Link
               href="/kuendigung-pruefen"
-              className="inline-block py-3.5 px-8 bg-primary-700 text-white border-none rounded-sm font-sans text-base font-semibold no-underline transition-all hover:bg-[#3730a3] hover:-translate-y-px hover:shadow-[0_6px_20px_rgba(99,102,241,0.25)]"
+              className="inline-block py-3.5 px-8 bg-gold text-white border-none rounded-sm font-sans text-base font-semibold no-underline transition-all hover:bg-[#3730a3] hover:-translate-y-px hover:shadow-[0_6px_20px_rgba(166,139,75,0.25)]"
             >
               Kostenlose Ersteinschätzung &rarr;
             </Link>

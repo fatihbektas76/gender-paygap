@@ -30,7 +30,7 @@ export default function Tools() {
   return (
     <section className="py-[90px] px-8 bg-slate-50 max-md:py-[60px] max-md:px-6" id="tools">
       <div className="max-w-content mx-auto">
-        <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-primary-700 mb-2.5">
+        <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-gold mb-2.5">
           Kostenlose Tools
         </div>
         <h2 className="font-serif text-[clamp(1.6rem,3vw,2.2rem)] font-bold leading-[1.25] mb-3.5 max-md:text-2xl">
@@ -41,21 +41,21 @@ export default function Tools() {
             <FadeUp key={tool.title} delay={tool.delay}>
               <a
                 href={tool.href}
-                className="bg-white border border-border-light rounded py-6 px-7 flex items-center gap-[18px] transition-all no-underline text-inherit hover:border-primary hover:translate-x-1 group"
+                className="bg-white border border-border-light rounded py-6 px-7 flex items-center gap-[18px] transition-all no-underline text-inherit hover:border-gold hover:translate-x-1 group"
               >
-                <div className="w-11 h-11 min-w-[44px] rounded-[10px] bg-primary-50 border border-primary/[0.12] flex items-center justify-center text-primary">
+                <div className="w-11 h-11 min-w-[44px] rounded-[10px] bg-gold-bg border border-gold/[0.12] flex items-center justify-center text-gold">
                   {tool.icon}
                 </div>
                 <div className="flex-1">
                   <h3 className="text-[0.98rem] font-bold mb-[3px]">
                     {tool.title}{' '}
-                    <span className="inline-block text-[0.62rem] font-bold text-green bg-secondary-50 rounded-[3px] px-[7px] py-[2px] tracking-wider uppercase ml-2 align-middle">
+                    <span className="inline-block text-[0.62rem] font-bold text-green bg-green-bg rounded-[3px] px-[7px] py-[2px] tracking-wider uppercase ml-2 align-middle">
                       Neu
                     </span>
                   </h3>
                   <p className="text-[0.84rem] text-ink-muted leading-relaxed">{tool.desc}</p>
                 </div>
-                <span className="text-ink-muted text-[1.2rem] transition-transform group-hover:translate-x-1 group-hover:text-primary">
+                <span className="text-ink-muted text-[1.2rem] transition-transform group-hover:translate-x-1 group-hover:text-gold">
                   &rarr;
                 </span>
               </a>

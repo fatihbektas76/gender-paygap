@@ -83,9 +83,9 @@ export default function EntgeltgleichheitAuditPage() {
 
       <main>
         {/* Hero */}
-        <header className="pt-[150px] pb-[80px] px-8 bg-accent-50 max-md:pt-[120px] max-md:pb-[60px] max-md:px-6">
+        <header className="pt-[150px] pb-[80px] px-8 bg-cream-dark max-md:pt-[120px] max-md:pb-[60px] max-md:px-6">
           <div className="max-w-content mx-auto">
-            <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-accent-700 mb-2.5">Arbeitgeber</div>
+            <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-blue mb-2.5">Arbeitgeber</div>
             <h1 className="font-serif text-[clamp(2rem,4vw,2.8rem)] font-extrabold leading-[1.15] mb-5 tracking-tight max-md:text-[1.8rem]">
               Entgeltgleichheit-Audit &mdash; Verg&uuml;tungsstrukturen pr&uuml;fen und absichern
             </h1>
@@ -107,8 +107,8 @@ export default function EntgeltgleichheitAuditPage() {
             <div className="space-y-5">
               {auditSchritte.map((s, i) => (
                 <FadeUp key={s.schritt} delay={Math.min(i, 3) as 0 | 1 | 2 | 3}>
-                  <div className="flex gap-5 items-start bg-accent-50 border-l-4 border-accent rounded p-6">
-                    <div className="w-10 h-10 rounded-full bg-accent-700 text-white font-bold text-[1rem] flex items-center justify-center shrink-0">
+                  <div className="flex gap-5 items-start bg-cream-dark border-l-4 border-blue rounded p-6">
+                    <div className="w-10 h-10 rounded-full bg-blue text-white font-bold text-[1rem] flex items-center justify-center shrink-0">
                       {s.schritt}
                     </div>
                     <div>
@@ -142,7 +142,7 @@ export default function EntgeltgleichheitAuditPage() {
                 ].map((k, i) => (
                   <FadeUp key={k.titel} delay={Math.min(i, 3) as 0 | 1 | 2 | 3}>
                     <div className="bg-white border border-border-light rounded p-6 h-full">
-                      <h3 className="font-serif text-[1.05rem] font-bold text-accent-700 mb-2">{k.titel}</h3>
+                      <h3 className="font-serif text-[1.05rem] font-bold text-blue mb-2">{k.titel}</h3>
                       <p className="text-[0.88rem] text-ink-muted leading-relaxed m-0">{k.text}</p>
                     </div>
                   </FadeUp>
@@ -159,7 +159,7 @@ export default function EntgeltgleichheitAuditPage() {
               Warum proaktive Compliance sich rechnet
             </h2>
             <FadeUp>
-              <div className="bg-accent-50 border border-accent/30 rounded p-7">
+              <div className="bg-cream-dark border border-blue/30 rounded p-7">
                 <ul className="space-y-3 text-[0.9rem] text-ink-muted">
                   <li><strong>Sanktionsvermeidung:</strong> Bußgelder und Schadensersatz nach Art. 21, 23 EU-RL lassen sich durch frühzeitige Korrektur verhindern.</li>
                   <li><strong>Art. 10 umgehen:</strong> Wer den GPG unter 5 % senkt, vermeidet die aufwändige gemeinsame Entgeltbewertung mit Arbeitnehmervertretern.</li>
@@ -193,7 +193,7 @@ export default function EntgeltgleichheitAuditPage() {
         <ContactForm />
 
         {/* CTA */}
-        <section className="py-[70px] px-8 bg-accent-700 text-white text-center max-md:py-12 max-md:px-6">
+        <section className="py-[70px] px-8 bg-blue text-white text-center max-md:py-12 max-md:px-6">
           <div className="max-w-[700px] mx-auto">
             <h2 className="font-serif text-[clamp(1.5rem,3vw,2rem)] font-bold mb-4">
               Vergütungs-Audit anfragen — kostenlose Ersteinschätzung
@@ -203,7 +203,7 @@ export default function EntgeltgleichheitAuditPage() {
             </p>
             <a
               href="/kontakt"
-              className="inline-flex items-center gap-2 px-8 py-3.5 rounded-sm text-[0.95rem] font-semibold no-underline transition-all bg-white text-accent-700 hover:bg-accent-50 hover:-translate-y-0.5"
+              className="inline-flex items-center gap-2 px-8 py-3.5 rounded-sm text-[0.95rem] font-semibold no-underline transition-all bg-white text-blue hover:bg-cream-dark hover:-translate-y-0.5"
             >
               Jetzt Kontakt aufnehmen &rarr;
             </a>

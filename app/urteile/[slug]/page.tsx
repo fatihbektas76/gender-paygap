@@ -106,18 +106,18 @@ export default function UrteilDetailPage({ params }: Props) {
       <div className="bg-slate-50 pt-[120px] pb-[50px] px-8 border-b border-border">
         <div className="max-w-content mx-auto">
           <nav className="text-[0.84rem] text-ink-muted mb-6">
-            <Link href="/" className="text-primary no-underline hover:underline">
+            <Link href="/" className="text-gold no-underline hover:underline">
               Start
             </Link>
             <span className="mx-2">/</span>
-            <Link href="/ratgeber/urteile" className="text-primary no-underline hover:underline">
+            <Link href="/ratgeber/urteile" className="text-gold no-underline hover:underline">
               Rechtsprechung
             </Link>
             <span className="mx-2">/</span>
             <span>{urteil.titel}</span>
           </nav>
           <StandAnzeige />
-          <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-primary-700 mb-2.5 mt-4">
+          <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-gold mb-2.5 mt-4">
             {urteil.gericht} &middot; {urteil.senat}
           </div>
           <div className="flex items-baseline gap-4 flex-wrap mb-3">
@@ -127,7 +127,7 @@ export default function UrteilDetailPage({ params }: Props) {
           <h1 className="font-serif text-[clamp(1.8rem,4vw,2.4rem)] font-bold leading-[1.2] max-w-[700px]">
             {urteil.titel}
           </h1>
-          <span className="inline-block mt-4 py-1 px-3 rounded-full border border-primary/30 text-[0.75rem] font-semibold text-primary-700 bg-primary-50">
+          <span className="inline-block mt-4 py-1 px-3 rounded-full border border-gold/30 text-[0.75rem] font-semibold text-gold bg-gold-bg">
             {urteil.kategorie}
           </span>
           <p className="text-[1.05rem] text-ink-light max-w-[640px] leading-relaxed mt-4">
@@ -139,10 +139,10 @@ export default function UrteilDetailPage({ params }: Props) {
       {/* Quellenbox */}
       <section className="py-8 px-8 bg-white border-b border-border">
         <div className="max-w-content mx-auto">
-          <div className="border-2 border-primary/30 rounded-sm p-5 bg-primary-50">
+          <div className="border-2 border-gold/30 rounded-sm p-5 bg-gold-bg">
             <div className="flex items-start gap-3">
               <svg
-                className="min-w-[20px] text-primary mt-0.5"
+                className="min-w-[20px] text-gold mt-0.5"
                 width="20"
                 height="20"
                 fill="none"
@@ -162,7 +162,7 @@ export default function UrteilDetailPage({ params }: Props) {
                   href={urteil.gerichtUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-[0.88rem] text-primary-700 no-underline hover:underline break-all"
+                  className="text-[0.88rem] text-gold no-underline hover:underline break-all"
                 >
                   Entscheidung aufrufen &rarr;
                 </a>
@@ -216,7 +216,7 @@ export default function UrteilDetailPage({ params }: Props) {
               <h2 className="font-serif text-[clamp(1.2rem,2.5vw,1.5rem)] font-bold mb-4 mt-10">
                 Leitsatz
               </h2>
-              <blockquote className="border-l-[3px] border-primary pl-5 py-3 my-6 bg-slate-50 rounded-r-sm">
+              <blockquote className="border-l-[3px] border-gold pl-5 py-3 my-6 bg-slate-50 rounded-r-sm">
                 <p className="font-serif text-[1rem] text-ink italic leading-relaxed m-0">
                   &bdquo;{urteil.leitsatz}&ldquo;
                 </p>
@@ -227,8 +227,8 @@ export default function UrteilDetailPage({ params }: Props) {
             <div className="lg:sticky lg:top-[140px]">
               {/* Bewertung Card */}
               <div className="border border-border rounded-sm overflow-hidden">
-                <div className="bg-[#1C1408] p-5 border-b-[3px] border-primary">
-                  <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-primary mb-3">
+                <div className="bg-[#1C1408] p-5 border-b-[3px] border-gold">
+                  <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-gold mb-3">
                     Einschätzung vom Fachanwalt
                   </div>
                   <Stars count={urteil.bewertung.sterne} />
@@ -250,7 +250,7 @@ export default function UrteilDetailPage({ params }: Props) {
                   {/* Für Arbeitgeber */}
                   <div className="p-4 border-b border-border">
                     <div className="flex items-center gap-2 mb-2">
-                      <div className="w-1 h-4 bg-primary rounded-full" />
+                      <div className="w-1 h-4 bg-gold rounded-full" />
                       <h3 className="text-[0.82rem] font-semibold text-ink m-0">Für Arbeitgeber</h3>
                     </div>
                     <p className="text-[0.82rem] text-ink-muted leading-relaxed m-0">
@@ -271,8 +271,8 @@ export default function UrteilDetailPage({ params }: Props) {
               </div>
 
               {/* Bedeutung Box */}
-              <div className="mt-5 py-4 px-5 bg-slate-50 rounded-sm border-l-[3px] border-primary">
-                <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-primary-700 mb-2">
+              <div className="mt-5 py-4 px-5 bg-slate-50 rounded-sm border-l-[3px] border-gold">
+                <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-gold mb-2">
                   Bedeutung für Sie
                 </div>
                 <p className="text-[0.84rem] text-ink leading-relaxed m-0">
@@ -304,7 +304,7 @@ export default function UrteilDetailPage({ params }: Props) {
       {verwandte.length > 0 && (
         <section className="py-[70px] px-8 bg-slate-50">
           <div className="max-w-content mx-auto">
-            <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-primary-700 mb-2.5">
+            <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-gold mb-2.5">
               Weitere Entscheidungen
             </div>
             <h2 className="font-serif text-[clamp(1.4rem,3vw,1.9rem)] font-bold leading-[1.25] mb-6">
@@ -316,11 +316,11 @@ export default function UrteilDetailPage({ params }: Props) {
                   <Link
                     key={u.slug}
                     href={`/urteile/${u.slug}/`}
-                    className="block border border-border rounded-sm overflow-hidden no-underline hover:border-primary hover:-translate-y-px hover:shadow-[0_6px_20px_rgba(99,102,241,0.12)] transition-all"
+                    className="block border border-border rounded-sm overflow-hidden no-underline hover:border-gold hover:-translate-y-px hover:shadow-[0_6px_20px_rgba(166,139,75,0.12)] transition-all"
                   >
-                    <div className="bg-[#1C1408] p-4 border-b-[3px] border-primary">
+                    <div className="bg-[#1C1408] p-4 border-b-[3px] border-gold">
                       <div className="flex items-center justify-between gap-3 mb-1.5">
-                        <span className="text-[0.7rem] font-bold tracking-[0.14em] uppercase text-primary">
+                        <span className="text-[0.7rem] font-bold tracking-[0.14em] uppercase text-gold">
                           {u.gericht}
                         </span>
                         <span className="text-[0.7rem] text-white/50">{u.jahr}</span>
@@ -336,7 +336,7 @@ export default function UrteilDetailPage({ params }: Props) {
                       <span className="inline-block py-0.5 px-2.5 rounded-full border border-border text-[0.7rem] font-semibold text-ink-muted">
                         {u.kategorie}
                       </span>
-                      <div className="mt-3 text-[0.82rem] font-semibold text-primary-700">
+                      <div className="mt-3 text-[0.82rem] font-semibold text-gold">
                         Urteil lesen &rarr;
                       </div>
                     </div>
@@ -351,7 +351,7 @@ export default function UrteilDetailPage({ params }: Props) {
       {/* CTA */}
       <section className="py-[70px] px-8 bg-white">
         <div className="max-w-content mx-auto text-center">
-          <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-primary-700 mb-2.5">
+          <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-gold mb-2.5">
             Jetzt handeln
           </div>
           <h2 className="font-serif text-[clamp(1.4rem,3vw,1.8rem)] font-bold mb-3">
@@ -363,7 +363,7 @@ export default function UrteilDetailPage({ params }: Props) {
           </p>
           <Link
             href="/kuendigung-pruefen"
-            className="inline-block py-3.5 px-8 bg-primary-700 text-white border-none rounded-sm font-sans text-base font-semibold no-underline transition-all hover:bg-[#3730a3] hover:-translate-y-px hover:shadow-[0_6px_20px_rgba(99,102,241,0.25)]"
+            className="inline-block py-3.5 px-8 bg-gold text-white border-none rounded-sm font-sans text-base font-semibold no-underline transition-all hover:bg-[#3730a3] hover:-translate-y-px hover:shadow-[0_6px_20px_rgba(166,139,75,0.25)]"
           >
             Kostenlos prüfen lassen &rarr;
           </Link>

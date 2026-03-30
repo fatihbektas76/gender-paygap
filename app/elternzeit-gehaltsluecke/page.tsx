@@ -89,9 +89,9 @@ export default function ElternzeitGehaltslueckePage() {
 
       <main>
         {/* Hero */}
-        <header className="pt-[150px] pb-[80px] px-8 bg-secondary-50 max-md:pt-[120px] max-md:pb-[60px] max-md:px-6">
+        <header className="pt-[150px] pb-[80px] px-8 bg-green-bg max-md:pt-[120px] max-md:pb-[60px] max-md:px-6">
           <div className="max-w-content mx-auto">
-            <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-secondary-700 mb-2.5">Arbeitnehmer</div>
+            <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-green mb-2.5">Arbeitnehmer</div>
             <h1 className="font-serif text-[clamp(2rem,4vw,2.8rem)] font-extrabold leading-[1.15] mb-5 tracking-tight max-md:text-[1.8rem]">
               Elternzeit und Gehaltslücke — Ihre Rechte als Elternteil
             </h1>
@@ -113,8 +113,8 @@ export default function ElternzeitGehaltslueckePage() {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
               {auswirkungen.map((a, i) => (
                 <FadeUp key={a.title} delay={Math.min(i, 3) as 0 | 1 | 2 | 3}>
-                  <div className="bg-secondary-50 border border-secondary/20 rounded p-7 h-full">
-                    <div className="font-serif text-[2rem] font-bold text-secondary-700 mb-1">{a.stat}</div>
+                  <div className="bg-green-bg border border-green-bg rounded p-7 h-full">
+                    <div className="font-serif text-[2rem] font-bold text-green mb-1">{a.stat}</div>
                     <h3 className="font-serif text-[1.05rem] font-bold text-ink mb-2">{a.title}</h3>
                     <p className="text-[0.88rem] text-ink-muted leading-relaxed m-0">{a.text}</p>
                   </div>
@@ -155,7 +155,7 @@ export default function ElternzeitGehaltslueckePage() {
               ].map((item, i) => (
                 <FadeUp key={item.num} delay={Math.min(i, 3) as 0 | 1 | 2 | 3}>
                   <div className="bg-white border border-border-light rounded p-6 h-full">
-                    <div className="w-8 h-8 rounded-full bg-secondary-100 text-secondary-700 font-bold text-[0.9rem] flex items-center justify-center mb-3">{item.num}</div>
+                    <div className="w-8 h-8 rounded-full bg-green-bg text-green font-bold text-[0.9rem] flex items-center justify-center mb-3">{item.num}</div>
                     <h3 className="font-serif text-[1.1rem] font-bold text-ink mb-2">{item.title}</h3>
                     <p className="text-[0.88rem] text-ink-muted leading-relaxed m-0">{item.text}</p>
                   </div>
@@ -169,8 +169,8 @@ export default function ElternzeitGehaltslueckePage() {
         <section className="py-[60px] px-8 bg-white max-md:py-10 max-md:px-6">
           <div className="max-w-content mx-auto">
             <FadeUp>
-              <div className="bg-white border border-secondary/30 rounded p-8 border-l-[4px] border-l-secondary">
-                <div className="text-[0.7rem] font-bold tracking-[0.14em] uppercase text-secondary-700 mb-2">Für Eltern besonders relevant</div>
+              <div className="bg-white border border-green/30 rounded p-8 border-l-[4px] border-l-green">
+                <div className="text-[0.7rem] font-bold tracking-[0.14em] uppercase text-green mb-2">Für Eltern besonders relevant</div>
                 <h3 className="font-serif text-[1.3rem] font-bold mb-3">BAG Az. 8 AZR 300/24 — Paarvergleich genügt</h3>
                 <p className="text-[0.95rem] text-ink-light leading-relaxed mb-0">
                   Wenn Sie nach der Elternzeit feststellen, dass ein Kollege in vergleichbarer Position
@@ -204,7 +204,7 @@ export default function ElternzeitGehaltslueckePage() {
         <ContactForm />
 
         {/* CTA */}
-        <section className="py-[70px] px-8 bg-secondary-700 text-white text-center max-md:py-12 max-md:px-6">
+        <section className="py-[70px] px-8 bg-green text-white text-center max-md:py-12 max-md:px-6">
           <div className="max-w-[700px] mx-auto">
             <h2 className="font-serif text-[clamp(1.5rem,3vw,2rem)] font-bold mb-4">
               Weniger Gehalt nach der Elternzeit?
@@ -214,7 +214,7 @@ export default function ElternzeitGehaltslueckePage() {
             </p>
             <a
               href="/kontakt"
-              className="inline-flex items-center gap-2 px-8 py-3.5 rounded-sm text-[0.95rem] font-semibold no-underline transition-all bg-white text-secondary-700 hover:bg-secondary-50 hover:-translate-y-0.5"
+              className="inline-flex items-center gap-2 px-8 py-3.5 rounded-sm text-[0.95rem] font-semibold no-underline transition-all bg-white text-green hover:bg-green-bg hover:-translate-y-0.5"
             >
               Jetzt Ersteinschätzung anfordern &rarr;
             </a>

@@ -405,17 +405,17 @@ export default function GlossarPage() {
       <div className="bg-slate-50 pt-[120px] pb-[50px] px-8 border-b border-border">
         <div className="max-w-content mx-auto">
           <nav className="text-[0.84rem] text-ink-muted mb-6">
-            <Link href="/" className="text-primary no-underline hover:underline">
+            <Link href="/" className="text-gold no-underline hover:underline">
               Start
             </Link>
             <span className="mx-2">/</span>
-            <Link href="/ratgeber" className="text-primary no-underline hover:underline">
+            <Link href="/ratgeber" className="text-gold no-underline hover:underline">
               Ratgeber
             </Link>
             <span className="mx-2">/</span>
             <span>Glossar</span>
           </nav>
-          <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-primary-700 mb-2.5">
+          <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-gold mb-2.5">
             Nachschlagewerk
           </div>
           <h1 className="font-serif text-[clamp(1.8rem,4vw,2.4rem)] font-bold leading-[1.2] max-w-[700px]">
@@ -433,7 +433,7 @@ export default function GlossarPage() {
               <a
                 key={b}
                 href={`#${b.toLowerCase()}`}
-                className="w-9 h-9 flex items-center justify-center rounded bg-white border border-border text-[0.82rem] font-semibold text-primary-700 no-underline hover:bg-primary-50 hover:border-primary transition-colors"
+                className="w-9 h-9 flex items-center justify-center rounded bg-white border border-border text-[0.82rem] font-semibold text-gold no-underline hover:bg-gold-bg hover:border-gold transition-colors"
               >
                 {b}
               </a>
@@ -451,7 +451,7 @@ export default function GlossarPage() {
             );
             return (
               <div key={buchstabe} id={buchstabe.toLowerCase()} className="mb-10 scroll-mt-24">
-                <div className="text-[1.4rem] font-serif font-bold text-primary-700 border-b border-border pb-2 mb-5">
+                <div className="text-[1.4rem] font-serif font-bold text-gold border-b border-border pb-2 mb-5">
                   {buchstabe}
                 </div>
                 <div className="space-y-6">
@@ -459,7 +459,7 @@ export default function GlossarPage() {
                     <div
                       key={g.id}
                       id={g.id}
-                      className="scroll-mt-24 border border-border rounded-sm p-5 hover:border-primary/40 transition-colors"
+                      className="scroll-mt-24 border border-border rounded-sm p-5 hover:border-gold/40 transition-colors"
                     >
                       <h2 className="font-serif text-[1.15rem] font-bold text-ink mb-2">
                         {g.begriff}
@@ -473,7 +473,7 @@ export default function GlossarPage() {
                         </span>
                         <Link
                           href={g.link}
-                          className="text-primary-700 font-semibold no-underline hover:underline"
+                          className="text-gold font-semibold no-underline hover:underline"
                         >
                           {g.linkText} &rarr;
                         </Link>
@@ -499,7 +499,7 @@ export default function GlossarPage() {
       {/* CTA */}
       <section className="py-[70px] px-8 bg-slate-50">
         <div className="max-w-content mx-auto text-center">
-          <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-primary-700 mb-2.5">
+          <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-gold mb-2.5">
             Persönliche Beratung
           </div>
           <h2 className="font-serif text-[clamp(1.4rem,3vw,1.8rem)] font-bold mb-3">
@@ -511,7 +511,7 @@ export default function GlossarPage() {
           </p>
           <a
             href="/#kontakt"
-            className="inline-block py-3.5 px-8 bg-primary-700 text-white border-none rounded-sm font-sans text-base font-semibold no-underline transition-all hover:bg-[#3730a3] hover:-translate-y-px hover:shadow-[0_6px_20px_rgba(99,102,241,0.25)]"
+            className="inline-block py-3.5 px-8 bg-gold text-white border-none rounded-sm font-sans text-base font-semibold no-underline transition-all hover:bg-[#3730a3] hover:-translate-y-px hover:shadow-[0_6px_20px_rgba(166,139,75,0.25)]"
           >
             Kostenlose Ersteinschätzung &rarr;
           </a>

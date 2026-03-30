@@ -97,12 +97,12 @@ export default function AbmahnungPage() {
       <div className="bg-slate-50 pt-[120px] pb-[50px] px-8 border-b border-border">
         <div className="max-w-content mx-auto">
           <nav className="text-[0.84rem] text-ink-muted mb-6">
-            <Link href="/" className="text-primary no-underline hover:underline">Start</Link>
+            <Link href="/" className="text-gold no-underline hover:underline">Start</Link>
             <span className="mx-2">/</span>
             <span>Abmahnung</span>
           </nav>
           <StandAnzeige />
-          <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-primary-700 mb-2.5 mt-4">
+          <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-gold mb-2.5 mt-4">
             Ratgeber Abmahnung
           </div>
           <h1 className="font-serif text-[clamp(1.8rem,4vw,2.4rem)] font-bold leading-[1.2] max-w-[700px]">
@@ -116,7 +116,7 @@ export default function AbmahnungPage() {
         <div className="max-w-content mx-auto">
           <div className="max-w-[740px]">
             {/* Warning box */}
-            <div className="py-5 px-6 bg-slate-50 rounded-sm border-l-[3px] border-primary mb-8">
+            <div className="py-5 px-6 bg-slate-50 rounded-sm border-l-[3px] border-gold mb-8">
               <p className="text-[0.95rem] font-semibold text-ink m-0">
                 Wichtig: Eine Abmahnung ist die Vorstufe zur Kündigung. Reagieren Sie überlegt &mdash;
                 aber zeitnah. Was Sie jetzt tun (oder nicht tun), kann Ihren Arbeitsplatz sichern.
@@ -145,7 +145,7 @@ export default function AbmahnungPage() {
             {/* CTA 1 */}
             <a
               href="/#kontakt"
-              className="inline-block py-3.5 px-8 bg-primary-700 text-white border-none rounded-sm font-sans text-base font-semibold no-underline transition-all hover:bg-[#3730a3] hover:-translate-y-px hover:shadow-[0_6px_20px_rgba(99,102,241,0.25)]"
+              className="inline-block py-3.5 px-8 bg-gold text-white border-none rounded-sm font-sans text-base font-semibold no-underline transition-all hover:bg-[#3730a3] hover:-translate-y-px hover:shadow-[0_6px_20px_rgba(166,139,75,0.25)]"
             >
               Abmahnung kostenlos prüfen lassen &rarr;
             </a>
@@ -157,7 +157,7 @@ export default function AbmahnungPage() {
       <section className="py-[70px] px-8 bg-slate-50">
         <div className="max-w-content mx-auto">
           <div className="max-w-[740px]">
-            <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-primary-700 mb-2.5">
+            <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-gold mb-2.5">
               Grundlagen
             </div>
             <h2 className="font-serif text-[clamp(1.4rem,3vw,1.9rem)] font-bold leading-[1.25] mb-5">
@@ -207,7 +207,7 @@ export default function AbmahnungPage() {
       <section className="py-[70px] px-8 bg-white">
         <div className="max-w-content mx-auto">
           <div className="max-w-[740px]">
-            <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-primary-700 mb-2.5">
+            <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-gold mb-2.5">
               Wirksamkeit prüfen
             </div>
             <h2 className="font-serif text-[clamp(1.4rem,3vw,1.9rem)] font-bold leading-[1.25] mb-5">
@@ -245,7 +245,7 @@ export default function AbmahnungPage() {
                 },
               ].map((item) => (
                 <div key={item.title} className="flex items-start gap-4 py-4 px-5 bg-slate-50 rounded-sm border border-border">
-                  <svg className="min-w-[20px] text-primary mt-0.5" width="20" height="20" fill="none" viewBox="0 0 24 24">
+                  <svg className="min-w-[20px] text-gold mt-0.5" width="20" height="20" fill="none" viewBox="0 0 24 24">
                     <path d="M12 2L1 21h22L12 2z" fill="none" stroke="currentColor" strokeWidth="2" strokeLinejoin="round" />
                     <path d="M12 9v4M12 17h.01" stroke="currentColor" strokeWidth="2" strokeLinecap="round" />
                   </svg>
@@ -272,7 +272,7 @@ export default function AbmahnungPage() {
           </p>
           <a
             href="/#kontakt"
-            className="inline-block py-3.5 px-8 bg-primary-700 text-white border-none rounded-sm font-sans text-base font-semibold no-underline transition-all hover:bg-[#3730a3] hover:-translate-y-px hover:shadow-[0_6px_20px_rgba(99,102,241,0.25)]"
+            className="inline-block py-3.5 px-8 bg-gold text-white border-none rounded-sm font-sans text-base font-semibold no-underline transition-all hover:bg-[#3730a3] hover:-translate-y-px hover:shadow-[0_6px_20px_rgba(166,139,75,0.25)]"
           >
             Abmahnung prüfen lassen &rarr;
           </a>
@@ -283,7 +283,7 @@ export default function AbmahnungPage() {
       <section className="py-[70px] px-8 bg-white">
         <div className="max-w-content mx-auto">
           <div className="max-w-[740px]">
-            <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-primary-700 mb-2.5">
+            <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-gold mb-2.5">
               Richtig reagieren
             </div>
             <h2 className="font-serif text-[clamp(1.4rem,3vw,1.9rem)] font-bold leading-[1.25] mb-5">
@@ -329,7 +329,7 @@ export default function AbmahnungPage() {
       <section className="py-[70px] px-8 bg-slate-50">
         <div className="max-w-content mx-auto">
           <div className="max-w-[740px]">
-            <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-primary-700 mb-2.5">
+            <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-gold mb-2.5">
               Zusammenhang
             </div>
             <h2 className="font-serif text-[clamp(1.4rem,3vw,1.9rem)] font-bold leading-[1.25] mb-5">
@@ -353,7 +353,7 @@ export default function AbmahnungPage() {
               also den gleichen oder einen gleichartigen Verstoß betreffen. Eine Abmahnung wegen
               Zuspätkommens rechtfertigt keine Kündigung wegen mangelhafter Arbeitsleistung.
             </p>
-            <div className="py-5 px-6 bg-white rounded-sm border-l-[3px] border-primary">
+            <div className="py-5 px-6 bg-white rounded-sm border-l-[3px] border-gold">
               <p className="text-[0.95rem] text-ink leading-relaxed m-0">
                 <strong>Ausnahme:</strong> Bei besonders schweren Pflichtverletzungen wie Diebstahl,
                 Betrug oder schwerer Beleidigung kann der Arbeitgeber auch ohne vorherige Abmahnung
@@ -368,7 +368,7 @@ export default function AbmahnungPage() {
       {/* Kündigung nach Abmahnungen — Ihre Situation */}
       <section className="py-[70px] px-8 bg-white">
         <div className="max-w-content mx-auto">
-          <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-primary-700 mb-2.5">
+          <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-gold mb-2.5">
             Ihre Situation
           </div>
           <h2 className="font-serif text-[clamp(1.4rem,3vw,1.9rem)] font-bold leading-[1.25] mb-3">
@@ -385,14 +385,14 @@ export default function AbmahnungPage() {
                 href={`/kuendigung-nach-${e.slug}/`}
                 className="no-underline text-inherit block"
               >
-                <article className="bg-slate-50 border border-border rounded py-[26px] px-7 transition-all border-l-[3px] border-l-transparent hover:border-l-primary hover:translate-x-1 h-full">
+                <article className="bg-slate-50 border border-border rounded py-[26px] px-7 transition-all border-l-[3px] border-l-transparent hover:border-l-gold hover:translate-x-1 h-full">
                   <h3 className="font-serif text-[1.05rem] font-bold mb-2">
                     Kündigung nach {e.count} {e.count === 1 ? 'Abmahnung' : 'Abmahnungen'}
                   </h3>
                   <p className="text-[0.88rem] text-ink-muted leading-relaxed mb-3">
                     Was gilt rechtlich und welche Abfindung ist möglich?
                   </p>
-                  <span className="text-[0.82rem] text-primary-700 font-semibold">
+                  <span className="text-[0.82rem] text-gold font-semibold">
                     Mehr erfahren &rarr;
                   </span>
                 </article>
@@ -405,7 +405,7 @@ export default function AbmahnungPage() {
       {/* FAQ */}
       <section className="py-[70px] px-8 bg-slate-50">
         <div className="max-w-content mx-auto">
-          <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-primary-700 mb-2.5">
+          <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-gold mb-2.5">
             Häufige Fragen
           </div>
           <h2 className="font-serif text-[clamp(1.4rem,3vw,1.9rem)] font-bold leading-[1.25] mb-6">
@@ -432,7 +432,7 @@ export default function AbmahnungPage() {
       {/* CTA 3 */}
       <section className="py-[70px] px-8 bg-white">
         <div className="max-w-content mx-auto text-center">
-          <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-primary-700 mb-2.5">
+          <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-gold mb-2.5">
             Jetzt handeln
           </div>
           <h2 className="font-serif text-[clamp(1.4rem,3vw,1.8rem)] font-bold mb-3">
@@ -444,7 +444,7 @@ export default function AbmahnungPage() {
           </p>
           <a
             href="/#kontakt"
-            className="inline-block py-3.5 px-8 bg-primary-700 text-white border-none rounded-sm font-sans text-base font-semibold no-underline transition-all hover:bg-[#3730a3] hover:-translate-y-px hover:shadow-[0_6px_20px_rgba(99,102,241,0.25)]"
+            className="inline-block py-3.5 px-8 bg-gold text-white border-none rounded-sm font-sans text-base font-semibold no-underline transition-all hover:bg-[#3730a3] hover:-translate-y-px hover:shadow-[0_6px_20px_rgba(166,139,75,0.25)]"
           >
             Kostenlose Ersteinschätzung &rarr;
           </a>

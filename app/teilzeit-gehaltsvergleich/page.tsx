@@ -90,9 +90,9 @@ export default function TeilzeitGehaltsvergleichPage() {
 
       <main>
         {/* Hero */}
-        <header className="pt-[150px] pb-[80px] px-8 bg-secondary-50 max-md:pt-[120px] max-md:pb-[60px] max-md:px-6">
+        <header className="pt-[150px] pb-[80px] px-8 bg-green-bg max-md:pt-[120px] max-md:pb-[60px] max-md:px-6">
           <div className="max-w-content mx-auto">
-            <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-secondary-700 mb-2.5">Arbeitnehmer</div>
+            <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-green mb-2.5">Arbeitnehmer</div>
             <h1 className="font-serif text-[clamp(2rem,4vw,2.8rem)] font-extrabold leading-[1.15] mb-5 tracking-tight max-md:text-[1.8rem]">
               Teilzeit und Gehaltsvergleich — Entgelttransparenz für Teilzeitbeschäftigte
             </h1>
@@ -111,22 +111,22 @@ export default function TeilzeitGehaltsvergleichPage() {
           <div className="max-w-content mx-auto">
             <div className="grid grid-cols-3 gap-6 max-md:grid-cols-1">
               <FadeUp>
-                <div className="bg-secondary-50 border border-secondary/20 rounded p-7 text-center">
-                  <div className="font-serif text-[2.5rem] font-bold text-secondary-700">48%</div>
+                <div className="bg-green-bg border border-green-bg rounded p-7 text-center">
+                  <div className="font-serif text-[2.5rem] font-bold text-green">48%</div>
                   <div className="text-[0.9rem] text-ink-muted mt-1">der Frauen in Teilzeit</div>
                   <div className="text-[0.78rem] text-ink-muted mt-0.5">vs. 12% der Männer (Destatis)</div>
                 </div>
               </FadeUp>
               <FadeUp delay={1}>
-                <div className="bg-secondary-50 border border-secondary/20 rounded p-7 text-center">
-                  <div className="font-serif text-[2.5rem] font-bold text-secondary-700">§ 4</div>
+                <div className="bg-green-bg border border-green-bg rounded p-7 text-center">
+                  <div className="font-serif text-[2.5rem] font-bold text-green">§ 4</div>
                   <div className="text-[0.9rem] text-ink-muted mt-1">TzBfG Diskriminierungsverbot</div>
                   <div className="text-[0.78rem] text-ink-muted mt-0.5">Gleichbehandlung bei Entgelt</div>
                 </div>
               </FadeUp>
               <FadeUp delay={2}>
-                <div className="bg-secondary-50 border border-secondary/20 rounded p-7 text-center">
-                  <div className="font-serif text-[2.5rem] font-bold text-secondary-700">Art. 7</div>
+                <div className="bg-green-bg border border-green-bg rounded p-7 text-center">
+                  <div className="font-serif text-[2.5rem] font-bold text-green">Art. 7</div>
                   <div className="text-[0.9rem] text-ink-muted mt-1">EU-RL 2023/970</div>
                   <div className="text-[0.78rem] text-ink-muted mt-0.5">Auskunftsrecht ab 50 MA</div>
                 </div>
@@ -184,8 +184,8 @@ export default function TeilzeitGehaltsvergleichPage() {
         <section className="py-[60px] px-8 bg-slate-50 max-md:py-10 max-md:px-6">
           <div className="max-w-content mx-auto">
             <FadeUp>
-              <div className="bg-white border border-secondary/30 rounded p-8 border-l-[4px] border-l-secondary">
-                <div className="text-[0.7rem] font-bold tracking-[0.14em] uppercase text-secondary-700 mb-2">Relevant für Teilzeitbeschäftigte</div>
+              <div className="bg-white border border-green/30 rounded p-8 border-l-[4px] border-l-green">
+                <div className="text-[0.7rem] font-bold tracking-[0.14em] uppercase text-green mb-2">Relevant für Teilzeitbeschäftigte</div>
                 <h3 className="font-serif text-[1.3rem] font-bold mb-3">BAG Az. 8 AZR 300/24 vom 23.10.2025</h3>
                 <p className="text-[0.95rem] text-ink-light leading-relaxed mb-0">
                   Das BAG hat bestätigt, dass ein <strong>Paarvergleich ausreicht</strong> — auch für
@@ -220,7 +220,7 @@ export default function TeilzeitGehaltsvergleichPage() {
         <ContactForm />
 
         {/* CTA */}
-        <section className="py-[70px] px-8 bg-secondary-700 text-white text-center max-md:py-12 max-md:px-6">
+        <section className="py-[70px] px-8 bg-green text-white text-center max-md:py-12 max-md:px-6">
           <div className="max-w-[700px] mx-auto">
             <h2 className="font-serif text-[clamp(1.5rem,3vw,2rem)] font-bold mb-4">
               Werden Sie als Teilzeitkraft benachteiligt?
@@ -230,7 +230,7 @@ export default function TeilzeitGehaltsvergleichPage() {
             </p>
             <a
               href="/kontakt"
-              className="inline-flex items-center gap-2 px-8 py-3.5 rounded-sm text-[0.95rem] font-semibold no-underline transition-all bg-white text-secondary-700 hover:bg-secondary-50 hover:-translate-y-0.5"
+              className="inline-flex items-center gap-2 px-8 py-3.5 rounded-sm text-[0.95rem] font-semibold no-underline transition-all bg-white text-green hover:bg-green-bg hover:-translate-y-0.5"
             >
               Jetzt Ersteinschätzung anfordern &rarr;
             </a>

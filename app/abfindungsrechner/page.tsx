@@ -112,11 +112,11 @@ export default function AbfindungsrechnerPage() {
       <div className="bg-slate-50 pt-[120px] pb-[50px] px-8 border-b border-border">
         <div className="max-w-content mx-auto">
           <nav className="text-[0.84rem] text-ink-muted mb-6">
-            <Link href="/" className="text-primary no-underline hover:underline">Start</Link>
+            <Link href="/" className="text-gold no-underline hover:underline">Start</Link>
             <span className="mx-2">/</span>
             <span>Abfindungsrechner</span>
           </nav>
-          <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-primary-700 mb-2.5">
+          <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-gold mb-2.5">
             Kostenloses Tool
           </div>
           <h1 className="font-serif text-[clamp(1.8rem,4vw,2.4rem)] font-bold leading-[1.2] max-w-[700px]">
@@ -150,7 +150,7 @@ export default function AbfindungsrechnerPage() {
               <div className="space-y-5">
                 <div>
                   <label className="block text-[0.84rem] font-semibold text-ink mb-1.5">
-                    Bruttomonatsgehalt (&euro;) <span className="text-primary-700 ml-0.5">*</span>
+                    Bruttomonatsgehalt (&euro;) <span className="text-gold ml-0.5">*</span>
                   </label>
                   <input
                     type="text"
@@ -158,12 +158,12 @@ export default function AbfindungsrechnerPage() {
                     value={gehalt}
                     onChange={(e) => setGehalt(e.target.value)}
                     placeholder="z. B. 4.000"
-                    className="w-full py-3 px-4 border border-border rounded-sm font-sans text-[0.92rem] text-ink bg-white transition-all outline-none focus:border-primary focus:shadow-[0_0_0_3px_rgba(99,102,241,0.1)] placeholder:text-ink-muted"
+                    className="w-full py-3 px-4 border border-border rounded-sm font-sans text-[0.92rem] text-ink bg-white transition-all outline-none focus:border-gold focus:shadow-[0_0_0_3px_rgba(166,139,75,0.1)] placeholder:text-ink-muted"
                   />
                 </div>
                 <div>
                   <label className="block text-[0.84rem] font-semibold text-ink mb-1.5">
-                    Betriebszugehörigkeit (Jahre) <span className="text-primary-700 ml-0.5">*</span>
+                    Betriebszugehörigkeit (Jahre) <span className="text-gold ml-0.5">*</span>
                   </label>
                   <input
                     type="number"
@@ -172,7 +172,7 @@ export default function AbfindungsrechnerPage() {
                     value={jahre}
                     onChange={(e) => setJahre(e.target.value)}
                     placeholder="z. B. 5"
-                    className="w-full py-3 px-4 border border-border rounded-sm font-sans text-[0.92rem] text-ink bg-white transition-all outline-none focus:border-primary focus:shadow-[0_0_0_3px_rgba(99,102,241,0.1)] placeholder:text-ink-muted"
+                    className="w-full py-3 px-4 border border-border rounded-sm font-sans text-[0.92rem] text-ink bg-white transition-all outline-none focus:border-gold focus:shadow-[0_0_0_3px_rgba(166,139,75,0.1)] placeholder:text-ink-muted"
                   />
                 </div>
                 <div>
@@ -182,7 +182,7 @@ export default function AbfindungsrechnerPage() {
                   <select
                     value={risiko}
                     onChange={(e) => setRisiko(e.target.value)}
-                    className="form-select w-full py-3 px-4 border border-border rounded-sm font-sans text-[0.92rem] text-ink bg-white transition-all outline-none focus:border-primary focus:shadow-[0_0_0_3px_rgba(99,102,241,0.1)]"
+                    className="form-select w-full py-3 px-4 border border-border rounded-sm font-sans text-[0.92rem] text-ink bg-white transition-all outline-none focus:border-gold focus:shadow-[0_0_0_3px_rgba(166,139,75,0.1)]"
                   >
                     <option value="niedrig">Niedrig &mdash; Kündigung wahrscheinlich wirksam</option>
                     <option value="mittel">Mittel &mdash; Erfolgsaussichten unklar</option>
@@ -194,13 +194,13 @@ export default function AbfindungsrechnerPage() {
                 </div>
                 <button
                   onClick={calculate}
-                  className="w-full py-3.5 bg-primary-700 text-white border-none rounded-sm font-sans text-base font-semibold cursor-pointer transition-all mt-2 hover:bg-[#3730a3] hover:-translate-y-px hover:shadow-[0_6px_20px_rgba(99,102,241,0.25)]"
+                  className="w-full py-3.5 bg-gold text-white border-none rounded-sm font-sans text-base font-semibold cursor-pointer transition-all mt-2 hover:bg-[#3730a3] hover:-translate-y-px hover:shadow-[0_6px_20px_rgba(166,139,75,0.25)]"
                 >
                   Abfindung berechnen
                 </button>
               </div>
               <p className="text-[0.75rem] text-ink-muted mt-4 leading-relaxed">
-                <strong>Hinweis:</strong> Dieses Tool dient ausschließlich der unverbindlichen Erstorientierung und ersetzt keine anwaltliche Beratung. Für eine verbindliche Einschätzung Ihres Falls wenden Sie sich bitte an einen <a href="/#kontakt" className="text-primary no-underline hover:underline">Fachanwalt für Arbeitsrecht</a>.
+                <strong>Hinweis:</strong> Dieses Tool dient ausschließlich der unverbindlichen Erstorientierung und ersetzt keine anwaltliche Beratung. Für eine verbindliche Einschätzung Ihres Falls wenden Sie sich bitte an einen <a href="/#kontakt" className="text-gold no-underline hover:underline">Fachanwalt für Arbeitsrecht</a>.
               </p>
             </div>
 
@@ -218,14 +218,14 @@ export default function AbfindungsrechnerPage() {
                     </div>
                     <div className="text-[0.78rem] text-ink-muted mt-1">Faktor 0,5&times;</div>
                   </div>
-                  <div className="rounded-sm border-2 border-primary p-5 text-center bg-primary-50">
-                    <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-primary-700 mb-2">
+                  <div className="rounded-sm border-2 border-gold p-5 text-center bg-gold-bg">
+                    <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-gold mb-2">
                       Oberer Erfahrungswert*
                     </div>
-                    <div className="font-serif text-[1.6rem] font-bold text-primary-700">
+                    <div className="font-serif text-[1.6rem] font-bold text-gold">
                       {fmt(result.max)}
                     </div>
-                    <div className="text-[0.78rem] text-primary-700 mt-1">Faktor 1,5&times;</div>
+                    <div className="text-[0.78rem] text-gold mt-1">Faktor 1,5&times;</div>
                   </div>
                 </div>
                 <p className="text-[0.78rem] text-ink-muted mt-4">
@@ -234,13 +234,13 @@ export default function AbfindungsrechnerPage() {
                 </p>
 
                 {/* CTA 1 */}
-                <div className="mt-8 py-5 px-6 bg-slate-50 rounded-sm border-l-[3px] border-primary">
+                <div className="mt-8 py-5 px-6 bg-slate-50 rounded-sm border-l-[3px] border-gold">
                   <p className="text-[0.95rem] text-ink mb-3">
                     <strong>Möchten Sie wissen, welches Szenario für Sie realistisch ist?</strong>
                   </p>
                   <a
                     href="/#kontakt"
-                    className="inline-block py-3 px-6 bg-primary-700 text-white border-none rounded-sm font-sans text-[0.92rem] font-semibold no-underline transition-all hover:bg-[#3730a3]"
+                    className="inline-block py-3 px-6 bg-gold text-white border-none rounded-sm font-sans text-[0.92rem] font-semibold no-underline transition-all hover:bg-[#3730a3]"
                   >
                     Kostenlose Ersteinschätzung anfordern &rarr;
                   </a>
@@ -263,7 +263,7 @@ export default function AbfindungsrechnerPage() {
           </p>
           <a
             href="/#kontakt"
-            className="inline-block py-3.5 px-8 bg-primary-700 text-white border-none rounded-sm font-sans text-base font-semibold no-underline transition-all hover:bg-[#3730a3] hover:-translate-y-px hover:shadow-[0_6px_20px_rgba(99,102,241,0.25)]"
+            className="inline-block py-3.5 px-8 bg-gold text-white border-none rounded-sm font-sans text-base font-semibold no-underline transition-all hover:bg-[#3730a3] hover:-translate-y-px hover:shadow-[0_6px_20px_rgba(166,139,75,0.25)]"
           >
             Jetzt kostenlos prüfen lassen &rarr;
           </a>
@@ -274,7 +274,7 @@ export default function AbfindungsrechnerPage() {
       <section className="py-[70px] px-8 bg-white">
         <div className="max-w-content mx-auto">
           <div className="max-w-[740px]">
-            <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-primary-700 mb-2.5">
+            <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-gold mb-2.5">
               Hintergrund
             </div>
             <h2 className="font-serif text-[clamp(1.4rem,3vw,1.9rem)] font-bold leading-[1.25] mb-6">
@@ -305,7 +305,7 @@ export default function AbfindungsrechnerPage() {
       <section className="py-[70px] px-8 bg-slate-50">
         <div className="max-w-content mx-auto">
           <div className="max-w-[740px]">
-            <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-primary-700 mb-2.5">
+            <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-gold mb-2.5">
               Verhandlungsspielraum
             </div>
             <h2 className="font-serif text-[clamp(1.4rem,3vw,1.9rem)] font-bold leading-[1.25] mb-6">
@@ -318,7 +318,7 @@ export default function AbfindungsrechnerPage() {
               Sozialauswahl (&sect;1 Abs. 3 KSchG) machen die Kündigung angreifbar und erhöhen den Abfindungsfaktor erheblich.
             </p>
             <p className="text-[0.95rem] text-ink-light leading-relaxed mb-5">
-              Besonderer <Link href="/kuendigung" className="text-primary no-underline hover:underline">Kündigungsschutz</Link> — etwa bei Schwangerschaft,
+              Besonderer <Link href="/kuendigung" className="text-gold no-underline hover:underline">Kündigungsschutz</Link> — etwa bei Schwangerschaft,
               Schwerbehinderung, Elternzeit oder als Betriebsratsmitglied — stärkt Ihre Position zusätzlich.
               In diesen Fällen ist die Kündigung oft von vornherein unwirksam, was den Arbeitgeber zu deutlich höheren
               Abfindungen bewegt.
@@ -336,7 +336,7 @@ export default function AbfindungsrechnerPage() {
       <section className="py-[70px] px-8 bg-white">
         <div className="max-w-content mx-auto">
           <div className="max-w-[740px]">
-            <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-primary-700 mb-2.5">
+            <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-gold mb-2.5">
               Praxishinweis
             </div>
             <h2 className="font-serif text-[clamp(1.4rem,3vw,1.9rem)] font-bold leading-[1.25] mb-6">
@@ -356,7 +356,7 @@ export default function AbfindungsrechnerPage() {
             <p className="text-[0.95rem] text-ink-light leading-relaxed">
               Haben Sie eine Rechtsschutzversicherung mit Arbeitsrechtsschutz? Dann übernimmt diese in der Regel
               die Anwalts- und Gerichtskosten vollständig. Aber auch ohne Versicherung lohnt sich zumindest eine{' '}
-              <Link href="/kuendigung-pruefen" className="text-primary no-underline hover:underline">kostenlose Ersteinschätzung</Link>,
+              <Link href="/kuendigung-pruefen" className="text-gold no-underline hover:underline">kostenlose Ersteinschätzung</Link>,
               um Ihre Chancen realistisch bewerten zu können.
             </p>
           </div>
@@ -372,17 +372,17 @@ export default function AbfindungsrechnerPage() {
             </div>
             <ul className="list-none space-y-2 text-[0.88rem]">
               <li>
-                <a href="https://www.gesetze-im-internet.de/kschg/__1a.html" target="_blank" rel="noopener noreferrer" className="text-primary no-underline hover:underline">
+                <a href="https://www.gesetze-im-internet.de/kschg/__1a.html" target="_blank" rel="noopener noreferrer" className="text-gold no-underline hover:underline">
                   &sect;1a KSchG &mdash; Abfindungsanspruch bei betriebsbedingter Kündigung &rarr;
                 </a>
               </li>
               <li>
-                <a href="https://www.gesetze-im-internet.de/kschg/__4.html" target="_blank" rel="noopener noreferrer" className="text-primary no-underline hover:underline">
+                <a href="https://www.gesetze-im-internet.de/kschg/__4.html" target="_blank" rel="noopener noreferrer" className="text-gold no-underline hover:underline">
                   &sect;4 KSchG &mdash; Klagefrist (3 Wochen) &rarr;
                 </a>
               </li>
               <li>
-                <a href="https://www.gesetze-im-internet.de/estg/__34.html" target="_blank" rel="noopener noreferrer" className="text-primary no-underline hover:underline">
+                <a href="https://www.gesetze-im-internet.de/estg/__34.html" target="_blank" rel="noopener noreferrer" className="text-gold no-underline hover:underline">
                   &sect;34 EStG &mdash; Fünftelregelung bei Abfindungen &rarr;
                 </a>
               </li>
@@ -394,7 +394,7 @@ export default function AbfindungsrechnerPage() {
       {/* FAQ */}
       <section className="py-[70px] px-8 bg-white">
         <div className="max-w-content mx-auto">
-          <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-primary-700 mb-2.5">
+          <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-gold mb-2.5">
             Häufige Fragen
           </div>
           <h2 className="font-serif text-[clamp(1.4rem,3vw,1.9rem)] font-bold leading-[1.25] mb-6">
@@ -407,7 +407,7 @@ export default function AbfindungsrechnerPage() {
       {/* CTA 3 */}
       <section className="py-[70px] px-8 bg-slate-50">
         <div className="max-w-content mx-auto text-center">
-          <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-primary-700 mb-2.5">
+          <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-gold mb-2.5">
             Jetzt handeln
           </div>
           <h2 className="font-serif text-[clamp(1.4rem,3vw,1.8rem)] font-bold mb-3">
@@ -419,7 +419,7 @@ export default function AbfindungsrechnerPage() {
           </p>
           <a
             href="/#kontakt"
-            className="inline-block py-3.5 px-8 bg-primary-700 text-white border-none rounded-sm font-sans text-base font-semibold no-underline transition-all hover:bg-[#3730a3] hover:-translate-y-px hover:shadow-[0_6px_20px_rgba(99,102,241,0.25)]"
+            className="inline-block py-3.5 px-8 bg-gold text-white border-none rounded-sm font-sans text-base font-semibold no-underline transition-all hover:bg-[#3730a3] hover:-translate-y-px hover:shadow-[0_6px_20px_rgba(166,139,75,0.25)]"
           >
             Kostenlose Ersteinschätzung &rarr;
           </a>

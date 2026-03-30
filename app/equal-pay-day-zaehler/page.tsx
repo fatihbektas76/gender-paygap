@@ -115,14 +115,14 @@ export default function EqualPayDayZaehlerPage() {
       />
 
       {/* Hero */}
-      <div className="bg-primary-50 pt-[120px] pb-[50px] px-8 border-b border-border">
+      <div className="bg-gold-bg pt-[120px] pb-[50px] px-8 border-b border-border">
         <div className="max-w-content mx-auto">
           <nav className="text-[0.84rem] text-ink-muted mb-6">
-            <Link href="/" className="text-primary-700 no-underline hover:underline">Start</Link>
+            <Link href="/" className="text-gold no-underline hover:underline">Start</Link>
             <span className="mx-2">/</span>
             <span>Equal Pay Day Zähler</span>
           </nav>
-          <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-primary-700 mb-2.5">
+          <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-gold mb-2.5">
             Kostenloses Tool
           </div>
           <h1 className="font-serif text-[clamp(1.8rem,4vw,2.4rem)] font-bold leading-[1.2] max-w-[700px]">
@@ -134,21 +134,21 @@ export default function EqualPayDayZaehlerPage() {
           </p>
           <div className="flex flex-wrap gap-5 mt-5 text-[0.88rem] text-ink-light">
             <span className="flex items-center gap-1.5">
-              <svg className="text-primary-600" width="16" height="16" fill="none" viewBox="0 0 24 24">
+              <svg className="text-gold" width="16" height="16" fill="none" viewBox="0 0 24 24">
                 <circle cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="2" />
                 <path d="M8 12l3 3 5-5" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
               </svg>
               Live-Countdown
             </span>
             <span className="flex items-center gap-1.5">
-              <svg className="text-primary-600" width="16" height="16" fill="none" viewBox="0 0 24 24">
+              <svg className="text-gold" width="16" height="16" fill="none" viewBox="0 0 24 24">
                 <circle cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="2" />
                 <path d="M8 12l3 3 5-5" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
               </svg>
               {branchen.length} Branchen
             </span>
             <span className="flex items-center gap-1.5">
-              <svg className="text-primary-600" width="16" height="16" fill="none" viewBox="0 0 24 24">
+              <svg className="text-gold" width="16" height="16" fill="none" viewBox="0 0 24 24">
                 <circle cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="2" />
                 <path d="M8 12l3 3 5-5" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
               </svg>
@@ -178,16 +178,16 @@ export default function EqualPayDayZaehlerPage() {
       <section className="py-[70px] px-8 bg-white">
         <div className="max-w-content mx-auto">
           <div className="max-w-[740px]">
-            <div className="bg-primary-50 border-2 border-primary-200 rounded p-8 text-center">
-              <p className="text-[0.85rem] text-primary-700 font-semibold uppercase tracking-wider mb-3">
+            <div className="bg-gold-bg border-2 border-gold/30 rounded p-8 text-center">
+              <p className="text-[0.85rem] text-gold font-semibold uppercase tracking-wider mb-3">
                 Deutschland &mdash; Gender Pay Gap {nationalGPG} %
               </p>
               <p className="font-serif text-[clamp(1.4rem,3.5vw,2rem)] font-bold leading-[1.25] text-ink mb-2">
                 Frauen arbeiten bis zum{' '}
-                <span className="text-primary-700">{formatDateDE(nationalResult.date)}</span> gratis.
+                <span className="text-gold">{formatDateDE(nationalResult.date)}</span> gratis.
               </p>
               <p className="text-[1.15rem] text-ink-light">
-                Das sind <span className="font-bold text-primary-700">{nationalResult.days} Tage</span> unbezahlte
+                Das sind <span className="font-bold text-gold">{nationalResult.days} Tage</span> unbezahlte
                 Arbeit im Jahr.
               </p>
             </div>
@@ -205,7 +205,7 @@ export default function EqualPayDayZaehlerPage() {
                   { value: countdown.seconds, label: 'Sekunden' },
                 ].map((item) => (
                   <div key={item.label} className="bg-white border border-border rounded-sm px-5 py-3 min-w-[80px]">
-                    <div className="font-serif text-[1.6rem] font-bold text-primary-700">
+                    <div className="font-serif text-[1.6rem] font-bold text-gold">
                       {String(item.value).padStart(2, '0')}
                     </div>
                     <div className="text-[0.75rem] text-ink-muted mt-1">{item.label}</div>
@@ -221,7 +221,7 @@ export default function EqualPayDayZaehlerPage() {
       <section className="py-[70px] px-8 bg-slate-50">
         <div className="max-w-content mx-auto">
           <div className="max-w-[740px]">
-            <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-primary-700 mb-2.5">
+            <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-gold mb-2.5">
               Individuell berechnen
             </div>
             <h2 className="font-serif text-[clamp(1.4rem,3vw,1.9rem)] font-bold leading-[1.25] mb-5">
@@ -247,16 +247,16 @@ export default function EqualPayDayZaehlerPage() {
             </select>
 
             {branchenResult && (
-              <div className="mt-6 bg-white border-2 border-primary-200 rounded p-6 text-center">
-                <p className="text-[0.85rem] text-primary-700 font-semibold mb-2">
+              <div className="mt-6 bg-white border-2 border-gold/30 rounded p-6 text-center">
+                <p className="text-[0.85rem] text-gold font-semibold mb-2">
                   {branchenResult.name} &mdash; Gender Pay Gap {branchenResult.gpg} %
                 </p>
                 <p className="font-serif text-[1.3rem] font-bold text-ink mb-1">
                   Equal Pay Day:{' '}
-                  <span className="text-primary-700">{formatDateDE(branchenResult.date)}</span>
+                  <span className="text-gold">{formatDateDE(branchenResult.date)}</span>
                 </p>
                 <p className="text-[1rem] text-ink-light">
-                  <span className="font-bold text-primary-700">{branchenResult.days} Tage</span> unbezahlte Arbeit im Jahr
+                  <span className="font-bold text-gold">{branchenResult.days} Tage</span> unbezahlte Arbeit im Jahr
                 </p>
               </div>
             )}
@@ -279,13 +279,13 @@ export default function EqualPayDayZaehlerPage() {
                       <div className="flex-1 bg-slate-200 rounded-sm h-6 relative overflow-hidden">
                         <div
                           className={`h-full rounded-sm transition-all duration-500 ${
-                            isSelected ? 'bg-primary-600' : 'bg-primary-300'
+                            isSelected ? 'bg-gold' : 'bg-gold-light'
                           }`}
                           style={{ width: `${widthPct}%` }}
                         />
                       </div>
                       <div className={`w-[72px] shrink-0 text-[0.82rem] font-semibold ${
-                        isSelected ? 'text-primary-700' : 'text-ink-muted'
+                        isSelected ? 'text-gold' : 'text-ink-muted'
                       }`}>
                         {days} Tage
                       </div>
@@ -302,7 +302,7 @@ export default function EqualPayDayZaehlerPage() {
       <section className="py-[50px] px-8 bg-white border-t border-border">
         <div className="max-w-content mx-auto">
           <div className="max-w-[740px] text-center">
-            <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-primary-700 mb-2.5">
+            <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-gold mb-2.5">
               Teilen
             </div>
             <h2 className="font-serif text-[1.3rem] font-bold mb-4">
@@ -347,7 +347,7 @@ export default function EqualPayDayZaehlerPage() {
       {/* FAQ */}
       <section className="py-[70px] px-8 bg-slate-50">
         <div className="max-w-content mx-auto">
-          <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-primary-700 mb-2.5">
+          <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-gold mb-2.5">
             Häufige Fragen
           </div>
           <h2 className="font-serif text-[clamp(1.4rem,3vw,1.9rem)] font-bold leading-[1.25] mb-6">
@@ -358,7 +358,7 @@ export default function EqualPayDayZaehlerPage() {
       </section>
 
       {/* CTA */}
-      <section className="py-[60px] px-8 bg-primary-700 text-white text-center">
+      <section className="py-[60px] px-8 bg-gold text-white text-center">
         <div className="max-w-content mx-auto">
           <h2 className="font-serif text-[clamp(1.4rem,3vw,1.8rem)] font-bold mb-3">
             Verdacht auf Gehaltsungleichheit? Prüfen Sie Ihr Auskunftsrecht.
@@ -369,7 +369,7 @@ export default function EqualPayDayZaehlerPage() {
           </p>
           <Link
             href="/auskunftsrecht-checker"
-            className="inline-block py-3.5 px-8 bg-white text-primary-700 border-none rounded-sm font-sans text-base font-semibold no-underline transition-all hover:bg-primary-50 hover:-translate-y-0.5"
+            className="inline-block py-3.5 px-8 bg-white text-gold border-none rounded-sm font-sans text-base font-semibold no-underline transition-all hover:bg-gold-bg hover:-translate-y-0.5"
           >
             Auskunftsrecht nutzen &rarr;
           </Link>
@@ -386,7 +386,7 @@ export default function EqualPayDayZaehlerPage() {
               Berechnung individueller Gehaltsunterschiede. Dieses Tool dient der Information und ersetzt
               keine anwaltliche Beratung. Für eine verbindliche Einschätzung Ihres Falls wenden Sie sich
               an einen{' '}
-              <Link href="/kontakt" className="text-primary-700 no-underline hover:underline">
+              <Link href="/kontakt" className="text-gold no-underline hover:underline">
                 Fachanwalt für Arbeitsrecht
               </Link>.
             </p>

@@ -99,14 +99,14 @@ export default function FristloseKuendigungPage() {
       <div className="bg-slate-50 pt-[120px] pb-[50px] px-8 border-b border-border">
         <div className="max-w-content mx-auto">
           <nav className="text-[0.84rem] text-ink-muted mb-6">
-            <Link href="/" className="text-primary no-underline hover:underline">Start</Link>
+            <Link href="/" className="text-gold no-underline hover:underline">Start</Link>
             <span className="mx-2">/</span>
-            <Link href="/kuendigung" className="text-primary no-underline hover:underline">Kündigung</Link>
+            <Link href="/kuendigung" className="text-gold no-underline hover:underline">Kündigung</Link>
             <span className="mx-2">/</span>
             <span>Fristlose Kündigung</span>
           </nav>
           <StandAnzeige />
-          <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-primary-700 mb-2.5 mt-4">
+          <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-gold mb-2.5 mt-4">
             Ratgeber Fristlose Kündigung
           </div>
           <h1 className="font-serif text-[clamp(1.8rem,4vw,2.4rem)] font-bold leading-[1.2] max-w-[700px]">
@@ -120,7 +120,7 @@ export default function FristloseKuendigungPage() {
         <div className="max-w-content mx-auto">
           <div className="max-w-[740px]">
             {/* Warning box */}
-            <div className="py-5 px-6 bg-slate-50 rounded-sm border-l-[3px] border-primary mb-8">
+            <div className="py-5 px-6 bg-slate-50 rounded-sm border-l-[3px] border-gold mb-8">
               <p className="text-[0.95rem] font-semibold text-ink m-0">
                 Wichtig: Bei einer fristlosen Kündigung läuft die 3-Wochen-Klagefrist ab Zugang.
                 Handeln Sie sofort &mdash; jeder Tag zählt.
@@ -155,7 +155,7 @@ export default function FristloseKuendigungPage() {
             {/* CTA 1 */}
             <a
               href="/#kontakt"
-              className="inline-block py-3.5 px-8 bg-primary-700 text-white border-none rounded-sm font-sans text-base font-semibold no-underline transition-all hover:bg-[#3730a3] hover:-translate-y-px hover:shadow-[0_6px_20px_rgba(99,102,241,0.25)]"
+              className="inline-block py-3.5 px-8 bg-gold text-white border-none rounded-sm font-sans text-base font-semibold no-underline transition-all hover:bg-[#3730a3] hover:-translate-y-px hover:shadow-[0_6px_20px_rgba(166,139,75,0.25)]"
             >
               Fristlose Kündigung kostenlos prüfen lassen &rarr;
             </a>
@@ -166,7 +166,7 @@ export default function FristloseKuendigungPage() {
       {/* §626 BGB Voraussetzungen */}
       <section className="py-[70px] px-8 bg-slate-50">
         <div className="max-w-content mx-auto">
-          <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-primary-700 mb-2.5">
+          <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-gold mb-2.5">
             Rechtliche Grundlagen
           </div>
           <h2 className="font-serif text-[clamp(1.4rem,3vw,1.9rem)] font-bold leading-[1.25] mb-3.5">
@@ -224,7 +224,7 @@ export default function FristloseKuendigungPage() {
           </p>
           <a
             href="/#kontakt"
-            className="inline-block py-3.5 px-8 bg-primary-700 text-white border-none rounded-sm font-sans text-base font-semibold no-underline transition-all hover:bg-[#3730a3] hover:-translate-y-px hover:shadow-[0_6px_20px_rgba(99,102,241,0.25)]"
+            className="inline-block py-3.5 px-8 bg-gold text-white border-none rounded-sm font-sans text-base font-semibold no-underline transition-all hover:bg-[#3730a3] hover:-translate-y-px hover:shadow-[0_6px_20px_rgba(166,139,75,0.25)]"
           >
             Jetzt kostenlos prüfen lassen &rarr;
           </a>
@@ -234,7 +234,7 @@ export default function FristloseKuendigungPage() {
       {/* Fristlose Kündigung nach Jahren */}
       <section className="py-[70px] px-8 bg-slate-50">
         <div className="max-w-content mx-auto">
-          <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-primary-700 mb-2.5">
+          <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-gold mb-2.5">
             Nach Betriebszugehörigkeit
           </div>
           <h2 className="font-serif text-[clamp(1.4rem,3vw,1.9rem)] font-bold leading-[1.25] mb-3">
@@ -249,7 +249,7 @@ export default function FristloseKuendigungPage() {
               <Link
                 key={e.year}
                 href={`/fristlose-kuendigung-nach-${e.slug}-betriebszugehoerigkeit/`}
-                className="py-2 px-4 rounded-full border border-border text-[0.85rem] font-semibold text-ink no-underline hover:border-primary hover:text-primary-700 transition-all bg-white"
+                className="py-2 px-4 rounded-full border border-border text-[0.85rem] font-semibold text-ink no-underline hover:border-gold hover:text-gold transition-all bg-white"
               >
                 {e.year} {e.year === 1 ? 'Jahr' : 'Jahre'}
               </Link>
@@ -264,9 +264,9 @@ export default function FristloseKuendigungPage() {
           <div className="max-w-[740px] grid grid-cols-2 gap-4 max-md:grid-cols-1">
             <Link
               href="/kuendigung/"
-              className="block py-6 px-6 bg-slate-50 border border-border rounded-sm no-underline text-ink hover:border-primary transition-all"
+              className="block py-6 px-6 bg-slate-50 border border-border rounded-sm no-underline text-ink hover:border-gold transition-all"
             >
-              <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-primary-700 mb-2">
+              <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-gold mb-2">
                 Verwandtes Thema
               </div>
               <span className="font-serif text-[1.05rem] font-bold">
@@ -278,9 +278,9 @@ export default function FristloseKuendigungPage() {
             </Link>
             <Link
               href="/abfindungsrechner/"
-              className="block py-6 px-6 bg-slate-50 border border-border rounded-sm no-underline text-ink hover:border-primary transition-all"
+              className="block py-6 px-6 bg-slate-50 border border-border rounded-sm no-underline text-ink hover:border-gold transition-all"
             >
-              <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-primary-700 mb-2">
+              <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-gold mb-2">
                 Tool
               </div>
               <span className="font-serif text-[1.05rem] font-bold">
@@ -297,7 +297,7 @@ export default function FristloseKuendigungPage() {
       {/* FAQ */}
       <section className="py-[70px] px-8 bg-white">
         <div className="max-w-content mx-auto">
-          <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-primary-700 mb-2.5">
+          <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-gold mb-2.5">
             Häufige Fragen
           </div>
           <h2 className="font-serif text-[clamp(1.4rem,3vw,1.9rem)] font-bold leading-[1.25] mb-6">
@@ -324,7 +324,7 @@ export default function FristloseKuendigungPage() {
       {/* CTA 3 */}
       <section className="py-[70px] px-8 bg-slate-50">
         <div className="max-w-content mx-auto text-center">
-          <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-primary-700 mb-2.5">
+          <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-gold mb-2.5">
             Jetzt handeln
           </div>
           <h2 className="font-serif text-[clamp(1.4rem,3vw,1.8rem)] font-bold mb-3">
@@ -336,7 +336,7 @@ export default function FristloseKuendigungPage() {
           </p>
           <a
             href="/#kontakt"
-            className="inline-block py-3.5 px-8 bg-primary-700 text-white border-none rounded-sm font-sans text-base font-semibold no-underline transition-all hover:bg-[#3730a3] hover:-translate-y-px hover:shadow-[0_6px_20px_rgba(99,102,241,0.25)]"
+            className="inline-block py-3.5 px-8 bg-gold text-white border-none rounded-sm font-sans text-base font-semibold no-underline transition-all hover:bg-[#3730a3] hover:-translate-y-px hover:shadow-[0_6px_20px_rgba(166,139,75,0.25)]"
           >
             Kostenlose Ersteinschätzung &rarr;
           </a>

@@ -29,7 +29,7 @@ export default function AttorneyProfile() {
   return (
     <section className="py-[90px] px-8 bg-white max-md:py-[60px] max-md:px-6" id="anwalt">
       <div className="max-w-content mx-auto">
-        <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-primary-700 mb-2.5">
+        <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-gold mb-2.5">
           Ihr Anwalt
         </div>
         <div className="grid grid-cols-[280px_1fr] gap-14 items-start max-md:grid-cols-1 max-md:gap-8">
@@ -47,13 +47,13 @@ export default function AttorneyProfile() {
           <FadeUp delay={1}>
             <div>
               <h2 className="font-serif text-[1.8rem] font-bold mb-1">Fatih Bektas</h2>
-              <div className="text-[0.95rem] text-primary-700 font-semibold mb-1.5">
+              <div className="text-[0.95rem] text-gold font-semibold mb-1.5">
                 Rechtsanwalt &amp; Fachanwalt für Arbeitsrecht
               </div>
               <div className="text-[0.88rem] text-ink-muted mb-5">
                 APOS Legal &middot; Heidelberg &amp; Berlin
               </div>
-              <div className="text-primary-700 text-base mb-1">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+              <div className="text-gold text-base mb-1">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
               <div className="text-[0.82rem] text-ink-muted mb-6">
                 5.0 Bewertung &middot; 2.000+ vertretene Mandanten
               </div>
@@ -87,7 +87,7 @@ export default function AttorneyProfile() {
               </ul>
               <button
                 onClick={downloadVCard}
-                className="inline-flex items-center gap-2 mt-5 text-[0.78rem] font-semibold text-primary bg-primary-50 border border-primary/20 rounded-full py-1.5 px-4 cursor-pointer transition-all hover:bg-primary hover:text-white"
+                className="inline-flex items-center gap-2 mt-5 text-[0.78rem] font-semibold text-gold bg-gold-bg border border-gold/20 rounded-full py-1.5 px-4 cursor-pointer transition-all hover:bg-gold hover:text-white"
               >
                 <svg width="14" height="14" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
                   <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
@@ -96,7 +96,7 @@ export default function AttorneyProfile() {
                 </svg>
                 Kontakt speichern
               </button>
-              <blockquote className="mt-7 py-5 px-6 bg-slate-50 border-l-[3px] border-primary rounded-r-sm font-serif italic text-[0.95rem] text-ink-light leading-relaxed">
+              <blockquote className="mt-7 py-5 px-6 bg-slate-50 border-l-[3px] border-gold rounded-r-sm font-serif italic text-[0.95rem] text-ink-light leading-relaxed">
                 &bdquo;Loyalität ist keine Einbahnstraße. Wenn ich sie von Ihnen erwarte, bekommen Sie
                 sie auch von mir.&ldquo;
               </blockquote>

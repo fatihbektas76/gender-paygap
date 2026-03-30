@@ -29,7 +29,7 @@ export default function TeamCard({
             if (fallback) (fallback as HTMLElement).style.display = 'flex';
           }}
         />
-        <div className="fallback absolute inset-0 items-center justify-center font-serif text-[2.5rem] text-primary opacity-40 hidden">
+        <div className="fallback absolute inset-0 items-center justify-center font-serif text-[2.5rem] text-gold opacity-40 hidden">
           &sect;
         </div>
       </div>

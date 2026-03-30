@@ -101,20 +101,20 @@ export default function EntgelttransparenzSanktionenBussgeldPage() {
 
       <main>
         {/* Breadcrumb */}
-        <div className="pt-[130px] px-8 bg-accent-50 max-md:pt-[110px] max-md:px-6">
+        <div className="pt-[130px] px-8 bg-cream-dark max-md:pt-[110px] max-md:px-6">
           <nav className="max-w-content mx-auto text-[0.8rem] text-ink-muted">
-            <a href="/" className="hover:text-primary transition-colors no-underline text-ink-muted">Start</a>
+            <a href="/" className="hover:text-gold transition-colors no-underline text-ink-muted">Start</a>
             <span className="mx-1.5">/</span>
-            <a href="/arbeitgeber" className="hover:text-primary transition-colors no-underline text-ink-muted">Arbeitgeber</a>
+            <a href="/arbeitgeber" className="hover:text-gold transition-colors no-underline text-ink-muted">Arbeitgeber</a>
             <span className="mx-1.5">/</span>
             <span className="text-ink">Sanktionen &amp; Bußgelder</span>
           </nav>
         </div>
 
         {/* Hero */}
-        <header className="pt-6 pb-[80px] px-8 bg-accent-50 max-md:pb-[60px] max-md:px-6">
+        <header className="pt-6 pb-[80px] px-8 bg-cream-dark max-md:pb-[60px] max-md:px-6">
           <div className="max-w-content mx-auto">
-            <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-accent-700 mb-2.5">Arbeitgeber · Sanktionen</div>
+            <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-blue mb-2.5">Arbeitgeber · Sanktionen</div>
             <h1 className="font-serif text-[clamp(2rem,4vw,2.8rem)] font-extrabold leading-[1.15] mb-5 tracking-tight max-md:text-[1.8rem]">
               Sanktionen und Bußgelder bei Entgelttransparenz-Verstößen
             </h1>
@@ -164,8 +164,8 @@ export default function EntgelttransparenzSanktionenBussgeldPage() {
                 <table className="w-full border-collapse text-[0.92rem]">
                   <thead>
                     <tr>
-                      <th className="text-left p-4 bg-accent-50 border border-border font-semibold text-ink">Verstoß</th>
-                      <th className="text-left p-4 bg-accent-50 border border-border font-semibold text-ink w-[180px]">Erwartbares Bußgeld</th>
+                      <th className="text-left p-4 bg-cream-dark border border-border font-semibold text-ink">Verstoß</th>
+                      <th className="text-left p-4 bg-cream-dark border border-border font-semibold text-ink w-[180px]">Erwartbares Bußgeld</th>
                     </tr>
                   </thead>
                   <tbody>
@@ -268,17 +268,17 @@ export default function EntgelttransparenzSanktionenBussgeldPage() {
               <h2 className="font-serif text-[1.5rem] font-bold mb-4">
                 Rechenbeispiel: Gesamtrisiko für ein Unternehmen mit 500 MA
               </h2>
-              <div className="bg-accent-50 border border-accent/20 rounded p-6">
+              <div className="bg-cream-dark border border-blue/20 rounded p-6">
                 <div className="space-y-3 text-[0.92rem] text-ink-light leading-relaxed">
-                  <div className="flex justify-between border-b border-accent/10 pb-2">
+                  <div className="flex justify-between border-b border-blue/10 pb-2">
                     <span>Bußgeld (fehlender GPG-Bericht + fehlende Gehaltsspannen)</span>
                     <span className="font-semibold text-ink whitespace-nowrap ml-4">ca. 150.000 Euro</span>
                   </div>
-                  <div className="flex justify-between border-b border-accent/10 pb-2">
+                  <div className="flex justify-between border-b border-blue/10 pb-2">
                     <span>Schadensersatz (30 betroffene Beschäftigte, je 25.000 Euro im Schnitt)</span>
                     <span className="font-semibold text-ink whitespace-nowrap ml-4">ca. 750.000 Euro</span>
                   </div>
-                  <div className="flex justify-between border-b border-accent/10 pb-2">
+                  <div className="flex justify-between border-b border-blue/10 pb-2">
                     <span>Anwalts- und Verfahrenskosten</span>
                     <span className="font-semibold text-ink whitespace-nowrap ml-4">ca. 100.000 Euro</span>
                   </div>
@@ -317,7 +317,7 @@ export default function EntgelttransparenzSanktionenBussgeldPage() {
         <ContactForm />
 
         {/* CTA */}
-        <section className="py-[70px] px-8 bg-accent-700 text-white text-center max-md:py-12 max-md:px-6">
+        <section className="py-[70px] px-8 bg-blue text-white text-center max-md:py-12 max-md:px-6">
           <div className="max-w-[700px] mx-auto">
             <h2 className="font-serif text-[clamp(1.5rem,3vw,2rem)] font-bold mb-4">
               Sanktionsrisiko minimieren — jetzt Compliance prüfen
@@ -327,7 +327,7 @@ export default function EntgelttransparenzSanktionenBussgeldPage() {
             </p>
             <a
               href="/kontakt"
-              className="inline-flex items-center gap-2 px-8 py-3.5 rounded-sm text-[0.95rem] font-semibold no-underline transition-all bg-white text-accent-700 hover:bg-accent-50 hover:-translate-y-0.5"
+              className="inline-flex items-center gap-2 px-8 py-3.5 rounded-sm text-[0.95rem] font-semibold no-underline transition-all bg-white text-blue hover:bg-cream-dark hover:-translate-y-0.5"
             >
               Jetzt Risikoanalyse anfragen &rarr;
             </a>

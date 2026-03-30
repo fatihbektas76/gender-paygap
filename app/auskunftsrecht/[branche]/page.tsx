@@ -94,20 +94,20 @@ export default function AuskunftsrechtBranchePage({ params }: Props) {
 
       <main>
         {/* Breadcrumb */}
-        <div className="pt-[130px] px-8 bg-secondary-50 max-md:pt-[110px] max-md:px-6">
+        <div className="pt-[130px] px-8 bg-green-bg max-md:pt-[110px] max-md:px-6">
           <nav className="max-w-content mx-auto text-[0.8rem] text-ink-muted">
-            <a href="/" className="hover:text-primary transition-colors no-underline text-ink-muted">Start</a>
+            <a href="/" className="hover:text-gold transition-colors no-underline text-ink-muted">Start</a>
             <span className="mx-1.5">/</span>
-            <a href="/arbeitnehmer" className="hover:text-primary transition-colors no-underline text-ink-muted">Arbeitnehmer</a>
+            <a href="/arbeitnehmer" className="hover:text-gold transition-colors no-underline text-ink-muted">Arbeitnehmer</a>
             <span className="mx-1.5">/</span>
             <span className="text-ink">Auskunftsrecht {b.name}</span>
           </nav>
         </div>
 
         {/* Hero */}
-        <header className="pt-6 pb-[80px] px-8 bg-secondary-50 max-md:pb-[60px] max-md:px-6">
+        <header className="pt-6 pb-[80px] px-8 bg-green-bg max-md:pb-[60px] max-md:px-6">
           <div className="max-w-content mx-auto">
-            <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-secondary-700 mb-2.5">Auskunftsrecht · {b.name}</div>
+            <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-green mb-2.5">Auskunftsrecht · {b.name}</div>
             <h1 className="font-serif text-[clamp(2rem,4vw,2.8rem)] font-extrabold leading-[1.15] mb-5 tracking-tight max-md:text-[1.8rem]">
               Auskunftsrecht in {b.nameGenitiv} — Equal Pay prüfen lassen
             </h1>
@@ -125,8 +125,8 @@ export default function AuskunftsrechtBranchePage({ params }: Props) {
           <div className="max-w-content mx-auto">
             <FadeUp>
               <div className="grid grid-cols-3 gap-5 max-md:grid-cols-1">
-                <div className="bg-secondary-50 border border-secondary/20 rounded p-6 text-center">
-                  <div className="text-[2.5rem] font-extrabold text-secondary-700">{b.gpgProzent}%</div>
+                <div className="bg-green-bg border border-green-bg rounded p-6 text-center">
+                  <div className="text-[2.5rem] font-extrabold text-green">{b.gpgProzent}%</div>
                   <div className="text-[0.85rem] text-ink-muted mt-1">Gender Pay Gap in {b.nameGenitiv}</div>
                   <div className="text-[0.75rem] text-ink-muted mt-0.5">Destatis 2025</div>
                 </div>
@@ -197,7 +197,7 @@ export default function AuskunftsrechtBranchePage({ params }: Props) {
                   { nr: '3', title: 'Ergebnis prüfen lassen', text: 'Zeigt die Auskunft eine Gehaltslücke? Ein Fachanwalt kann prüfen, ob ein Entgeltdiskriminierungsanspruch besteht und welche Entschädigung möglich ist.' },
                 ].map((step) => (
                   <div key={step.nr} className="flex gap-4">
-                    <div className="w-9 h-9 min-w-[36px] rounded-full bg-secondary-50 border border-secondary/30 flex items-center justify-center text-secondary-700 font-bold text-[0.85rem]">
+                    <div className="w-9 h-9 min-w-[36px] rounded-full bg-green-bg border border-green/30 flex items-center justify-center text-green font-bold text-[0.85rem]">
                       {step.nr}
                     </div>
                     <div>
@@ -266,7 +266,7 @@ export default function AuskunftsrechtBranchePage({ params }: Props) {
         <ContactForm />
 
         {/* CTA */}
-        <section className="py-[70px] px-8 bg-secondary-700 text-white text-center max-md:py-12 max-md:px-6">
+        <section className="py-[70px] px-8 bg-green text-white text-center max-md:py-12 max-md:px-6">
           <div className="max-w-[700px] mx-auto">
             <h2 className="font-serif text-[clamp(1.5rem,3vw,2rem)] font-bold mb-4">
               Kostenlose Ersteinschätzung — Auskunftsrecht in {b.nameGenitiv}
@@ -276,7 +276,7 @@ export default function AuskunftsrechtBranchePage({ params }: Props) {
             </p>
             <a
               href="/kontakt"
-              className="inline-flex items-center gap-2 px-8 py-3.5 rounded-sm text-[0.95rem] font-semibold no-underline transition-all bg-white text-secondary-700 hover:bg-secondary-50 hover:-translate-y-0.5"
+              className="inline-flex items-center gap-2 px-8 py-3.5 rounded-sm text-[0.95rem] font-semibold no-underline transition-all bg-white text-green hover:bg-green-bg hover:-translate-y-0.5"
             >
               Jetzt Kontakt aufnehmen &rarr;
             </a>
