@@ -14,7 +14,7 @@ export default function TableOfContents({ headings }: { headings: TocItem[] }) {
   if (headings.length === 0) return null;
 
   return (
-    <nav className="mb-10 border border-border-light rounded bg-slate-50/50 overflow-hidden">
+    <nav className="mb-10 border border-border-light rounded bg-cream/50 overflow-hidden">
       <button
         onClick={() => setOpen(!open)}
         className="w-full flex items-center justify-between px-6 py-4 bg-none border-none cursor-pointer text-left font-sans"

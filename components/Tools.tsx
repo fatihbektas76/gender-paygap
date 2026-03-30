@@ -28,7 +28,7 @@ const tools = [
 
 export default function Tools() {
   return (
-    <section className="py-[90px] px-8 bg-slate-50 max-md:py-[60px] max-md:px-6" id="tools">
+    <section className="py-[90px] px-8 bg-cream max-md:py-[60px] max-md:px-6" id="tools">
       <div className="max-w-content mx-auto">
         <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-gold mb-2.5">
           Kostenlose Tools

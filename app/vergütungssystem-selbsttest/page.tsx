@@ -365,7 +365,7 @@ export default function VergütungssystemSelbsttestPage() {
                           return (
                             <div
                               key={idx}
-                              className="bg-slate-50 border border-border-light rounded p-5 flex flex-col sm:flex-row sm:items-center gap-4"
+                              className="bg-cream border border-border-light rounded p-5 flex flex-col sm:flex-row sm:items-center gap-4"
                             >
                               <div className="flex gap-3 items-start flex-1">
                                 <span className="text-[0.85rem] font-bold text-blue min-w-[28px] mt-0.5">
@@ -436,7 +436,7 @@ export default function VergütungssystemSelbsttestPage() {
       )}
 
       {/* FAQ */}
-      <section className="py-[70px] px-8 bg-slate-50 max-md:py-12 max-md:px-6">
+      <section className="py-[70px] px-8 bg-cream max-md:py-12 max-md:px-6">
         <div className="max-w-content mx-auto">
           <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-blue mb-2.5">
             Häufige Fragen

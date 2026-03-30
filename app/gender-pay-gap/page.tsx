@@ -72,7 +72,7 @@ export default function GenderPayGapPage() {
       />
 
       <main>
-        <header className="pt-[150px] pb-[80px] px-8 bg-slate-50 max-md:pt-[120px] max-md:pb-[60px] max-md:px-6">
+        <header className="pt-[150px] pb-[80px] px-8 bg-cream max-md:pt-[120px] max-md:pb-[60px] max-md:px-6">
           <div className="max-w-content mx-auto">
             <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-gold mb-2.5">Wissen</div>
             <h1 className="font-serif text-[clamp(2rem,4vw,2.8rem)] font-extrabold leading-[1.15] mb-5 tracking-tight max-md:text-[1.8rem]">
@@ -116,7 +116,7 @@ export default function GenderPayGapPage() {
         </section>
 
         {/* Ursachen */}
-        <section className="py-[90px] px-8 bg-slate-50 max-md:py-[60px] max-md:px-6">
+        <section className="py-[90px] px-8 bg-cream max-md:py-[60px] max-md:px-6">
           <div className="max-w-content mx-auto">
             <h2 className="font-serif text-[clamp(1.5rem,3vw,2rem)] font-bold leading-tight mb-8">
               Warum gibt es einen Gender Pay Gap?
@@ -152,7 +152,7 @@ export default function GenderPayGapPage() {
               {branchenHighlights.map((b) => (
                 <div key={b.name} className="flex items-center gap-4">
                   <div className="w-[140px] text-[0.88rem] text-ink font-medium shrink-0 max-md:w-[110px] max-md:text-[0.8rem]">{b.name}</div>
-                  <div className="flex-1 bg-slate-100 rounded-full h-6 overflow-hidden">
+                  <div className="flex-1 bg-cream-dark rounded-full h-6 overflow-hidden">
                     <div
                       className={`${b.color} h-full rounded-full flex items-center justify-end pr-2.5`}
                       style={{ width: `${Math.max(b.gpg * 3, 20)}%` }}
@@ -167,7 +167,7 @@ export default function GenderPayGapPage() {
         </section>
 
         {/* CTA zu AN/AG */}
-        <section className="py-[70px] px-8 bg-slate-50 max-md:py-[50px] max-md:px-6">
+        <section className="py-[70px] px-8 bg-cream max-md:py-[50px] max-md:px-6">
           <div className="max-w-content mx-auto grid grid-cols-2 gap-6 max-md:grid-cols-1">
             <a href="/arbeitnehmer" className="block bg-green-bg border border-green-bg rounded p-7 no-underline transition-all hover:-translate-y-0.5 hover:shadow-lg">
               <div className="text-[0.7rem] font-bold tracking-[0.14em] uppercase text-green mb-2">Arbeitnehmer</div>

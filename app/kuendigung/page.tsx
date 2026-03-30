@@ -108,7 +108,7 @@ export default function KuendigungPage() {
       />
 
       {/* Header */}
-      <div className="bg-slate-50 pt-[120px] pb-[50px] px-8 border-b border-border">
+      <div className="bg-cream pt-[120px] pb-[50px] px-8 border-b border-border">
         <div className="max-w-content mx-auto">
           <nav className="text-[0.84rem] text-ink-muted mb-6">
             <Link href="/" className="text-gold no-underline hover:underline">Start</Link>
@@ -130,7 +130,7 @@ export default function KuendigungPage() {
         <div className="max-w-content mx-auto">
           <div className="max-w-[740px]">
             {/* Urgency box */}
-            <div className="py-5 px-6 bg-slate-50 rounded-sm border-l-[3px] border-gold mb-8">
+            <div className="py-5 px-6 bg-cream rounded-sm border-l-[3px] border-gold mb-8">
               <p className="text-[0.95rem] font-semibold text-ink m-0">
                 Wichtig: Die Klagefrist beträgt nur 3 Wochen ab Zugang der Kündigung (&sect;4 KSchG).
                 Handeln Sie sofort.
@@ -150,7 +150,7 @@ export default function KuendigungPage() {
             {/* CTA 1 */}
             <a
               href="/#kontakt"
-              className="inline-block py-3.5 px-8 bg-gold text-white border-none rounded-sm font-sans text-base font-semibold no-underline transition-all hover:bg-[#3730a3] hover:-translate-y-px hover:shadow-[0_6px_20px_rgba(166,139,75,0.25)]"
+              className="inline-block py-3.5 px-8 bg-gold text-white border-none rounded-sm font-sans text-base font-semibold no-underline transition-all hover:bg-[#7A6530] hover:-translate-y-px hover:shadow-[0_6px_20px_rgba(166,139,75,0.25)]"
             >
               Kündigung kostenlos prüfen lassen &rarr;
             </a>
@@ -159,7 +159,7 @@ export default function KuendigungPage() {
       </section>
 
       {/* Kündigungsfristen-Tabelle */}
-      <section className="py-[70px] px-8 bg-slate-50">
+      <section className="py-[70px] px-8 bg-cream">
         <div className="max-w-content mx-auto">
           <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-gold mb-2.5">
             Kündigungsfristen
@@ -210,7 +210,7 @@ export default function KuendigungPage() {
           </p>
           <a
             href="/#kontakt"
-            className="inline-block py-3.5 px-8 bg-gold text-white border-none rounded-sm font-sans text-base font-semibold no-underline transition-all hover:bg-[#3730a3] hover:-translate-y-px hover:shadow-[0_6px_20px_rgba(166,139,75,0.25)]"
+            className="inline-block py-3.5 px-8 bg-gold text-white border-none rounded-sm font-sans text-base font-semibold no-underline transition-all hover:bg-[#7A6530] hover:-translate-y-px hover:shadow-[0_6px_20px_rgba(166,139,75,0.25)]"
           >
             Jetzt kostenlos prüfen lassen &rarr;
           </a>
@@ -218,7 +218,7 @@ export default function KuendigungPage() {
       </section>
 
       {/* Kündigung nach Betriebszugehörigkeit - Links */}
-      <section className="py-[70px] px-8 bg-slate-50">
+      <section className="py-[70px] px-8 bg-cream">
         <div className="max-w-content mx-auto">
           <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-gold mb-2.5">
             Nach Betriebszugehörigkeit
@@ -272,10 +272,10 @@ export default function KuendigungPage() {
       </section>
 
       {/* Fristlose Kündigung - Link Card */}
-      <section className="py-[50px] px-8 bg-slate-50">
+      <section className="py-[50px] px-8 bg-cream">
         <div className="max-w-content mx-auto">
           <div className="max-w-[740px]">
-            <div className="flex items-center justify-between gap-6 py-5 px-6 bg-slate-50 rounded-sm border-l-[3px] border-gold max-md:flex-col max-md:items-start">
+            <div className="flex items-center justify-between gap-6 py-5 px-6 bg-cream rounded-sm border-l-[3px] border-gold max-md:flex-col max-md:items-start">
               <div>
                 <p className="text-[1rem] font-semibold text-ink m-0">Fristlose Kündigung erhalten?</p>
                 <p className="text-[0.84rem] text-ink-muted mt-1 m-0">
@@ -284,7 +284,7 @@ export default function KuendigungPage() {
               </div>
               <Link
                 href="/fristlose-kuendigung/"
-                className="inline-block py-3 px-6 bg-gold text-white border-none rounded-sm font-sans text-[0.92rem] font-semibold no-underline whitespace-nowrap transition-all hover:bg-[#3730a3]"
+                className="inline-block py-3 px-6 bg-gold text-white border-none rounded-sm font-sans text-[0.92rem] font-semibold no-underline whitespace-nowrap transition-all hover:bg-[#7A6530]"
               >
                 Zum Ratgeber &rarr;
               </Link>
@@ -294,7 +294,7 @@ export default function KuendigungPage() {
       </section>
 
       {/* Kündigung nach Ihrer Situation */}
-      <section className="py-[70px] px-8 bg-slate-50">
+      <section className="py-[70px] px-8 bg-cream">
         <div className="max-w-content mx-auto">
           <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-gold mb-2.5">
             Nach Ihrer Situation
@@ -324,7 +324,7 @@ export default function KuendigungPage() {
       <section className="py-[50px] px-8 bg-white">
         <div className="max-w-content mx-auto">
           <div className="max-w-[740px]">
-            <div className="flex items-center justify-between gap-6 py-5 px-6 bg-slate-50 rounded-sm border-l-[3px] border-gold max-md:flex-col max-md:items-start">
+            <div className="flex items-center justify-between gap-6 py-5 px-6 bg-cream rounded-sm border-l-[3px] border-gold max-md:flex-col max-md:items-start">
               <div>
                 <p className="text-[1rem] font-semibold text-ink m-0">Abmahnung erhalten?</p>
                 <p className="text-[0.84rem] text-ink-muted mt-1 m-0">
@@ -333,7 +333,7 @@ export default function KuendigungPage() {
               </div>
               <Link
                 href="/abmahnung/"
-                className="inline-block py-3 px-6 bg-gold text-white border-none rounded-sm font-sans text-[0.92rem] font-semibold no-underline whitespace-nowrap transition-all hover:bg-[#3730a3]"
+                className="inline-block py-3 px-6 bg-gold text-white border-none rounded-sm font-sans text-[0.92rem] font-semibold no-underline whitespace-nowrap transition-all hover:bg-[#7A6530]"
               >
                 Zum Ratgeber Abmahnung &rarr;
               </Link>
@@ -383,7 +383,7 @@ export default function KuendigungPage() {
       </section>
 
       {/* CTA 3 */}
-      <section className="py-[70px] px-8 bg-slate-50">
+      <section className="py-[70px] px-8 bg-cream">
         <div className="max-w-content mx-auto text-center">
           <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-gold mb-2.5">
             Jetzt handeln
@@ -397,7 +397,7 @@ export default function KuendigungPage() {
           </p>
           <a
             href="/#kontakt"
-            className="inline-block py-3.5 px-8 bg-gold text-white border-none rounded-sm font-sans text-base font-semibold no-underline transition-all hover:bg-[#3730a3] hover:-translate-y-px hover:shadow-[0_6px_20px_rgba(166,139,75,0.25)]"
+            className="inline-block py-3.5 px-8 bg-gold text-white border-none rounded-sm font-sans text-base font-semibold no-underline transition-all hover:bg-[#7A6530] hover:-translate-y-px hover:shadow-[0_6px_20px_rgba(166,139,75,0.25)]"
           >
             Kostenlose Ersteinschätzung &rarr;
           </a>

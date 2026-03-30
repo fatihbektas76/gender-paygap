@@ -244,7 +244,7 @@ export default function EqualPaySchnellcheckPage() {
                 )}
 
                 {result === 'weak' && (
-                  <div className="rounded-sm border-2 border-gray-300 bg-slate-50 p-6 text-center">
+                  <div className="rounded-sm border-2 border-gray-300 bg-cream p-6 text-center">
                     <div className="inline-block py-1.5 px-4 bg-gray-500 text-white rounded-sm text-[0.85rem] font-semibold mb-4">
                       Kein eindeutiger Anspruch erkennbar
                     </div>
@@ -272,7 +272,7 @@ export default function EqualPaySchnellcheckPage() {
                 </div>
 
                 {/* Summary */}
-                <div className="mt-6 bg-slate-50 rounded-sm border border-border p-5">
+                <div className="mt-6 bg-cream rounded-sm border border-border p-5">
                   <div className="text-[0.78rem] font-bold tracking-[0.14em] uppercase text-ink-muted mb-3">
                     Ihre Antworten
                   </div>
@@ -310,7 +310,7 @@ export default function EqualPaySchnellcheckPage() {
       </section>
 
       {/* FAQ */}
-      <section className="py-[70px] px-8 bg-slate-50 max-md:py-12 max-md:px-6">
+      <section className="py-[70px] px-8 bg-cream max-md:py-12 max-md:px-6">
         <div className="max-w-content mx-auto">
           <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-green mb-2.5">
             Häufige Fragen

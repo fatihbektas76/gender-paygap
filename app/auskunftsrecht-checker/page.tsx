@@ -183,7 +183,7 @@ export default function AuskunftsrechtCheckerPage() {
                           ? 'bg-green text-white'
                           : s < step
                             ? 'bg-green-bg text-green'
-                            : 'bg-slate-100 text-ink-muted'
+                            : 'bg-cream-dark text-ink-muted'
                       }`}
                     >
                       {s < step ? (
@@ -195,7 +195,7 @@ export default function AuskunftsrechtCheckerPage() {
                       )}
                     </div>
                     {s < 3 && (
-                      <div className={`w-12 h-0.5 ${s < step ? 'bg-green-bg' : 'bg-slate-200'}`} />
+                      <div className={`w-12 h-0.5 ${s < step ? 'bg-green-bg' : 'bg-cream-dark'}`} />
                     )}
                   </div>
                 ))}
@@ -207,7 +207,7 @@ export default function AuskunftsrechtCheckerPage() {
 
             {/* Step 1: Company size */}
             {step === 1 && (
-              <div className="bg-slate-50 border border-border-light rounded p-8">
+              <div className="bg-cream border border-border-light rounded p-8">
                 <h2 className="font-serif text-[1.2rem] font-bold mb-2">
                   Wie viele Mitarbeiter hat Ihr Unternehmen?
                 </h2>
@@ -233,7 +233,7 @@ export default function AuskunftsrechtCheckerPage() {
 
             {/* Step 2: Tenure */}
             {step === 2 && (
-              <div className="bg-slate-50 border border-border-light rounded p-8">
+              <div className="bg-cream border border-border-light rounded p-8">
                 <h2 className="font-serif text-[1.2rem] font-bold mb-2">
                   Wie lange sind Sie im Unternehmen?
                 </h2>
@@ -262,7 +262,7 @@ export default function AuskunftsrechtCheckerPage() {
 
             {/* Step 3: Situation */}
             {step === 3 && (
-              <div className="bg-slate-50 border border-border-light rounded p-8">
+              <div className="bg-cream border border-border-light rounded p-8">
                 <h2 className="font-serif text-[1.2rem] font-bold mb-2">
                   Was beschreibt Ihre Situation am besten?
                 </h2>
@@ -380,7 +380,7 @@ export default function AuskunftsrechtCheckerPage() {
       </section>
 
       {/* Explanation */}
-      <section className="py-[70px] px-8 bg-slate-50">
+      <section className="py-[70px] px-8 bg-cream">
         <div className="max-w-content mx-auto">
           <div className="max-w-[740px]">
             <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-green mb-2.5">
@@ -461,7 +461,7 @@ export default function AuskunftsrechtCheckerPage() {
       </section>
 
       {/* FAQ */}
-      <section className="py-[70px] px-8 bg-slate-50">
+      <section className="py-[70px] px-8 bg-cream">
         <div className="max-w-content mx-auto">
           <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-green mb-2.5">
             Häufige Fragen

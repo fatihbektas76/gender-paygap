@@ -64,7 +64,7 @@ export default function EntgelttransparenzgesetzPage() {
       />
 
       <main>
-        <header className="pt-[150px] pb-[80px] px-8 bg-slate-50 max-md:pt-[120px] max-md:pb-[60px] max-md:px-6">
+        <header className="pt-[150px] pb-[80px] px-8 bg-cream max-md:pt-[120px] max-md:pb-[60px] max-md:px-6">
           <div className="max-w-content mx-auto">
             <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-gold mb-2.5">Das Gesetz</div>
             <h1 className="font-serif text-[clamp(2rem,4vw,2.8rem)] font-extrabold leading-[1.15] mb-5 tracking-tight max-md:text-[1.8rem]">
@@ -93,7 +93,7 @@ export default function EntgelttransparenzgesetzPage() {
                 { num: '5', title: 'Wirksame Sanktionen', text: 'Erstmals drohen echte Bußgelder und Schadensersatzansprüche. Betroffene können Entschädigung für bis zu 3 Jahre rückwirkend fordern (Art. 21, 23 EU-RL).' },
               ].map((item, i) => (
                 <FadeUp key={item.num} delay={Math.min(i, 3) as 0 | 1 | 2 | 3}>
-                  <div className="bg-slate-50 border border-border-light rounded p-6 h-full">
+                  <div className="bg-cream border border-border-light rounded p-6 h-full">
                     <div className="w-8 h-8 rounded-full bg-gold-bg text-gold font-bold text-[0.9rem] flex items-center justify-center mb-3">{item.num}</div>
                     <h3 className="font-serif text-[1.1rem] font-bold text-ink mb-2">{item.title}</h3>
                     <p className="text-[0.88rem] text-ink-muted leading-relaxed m-0">{item.text}</p>
@@ -105,7 +105,7 @@ export default function EntgelttransparenzgesetzPage() {
         </section>
 
         {/* Zeitstrahl */}
-        <section className="py-[90px] px-8 bg-slate-50 max-md:py-[60px] max-md:px-6">
+        <section className="py-[90px] px-8 bg-cream max-md:py-[60px] max-md:px-6">
           <div className="max-w-content mx-auto">
             <h2 className="font-serif text-[clamp(1.5rem,3vw,2rem)] font-bold leading-tight mb-8">
               Zeitstrahl: Vom EntgTranspG zur EU-Richtlinie
@@ -143,7 +143,7 @@ export default function EntgelttransparenzgesetzPage() {
         </section>
 
         {/* FAQ */}
-        <section className="py-[90px] px-8 bg-slate-50 max-md:py-[60px] max-md:px-6" id="faq">
+        <section className="py-[90px] px-8 bg-cream max-md:py-[60px] max-md:px-6" id="faq">
           <div className="max-w-content mx-auto">
             <h2 className="font-serif text-[clamp(1.5rem,3vw,2rem)] font-bold leading-tight mb-8">
               Häufige Fragen zum Entgelttransparenzgesetz

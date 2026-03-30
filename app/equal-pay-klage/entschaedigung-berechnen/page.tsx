@@ -317,7 +317,7 @@ export default function EntschaedigungBerechnenPage() {
       </section>
 
       {/* Erklärung */}
-      <section className="py-[70px] px-8 bg-slate-50 max-md:py-10 max-md:px-6">
+      <section className="py-[70px] px-8 bg-cream max-md:py-10 max-md:px-6">
         <div className="max-w-content mx-auto">
           <div className="max-w-[740px]">
             <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-green mb-2.5">
@@ -376,7 +376,7 @@ export default function EntschaedigungBerechnenPage() {
       </section>
 
       {/* FAQ */}
-      <section className="py-[70px] px-8 bg-slate-50 max-md:py-10 max-md:px-6">
+      <section className="py-[70px] px-8 bg-cream max-md:py-10 max-md:px-6">
         <div className="max-w-content mx-auto">
           <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-green mb-2.5">
             Häufige Fragen

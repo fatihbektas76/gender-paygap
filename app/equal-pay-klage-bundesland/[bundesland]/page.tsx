@@ -122,11 +122,11 @@ export default function EqualPayKlageBundeslandPage({ params }: Props) {
                   <div className="text-[0.85rem] text-ink-muted mt-1">Gender Pay Gap</div>
                   <div className="text-[0.75rem] text-ink-muted mt-0.5">{bl.name} · Destatis 2025</div>
                 </div>
-                <div className="bg-slate-50 border border-border-light rounded p-6">
+                <div className="bg-cream border border-border-light rounded p-6">
                   <div className="text-[0.72rem] font-bold tracking-[0.12em] uppercase text-ink-muted mb-2">Zuständiges Arbeitsgericht</div>
                   <div className="text-[1.1rem] font-bold text-ink">{bl.arbGStadt}</div>
                 </div>
-                <div className="bg-slate-50 border border-border-light rounded p-6">
+                <div className="bg-cream border border-border-light rounded p-6">
                   <div className="text-[0.72rem] font-bold tracking-[0.12em] uppercase text-ink-muted mb-2">Berufungsinstanz</div>
                   <div className="text-[1.1rem] font-bold text-ink">{bl.lagName}</div>
                 </div>
@@ -136,7 +136,7 @@ export default function EqualPayKlageBundeslandPage({ params }: Props) {
         </section>
 
         {/* Besonderheiten */}
-        <section className="py-[60px] px-8 bg-slate-50 max-md:py-10 max-md:px-6">
+        <section className="py-[60px] px-8 bg-cream max-md:py-10 max-md:px-6">
           <div className="max-w-content mx-auto max-w-[800px]">
             <FadeUp>
               <h2 className="font-serif text-[1.5rem] font-bold mb-4">
@@ -180,7 +180,7 @@ export default function EqualPayKlageBundeslandPage({ params }: Props) {
         </section>
 
         {/* BAG-Urteil Highlight */}
-        <section className="py-[40px] px-8 bg-slate-50 max-md:py-8 max-md:px-6">
+        <section className="py-[40px] px-8 bg-cream max-md:py-8 max-md:px-6">
           <div className="max-w-content mx-auto max-w-[800px]">
             <FadeUp>
               <div className="bg-white border border-green/30 rounded p-8 border-l-[4px] border-l-green">

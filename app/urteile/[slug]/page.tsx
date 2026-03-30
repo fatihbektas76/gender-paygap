@@ -38,8 +38,8 @@ function Stars({ count }: { count: number }) {
           width="18"
           height="18"
           viewBox="0 0 24 24"
-          fill={i <= count ? '#6366f1' : 'none'}
-          stroke="#6366f1"
+          fill={i <= count ? '#A68B4B' : 'none'}
+          stroke="#A68B4B"
           strokeWidth="2"
         >
           <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
@@ -103,7 +103,7 @@ export default function UrteilDetailPage({ params }: Props) {
       />
 
       {/* Header */}
-      <div className="bg-slate-50 pt-[120px] pb-[50px] px-8 border-b border-border">
+      <div className="bg-cream pt-[120px] pb-[50px] px-8 border-b border-border">
         <div className="max-w-content mx-auto">
           <nav className="text-[0.84rem] text-ink-muted mb-6">
             <Link href="/" className="text-gold no-underline hover:underline">
@@ -216,7 +216,7 @@ export default function UrteilDetailPage({ params }: Props) {
               <h2 className="font-serif text-[clamp(1.2rem,2.5vw,1.5rem)] font-bold mb-4 mt-10">
                 Leitsatz
               </h2>
-              <blockquote className="border-l-[3px] border-gold pl-5 py-3 my-6 bg-slate-50 rounded-r-sm">
+              <blockquote className="border-l-[3px] border-gold pl-5 py-3 my-6 bg-cream rounded-r-sm">
                 <p className="font-serif text-[1rem] text-ink italic leading-relaxed m-0">
                   &bdquo;{urteil.leitsatz}&ldquo;
                 </p>
@@ -271,7 +271,7 @@ export default function UrteilDetailPage({ params }: Props) {
               </div>
 
               {/* Bedeutung Box */}
-              <div className="mt-5 py-4 px-5 bg-slate-50 rounded-sm border-l-[3px] border-gold">
+              <div className="mt-5 py-4 px-5 bg-cream rounded-sm border-l-[3px] border-gold">
                 <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-gold mb-2">
                   Bedeutung für Sie
                 </div>
@@ -302,7 +302,7 @@ export default function UrteilDetailPage({ params }: Props) {
 
       {/* Verwandte Urteile */}
       {verwandte.length > 0 && (
-        <section className="py-[70px] px-8 bg-slate-50">
+        <section className="py-[70px] px-8 bg-cream">
           <div className="max-w-content mx-auto">
             <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-gold mb-2.5">
               Weitere Entscheidungen
@@ -363,7 +363,7 @@ export default function UrteilDetailPage({ params }: Props) {
           </p>
           <Link
             href="/kuendigung-pruefen"
-            className="inline-block py-3.5 px-8 bg-gold text-white border-none rounded-sm font-sans text-base font-semibold no-underline transition-all hover:bg-[#3730a3] hover:-translate-y-px hover:shadow-[0_6px_20px_rgba(166,139,75,0.25)]"
+            className="inline-block py-3.5 px-8 bg-gold text-white border-none rounded-sm font-sans text-base font-semibold no-underline transition-all hover:bg-[#7A6530] hover:-translate-y-px hover:shadow-[0_6px_20px_rgba(166,139,75,0.25)]"
           >
             Kostenlos prüfen lassen &rarr;
           </Link>

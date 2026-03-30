@@ -180,7 +180,7 @@ ${n}`;
                           ? 'bg-green text-white'
                           : s.num < step
                             ? 'bg-green-bg text-green'
-                            : 'bg-slate-100 text-ink-muted'
+                            : 'bg-cream-dark text-ink-muted'
                       }`}
                     >
                       {s.num < step ? (
@@ -196,7 +196,7 @@ ${n}`;
                     </span>
                   </div>
                   {i < 2 && (
-                    <div className={`w-8 h-0.5 ${s.num < step ? 'bg-green-bg' : 'bg-slate-200'}`} />
+                    <div className={`w-8 h-0.5 ${s.num < step ? 'bg-green-bg' : 'bg-cream-dark'}`} />
                   )}
                 </div>
               ))}
@@ -204,7 +204,7 @@ ${n}`;
 
             {/* Step 1: Form */}
             {step === 1 && (
-              <div className="bg-slate-50 border border-border-light rounded p-8">
+              <div className="bg-cream border border-border-light rounded p-8">
                 <h2 className="font-serif text-[1.2rem] font-bold mb-2">
                   Ihre Daten eingeben
                 </h2>
@@ -278,7 +278,7 @@ ${n}`;
                     className={`w-full py-3.5 border-none rounded-sm font-sans text-base font-semibold cursor-pointer transition-all mt-2 ${
                       isFormValid
                         ? 'bg-green text-white hover:bg-green hover:-translate-y-px hover:shadow-[0_6px_20px_rgba(43,76,53,0.25)]'
-                        : 'bg-slate-200 text-ink-muted cursor-not-allowed'
+                        : 'bg-cream-dark text-ink-muted cursor-not-allowed'
                     }`}
                   >
                     Vorschau anzeigen &rarr;
@@ -307,7 +307,7 @@ ${n}`;
                 <div className="flex gap-3 mt-6">
                   <button
                     onClick={() => setStep(1)}
-                    className="py-3 px-6 bg-white text-ink border border-border rounded-sm font-sans text-[0.92rem] font-semibold cursor-pointer transition-all hover:bg-slate-50"
+                    className="py-3 px-6 bg-white text-ink border border-border rounded-sm font-sans text-[0.92rem] font-semibold cursor-pointer transition-all hover:bg-cream"
                   >
                     &larr; Zurück bearbeiten
                   </button>
@@ -345,7 +345,7 @@ ${n}`;
 
                 {/* Letter preview (collapsed) */}
                 <details className="mb-6 border border-border rounded-sm overflow-hidden">
-                  <summary className="py-3 px-5 bg-slate-50 text-[0.88rem] font-semibold cursor-pointer">
+                  <summary className="py-3 px-5 bg-cream text-[0.88rem] font-semibold cursor-pointer">
                     Schreiben nochmals anzeigen
                   </summary>
                   <div className="letter-preview p-6 font-sans text-[0.88rem] text-ink leading-relaxed whitespace-pre-line">
@@ -362,7 +362,7 @@ ${n}`;
                 </button>
 
                 {/* CTA */}
-                <div className="py-6 px-6 bg-slate-50 rounded-sm border-l-[3px] border-green">
+                <div className="py-6 px-6 bg-cream rounded-sm border-l-[3px] border-green">
                   <h3 className="font-serif text-[1.1rem] font-bold mb-2">
                     Antwort des Arbeitgebers prüfen lassen
                   </h3>
@@ -414,7 +414,7 @@ ${n}`;
       </section>
 
       {/* Tips section */}
-      <section className="py-[70px] px-8 bg-slate-50">
+      <section className="py-[70px] px-8 bg-cream">
         <div className="max-w-content mx-auto">
           <div className="max-w-[740px]">
             <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-green mb-2.5">
@@ -489,7 +489,7 @@ ${n}`;
       </section>
 
       {/* FAQ */}
-      <section className="py-[70px] px-8 bg-slate-50">
+      <section className="py-[70px] px-8 bg-cream">
         <div className="max-w-content mx-auto">
           <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-green mb-2.5">
             Häufige Fragen

@@ -140,7 +140,7 @@ export default function ArbeitnehmerPage() {
         </section>
 
         {/* BAG-Urteil Highlight */}
-        <section className="py-[60px] px-8 bg-slate-50 max-md:py-10 max-md:px-6">
+        <section className="py-[60px] px-8 bg-cream max-md:py-10 max-md:px-6">
           <div className="max-w-content mx-auto">
             <FadeUp>
               <div className="bg-white border border-green/30 rounded p-8 border-l-[4px] border-l-green">

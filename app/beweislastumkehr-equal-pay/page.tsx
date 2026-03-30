@@ -154,7 +154,7 @@ export default function BeweislastumkehrEqualPayPage() {
                 Das Bundesarbeitsgericht hat am 23.10.2025 mit dem Urteil <strong>Az. 8 AZR 300/24</strong>
                 eine wegweisende Entscheidung für die Beweislastumkehr getroffen. Der Leitsatz:
               </p>
-              <div className="bg-slate-50 border border-border-light rounded p-6 mb-8">
+              <div className="bg-cream border border-border-light rounded p-6 mb-8">
                 <p className="text-[0.95rem] text-ink-light leading-relaxed italic mb-3">
                   „Ein Paarvergleich — der Vergleich des Entgelts einer Person mit dem Entgelt einer Person
                   des anderen Geschlechts, die gleiche oder gleichwertige Arbeit verrichtet — ist ausreichend,
@@ -195,7 +195,7 @@ export default function BeweislastumkehrEqualPayPage() {
         </section>
 
         {/* BAG-Urteil Highlight */}
-        <section className="py-[60px] px-8 bg-slate-50 max-md:py-10 max-md:px-6">
+        <section className="py-[60px] px-8 bg-cream max-md:py-10 max-md:px-6">
           <div className="max-w-content mx-auto">
             <FadeUp>
               <div className="bg-white border border-green/30 rounded p-8 border-l-[4px] border-l-green">

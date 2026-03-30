@@ -276,7 +276,7 @@ export default function VergleichsgruppenFinderPage() {
                   disabled={loading || beschreibung.length < 20}
                   className={`w-full py-3.5 border-none rounded-sm font-sans text-base font-semibold cursor-pointer transition-all ${
                     loading || beschreibung.length < 20
-                      ? 'bg-slate-200 text-ink-muted cursor-not-allowed'
+                      ? 'bg-cream-dark text-ink-muted cursor-not-allowed'
                       : 'bg-green text-white hover:bg-green hover:-translate-y-px hover:shadow-[0_6px_20px_rgba(43,76,53,0.25)]'
                   }`}
                 >
@@ -329,7 +329,7 @@ export default function VergleichsgruppenFinderPage() {
                   </div>
                 ) : (
                   /* Fallback: raw text */
-                  <div className="bg-slate-50 border border-border-light rounded p-6">
+                  <div className="bg-cream border border-border-light rounded p-6">
                     <div className="text-[0.92rem] text-ink-light leading-relaxed whitespace-pre-line">
                       {result}
                     </div>
@@ -398,7 +398,7 @@ export default function VergleichsgruppenFinderPage() {
       </section>
 
       {/* 4 Criteria Explanation */}
-      <section className="py-[70px] px-8 bg-slate-50 max-md:py-12 max-md:px-6">
+      <section className="py-[70px] px-8 bg-cream max-md:py-12 max-md:px-6">
         <div className="max-w-content mx-auto">
           <div className="max-w-[740px]">
             <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-green mb-2.5">
@@ -481,7 +481,7 @@ export default function VergleichsgruppenFinderPage() {
       </section>
 
       {/* FAQ */}
-      <section className="py-[70px] px-8 bg-slate-50 max-md:py-12 max-md:px-6">
+      <section className="py-[70px] px-8 bg-cream max-md:py-12 max-md:px-6">
         <div className="max-w-content mx-auto">
           <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-green mb-2.5">
             Häufige Fragen

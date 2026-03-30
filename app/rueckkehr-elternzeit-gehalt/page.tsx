@@ -147,7 +147,7 @@ export default function RueckkehrElternzeitGehaltPage() {
         </section>
 
         {/* Schritt-für-Schritt */}
-        <section className="py-[90px] px-8 bg-slate-50 max-md:py-[60px] max-md:px-6">
+        <section className="py-[90px] px-8 bg-cream max-md:py-[60px] max-md:px-6">
           <div className="max-w-content mx-auto">
             <h2 className="font-serif text-[clamp(1.5rem,3vw,2rem)] font-bold leading-tight mb-8">
               In 4 Schritten zu Ihrem Recht
@@ -188,7 +188,7 @@ export default function RueckkehrElternzeitGehaltPage() {
         </section>
 
         {/* Rechenbeispiel */}
-        <section className="py-[70px] px-8 bg-slate-50 max-md:py-[50px] max-md:px-6">
+        <section className="py-[70px] px-8 bg-cream max-md:py-[50px] max-md:px-6">
           <div className="max-w-content mx-auto">
             <FadeUp>
               <div className="bg-white border border-border-light rounded p-8">

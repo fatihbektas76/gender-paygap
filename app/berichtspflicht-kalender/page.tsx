@@ -277,8 +277,8 @@ export default function BerichtspflichtKalenderPage() {
                     let cardBg = 'bg-white';
                     if (past) {
                       dotColor = 'bg-ink-muted';
-                      cardBorder = 'border-slate-200';
-                      cardBg = 'bg-slate-50';
+                      cardBorder = 'border-border';
+                      cardBg = 'bg-cream';
                     } else if (upcoming) {
                       dotColor = 'bg-blue';
                       cardBorder = 'border-blue/60';
@@ -329,7 +329,7 @@ export default function BerichtspflichtKalenderPage() {
 
             {/* Prompt if no selection */}
             {!selectedSize && (
-              <div className="mt-10 bg-slate-50 border border-border-light rounded p-8 text-center">
+              <div className="mt-10 bg-cream border border-border-light rounded p-8 text-center">
                 <p className="text-[0.95rem] text-ink-muted">
                   Wählen Sie oben Ihre Unternehmensgröße, um Ihren personalisierten
                   Deadline-Kalender zu sehen.
@@ -341,7 +341,7 @@ export default function BerichtspflichtKalenderPage() {
       </section>
 
       {/* FAQ */}
-      <section className="py-[70px] px-8 bg-slate-50">
+      <section className="py-[70px] px-8 bg-cream">
         <div className="max-w-content mx-auto">
           <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-blue mb-2.5">
             Häufige Fragen

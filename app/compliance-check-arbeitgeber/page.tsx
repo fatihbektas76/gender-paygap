@@ -235,7 +235,7 @@ export default function ComplianceCheckPage() {
               {questions.map((q, qIdx) => (
                 <div
                   key={q.id}
-                  className="bg-slate-50 border border-border-light rounded p-6 sm:p-8"
+                  className="bg-cream border border-border-light rounded p-6 sm:p-8"
                 >
                   <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-blue mb-2">
                     Frage {qIdx + 1} von {questions.length}
@@ -276,7 +276,7 @@ export default function ComplianceCheckPage() {
               className={`w-full py-3.5 border-none rounded-sm font-sans text-base font-semibold cursor-pointer transition-all mt-8 ${
                 allAnswered
                   ? 'bg-blue text-white hover:bg-blue hover:-translate-y-px hover:shadow-[0_6px_20px_rgba(61,90,128,0.25)]'
-                  : 'bg-slate-200 text-ink-muted cursor-not-allowed'
+                  : 'bg-cream-dark text-ink-muted cursor-not-allowed'
               }`}
             >
               Compliance-Check auswerten
@@ -297,7 +297,7 @@ export default function ComplianceCheckPage() {
 
       {/* Result */}
       {submitted && (
-        <section className="py-[70px] px-8 bg-slate-50">
+        <section className="py-[70px] px-8 bg-cream">
           <div className="max-w-content mx-auto">
             <div className="max-w-[700px]">
               <h2 className="font-serif text-[clamp(1.4rem,3vw,1.9rem)] font-bold leading-[1.25] mb-6">
@@ -447,7 +447,7 @@ export default function ComplianceCheckPage() {
       </section>
 
       {/* Disclaimer */}
-      <section className="py-6 px-8 bg-slate-50 border-t border-border">
+      <section className="py-6 px-8 bg-cream border-t border-border">
         <div className="max-w-content mx-auto">
           <p className="text-[0.78rem] text-ink-muted leading-relaxed max-w-[740px]">
             <strong>Rechtlicher Hinweis:</strong> Dieser Compliance-Check dient der unverbindlichen

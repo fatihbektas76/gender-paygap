@@ -48,7 +48,7 @@ export default function RelatedTopics({ current }: RelatedTopicsProps) {
   const topics = allTopics.filter((t) => t.key !== current);
 
   return (
-    <section className="py-[70px] px-8 bg-slate-50">
+    <section className="py-[70px] px-8 bg-cream">
       <div className="max-w-content mx-auto">
         <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-gold mb-2.5">
           Weiterführende Themen

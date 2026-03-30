@@ -336,7 +336,7 @@ export default function KuendigungPruefenPage() {
         </div>
       </div>
 
-      <div className="mb-8 py-4 px-4 bg-slate-50 rounded-sm border border-border">
+      <div className="mb-8 py-4 px-4 bg-cream rounded-sm border border-border">
         <p className="text-[0.75rem] text-ink-muted leading-relaxed m-0">
           <strong>Hinweis:</strong> Dieses Tool dient ausschließlich der unverbindlichen Erstorientierung und ersetzt keine anwaltliche Beratung.
         </p>
@@ -357,12 +357,12 @@ export default function KuendigungPruefenPage() {
   /* ───── Thank You ───── */
   if (submitted) {
     return (
-      <div className="flex min-h-screen bg-slate-50">
+      <div className="flex min-h-screen bg-cream">
         {sidebar}
         <div className="flex-1 flex items-center justify-center p-8">
           <div className="max-w-[520px] text-center">
             <div className="w-16 h-16 mx-auto mb-6 rounded-full bg-gold-bg flex items-center justify-center">
-              <svg width="32" height="32" fill="none" stroke="#6366f1" strokeWidth="2" viewBox="0 0 24 24">
+              <svg width="32" height="32" fill="none" stroke="#A68B4B" strokeWidth="2" viewBox="0 0 24 24">
                 <polyline points="20 6 9 17 4 12" />
               </svg>
             </div>
@@ -389,7 +389,7 @@ export default function KuendigungPruefenPage() {
               href="https://meet.brevo.com/fatih-bektas/erstberatung-per-telefon-kuendigung-arbeitsrechtde"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-block py-3.5 px-8 bg-gold text-white rounded-sm font-sans text-[0.92rem] font-semibold no-underline transition-all hover:bg-[#3730a3] hover:-translate-y-px"
+              className="inline-block py-3.5 px-8 bg-gold text-white rounded-sm font-sans text-[0.92rem] font-semibold no-underline transition-all hover:bg-[#7A6530] hover:-translate-y-px"
             >
               Telefontermin buchen &rarr;
             </a>
@@ -875,7 +875,7 @@ export default function KuendigungPruefenPage() {
             <button
               onClick={handleSubmit}
               disabled={!answers.email || !answers.datenschutz || !answers.vorname || !answers.nachname || loading}
-              className="w-full mt-6 py-4 bg-gold text-white border-none rounded-sm font-sans text-base font-semibold cursor-pointer transition-all hover:bg-[#3730a3] hover:-translate-y-px hover:shadow-[0_6px_20px_rgba(166,139,75,0.25)] disabled:opacity-40 disabled:cursor-not-allowed disabled:hover:translate-y-0 disabled:hover:shadow-none"
+              className="w-full mt-6 py-4 bg-gold text-white border-none rounded-sm font-sans text-base font-semibold cursor-pointer transition-all hover:bg-[#7A6530] hover:-translate-y-px hover:shadow-[0_6px_20px_rgba(166,139,75,0.25)] disabled:opacity-40 disabled:cursor-not-allowed disabled:hover:translate-y-0 disabled:hover:shadow-none"
             >
               {loading ? 'Wird gesendet...' : 'Jetzt Ergebnis anfordern \u2192'}
             </button>
@@ -912,7 +912,7 @@ export default function KuendigungPruefenPage() {
             </p>
             <button
               onClick={() => goTo('S10')}
-              className="w-full py-4 bg-gold text-white border-none rounded-sm font-sans text-base font-semibold cursor-pointer transition-all hover:bg-[#3730a3] hover:-translate-y-px hover:shadow-[0_6px_20px_rgba(166,139,75,0.25)]"
+              className="w-full py-4 bg-gold text-white border-none rounded-sm font-sans text-base font-semibold cursor-pointer transition-all hover:bg-[#7A6530] hover:-translate-y-px hover:shadow-[0_6px_20px_rgba(166,139,75,0.25)]"
             >
               Trotzdem kostenlos prüfen lassen &rarr;
             </button>
@@ -926,7 +926,7 @@ export default function KuendigungPruefenPage() {
 
   /* ───── Render ───── */
   return (
-    <div className="flex min-h-screen bg-slate-50">
+    <div className="flex min-h-screen bg-cream">
       <SeoGeoBase
         pageType="WebApplication"
         pageUrl={`${SEO_CONFIG.baseUrl}/kuendigung-pruefen/`}
@@ -1043,7 +1043,7 @@ export default function KuendigungPruefenPage() {
                 <button
                   onClick={() => canAdvance() && goTo(getNextManualStep())}
                   disabled={!canAdvance()}
-                  className="py-3 px-8 bg-gold text-white border-none rounded-sm font-sans text-[0.92rem] font-semibold cursor-pointer transition-all hover:bg-[#3730a3] hover:-translate-y-px disabled:opacity-40 disabled:cursor-not-allowed"
+                  className="py-3 px-8 bg-gold text-white border-none rounded-sm font-sans text-[0.92rem] font-semibold cursor-pointer transition-all hover:bg-[#7A6530] hover:-translate-y-px disabled:opacity-40 disabled:cursor-not-allowed"
                 >
                   Weiter &rarr;
                 </button>

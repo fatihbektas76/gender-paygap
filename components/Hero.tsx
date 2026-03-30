@@ -2,12 +2,12 @@ import FadeUp from './FadeUp';
 
 export default function Hero() {
   return (
-    <header className="pt-[150px] pb-[100px] px-8 bg-slate-50 text-center relative overflow-hidden max-md:pt-[120px] max-md:pb-[70px] max-md:px-6" role="banner">
+    <header className="pt-[150px] pb-[100px] px-8 bg-cream text-center relative overflow-hidden max-md:pt-[120px] max-md:pb-[70px] max-md:px-6" role="banner">
       <div className="absolute -top-[40%] -right-[15%] w-[600px] h-[600px] bg-[radial-gradient(circle,rgba(166,139,75,0.07)_0%,transparent_70%)] z-[2]" />
       <div className="max-w-[800px] mx-auto relative z-[3]">
-        <div className="font-serif text-[1.1rem] text-gold font-semibold mb-1.5">
+        <div className="font-serif text-[1.1rem] text-gold-dark font-semibold mb-1.5">
           Fachanwalt für Arbeitsrecht{' '}
-          <span className="inline-block text-[0.68rem] font-bold text-gold bg-gold-bg border-[1.5px] border-gold/20 rounded px-2.5 py-[3px] tracking-wider uppercase ml-2.5 align-middle">
+          <span className="inline-block text-[0.68rem] font-bold text-green bg-green-bg border-[1.5px] border-green/20 rounded px-2.5 py-[3px] tracking-wider uppercase ml-2.5 align-middle">
             Kostenlose Ersteinschätzung
           </span>
         </div>
@@ -16,7 +16,7 @@ export default function Hero() {
           <br />
           Ihr Schutz vor Lohndiskriminierung.
         </h1>
-        <p className="text-[1.12rem] text-ink-muted max-w-[660px] mx-auto mb-6 leading-relaxed">
+        <p className="text-[1.12rem] text-ink-muted max-w-[620px] mx-auto mb-6 leading-relaxed">
           Die EU-Entgelttransparenzrichtlinie gibt Arbeitnehmern neue Rechte und Arbeitgebern neue Pflichten.
           Fachanwalt Fatih Bektas berät beide Seiten.
         </p>
@@ -35,37 +35,36 @@ export default function Hero() {
           </span>
         </div>
 
-        {/* Dual-CTA: Arbeitnehmer (grün) + Arbeitgeber (blau) */}
         <div className="flex gap-3.5 justify-center flex-wrap max-md:flex-col max-md:items-center">
           <a
             href="/arbeitnehmer"
-            className="inline-flex items-center gap-2 px-[30px] py-3.5 rounded-sm text-[0.95rem] font-semibold no-underline transition-all bg-green text-white hover:bg-green hover:-translate-y-0.5 hover:shadow-[0_8px_24px_rgba(43,76,53,0.25)] max-md:w-full max-md:justify-center"
+            className="inline-flex items-center gap-2 px-[30px] py-3.5 rounded-sm text-[0.95rem] font-semibold no-underline transition-all bg-gold-dark text-white hover:bg-[#735F32] hover:-translate-y-0.5 hover:shadow-[0_8px_24px_rgba(166,139,75,0.25)] max-md:w-full max-md:justify-center"
           >
             Mein Auskunftsrecht prüfen &rarr;
           </a>
           <a
             href="/arbeitgeber"
-            className="inline-flex items-center gap-2 px-[30px] py-3.5 rounded-sm text-[0.95rem] font-semibold no-underline transition-all bg-blue text-white hover:bg-blue hover:-translate-y-0.5 hover:shadow-[0_8px_24px_rgba(61,90,128,0.25)] max-md:w-full max-md:justify-center"
+            className="inline-flex items-center gap-2 px-[30px] py-3.5 rounded-sm text-[0.95rem] font-semibold no-underline transition-all bg-transparent text-ink border-[1.5px] border-border hover:border-gold hover:text-gold max-md:w-full max-md:justify-center"
           >
-            Compliance-Check starten &rarr;
+            Compliance-Check starten
           </a>
         </div>
 
         <FadeUp className="flex gap-10 justify-center mt-12 pt-9 border-t border-border max-md:gap-5 max-md:flex-wrap">
           <div>
-            <div className="font-serif text-[1.6rem] font-bold text-gold">16%</div>
+            <div className="font-serif text-[1.6rem] font-bold text-gold-dark">16%</div>
             <div className="text-[0.82rem] text-ink-muted mt-0.5">Gender Pay Gap DE</div>
           </div>
           <div>
-            <div className="font-serif text-[1.6rem] font-bold text-gold">Juni 2026</div>
+            <div className="font-serif text-[1.6rem] font-bold text-gold-dark">Juni 2026</div>
             <div className="text-[0.82rem] text-ink-muted mt-0.5">EU-Richtlinie greift</div>
           </div>
           <div>
-            <div className="font-serif text-[1.6rem] font-bold text-gold">20+</div>
+            <div className="font-serif text-[1.6rem] font-bold text-gold-dark">20+</div>
             <div className="text-[0.82rem] text-ink-muted mt-0.5">Jahre Erfahrung</div>
           </div>
           <div>
-            <div className="font-serif text-[1.6rem] font-bold text-gold">4.9 &#9733;</div>
+            <div className="font-serif text-[1.6rem] font-bold text-gold-dark">4.9 &#9733;</div>
             <div className="text-[0.82rem] text-ink-muted mt-0.5">68 Bewertungen</div>
           </div>
         </FadeUp>

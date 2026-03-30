@@ -267,7 +267,7 @@ export default function GehaltsverhandlungVorbereiterPage() {
 
             <div className="space-y-5">
               {/* Gehalt */}
-              <div className="bg-slate-50 border border-border-light rounded p-5">
+              <div className="bg-cream border border-border-light rounded p-5">
                 <label
                   htmlFor="gehalt"
                   className="block text-[0.88rem] font-semibold text-ink mb-2"
@@ -290,7 +290,7 @@ export default function GehaltsverhandlungVorbereiterPage() {
               </div>
 
               {/* Vergleichsgehalt */}
-              <div className="bg-slate-50 border border-border-light rounded p-5">
+              <div className="bg-cream border border-border-light rounded p-5">
                 <label
                   htmlFor="vergleich"
                   className="block text-[0.88rem] font-semibold text-ink mb-2"
@@ -313,7 +313,7 @@ export default function GehaltsverhandlungVorbereiterPage() {
               </div>
 
               {/* Dauer */}
-              <div className="bg-slate-50 border border-border-light rounded p-5">
+              <div className="bg-cream border border-border-light rounded p-5">
                 <label
                   htmlFor="dauer"
                   className="block text-[0.88rem] font-semibold text-ink mb-2"
@@ -339,7 +339,7 @@ export default function GehaltsverhandlungVorbereiterPage() {
               </div>
 
               {/* Leistung */}
-              <div className="bg-slate-50 border border-border-light rounded p-5">
+              <div className="bg-cream border border-border-light rounded p-5">
                 <label
                   htmlFor="leistung"
                   className="block text-[0.88rem] font-semibold text-ink mb-2"
@@ -363,7 +363,7 @@ export default function GehaltsverhandlungVorbereiterPage() {
               </div>
 
               {/* Grund */}
-              <div className="bg-slate-50 border border-border-light rounded p-5">
+              <div className="bg-cream border border-border-light rounded p-5">
                 <label
                   htmlFor="grund"
                   className="block text-[0.88rem] font-semibold text-ink mb-2"
@@ -395,7 +395,7 @@ export default function GehaltsverhandlungVorbereiterPage() {
               className={`w-full py-3.5 border-none rounded-sm font-sans text-base font-semibold cursor-pointer transition-all mt-6 ${
                 allFilled
                   ? 'bg-green text-white hover:bg-green hover:-translate-y-px hover:shadow-[0_6px_20px_rgba(43,76,53,0.25)]'
-                  : 'bg-slate-200 text-ink-muted cursor-not-allowed'
+                  : 'bg-cream-dark text-ink-muted cursor-not-allowed'
               }`}
             >
               Gesprächsleitfaden erstellen
@@ -417,7 +417,7 @@ export default function GehaltsverhandlungVorbereiterPage() {
 
       {/* Result */}
       {showResult && allFilled && (
-        <section id="leitfaden-result" className="py-[70px] px-8 bg-slate-50 max-md:py-12 max-md:px-6">
+        <section id="leitfaden-result" className="py-[70px] px-8 bg-cream max-md:py-12 max-md:px-6">
           <div className="max-w-content mx-auto">
             <div className="max-w-[740px]">
               <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-green mb-2.5">
@@ -618,7 +618,7 @@ export default function GehaltsverhandlungVorbereiterPage() {
       </section>
 
       {/* Disclaimer bottom */}
-      <section className="py-6 px-8 bg-slate-50 border-t border-border max-md:px-6">
+      <section className="py-6 px-8 bg-cream border-t border-border max-md:px-6">
         <div className="max-w-content mx-auto">
           <p className="text-[0.78rem] text-ink-muted leading-relaxed max-w-[740px]">
             <strong>Rechtlicher Hinweis:</strong> Dieser Gesprächsleitfaden dient der

@@ -28,7 +28,7 @@ export default function TeamTeaser() {
           {teamPreview.map((member, i) => (
             <FadeUp key={member.name} delay={i}>
               <div className="bg-white border border-border-light rounded-[12px] py-8 px-6 text-center">
-                <div className="w-[120px] h-[120px] rounded-full overflow-hidden mx-auto mb-5 bg-gradient-to-br from-slate-100 to-border relative">
+                <div className="w-[120px] h-[120px] rounded-full overflow-hidden mx-auto mb-5 bg-gradient-to-br from-cream-dark to-border relative">
                   <Image
                     src={member.src}
                     alt={member.name}

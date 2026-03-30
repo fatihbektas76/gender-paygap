@@ -132,12 +132,12 @@ export default function AuskunftsrechtBranchePage({ params }: Props) {
                 </div>
                 {benchmark && (
                   <>
-                    <div className="bg-slate-50 border border-border-light rounded p-6 text-center">
+                    <div className="bg-cream border border-border-light rounded p-6 text-center">
                       <div className="text-[2.5rem] font-extrabold text-ink">{(benchmark.frauen / 1000).toFixed(0)}k €</div>
                       <div className="text-[0.85rem] text-ink-muted mt-1">Median Jahresgehalt Frauen</div>
                       <div className="text-[0.75rem] text-ink-muted mt-0.5">{b.name} · Destatis 2025</div>
                     </div>
-                    <div className="bg-slate-50 border border-border-light rounded p-6 text-center">
+                    <div className="bg-cream border border-border-light rounded p-6 text-center">
                       <div className="text-[2.5rem] font-extrabold text-ink">{(benchmark.maenner / 1000).toFixed(0)}k €</div>
                       <div className="text-[0.85rem] text-ink-muted mt-1">Median Jahresgehalt Männer</div>
                       <div className="text-[0.75rem] text-ink-muted mt-0.5">{b.name} · Destatis 2025</div>
@@ -150,7 +150,7 @@ export default function AuskunftsrechtBranchePage({ params }: Props) {
         </section>
 
         {/* Content-Abschnitte */}
-        <section className="py-[60px] px-8 bg-slate-50 max-md:py-10 max-md:px-6">
+        <section className="py-[60px] px-8 bg-cream max-md:py-10 max-md:px-6">
           <div className="max-w-content mx-auto max-w-[800px]">
             <FadeUp>
               <h2 className="font-serif text-[1.5rem] font-bold mb-4">

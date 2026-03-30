@@ -156,7 +156,7 @@ export default function VerguetungssystemRechtssicherPage() {
         </section>
 
         {/* 5 Schritte */}
-        <section className="py-[60px] px-8 bg-slate-50 max-md:py-10 max-md:px-6">
+        <section className="py-[60px] px-8 bg-cream max-md:py-10 max-md:px-6">
           <div className="max-w-content mx-auto max-w-[800px]">
             <h2 className="font-serif text-[1.5rem] font-bold mb-8">
               In 5 Schritten zum rechtskonformen Vergütungssystem
@@ -213,7 +213,7 @@ export default function VerguetungssystemRechtssicherPage() {
         </section>
 
         {/* Vergleichsgruppen */}
-        <section className="py-[60px] px-8 bg-slate-50 max-md:py-10 max-md:px-6">
+        <section className="py-[60px] px-8 bg-cream max-md:py-10 max-md:px-6">
           <div className="max-w-content mx-auto max-w-[800px]">
             <FadeUp>
               <h2 className="font-serif text-[1.5rem] font-bold mb-4">
@@ -268,7 +268,7 @@ export default function VerguetungssystemRechtssicherPage() {
         </section>
 
         {/* FAQ */}
-        <section className="py-[90px] px-8 bg-slate-50 max-md:py-[60px] max-md:px-6" id="faq">
+        <section className="py-[90px] px-8 bg-cream max-md:py-[60px] max-md:px-6" id="faq">
           <div className="max-w-content mx-auto">
             <h2 className="font-serif text-[clamp(1.5rem,3vw,2rem)] font-bold leading-tight mb-8">
               Häufige Fragen zum rechtssicheren Vergütungssystem

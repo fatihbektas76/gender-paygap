@@ -15,8 +15,8 @@ export default function TeamCard({
 }) {
   const Heading = headingLevel;
   return (
-    <div className="bg-slate-50 border border-border-light rounded overflow-hidden">
-      <div className="aspect-[4/5] relative bg-gradient-to-br from-slate-100 to-border">
+    <div className="bg-cream border border-border-light rounded overflow-hidden">
+      <div className="aspect-[4/5] relative bg-gradient-to-br from-cream-dark to-border">
         <Image
           src={src}
           alt={`${name} — ${title}`}

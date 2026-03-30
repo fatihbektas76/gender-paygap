@@ -12,7 +12,7 @@ export default function Situations() {
         </h2>
         <div className="grid grid-cols-2 gap-6 mt-10 max-md:grid-cols-1">
           <FadeUp>
-            <article className="bg-slate-50 border border-border-light rounded p-9 px-8 transition-all hover:-translate-y-[3px] hover:shadow-[0_12px_32px_rgba(0,0,0,0.06)]">
+            <article className="bg-cream border border-border-light rounded p-9 px-8 transition-all hover:-translate-y-[3px] hover:shadow-[0_12px_32px_rgba(0,0,0,0.06)]">
               <div className="w-[52px] h-[52px] rounded-full flex items-center justify-center mb-[18px] text-2xl bg-gold/[0.08] text-gold border border-gold/[0.15]">
                 &#9878;
               </div>
@@ -30,7 +30,7 @@ export default function Situations() {
             </article>
           </FadeUp>
           <FadeUp delay={1}>
-            <article className="bg-slate-50 border border-border-light rounded p-9 px-8 transition-all hover:-translate-y-[3px] hover:shadow-[0_12px_32px_rgba(0,0,0,0.06)]">
+            <article className="bg-cream border border-border-light rounded p-9 px-8 transition-all hover:-translate-y-[3px] hover:shadow-[0_12px_32px_rgba(0,0,0,0.06)]">
               <div className="w-[52px] h-[52px] rounded-full flex items-center justify-center mb-[18px] text-2xl bg-blue/[0.07] text-blue border border-blue/[0.15]">
                 &#9881;
               </div>

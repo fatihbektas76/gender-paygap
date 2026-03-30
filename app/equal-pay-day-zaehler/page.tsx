@@ -193,7 +193,7 @@ export default function EqualPayDayZaehlerPage() {
             </div>
 
             {/* Countdown */}
-            <div className="mt-8 bg-slate-50 border border-border-light rounded p-6 text-center">
+            <div className="mt-8 bg-cream border border-border-light rounded p-6 text-center">
               <p className="text-[0.85rem] text-ink-muted font-semibold mb-4">
                 Noch bis zum nächsten Equal Pay Day:
               </p>
@@ -218,7 +218,7 @@ export default function EqualPayDayZaehlerPage() {
       </section>
 
       {/* Branch Selection */}
-      <section className="py-[70px] px-8 bg-slate-50">
+      <section className="py-[70px] px-8 bg-cream">
         <div className="max-w-content mx-auto">
           <div className="max-w-[740px]">
             <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-gold mb-2.5">
@@ -276,7 +276,7 @@ export default function EqualPayDayZaehlerPage() {
                       <div className="w-[160px] shrink-0 text-[0.82rem] text-ink-light text-right truncate">
                         {b.name}
                       </div>
-                      <div className="flex-1 bg-slate-200 rounded-sm h-6 relative overflow-hidden">
+                      <div className="flex-1 bg-cream-dark rounded-sm h-6 relative overflow-hidden">
                         <div
                           className={`h-full rounded-sm transition-all duration-500 ${
                             isSelected ? 'bg-gold' : 'bg-gold-light'
@@ -345,7 +345,7 @@ export default function EqualPayDayZaehlerPage() {
       </section>
 
       {/* FAQ */}
-      <section className="py-[70px] px-8 bg-slate-50">
+      <section className="py-[70px] px-8 bg-cream">
         <div className="max-w-content mx-auto">
           <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-gold mb-2.5">
             Häufige Fragen

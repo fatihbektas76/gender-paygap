@@ -51,7 +51,7 @@ export default function MusterPageContent({ entry, original, generated, faqs }: 
   return (
     <main className="pb-20">
       {/* ───── Header ───── */}
-      <div className="bg-slate-50 pt-[120px] pb-[50px] px-8 border-b border-border">
+      <div className="bg-cream pt-[120px] pb-[50px] px-8 border-b border-border">
         <div className="max-w-content mx-auto">
           <nav className="text-[0.84rem] text-ink-muted mb-6">
             <Link href="/" className="text-gold no-underline hover:underline">Start</Link>
@@ -105,7 +105,7 @@ export default function MusterPageContent({ entry, original, generated, faqs }: 
       </section>
 
       {/* ───── Muster / Checkliste ───── */}
-      <section className="py-[60px] px-8 bg-slate-50">
+      <section className="py-[60px] px-8 bg-cream">
         <div className="max-w-content mx-auto">
           <div className="max-w-[740px]">
             <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-gold mb-2.5">
@@ -150,7 +150,7 @@ export default function MusterPageContent({ entry, original, generated, faqs }: 
             <h2 className="font-serif text-[clamp(1.3rem,3vw,1.7rem)] font-bold leading-[1.25] mb-4">
               Wichtige Hinweise {isMuster ? 'zum Muster' : 'zur Checkliste'}
             </h2>
-            <div className="py-5 px-6 bg-slate-50 rounded-sm border-l-[3px] border-gold">
+            <div className="py-5 px-6 bg-cream rounded-sm border-l-[3px] border-gold">
               <p className="text-[0.92rem] text-ink leading-relaxed m-0">
                 {generated.wichtigeHinweise}
               </p>
@@ -160,7 +160,7 @@ export default function MusterPageContent({ entry, original, generated, faqs }: 
       </section>
 
       {/* ───── CTA 1 ───── */}
-      <section className="py-[50px] px-8 bg-slate-50">
+      <section className="py-[50px] px-8 bg-cream">
         <div className="max-w-content mx-auto text-center">
           <h2 className="font-serif text-[clamp(1.3rem,3vw,1.7rem)] font-bold mb-3">
             {isMuster ? 'Unsicher bei der Anpassung?' : 'Unsicher bei der Prüfung?'}
@@ -170,7 +170,7 @@ export default function MusterPageContent({ entry, original, generated, faqs }: 
           </p>
           <a
             href="/#kontakt"
-            className="inline-block py-3 px-6 bg-gold text-white border-none rounded-sm font-sans text-[0.92rem] font-semibold no-underline transition-all hover:bg-[#3730a3] hover:-translate-y-px hover:shadow-[0_6px_20px_rgba(166,139,75,0.25)]"
+            className="inline-block py-3 px-6 bg-gold text-white border-none rounded-sm font-sans text-[0.92rem] font-semibold no-underline transition-all hover:bg-[#7A6530] hover:-translate-y-px hover:shadow-[0_6px_20px_rgba(166,139,75,0.25)]"
           >
             Kostenlose Ersteinschätzung anfordern &rarr;
           </a>
@@ -189,7 +189,7 @@ export default function MusterPageContent({ entry, original, generated, faqs }: 
             </h2>
             <div className="space-y-4">
               {generated.ausfuellhilfe.map((tipp, i) => (
-                <div key={i} className="flex gap-4 py-4 px-5 bg-slate-50 rounded-sm border border-border">
+                <div key={i} className="flex gap-4 py-4 px-5 bg-cream rounded-sm border border-border">
                   <div className="w-8 h-8 min-w-[32px] rounded-full bg-gold flex items-center justify-center text-white text-[0.82rem] font-bold mt-0.5">
                     {i + 1}
                   </div>
@@ -202,7 +202,7 @@ export default function MusterPageContent({ entry, original, generated, faqs }: 
       </section>
 
       {/* ───── FAQ ───── */}
-      <section className="py-[70px] px-8 bg-slate-50">
+      <section className="py-[70px] px-8 bg-cream">
         <div className="max-w-content mx-auto">
           <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-gold mb-2.5">
             Häufige Fragen

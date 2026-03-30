@@ -37,12 +37,12 @@ export default function Navigation() {
       aria-label="Hauptnavigation"
     >
       <div className="max-w-content mx-auto px-8 flex items-center justify-between h-[72px]">
-        <Link href="/" className="flex items-center gap-2.5 no-underline">
+        <Link href="/" className="flex items-center gap-3.5 no-underline">
           <span className="font-serif text-[1.15rem] font-bold text-gold tracking-tight">
             gender-paygap.de
           </span>
-          <span className="inline-block text-[0.6rem] font-bold text-gold bg-gold-bg border-[1.5px] border-gold/20 rounded px-2 py-0.5 tracking-wider uppercase whitespace-nowrap">
-            Fachanwalt
+          <span className="inline-block text-[0.65rem] font-bold text-green bg-green-bg border-[1.5px] border-green/20 rounded px-2 py-0.5 tracking-wider uppercase whitespace-nowrap">
+            Arbeitsrecht
           </span>
         </Link>
 
@@ -64,12 +64,12 @@ export default function Navigation() {
           }`}
         >
           <li>
-            <Link href="/arbeitnehmer" onClick={closeMenu} className="text-[0.85rem] font-medium text-ink-muted no-underline hover:text-green transition-colors tracking-[0.01em]">
+            <Link href="/arbeitnehmer" onClick={closeMenu} className="text-[0.85rem] font-medium text-ink-muted no-underline hover:text-gold transition-colors tracking-[0.01em]">
               Arbeitnehmer
             </Link>
           </li>
           <li>
-            <Link href="/arbeitgeber" onClick={closeMenu} className="text-[0.85rem] font-medium text-ink-muted no-underline hover:text-blue transition-colors tracking-[0.01em]">
+            <Link href="/arbeitgeber" onClick={closeMenu} className="text-[0.85rem] font-medium text-ink-muted no-underline hover:text-gold transition-colors tracking-[0.01em]">
               Arbeitgeber
             </Link>
           </li>
@@ -87,7 +87,7 @@ export default function Navigation() {
             <Link
               href="/kontakt"
               onClick={closeMenu}
-              className="bg-gold text-white px-6 py-2.5 rounded-sm font-semibold text-[0.85rem] no-underline hover:bg-gold-dark hover:-translate-y-px hover:shadow-[0_4px_16px_rgba(166,139,75,0.2)] transition-all whitespace-nowrap"
+              className="bg-gold-dark text-white px-6 py-2.5 rounded-sm font-semibold text-[0.85rem] no-underline hover:bg-gold-dark hover:-translate-y-px hover:shadow-[0_4px_16px_rgba(166,139,75,0.2)] transition-all whitespace-nowrap"
             >
               Kontakt &rarr;
             </Link>

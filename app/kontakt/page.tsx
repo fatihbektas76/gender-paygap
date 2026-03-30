@@ -14,7 +14,7 @@ export const metadata: Metadata = buildMetadata({
 export default function KontaktPage() {
   return (
     <main>
-      <header className="pt-[150px] pb-[40px] px-8 bg-slate-50 max-md:pt-[120px] max-md:pb-[30px] max-md:px-6">
+      <header className="pt-[150px] pb-[40px] px-8 bg-cream max-md:pt-[120px] max-md:pb-[30px] max-md:px-6">
         <div className="max-w-content mx-auto">
           <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-gold mb-2.5">Kontakt</div>
           <h1 className="font-serif text-[clamp(2rem,4vw,2.8rem)] font-extrabold leading-[1.15] mb-4 tracking-tight max-md:text-[1.8rem]">

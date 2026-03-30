@@ -9,7 +9,7 @@ export const metadata: Metadata = {
 export default function LegalNoticePage() {
   return (
     <main>
-      <div className="bg-slate-50 pt-[120px] pb-[50px] px-8 border-b border-border">
+      <div className="bg-cream pt-[120px] pb-[50px] px-8 border-b border-border">
         <div className="max-w-[720px] mx-auto">
           <Link href="/" className="text-gold no-underline text-[0.88rem] font-medium hover:underline">
             &larr; Zurück zur Startseite

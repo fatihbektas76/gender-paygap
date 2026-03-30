@@ -177,7 +177,7 @@ export default function SanktionsrechnerPage() {
       <section className="py-[70px] px-8 bg-white">
         <div className="max-w-content mx-auto">
           <div className="max-w-[700px]">
-            <div className="bg-slate-50 border border-border-light rounded p-6 sm:p-8">
+            <div className="bg-cream border border-border-light rounded p-6 sm:p-8">
               <h2 className="font-serif text-[1.2rem] font-bold mb-6">
                 Ihre Unternehmensdaten
               </h2>
@@ -289,7 +289,7 @@ export default function SanktionsrechnerPage() {
 
               {/* 3 Metric Cards */}
               <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-8">
-                <div className="bg-slate-50 border border-border-light rounded-sm p-5 text-center">
+                <div className="bg-cream border border-border-light rounded-sm p-5 text-center">
                   <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-ink-muted mb-2">
                     Jährliche Lohnlücke
                   </div>
@@ -297,7 +297,7 @@ export default function SanktionsrechnerPage() {
                     {formatEuro(result.lueckeJahr)}
                   </div>
                 </div>
-                <div className="bg-slate-50 border border-border-light rounded-sm p-5 text-center">
+                <div className="bg-cream border border-border-light rounded-sm p-5 text-center">
                   <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-ink-muted mb-2">
                     3-Jahres-Nachzahlung
                   </div>
@@ -305,7 +305,7 @@ export default function SanktionsrechnerPage() {
                     {formatEuro(result.nachzahlung3Jahre)}
                   </div>
                 </div>
-                <div className="bg-slate-50 border border-border-light rounded-sm p-5 text-center">
+                <div className="bg-cream border border-border-light rounded-sm p-5 text-center">
                   <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-ink-muted mb-2">
                     Max. Bußgeld
                   </div>
@@ -342,7 +342,7 @@ export default function SanktionsrechnerPage() {
               </div>
 
               {/* Detailed Breakdown */}
-              <div className="bg-slate-50 border border-border-light rounded p-6 sm:p-8">
+              <div className="bg-cream border border-border-light rounded p-6 sm:p-8">
                 <h3 className="font-serif text-[1.1rem] font-bold mb-5">
                   Detaillierte Aufstellung
                 </h3>
@@ -427,7 +427,7 @@ export default function SanktionsrechnerPage() {
               </div>
 
               {/* Link back to Compliance-Check */}
-              <div className="mt-6 p-5 bg-slate-50 border border-border-light rounded-sm">
+              <div className="mt-6 p-5 bg-cream border border-border-light rounded-sm">
                 <p className="text-[0.92rem] text-ink mb-3">
                   <strong>Noch nicht geprüft, ob Sie vorbereitet sind?</strong>
                 </p>
@@ -463,7 +463,7 @@ export default function SanktionsrechnerPage() {
       </section>
 
       {/* Disclaimer */}
-      <section className="py-6 px-8 bg-slate-50 border-t border-border">
+      <section className="py-6 px-8 bg-cream border-t border-border">
         <div className="max-w-content mx-auto">
           <p className="text-[0.78rem] text-ink-muted leading-relaxed max-w-[740px]">
             <strong>Rechtlicher Hinweis:</strong> Alle Berechnungen sind Schätzungen und ersetzen

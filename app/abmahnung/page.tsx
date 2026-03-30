@@ -94,7 +94,7 @@ export default function AbmahnungPage() {
       />
 
       {/* Header */}
-      <div className="bg-slate-50 pt-[120px] pb-[50px] px-8 border-b border-border">
+      <div className="bg-cream pt-[120px] pb-[50px] px-8 border-b border-border">
         <div className="max-w-content mx-auto">
           <nav className="text-[0.84rem] text-ink-muted mb-6">
             <Link href="/" className="text-gold no-underline hover:underline">Start</Link>
@@ -116,7 +116,7 @@ export default function AbmahnungPage() {
         <div className="max-w-content mx-auto">
           <div className="max-w-[740px]">
             {/* Warning box */}
-            <div className="py-5 px-6 bg-slate-50 rounded-sm border-l-[3px] border-gold mb-8">
+            <div className="py-5 px-6 bg-cream rounded-sm border-l-[3px] border-gold mb-8">
               <p className="text-[0.95rem] font-semibold text-ink m-0">
                 Wichtig: Eine Abmahnung ist die Vorstufe zur Kündigung. Reagieren Sie überlegt &mdash;
                 aber zeitnah. Was Sie jetzt tun (oder nicht tun), kann Ihren Arbeitsplatz sichern.
@@ -145,7 +145,7 @@ export default function AbmahnungPage() {
             {/* CTA 1 */}
             <a
               href="/#kontakt"
-              className="inline-block py-3.5 px-8 bg-gold text-white border-none rounded-sm font-sans text-base font-semibold no-underline transition-all hover:bg-[#3730a3] hover:-translate-y-px hover:shadow-[0_6px_20px_rgba(166,139,75,0.25)]"
+              className="inline-block py-3.5 px-8 bg-gold text-white border-none rounded-sm font-sans text-base font-semibold no-underline transition-all hover:bg-[#7A6530] hover:-translate-y-px hover:shadow-[0_6px_20px_rgba(166,139,75,0.25)]"
             >
               Abmahnung kostenlos prüfen lassen &rarr;
             </a>
@@ -154,7 +154,7 @@ export default function AbmahnungPage() {
       </section>
 
       {/* Was ist eine Abmahnung? */}
-      <section className="py-[70px] px-8 bg-slate-50">
+      <section className="py-[70px] px-8 bg-cream">
         <div className="max-w-content mx-auto">
           <div className="max-w-[740px]">
             <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-gold mb-2.5">
@@ -244,7 +244,7 @@ export default function AbmahnungPage() {
                   desc: 'Fehlt der Hinweis, dass bei Wiederholung Kündigung droht, liegt keine wirksame Abmahnung vor, sondern nur eine Ermahnung.',
                 },
               ].map((item) => (
-                <div key={item.title} className="flex items-start gap-4 py-4 px-5 bg-slate-50 rounded-sm border border-border">
+                <div key={item.title} className="flex items-start gap-4 py-4 px-5 bg-cream rounded-sm border border-border">
                   <svg className="min-w-[20px] text-gold mt-0.5" width="20" height="20" fill="none" viewBox="0 0 24 24">
                     <path d="M12 2L1 21h22L12 2z" fill="none" stroke="currentColor" strokeWidth="2" strokeLinejoin="round" />
                     <path d="M12 9v4M12 17h.01" stroke="currentColor" strokeWidth="2" strokeLinecap="round" />
@@ -261,7 +261,7 @@ export default function AbmahnungPage() {
       </section>
 
       {/* CTA 2 */}
-      <section className="py-[60px] px-8 bg-slate-50">
+      <section className="py-[60px] px-8 bg-cream">
         <div className="max-w-content mx-auto text-center">
           <h2 className="font-serif text-[clamp(1.4rem,3vw,1.8rem)] font-bold mb-3">
             Ist Ihre Abmahnung wirksam?
@@ -272,7 +272,7 @@ export default function AbmahnungPage() {
           </p>
           <a
             href="/#kontakt"
-            className="inline-block py-3.5 px-8 bg-gold text-white border-none rounded-sm font-sans text-base font-semibold no-underline transition-all hover:bg-[#3730a3] hover:-translate-y-px hover:shadow-[0_6px_20px_rgba(166,139,75,0.25)]"
+            className="inline-block py-3.5 px-8 bg-gold text-white border-none rounded-sm font-sans text-base font-semibold no-underline transition-all hover:bg-[#7A6530] hover:-translate-y-px hover:shadow-[0_6px_20px_rgba(166,139,75,0.25)]"
           >
             Abmahnung prüfen lassen &rarr;
           </a>
@@ -326,7 +326,7 @@ export default function AbmahnungPage() {
       </section>
 
       {/* Abmahnung und Kündigung */}
-      <section className="py-[70px] px-8 bg-slate-50">
+      <section className="py-[70px] px-8 bg-cream">
         <div className="max-w-content mx-auto">
           <div className="max-w-[740px]">
             <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-gold mb-2.5">
@@ -385,7 +385,7 @@ export default function AbmahnungPage() {
                 href={`/kuendigung-nach-${e.slug}/`}
                 className="no-underline text-inherit block"
               >
-                <article className="bg-slate-50 border border-border rounded py-[26px] px-7 transition-all border-l-[3px] border-l-transparent hover:border-l-gold hover:translate-x-1 h-full">
+                <article className="bg-cream border border-border rounded py-[26px] px-7 transition-all border-l-[3px] border-l-transparent hover:border-l-gold hover:translate-x-1 h-full">
                   <h3 className="font-serif text-[1.05rem] font-bold mb-2">
                     Kündigung nach {e.count} {e.count === 1 ? 'Abmahnung' : 'Abmahnungen'}
                   </h3>
@@ -403,7 +403,7 @@ export default function AbmahnungPage() {
       </section>
 
       {/* FAQ */}
-      <section className="py-[70px] px-8 bg-slate-50">
+      <section className="py-[70px] px-8 bg-cream">
         <div className="max-w-content mx-auto">
           <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-gold mb-2.5">
             Häufige Fragen
@@ -444,7 +444,7 @@ export default function AbmahnungPage() {
           </p>
           <a
             href="/#kontakt"
-            className="inline-block py-3.5 px-8 bg-gold text-white border-none rounded-sm font-sans text-base font-semibold no-underline transition-all hover:bg-[#3730a3] hover:-translate-y-px hover:shadow-[0_6px_20px_rgba(166,139,75,0.25)]"
+            className="inline-block py-3.5 px-8 bg-gold text-white border-none rounded-sm font-sans text-base font-semibold no-underline transition-all hover:bg-[#7A6530] hover:-translate-y-px hover:shadow-[0_6px_20px_rgba(166,139,75,0.25)]"
           >
             Kostenlose Ersteinschätzung &rarr;
           </a>

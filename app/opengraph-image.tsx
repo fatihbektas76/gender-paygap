@@ -87,7 +87,7 @@ export default function Image() {
             left: '0',
             right: '0',
             height: '6px',
-            backgroundColor: '#6366f1',
+            backgroundColor: '#A68B4B',
           }}
         />
       </div>

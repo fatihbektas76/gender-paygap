@@ -61,7 +61,7 @@ function getVerdictColor(verdict: string): { bg: string; border: string; badge: 
     case 'HOCH':
       return { bg: 'bg-red-50', border: 'border-red-400', badge: 'bg-red-500' };
     default:
-      return { bg: 'bg-slate-50', border: 'border-border', badge: 'bg-slate-500' };
+      return { bg: 'bg-cream', border: 'border-border', badge: 'bg-cream0' };
   }
 }
 
@@ -245,7 +245,7 @@ export default function SituationscheckPage() {
                 className={`flex-1 py-3.5 px-4 font-sans text-[0.92rem] font-semibold cursor-pointer transition-all border-none ${
                   audience === 'an'
                     ? 'bg-green text-white'
-                    : 'bg-white text-ink-muted hover:bg-slate-50'
+                    : 'bg-white text-ink-muted hover:bg-cream'
                 }`}
               >
                 Ich bin Arbeitnehmer
@@ -258,7 +258,7 @@ export default function SituationscheckPage() {
                 className={`flex-1 py-3.5 px-4 font-sans text-[0.92rem] font-semibold cursor-pointer transition-all border-none ${
                   audience === 'ag'
                     ? 'bg-blue text-white'
-                    : 'bg-white text-ink-muted hover:bg-slate-50'
+                    : 'bg-white text-ink-muted hover:bg-cream'
                 }`}
               >
                 Ich bin Arbeitgeber
@@ -336,7 +336,7 @@ export default function SituationscheckPage() {
                   disabled={loading || situation.length < 10}
                   className={`w-full py-3.5 border-none rounded-sm font-sans text-base font-semibold cursor-pointer transition-all ${
                     loading || situation.length < 10
-                      ? 'bg-slate-200 text-ink-muted cursor-not-allowed'
+                      ? 'bg-cream-dark text-ink-muted cursor-not-allowed'
                       : audience === 'an'
                         ? 'bg-green text-white hover:bg-green hover:-translate-y-px hover:shadow-[0_6px_20px_rgba(43,76,53,0.25)]'
                         : 'bg-blue text-white hover:bg-blue hover:-translate-y-px hover:shadow-[0_6px_20px_rgba(61,90,128,0.25)]'
@@ -369,7 +369,7 @@ export default function SituationscheckPage() {
                 )}
 
                 {/* AI Response */}
-                <div className="bg-slate-50 border border-border-light rounded p-6">
+                <div className="bg-cream border border-border-light rounded p-6">
                   <div className="text-[0.92rem] text-ink-light leading-relaxed whitespace-pre-line">
                     {result}
                   </div>
@@ -415,7 +415,7 @@ export default function SituationscheckPage() {
       </section>
 
       {/* How it works */}
-      <section className="py-[70px] px-8 bg-slate-50 max-md:py-12 max-md:px-6">
+      <section className="py-[70px] px-8 bg-cream max-md:py-12 max-md:px-6">
         <div className="max-w-content mx-auto">
           <div className="max-w-[740px]">
             <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-gold mb-2.5">
@@ -492,7 +492,7 @@ export default function SituationscheckPage() {
       </section>
 
       {/* FAQ */}
-      <section className="py-[70px] px-8 bg-slate-50 max-md:py-12 max-md:px-6">
+      <section className="py-[70px] px-8 bg-cream max-md:py-12 max-md:px-6">
         <div className="max-w-content mx-auto">
           <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-gold mb-2.5">
             Häufige Fragen

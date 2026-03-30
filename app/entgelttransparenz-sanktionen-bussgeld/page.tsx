@@ -148,7 +148,7 @@ export default function EntgelttransparenzSanktionenBussgeldPage() {
         </section>
 
         {/* Art. 23 Bußgelder */}
-        <section className="py-[60px] px-8 bg-slate-50 max-md:py-10 max-md:px-6">
+        <section className="py-[60px] px-8 bg-cream max-md:py-10 max-md:px-6">
           <div className="max-w-content mx-auto max-w-[800px]">
             <FadeUp>
               <h2 className="font-serif text-[1.5rem] font-bold mb-4">
@@ -212,7 +212,7 @@ export default function EntgelttransparenzSanktionenBussgeldPage() {
                   { posten: 'Zinsen', detail: 'Verzugszinsen auf die Nachzahlung ab dem Zeitpunkt der Diskriminierung' },
                   { posten: 'Verfahrenskosten', detail: 'Der Arbeitgeber trägt die Kosten des Verfahrens bei Obsiegen der Beschäftigten' },
                 ].map((p, i) => (
-                  <div key={i} className="bg-slate-50 border border-border-light rounded p-5 flex gap-4 max-md:flex-col">
+                  <div key={i} className="bg-cream border border-border-light rounded p-5 flex gap-4 max-md:flex-col">
                     <div className="font-semibold text-[0.92rem] text-ink min-w-[160px]">{p.posten}</div>
                     <p className="text-[0.9rem] text-ink-light leading-relaxed m-0">{p.detail}</p>
                   </div>
@@ -223,7 +223,7 @@ export default function EntgelttransparenzSanktionenBussgeldPage() {
         </section>
 
         {/* Art. 18 Beweislastumkehr */}
-        <section className="py-[60px] px-8 bg-slate-50 max-md:py-10 max-md:px-6">
+        <section className="py-[60px] px-8 bg-cream max-md:py-10 max-md:px-6">
           <div className="max-w-content mx-auto max-w-[800px]">
             <FadeUp>
               <h2 className="font-serif text-[1.5rem] font-bold mb-4">
@@ -297,7 +297,7 @@ export default function EntgelttransparenzSanktionenBussgeldPage() {
         </section>
 
         {/* FAQ */}
-        <section className="py-[90px] px-8 bg-slate-50 max-md:py-[60px] max-md:px-6" id="faq">
+        <section className="py-[90px] px-8 bg-cream max-md:py-[60px] max-md:px-6" id="faq">
           <div className="max-w-content mx-auto">
             <h2 className="font-serif text-[clamp(1.5rem,3vw,2rem)] font-bold leading-tight mb-8">
               Häufige Fragen zu Sanktionen und Bußgeldern

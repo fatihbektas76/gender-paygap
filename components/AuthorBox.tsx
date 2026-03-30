@@ -2,7 +2,7 @@ import Image from 'next/image';
 
 export default function AuthorBox() {
   return (
-    <aside className="mt-16 p-8 bg-slate-50 border border-border-light rounded flex gap-7 items-start max-md:flex-col max-md:items-center max-md:text-center">
+    <aside className="mt-16 p-8 bg-cream border border-border-light rounded flex gap-7 items-start max-md:flex-col max-md:items-center max-md:text-center">
       <div className="w-[100px] h-[100px] rounded-full overflow-hidden flex-shrink-0">
         <Image
           src="/Fatih.webp"

@@ -105,7 +105,7 @@ export default function CookieBanner() {
             <div className="flex gap-2.5 items-center flex-wrap max-md:w-full">
               <button
                 onClick={acceptAll}
-                className="py-2.5 px-[22px] rounded-sm text-[0.85rem] font-semibold cursor-pointer border-none font-sans transition-all bg-gold text-white hover:bg-[#3730a3] max-md:flex-1"
+                className="py-2.5 px-[22px] rounded-sm text-[0.85rem] font-semibold cursor-pointer border-none font-sans transition-all bg-gold text-white hover:bg-[#7A6530] max-md:flex-1"
               >
                 Akzeptieren
               </button>
@@ -204,7 +204,7 @@ export default function CookieBanner() {
               </button>
               <button
                 onClick={acceptAll}
-                className="flex-1 py-2.5 px-[22px] rounded-sm text-[0.85rem] font-semibold cursor-pointer border-none font-sans transition-all bg-gold text-white hover:bg-[#3730a3]"
+                className="flex-1 py-2.5 px-[22px] rounded-sm text-[0.85rem] font-semibold cursor-pointer border-none font-sans transition-all bg-gold text-white hover:bg-[#7A6530]"
               >
                 Alle akzeptieren
               </button>

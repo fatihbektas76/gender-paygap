@@ -189,7 +189,7 @@ export default function KuendigungsfristRechnerPage() {
       />
 
       {/* Hero */}
-      <div className="bg-slate-50 pt-[120px] pb-[50px] px-8 border-b border-border">
+      <div className="bg-cream pt-[120px] pb-[50px] px-8 border-b border-border">
         <div className="max-w-content mx-auto">
           <nav className="text-[0.84rem] text-ink-muted mb-6">
             <Link href="/" className="text-gold no-underline hover:underline">Start</Link>
@@ -257,7 +257,7 @@ export default function KuendigungsfristRechnerPage() {
             </p>
             <Link
               href="/kuendigung-pruefen"
-              className="inline-block py-2.5 px-6 bg-gold text-white border-none rounded-sm font-sans text-[0.88rem] font-semibold no-underline transition-all hover:bg-[#3730a3] whitespace-nowrap"
+              className="inline-block py-2.5 px-6 bg-gold text-white border-none rounded-sm font-sans text-[0.88rem] font-semibold no-underline transition-all hover:bg-[#7A6530] whitespace-nowrap"
             >
               Jetzt kostenlos prüfen &rarr;
             </Link>
@@ -369,7 +369,7 @@ export default function KuendigungsfristRechnerPage() {
                 {/* Berechnen */}
                 <button
                   onClick={berechnen}
-                  className="w-full py-3.5 bg-gold text-white border-none rounded-sm font-sans text-base font-semibold cursor-pointer transition-all mt-2 hover:bg-[#3730a3] hover:-translate-y-px hover:shadow-[0_6px_20px_rgba(166,139,75,0.25)]"
+                  className="w-full py-3.5 bg-gold text-white border-none rounded-sm font-sans text-base font-semibold cursor-pointer transition-all mt-2 hover:bg-[#7A6530] hover:-translate-y-px hover:shadow-[0_6px_20px_rgba(166,139,75,0.25)]"
                 >
                   BERECHNEN
                 </button>
@@ -383,7 +383,7 @@ export default function KuendigungsfristRechnerPage() {
                 <div className="mt-6 border border-border rounded-sm overflow-hidden">
                   <button
                     onClick={() => setHinweisOffen(!hinweisOffen)}
-                    className="w-full flex items-center justify-between py-3 px-4 bg-slate-50 text-[0.84rem] font-semibold text-ink cursor-pointer border-none text-left"
+                    className="w-full flex items-center justify-between py-3 px-4 bg-cream text-[0.84rem] font-semibold text-ink cursor-pointer border-none text-left"
                   >
                     Hinweis zur Berechnung von Kündigungsfristen
                     <svg
@@ -422,7 +422,7 @@ export default function KuendigungsfristRechnerPage() {
             </div>
 
             {/* Rechte Karte — Ergebnis */}
-            <div className="ergebnis-box bg-slate-50 border border-border-light rounded p-8">
+            <div className="ergebnis-box bg-cream border border-border-light rounded p-8">
               {!result ? (
                 <div className="text-center py-10">
                   <div className="w-14 h-14 rounded-full bg-gold-bg border border-gold/[0.12] flex items-center justify-center text-gold mx-auto mb-4">
@@ -490,7 +490,7 @@ export default function KuendigungsfristRechnerPage() {
                   {/* CTA */}
                   <Link
                     href="/kuendigung-pruefen"
-                    className="block w-full py-3.5 bg-gold text-white border-none rounded-sm font-sans text-base font-semibold no-underline text-center transition-all hover:bg-[#3730a3] hover:-translate-y-px hover:shadow-[0_6px_20px_rgba(166,139,75,0.25)]"
+                    className="block w-full py-3.5 bg-gold text-white border-none rounded-sm font-sans text-base font-semibold no-underline text-center transition-all hover:bg-[#7A6530] hover:-translate-y-px hover:shadow-[0_6px_20px_rgba(166,139,75,0.25)]"
                   >
                     Kündigung kostenlos prüfen &rarr;
                   </Link>
@@ -502,7 +502,7 @@ export default function KuendigungsfristRechnerPage() {
       </section>
 
       {/* §622 BGB Tabelle */}
-      <section className="py-[70px] px-8 bg-slate-50">
+      <section className="py-[70px] px-8 bg-cream">
         <div className="max-w-content mx-auto">
           <div className="max-w-[740px]">
             <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-gold mb-2.5">
@@ -580,7 +580,7 @@ export default function KuendigungsfristRechnerPage() {
       </section>
 
       {/* Sonderkündigungsschutz */}
-      <section className="py-[70px] px-8 bg-slate-50">
+      <section className="py-[70px] px-8 bg-cream">
         <div className="max-w-content mx-auto">
           <div className="max-w-[740px]">
             <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-gold mb-2.5">
@@ -696,7 +696,7 @@ export default function KuendigungsfristRechnerPage() {
       </section>
 
       {/* FAQ */}
-      <section className="py-[70px] px-8 bg-slate-50">
+      <section className="py-[70px] px-8 bg-cream">
         <div className="max-w-content mx-auto">
           <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-gold mb-2.5">
             Häufige Fragen
@@ -709,7 +709,7 @@ export default function KuendigungsfristRechnerPage() {
       </section>
 
       {/* CTA #3 */}
-      <section className="py-[70px] px-8 bg-slate-50">
+      <section className="py-[70px] px-8 bg-cream">
         <div className="max-w-content mx-auto">
           <div className="border-2 border-gold/20 rounded-sm p-8 bg-white text-center max-w-[640px] mx-auto">
             <h2 className="font-serif text-[1.3rem] font-bold mb-3">
@@ -721,7 +721,7 @@ export default function KuendigungsfristRechnerPage() {
             </p>
             <Link
               href="/kuendigung-pruefen"
-              className="inline-block py-3.5 px-8 bg-gold text-white border-none rounded-sm font-sans text-base font-semibold no-underline transition-all hover:bg-[#3730a3] hover:-translate-y-px hover:shadow-[0_6px_20px_rgba(166,139,75,0.25)]"
+              className="inline-block py-3.5 px-8 bg-gold text-white border-none rounded-sm font-sans text-base font-semibold no-underline transition-all hover:bg-[#7A6530] hover:-translate-y-px hover:shadow-[0_6px_20px_rgba(166,139,75,0.25)]"
             >
               Kostenlose Ersteinschätzung &rarr;
             </Link>

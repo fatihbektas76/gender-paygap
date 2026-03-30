@@ -163,7 +163,7 @@ export default function UrlaubsabgeltungRechnerPage() {
       />
 
       {/* Hero */}
-      <div className="bg-slate-50 pt-[120px] pb-[50px] px-8 border-b border-border">
+      <div className="bg-cream pt-[120px] pb-[50px] px-8 border-b border-border">
         <div className="max-w-content mx-auto">
           <nav className="text-[0.84rem] text-ink-muted mb-6">
             <Link href="/" className="text-gold no-underline hover:underline">Start</Link>
@@ -224,7 +224,7 @@ export default function UrlaubsabgeltungRechnerPage() {
             </p>
             <Link
               href="/kuendigung-pruefen"
-              className="inline-block py-2.5 px-6 bg-gold text-white border-none rounded-sm font-sans text-[0.88rem] font-semibold no-underline transition-all hover:bg-[#3730a3] whitespace-nowrap"
+              className="inline-block py-2.5 px-6 bg-gold text-white border-none rounded-sm font-sans text-[0.88rem] font-semibold no-underline transition-all hover:bg-[#7A6530] whitespace-nowrap"
             >
               Jetzt kostenlos prüfen &rarr;
             </Link>
@@ -326,7 +326,7 @@ export default function UrlaubsabgeltungRechnerPage() {
                 <div className="mb-6 border border-border rounded-sm overflow-hidden">
                   <button
                     onClick={() => setAnteilOffen(!anteilOffen)}
-                    className="w-full flex items-center justify-between py-3 px-4 bg-slate-50 text-[0.84rem] font-semibold text-ink cursor-pointer border-none text-left"
+                    className="w-full flex items-center justify-between py-3 px-4 bg-cream text-[0.84rem] font-semibold text-ink cursor-pointer border-none text-left"
                   >
                     Anteiligen Urlaubsanspruch berechnen
                     <svg
@@ -366,7 +366,7 @@ export default function UrlaubsabgeltungRechnerPage() {
                       </div>
                       <button
                         onClick={berechneAnteil}
-                        className="w-full py-2.5 bg-slate-50 border border-gold/30 rounded-sm font-sans text-[0.88rem] font-semibold text-ink cursor-pointer transition-all hover:bg-gold-bg"
+                        className="w-full py-2.5 bg-cream border border-gold/30 rounded-sm font-sans text-[0.88rem] font-semibold text-ink cursor-pointer transition-all hover:bg-gold-bg"
                       >
                         Anteil berechnen
                       </button>
@@ -397,7 +397,7 @@ export default function UrlaubsabgeltungRechnerPage() {
                 <div className="mt-6 border border-border rounded-sm overflow-hidden">
                   <button
                     onClick={() => setHinweisOffen(!hinweisOffen)}
-                    className="w-full flex items-center justify-between py-3 px-4 bg-slate-50 text-[0.84rem] font-semibold text-ink cursor-pointer border-none text-left"
+                    className="w-full flex items-center justify-between py-3 px-4 bg-cream text-[0.84rem] font-semibold text-ink cursor-pointer border-none text-left"
                   >
                     Hinweis zur Berechnung der Urlaubsabgeltung
                     <svg
@@ -433,7 +433,7 @@ export default function UrlaubsabgeltungRechnerPage() {
             </div>
 
             {/* Rechte Karte — Ergebnis */}
-            <div id="ergebnis-box" className="bg-slate-50 border border-border-light rounded p-8">
+            <div id="ergebnis-box" className="bg-cream border border-border-light rounded p-8">
               {!result ? (
                 <div className="text-center py-10">
                   <div className="w-14 h-14 rounded-full bg-gold-bg border border-gold/[0.12] flex items-center justify-center text-gold mx-auto mb-4">
@@ -502,7 +502,7 @@ export default function UrlaubsabgeltungRechnerPage() {
                   {/* CTA */}
                   <Link
                     href="/kuendigung-pruefen"
-                    className="block w-full py-3.5 bg-gold text-white border-none rounded-sm font-sans text-base font-semibold no-underline text-center transition-all hover:bg-[#3730a3] hover:-translate-y-px hover:shadow-[0_6px_20px_rgba(166,139,75,0.25)]"
+                    className="block w-full py-3.5 bg-gold text-white border-none rounded-sm font-sans text-base font-semibold no-underline text-center transition-all hover:bg-[#7A6530] hover:-translate-y-px hover:shadow-[0_6px_20px_rgba(166,139,75,0.25)]"
                   >
                     Anspruch jetzt kostenlos prüfen &rarr;
                   </Link>
@@ -514,7 +514,7 @@ export default function UrlaubsabgeltungRechnerPage() {
       </section>
 
       {/* Was bedeutet Urlaubsabgeltung? */}
-      <section className="py-[70px] px-8 bg-slate-50">
+      <section className="py-[70px] px-8 bg-cream">
         <div className="max-w-content mx-auto">
           <div className="max-w-[740px]">
             <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-gold mb-2.5">
@@ -559,7 +559,7 @@ export default function UrlaubsabgeltungRechnerPage() {
             </p>
 
             {/* Formel-Box */}
-            <div className="my-8 py-6 px-8 bg-slate-50 border-2 border-gold/30 rounded-sm text-center">
+            <div className="my-8 py-6 px-8 bg-cream border-2 border-gold/30 rounded-sm text-center">
               <div className="text-[0.82rem] font-bold tracking-[0.1em] uppercase text-gold mb-4">Formel nach &sect;11 BUrlG</div>
               <div className="font-serif text-[1.1rem] leading-[1.8] text-ink">
                 <strong>Urlaubsabgeltung</strong> =<br />
@@ -588,7 +588,7 @@ export default function UrlaubsabgeltungRechnerPage() {
               </li>
             </ol>
 
-            <div className="py-4 px-5 bg-slate-50 rounded-sm border-l-[3px] border-gold">
+            <div className="py-4 px-5 bg-cream rounded-sm border-l-[3px] border-gold">
               <p className="text-[0.88rem] text-ink-muted leading-relaxed m-0">
                 Diese Formel berücksichtigt, dass Verdienstausfälle durch Kurzarbeit, unverschuldetes Fehlen
                 oder Arbeitsausfälle außer Betracht bleiben (&sect;11 Abs. 1 Satz 3 BUrlG).
@@ -599,7 +599,7 @@ export default function UrlaubsabgeltungRechnerPage() {
       </section>
 
       {/* Gesetzliche Urlaubstabelle */}
-      <section className="py-[70px] px-8 bg-slate-50">
+      <section className="py-[70px] px-8 bg-cream">
         <div className="max-w-content mx-auto">
           <div className="max-w-[740px]">
             <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-gold mb-2.5">
@@ -732,7 +732,7 @@ export default function UrlaubsabgeltungRechnerPage() {
       </section>
 
       {/* FAQ */}
-      <section className="py-[70px] px-8 bg-slate-50">
+      <section className="py-[70px] px-8 bg-cream">
         <div className="max-w-content mx-auto">
           <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-gold mb-2.5">
             Häufige Fragen
@@ -747,7 +747,7 @@ export default function UrlaubsabgeltungRechnerPage() {
       {/* CTA #3 */}
       <section className="py-[70px] px-8 bg-white">
         <div className="max-w-content mx-auto">
-          <div className="border-2 border-gold/20 rounded-sm p-8 bg-slate-50 text-center max-w-[640px] mx-auto">
+          <div className="border-2 border-gold/20 rounded-sm p-8 bg-cream text-center max-w-[640px] mx-auto">
             <h2 className="font-serif text-[1.3rem] font-bold mb-3">
               Ergebnis berechnet &mdash; was jetzt?
             </h2>
@@ -757,7 +757,7 @@ export default function UrlaubsabgeltungRechnerPage() {
             </p>
             <Link
               href="/kuendigung-pruefen"
-              className="inline-block py-3.5 px-8 bg-gold text-white border-none rounded-sm font-sans text-base font-semibold no-underline transition-all hover:bg-[#3730a3] hover:-translate-y-px hover:shadow-[0_6px_20px_rgba(166,139,75,0.25)]"
+              className="inline-block py-3.5 px-8 bg-gold text-white border-none rounded-sm font-sans text-base font-semibold no-underline transition-all hover:bg-[#7A6530] hover:-translate-y-px hover:shadow-[0_6px_20px_rgba(166,139,75,0.25)]"
             >
               Kostenlose Ersteinschätzung vom Fachanwalt &rarr;
             </Link>

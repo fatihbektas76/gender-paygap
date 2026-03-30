@@ -53,7 +53,7 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
-  background: #E2E8F0;
+  background: #E8E4DC;
   border-radius: 12px;
   transition: 0.3s;
 }
@@ -71,7 +71,7 @@ body {
 }
 
 .cookie-toggle input:checked + .cookie-slider {
-  background: #6366f1;
+  background: #A68B4B;
 }
 
 .cookie-toggle input:checked + .cookie-slider::before {
@@ -122,7 +122,7 @@ body {
 }
 
 .prose blockquote {
-  @apply border-l-[3px] border-gold bg-slate-50 rounded-r-sm pl-5 pr-5 py-4 my-6 italic text-ink-light;
+  @apply border-l-[3px] border-gold bg-cream rounded-r-sm pl-5 pr-5 py-4 my-6 italic text-ink-light;
 }
 
 .prose table {
@@ -130,7 +130,7 @@ body {
 }
 
 .prose th {
-  @apply text-left p-3 border border-border bg-slate-50 font-semibold text-ink;
+  @apply text-left p-3 border border-border bg-cream font-semibold text-ink;
 }
 
 .prose td {

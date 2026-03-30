@@ -132,7 +132,7 @@ export default function EntschaedigungEntgeltdiskriminierungPage() {
                     — bis zu 36 Monate rückwirkend (Art. 21 EU-RL).
                   </p>
                 </div>
-                <div className="bg-slate-50 border border-border-light rounded p-6">
+                <div className="bg-cream border border-border-light rounded p-6">
                   <div className="text-[0.7rem] font-bold tracking-[0.14em] uppercase text-ink-muted mb-2">Komponente 2</div>
                   <h3 className="font-serif text-[1.1rem] font-bold mb-2">Verzugszinsen</h3>
                   <p className="text-[0.88rem] text-ink-muted leading-relaxed m-0">
@@ -140,7 +140,7 @@ export default function EntschaedigungEntgeltdiskriminierungPage() {
                     (§ 288 Abs. 1 BGB). Aktuell: ca. 8,62 % p.a.
                   </p>
                 </div>
-                <div className="bg-slate-50 border border-border-light rounded p-6">
+                <div className="bg-cream border border-border-light rounded p-6">
                   <div className="text-[0.7rem] font-bold tracking-[0.14em] uppercase text-ink-muted mb-2">Komponente 3</div>
                   <h3 className="font-serif text-[1.1rem] font-bold mb-2">Immaterielle Entschädigung</h3>
                   <p className="text-[0.88rem] text-ink-muted leading-relaxed m-0">
@@ -155,7 +155,7 @@ export default function EntschaedigungEntgeltdiskriminierungPage() {
               <h2 className="font-serif text-[1.5rem] font-bold mb-4">
                 Berechnungsbeispiel: So hoch kann Ihre Entschädigung ausfallen
               </h2>
-              <div className="bg-slate-50 border border-border-light rounded p-6 mb-8">
+              <div className="bg-cream border border-border-light rounded p-6 mb-8">
                 <p className="text-[0.95rem] text-ink-light leading-relaxed mb-3">
                   <strong>Ausgangslage:</strong> Frau M. verdient als Marketing-Managerin 4.200 € brutto/Monat.
                   Ihr männlicher Kollege in gleicher Position erhält 4.700 € brutto/Monat.
@@ -207,7 +207,7 @@ export default function EntschaedigungEntgeltdiskriminierungPage() {
         </section>
 
         {/* BAG-Urteil Highlight */}
-        <section className="py-[60px] px-8 bg-slate-50 max-md:py-10 max-md:px-6">
+        <section className="py-[60px] px-8 bg-cream max-md:py-10 max-md:px-6">
           <div className="max-w-content mx-auto">
             <FadeUp>
               <div className="bg-white border border-green/30 rounded p-8 border-l-[4px] border-l-green">

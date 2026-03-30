@@ -84,7 +84,7 @@ const disputes = [
 
 export default function Disputes() {
   return (
-    <section className="py-[90px] px-8 bg-slate-50 max-md:py-[60px] max-md:px-6" id="leistungen">
+    <section className="py-[90px] px-8 bg-cream max-md:py-[60px] max-md:px-6" id="leistungen">
       <div className="max-w-content mx-auto">
         <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-gold mb-2.5">
           Unsere Leistungen

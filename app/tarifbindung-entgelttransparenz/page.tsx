@@ -135,7 +135,7 @@ export default function TarifbindungEntgelttransparenzPage() {
         </section>
 
         {/* TVöD / TV-L */}
-        <section className="py-[60px] px-8 bg-slate-50 max-md:py-10 max-md:px-6">
+        <section className="py-[60px] px-8 bg-cream max-md:py-10 max-md:px-6">
           <div className="max-w-content mx-auto max-w-[800px]">
             <FadeUp>
               <h2 className="font-serif text-[1.5rem] font-bold mb-4">
@@ -206,7 +206,7 @@ export default function TarifbindungEntgelttransparenzPage() {
         </section>
 
         {/* Handlungsempfehlungen */}
-        <section className="py-[60px] px-8 bg-slate-50 max-md:py-10 max-md:px-6">
+        <section className="py-[60px] px-8 bg-cream max-md:py-10 max-md:px-6">
           <div className="max-w-content mx-auto max-w-[800px]">
             <FadeUp>
               <h2 className="font-serif text-[1.5rem] font-bold mb-6">

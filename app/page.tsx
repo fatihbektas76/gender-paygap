@@ -178,7 +178,7 @@ export default function Home() {
         </section>
 
         {/* Trust-Sektion */}
-        <section className="py-[60px] px-8 bg-slate-50 max-md:py-10 max-md:px-6">
+        <section className="py-[60px] px-8 bg-cream max-md:py-10 max-md:px-6">
           <div className="max-w-content mx-auto">
             <FadeUp className="flex flex-wrap justify-center gap-x-10 gap-y-4 text-[0.85rem] text-ink-light">
               <span className="flex items-center gap-2">

@@ -132,7 +132,7 @@ export default function EntgelttransparenzArbeitgeberBranchePage({ params }: Pro
                 </div>
                 {benchmark && differenz && (
                   <>
-                    <div className="bg-slate-50 border border-border-light rounded p-6 text-center">
+                    <div className="bg-cream border border-border-light rounded p-6 text-center">
                       <div className="text-[2.2rem] font-extrabold text-ink">{differenz.toLocaleString('de-DE')} €</div>
                       <div className="text-[0.85rem] text-ink-muted mt-1">Gehaltsdifferenz pro Jahr</div>
                       <div className="text-[0.75rem] text-ink-muted mt-0.5">Median, {b.name}</div>
@@ -152,7 +152,7 @@ export default function EntgelttransparenzArbeitgeberBranchePage({ params }: Pro
         </section>
 
         {/* Branchenspezifische Vergütungsstrukturen */}
-        <section className="py-[60px] px-8 bg-slate-50 max-md:py-10 max-md:px-6">
+        <section className="py-[60px] px-8 bg-cream max-md:py-10 max-md:px-6">
           <div className="max-w-content mx-auto max-w-[800px]">
             <FadeUp>
               <h2 className="font-serif text-[1.5rem] font-bold mb-4">
@@ -201,7 +201,7 @@ export default function EntgelttransparenzArbeitgeberBranchePage({ params }: Pro
         </section>
 
         {/* Checkliste */}
-        <section className="py-[60px] px-8 bg-slate-50 max-md:py-10 max-md:px-6">
+        <section className="py-[60px] px-8 bg-cream max-md:py-10 max-md:px-6">
           <div className="max-w-content mx-auto max-w-[800px]">
             <FadeUp>
               <h2 className="font-serif text-[1.5rem] font-bold mb-6">
@@ -251,7 +251,7 @@ export default function EntgelttransparenzArbeitgeberBranchePage({ params }: Pro
         </section>
 
         {/* FAQ */}
-        <section className="py-[90px] px-8 bg-slate-50 max-md:py-[60px] max-md:px-6" id="faq">
+        <section className="py-[90px] px-8 bg-cream max-md:py-[60px] max-md:px-6" id="faq">
           <div className="max-w-content mx-auto">
             <h2 className="font-serif text-[clamp(1.5rem,3vw,2rem)] font-bold leading-tight mb-8">
               Häufige Fragen zur Entgelttransparenz in {b.nameGenitiv}

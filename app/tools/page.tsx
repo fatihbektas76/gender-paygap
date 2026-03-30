@@ -204,7 +204,7 @@ export default function ToolsPage() {
       />
 
       {/* Hero */}
-      <div className="bg-slate-50 pt-[120px] pb-[50px] px-8 border-b border-border">
+      <div className="bg-cream pt-[120px] pb-[50px] px-8 border-b border-border">
         <div className="max-w-content mx-auto">
           <nav className="text-[0.84rem] text-ink-muted mb-6">
             <Link href="/" className="text-gold no-underline hover:underline">Start</Link>
@@ -233,7 +233,7 @@ export default function ToolsPage() {
               <Link
                 key={tool.title}
                 href={tool.href}
-                className="group block bg-slate-50 border border-border-light rounded p-7 no-underline transition-all hover:border-gold hover:-translate-y-px hover:shadow-[0_6px_20px_rgba(166,139,75,0.12)]"
+                className="group block bg-cream border border-border-light rounded p-7 no-underline transition-all hover:border-gold hover:-translate-y-px hover:shadow-[0_6px_20px_rgba(166,139,75,0.12)]"
               >
                 <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-gold mb-2.5">
                   {tool.label}
@@ -265,7 +265,7 @@ export default function ToolsPage() {
       </section>
 
       {/* Warum diese Tools? */}
-      <section className="py-[70px] px-8 bg-slate-50">
+      <section className="py-[70px] px-8 bg-cream">
         <div className="max-w-content mx-auto">
           <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-gold mb-2.5">
             Ihre Vorteile
@@ -365,7 +365,7 @@ export default function ToolsPage() {
       </section>
 
       {/* FAQ */}
-      <section className="py-[70px] px-8 bg-slate-50">
+      <section className="py-[70px] px-8 bg-cream">
         <div className="max-w-content mx-auto">
           <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-gold mb-2.5">
             Häufige Fragen
@@ -392,7 +392,7 @@ export default function ToolsPage() {
           </p>
           <Link
             href="/kuendigung-pruefen"
-            className="inline-block py-3.5 px-8 bg-gold text-white border-none rounded-sm font-sans text-base font-semibold no-underline transition-all hover:bg-[#3730a3] hover:-translate-y-px hover:shadow-[0_6px_20px_rgba(166,139,75,0.25)]"
+            className="inline-block py-3.5 px-8 bg-gold text-white border-none rounded-sm font-sans text-base font-semibold no-underline transition-all hover:bg-[#7A6530] hover:-translate-y-px hover:shadow-[0_6px_20px_rgba(166,139,75,0.25)]"
           >
             Jetzt kostenlos anfragen &rarr;
           </Link>

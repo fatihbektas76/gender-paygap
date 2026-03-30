@@ -103,7 +103,7 @@ export default function ContactForm() {
                   Jetzt Online Termin buchen
                 </a>
               </div>
-              <div className="mt-6 py-4 px-5 bg-slate-50 rounded-sm border-l-[3px] border-gold">
+              <div className="mt-6 py-4 px-5 bg-cream rounded-sm border-l-[3px] border-gold">
                 <p className="text-[0.85rem] text-ink-muted m-0 leading-relaxed">
                   <strong className="text-ink font-semibold">Antwortzeit:</strong> Wir melden uns in der
                   Regel innerhalb von 48 Stunden an Werktagen. Falls Sie laufende Fristen haben,
@@ -113,7 +113,7 @@ export default function ContactForm() {
             </div>
           </FadeUp>
           <FadeUp delay={1}>
-            <div className="bg-slate-50 border border-border-light rounded p-9 px-8">
+            <div className="bg-cream border border-border-light rounded p-9 px-8">
               {!submitted ? (
                 <form onSubmit={handleSubmit}>
                   {/* Honeypot */}

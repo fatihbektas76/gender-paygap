@@ -231,7 +231,7 @@ export default function StellenanzeigenCheckerPage() {
               anhand von 4 Kriterien der EU-Entgelttransparenzrichtlinie.
             </p>
 
-            <div className="bg-slate-50 border border-border-light rounded p-6 sm:p-8">
+            <div className="bg-cream border border-border-light rounded p-6 sm:p-8">
               <label
                 htmlFor="stellenanzeige-text"
                 className="block text-[0.88rem] font-semibold text-ink mb-2"
@@ -263,7 +263,7 @@ export default function StellenanzeigenCheckerPage() {
                 disabled={loading || text.length < 30}
                 className={`w-full py-3.5 border-none rounded-sm font-sans text-base font-semibold cursor-pointer transition-all mt-5 ${
                   loading || text.length < 30
-                    ? 'bg-slate-200 text-ink-muted cursor-not-allowed'
+                    ? 'bg-cream-dark text-ink-muted cursor-not-allowed'
                     : 'bg-blue text-white hover:bg-blue hover:-translate-y-px hover:shadow-[0_6px_20px_rgba(61,90,128,0.25)]'
                 }`}
               >
@@ -324,7 +324,7 @@ export default function StellenanzeigenCheckerPage() {
                   {result.checks.map((check) => (
                     <div
                       key={check.id}
-                      className="flex gap-3 p-4 bg-slate-50 border border-border-light rounded-sm"
+                      className="flex gap-3 p-4 bg-cream border border-border-light rounded-sm"
                     >
                       <span
                         className={`text-[1.3rem] font-bold shrink-0 mt-0.5 ${
@@ -408,7 +408,7 @@ export default function StellenanzeigenCheckerPage() {
       </section>
 
       {/* FAQ */}
-      <section className="py-[70px] px-8 bg-slate-50 max-md:py-12 max-md:px-6">
+      <section className="py-[70px] px-8 bg-cream max-md:py-12 max-md:px-6">
         <div className="max-w-content mx-auto">
           <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-blue mb-2.5">
             Häufige Fragen
@@ -440,7 +440,7 @@ export default function StellenanzeigenCheckerPage() {
       </section>
 
       {/* Disclaimer bottom */}
-      <section className="py-6 px-8 bg-slate-50 border-t border-border max-md:px-6">
+      <section className="py-6 px-8 bg-cream border-t border-border max-md:px-6">
         <div className="max-w-content mx-auto">
           <p className="text-[0.78rem] text-ink-muted leading-relaxed max-w-[740px]">
             <strong>Rechtlicher Hinweis:</strong> Dieser Stellenanzeigen-Checker dient der

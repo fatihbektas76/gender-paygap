@@ -28,7 +28,7 @@ export default function LebenssituationContent({ entry, related, faqs, uniqueInt
   return (
     <main className="pb-20">
       {/* ───── a. Header ───── */}
-      <div className="bg-slate-50 pt-[120px] pb-[50px] px-8 border-b border-border">
+      <div className="bg-cream pt-[120px] pb-[50px] px-8 border-b border-border">
         <div className="max-w-content mx-auto">
           <nav className="text-[0.84rem] text-ink-muted mb-6">
             <Link href="/" className="text-gold no-underline hover:underline">Startseite</Link>
@@ -53,7 +53,7 @@ export default function LebenssituationContent({ entry, related, faqs, uniqueInt
       {/* ───── b. Warning Box ───── */}
       <section className="py-8 px-8 bg-white">
         <div className="max-w-content mx-auto">
-          <div className="flex items-start gap-4 py-5 px-6 bg-slate-50 rounded-sm border-l-[3px] border-gold">
+          <div className="flex items-start gap-4 py-5 px-6 bg-cream rounded-sm border-l-[3px] border-gold">
             <svg className="min-w-[24px] text-gold mt-0.5" width="24" height="24" fill="none" viewBox="0 0 24 24">
               <path d="M12 2L1 21h22L12 2z" fill="none" stroke="currentColor" strokeWidth="2" strokeLinejoin="round" />
               <path d="M12 9v4M12 17h.01" stroke="currentColor" strokeWidth="2" strokeLinecap="round" />
@@ -72,7 +72,7 @@ export default function LebenssituationContent({ entry, related, faqs, uniqueInt
       </section>
 
       {/* ───── c. Abfindungsrechner ───── */}
-      <section className="py-[60px] px-8 bg-slate-50">
+      <section className="py-[60px] px-8 bg-cream">
         <div className="max-w-content mx-auto">
           <div className="max-w-[740px]">
             <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-gold mb-2.5">
@@ -107,11 +107,11 @@ export default function LebenssituationContent({ entry, related, faqs, uniqueInt
                 </div>
               </div>
               <div className="grid grid-cols-2 gap-4 max-md:grid-cols-1">
-                <div className="text-center py-4 bg-slate-50 rounded border border-border">
+                <div className="text-center py-4 bg-cream rounded border border-border">
                   <div className="text-[0.72rem] font-bold text-ink-muted uppercase tracking-wider mb-1">Unterer Erfahrungswert (0,5&times;)</div>
                   <div className="font-serif text-[1.3rem] font-bold text-ink">{fmt(g * 0.5 * j)}</div>
                 </div>
-                <div className="text-center py-4 bg-slate-50 rounded border-2 border-gold">
+                <div className="text-center py-4 bg-cream rounded border-2 border-gold">
                   <div className="text-[0.72rem] font-bold text-gold uppercase tracking-wider mb-1">Oberer Erfahrungswert (1,5&times;)</div>
                   <div className="font-serif text-[1.3rem] font-bold text-gold">{fmt(g * 1.5 * j)}</div>
                 </div>
@@ -128,7 +128,7 @@ export default function LebenssituationContent({ entry, related, faqs, uniqueInt
       <section className="py-[50px] px-8 bg-white">
         <div className="max-w-content mx-auto">
           <div className="max-w-[600px]">
-            <div className="border-[1.5px] border-gold rounded bg-slate-50 p-8 text-center">
+            <div className="border-[1.5px] border-gold rounded bg-cream p-8 text-center">
               <h2 className="font-serif text-[1.4rem] font-bold mb-4">Kündigung prüfen lassen</h2>
               <p className="text-[0.95rem] text-ink-light leading-relaxed mb-6">
                 Wir prüfen Ihre Kündigung kostenlos und geben Ihnen innerhalb von 24 Stunden
@@ -136,7 +136,7 @@ export default function LebenssituationContent({ entry, related, faqs, uniqueInt
               </p>
               <a
                 href="/#kontakt"
-                className="block w-full py-3.5 bg-gold text-white border-none rounded-sm font-sans text-base font-semibold no-underline text-center transition-all hover:bg-[#3730a3] hover:-translate-y-px hover:shadow-[0_6px_20px_rgba(166,139,75,0.25)]"
+                className="block w-full py-3.5 bg-gold text-white border-none rounded-sm font-sans text-base font-semibold no-underline text-center transition-all hover:bg-[#7A6530] hover:-translate-y-px hover:shadow-[0_6px_20px_rgba(166,139,75,0.25)]"
               >
                 Kündigung jetzt kostenlos prüfen &rarr;
               </a>
@@ -149,7 +149,7 @@ export default function LebenssituationContent({ entry, related, faqs, uniqueInt
       </section>
 
       {/* ───── e. Besonderer Schutz ───── */}
-      <section className="py-[60px] px-8 bg-slate-50">
+      <section className="py-[60px] px-8 bg-cream">
         <div className="max-w-content mx-auto">
           <div className="max-w-[740px]">
             <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-gold mb-2.5">
@@ -170,7 +170,7 @@ export default function LebenssituationContent({ entry, related, faqs, uniqueInt
       {/* ───── g. Praxistipp ───── */}
       <section className="py-8 px-8 bg-white">
         <div className="max-w-content mx-auto">
-          <div className="max-w-[740px] py-5 px-6 bg-slate-50 rounded-sm border-l-[3px] border-gold">
+          <div className="max-w-[740px] py-5 px-6 bg-cream rounded-sm border-l-[3px] border-gold">
             <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-gold mb-2">
               Praxistipp
             </div>
@@ -182,7 +182,7 @@ export default function LebenssituationContent({ entry, related, faqs, uniqueInt
       </section>
 
       {/* ───── i. 3 Schritte ───── */}
-      <section className="py-[70px] px-8 bg-slate-50">
+      <section className="py-[70px] px-8 bg-cream">
         <div className="max-w-content mx-auto">
           <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-gold mb-2.5">
             Wie ist der Ablauf?
@@ -208,7 +208,7 @@ export default function LebenssituationContent({ entry, related, faqs, uniqueInt
           <div className="mt-8 text-center">
             <a
               href="/#kontakt"
-              className="inline-block py-3.5 px-8 bg-gold text-white border-none rounded-sm font-sans text-base font-semibold no-underline transition-all hover:bg-[#3730a3] hover:-translate-y-px hover:shadow-[0_6px_20px_rgba(166,139,75,0.25)]"
+              className="inline-block py-3.5 px-8 bg-gold text-white border-none rounded-sm font-sans text-base font-semibold no-underline transition-all hover:bg-[#7A6530] hover:-translate-y-px hover:shadow-[0_6px_20px_rgba(166,139,75,0.25)]"
             >
               Kündigung kostenlos prüfen lassen &rarr;
             </a>
@@ -219,14 +219,14 @@ export default function LebenssituationContent({ entry, related, faqs, uniqueInt
       {/* ───── j. CTA #2 (urgency) ───── */}
       <section className="py-[50px] px-8 bg-white">
         <div className="max-w-content mx-auto">
-          <div className="flex items-center justify-between gap-6 py-5 px-6 bg-slate-50 rounded-sm border-l-[3px] border-gold max-md:flex-col max-md:items-start">
+          <div className="flex items-center justify-between gap-6 py-5 px-6 bg-cream rounded-sm border-l-[3px] border-gold max-md:flex-col max-md:items-start">
             <div>
               <p className="text-[1rem] font-semibold text-ink m-0">Nur 3 Wochen Frist &mdash; jetzt handeln.</p>
               <p className="text-[0.84rem] text-ink-muted mt-1 m-0">Kündigung anwaltlich prüfen lassen, bevor die Frist abläuft.</p>
             </div>
             <a
               href="/#kontakt"
-              className="inline-block py-3 px-6 bg-gold text-white border-none rounded-sm font-sans text-[0.92rem] font-semibold no-underline whitespace-nowrap transition-all hover:bg-[#3730a3]"
+              className="inline-block py-3 px-6 bg-gold text-white border-none rounded-sm font-sans text-[0.92rem] font-semibold no-underline whitespace-nowrap transition-all hover:bg-[#7A6530]"
             >
               Jetzt kontaktieren &rarr;
             </a>
@@ -235,7 +235,7 @@ export default function LebenssituationContent({ entry, related, faqs, uniqueInt
       </section>
 
       {/* ───── k. Warum Section ───── */}
-      <section className="py-[70px] px-8 bg-slate-50">
+      <section className="py-[70px] px-8 bg-cream">
         <div className="max-w-content mx-auto">
           <h2 className="font-serif text-[clamp(1.4rem,3vw,1.9rem)] font-bold leading-[1.25] mb-3">
             Warum Sie unsere Kanzlei beauftragen sollten!
@@ -277,7 +277,7 @@ export default function LebenssituationContent({ entry, related, faqs, uniqueInt
       {/* ───── l. Trust Bar ───── */}
       <section className="py-[40px] px-8 bg-white">
         <div className="max-w-content mx-auto">
-          <div className="grid grid-cols-4 gap-0 border border-gold rounded-sm overflow-hidden bg-slate-50 max-md:grid-cols-2">
+          <div className="grid grid-cols-4 gap-0 border border-gold rounded-sm overflow-hidden bg-cream max-md:grid-cols-2">
             {[
               { value: '2.000+', label: 'Beratungen' },
               { value: '2.000+', label: 'Verfahren' },
@@ -297,7 +297,7 @@ export default function LebenssituationContent({ entry, related, faqs, uniqueInt
       </section>
 
       {/* ───── m. FAQ Accordion ───── */}
-      <section className="py-[70px] px-8 bg-slate-50">
+      <section className="py-[70px] px-8 bg-cream">
         <div className="max-w-content mx-auto">
           <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-gold mb-2.5">
             Häufige Fragen
@@ -330,7 +330,7 @@ export default function LebenssituationContent({ entry, related, faqs, uniqueInt
       <section className="py-[50px] px-8 bg-white">
         <div className="max-w-content mx-auto">
           <div className="max-w-[740px]">
-            <div className="flex items-center justify-between gap-6 py-5 px-6 bg-slate-50 rounded-sm border-l-[3px] border-gold max-md:flex-col max-md:items-start">
+            <div className="flex items-center justify-between gap-6 py-5 px-6 bg-cream rounded-sm border-l-[3px] border-gold max-md:flex-col max-md:items-start">
               <div>
                 <p className="text-[1rem] font-semibold text-ink m-0">Wie hoch ist Ihre Abfindung?</p>
                 <p className="text-[0.84rem] text-ink-muted mt-1 m-0">
@@ -339,7 +339,7 @@ export default function LebenssituationContent({ entry, related, faqs, uniqueInt
               </div>
               <Link
                 href="/abfindung/"
-                className="inline-block py-3 px-6 bg-gold text-white border-none rounded-sm font-sans text-[0.92rem] font-semibold no-underline whitespace-nowrap transition-all hover:bg-[#3730a3]"
+                className="inline-block py-3 px-6 bg-gold text-white border-none rounded-sm font-sans text-[0.92rem] font-semibold no-underline whitespace-nowrap transition-all hover:bg-[#7A6530]"
               >
                 Zum Ratgeber Abfindung &rarr;
               </Link>
@@ -349,7 +349,7 @@ export default function LebenssituationContent({ entry, related, faqs, uniqueInt
       </section>
 
       {/* ───── o. Internal Navigation ───── */}
-      <section className="py-[50px] px-8 bg-slate-50">
+      <section className="py-[50px] px-8 bg-cream">
         <div className="max-w-content mx-auto">
           <div className="flex flex-wrap gap-3">
             <Link href="/kuendigung" className="py-2.5 px-5 rounded-full border border-border text-[0.85rem] font-semibold text-ink no-underline hover:border-gold hover:text-gold transition-all bg-white">

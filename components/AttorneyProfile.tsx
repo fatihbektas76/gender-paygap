@@ -79,7 +79,7 @@ export default function AttorneyProfile() {
                 ].map((q) => (
                   <li
                     key={q}
-                    className="text-[0.78rem] font-semibold text-ink-light bg-slate-50 border border-border rounded-full py-1.5 px-4"
+                    className="text-[0.78rem] font-semibold text-ink-light bg-cream border border-border rounded-full py-1.5 px-4"
                   >
                     {q}
                   </li>
@@ -96,7 +96,7 @@ export default function AttorneyProfile() {
                 </svg>
                 Kontakt speichern
               </button>
-              <blockquote className="mt-7 py-5 px-6 bg-slate-50 border-l-[3px] border-gold rounded-r-sm font-serif italic text-[0.95rem] text-ink-light leading-relaxed">
+              <blockquote className="mt-7 py-5 px-6 bg-cream border-l-[3px] border-gold rounded-r-sm font-serif italic text-[0.95rem] text-ink-light leading-relaxed">
                 &bdquo;Loyalität ist keine Einbahnstraße. Wenn ich sie von Ihnen erwarte, bekommen Sie
                 sie auch von mir.&ldquo;
               </blockquote>

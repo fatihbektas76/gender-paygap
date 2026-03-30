@@ -50,7 +50,7 @@ export default function TeilzeitRechnerClient() {
                   step={1}
                   value={vollzeitUrlaub}
                   onChange={(e) => setVollzeitUrlaub(Number(e.target.value))}
-                  className="w-full h-2 rounded-full appearance-none cursor-pointer bg-border accent-[#4338ca]"
+                  className="w-full h-2 rounded-full appearance-none cursor-pointer bg-border accent-[#7A6530]"
                 />
                 <div className="text-[0.92rem] font-semibold text-gold mt-2">{vollzeitUrlaub} Tage</div>
               </div>
@@ -130,7 +130,7 @@ export default function TeilzeitRechnerClient() {
                 <div className="text-[0.84rem] font-semibold text-ink mb-3">Ihr Urlaubsanspruch:</div>
                 <div
                   id="ergebnis-box"
-                  className="py-5 px-6 bg-slate-50 border-2 border-gold/30 rounded-sm text-center"
+                  className="py-5 px-6 bg-cream border-2 border-gold/30 rounded-sm text-center"
                 >
                   <div className="font-serif text-[2rem] font-bold text-gold">
                     {urlaubTeilzeit} Tage
@@ -148,7 +148,7 @@ export default function TeilzeitRechnerClient() {
             <div className="border border-border rounded-sm overflow-hidden">
               <button
                 onClick={() => setHinweisOffen(!hinweisOffen)}
-                className="w-full flex items-center justify-between py-3.5 px-5 bg-slate-50 text-[0.88rem] font-semibold text-ink cursor-pointer border-none text-left"
+                className="w-full flex items-center justify-between py-3.5 px-5 bg-cream text-[0.88rem] font-semibold text-ink cursor-pointer border-none text-left"
               >
                 Hinweis zur Urlaubsberechnung
                 <svg
@@ -200,7 +200,7 @@ export default function TeilzeitRechnerClient() {
         </div>
 
         {/* CTA #2 — nach Rechner */}
-        <div className="mt-10 border-2 border-gold/20 rounded-sm p-7 bg-slate-50 max-w-[640px] mx-auto text-center">
+        <div className="mt-10 border-2 border-gold/20 rounded-sm p-7 bg-cream max-w-[640px] mx-auto text-center">
           <h3 className="font-serif text-[1.15rem] font-bold mb-2">
             Ergebnis berechnet &mdash; nächster Schritt?
           </h3>

@@ -112,7 +112,7 @@ export default function SchwellenwertRechnerPage() {
       />
 
       {/* Header */}
-      <div className="bg-slate-50 pt-[120px] pb-[50px] px-8 border-b border-border">
+      <div className="bg-cream pt-[120px] pb-[50px] px-8 border-b border-border">
         <div className="max-w-content mx-auto">
           <nav className="text-[0.84rem] text-ink-muted mb-6">
             <Link href="/" className="text-gold no-underline hover:underline">Start</Link>
@@ -149,7 +149,7 @@ export default function SchwellenwertRechnerPage() {
       <section className="py-[70px] px-8 bg-white">
         <div className="max-w-content mx-auto">
           <div className="max-w-[600px]">
-            <div className="bg-slate-50 border border-border-light rounded p-8">
+            <div className="bg-cream border border-border-light rounded p-8">
               <h2 className="font-serif text-[1.2rem] font-bold mb-5">Mitarbeiter im Betrieb</h2>
               <div className="space-y-5">
                 <div>
@@ -212,7 +212,7 @@ export default function SchwellenwertRechnerPage() {
                 </div>
                 <button
                   onClick={calculate}
-                  className="w-full py-3.5 bg-gold text-white border-none rounded-sm font-sans text-base font-semibold cursor-pointer transition-all mt-2 hover:bg-[#3730a3] hover:-translate-y-px hover:shadow-[0_6px_20px_rgba(166,139,75,0.25)]"
+                  className="w-full py-3.5 bg-gold text-white border-none rounded-sm font-sans text-base font-semibold cursor-pointer transition-all mt-2 hover:bg-[#7A6530] hover:-translate-y-px hover:shadow-[0_6px_20px_rgba(166,139,75,0.25)]"
                 >
                   Schwellenwert prüfen
                 </button>
@@ -230,7 +230,7 @@ export default function SchwellenwertRechnerPage() {
                   className={`rounded-sm border-2 p-6 text-center ${
                     result.gilt
                       ? 'border-green bg-green-bg'
-                      : 'border-gold bg-slate-50'
+                      : 'border-gold bg-cream'
                   }`}
                 >
                   <div className="text-[0.78rem] font-bold tracking-[0.14em] uppercase mb-2 text-ink-muted">
@@ -266,13 +266,13 @@ export default function SchwellenwertRechnerPage() {
                 </div>
 
                 {/* CTA 1 */}
-                <div className="mt-8 py-5 px-6 bg-slate-50 rounded-sm border-l-[3px] border-gold">
+                <div className="mt-8 py-5 px-6 bg-cream rounded-sm border-l-[3px] border-gold">
                   <p className="text-[0.95rem] text-ink mb-3">
                     <strong>Unsicher, ob die Berechnung korrekt ist? Wir prüfen es für Sie.</strong>
                   </p>
                   <a
                     href="/#kontakt"
-                    className="inline-block py-3 px-6 bg-gold text-white border-none rounded-sm font-sans text-[0.92rem] font-semibold no-underline transition-all hover:bg-[#3730a3]"
+                    className="inline-block py-3 px-6 bg-gold text-white border-none rounded-sm font-sans text-[0.92rem] font-semibold no-underline transition-all hover:bg-[#7A6530]"
                   >
                     Kostenlose Ersteinschätzung anfordern &rarr;
                   </a>
@@ -284,7 +284,7 @@ export default function SchwellenwertRechnerPage() {
       </section>
 
       {/* Explanation */}
-      <section className="py-[70px] px-8 bg-slate-50">
+      <section className="py-[70px] px-8 bg-cream">
         <div className="max-w-content mx-auto">
           <div className="max-w-[740px]">
             <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-gold mb-2.5">
@@ -342,7 +342,7 @@ export default function SchwellenwertRechnerPage() {
           </p>
           <a
             href="/#kontakt"
-            className="inline-block py-3.5 px-8 bg-gold text-white border-none rounded-sm font-sans text-base font-semibold no-underline transition-all hover:bg-[#3730a3] hover:-translate-y-px hover:shadow-[0_6px_20px_rgba(166,139,75,0.25)]"
+            className="inline-block py-3.5 px-8 bg-gold text-white border-none rounded-sm font-sans text-base font-semibold no-underline transition-all hover:bg-[#7A6530] hover:-translate-y-px hover:shadow-[0_6px_20px_rgba(166,139,75,0.25)]"
           >
             Jetzt kostenlos prüfen lassen &rarr;
           </a>
@@ -350,7 +350,7 @@ export default function SchwellenwertRechnerPage() {
       </section>
 
       {/* Kündigungsschutz im Kleinbetrieb */}
-      <section className="py-[70px] px-8 bg-slate-50">
+      <section className="py-[70px] px-8 bg-cream">
         <div className="max-w-content mx-auto">
           <div className="max-w-[740px]">
             <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-gold mb-2.5">
@@ -412,7 +412,7 @@ export default function SchwellenwertRechnerPage() {
       </section>
 
       {/* Quellenblock */}
-      <section className="py-10 px-8 bg-slate-50 border-t border-border">
+      <section className="py-10 px-8 bg-cream border-t border-border">
         <div className="max-w-content mx-auto">
           <div className="max-w-[740px]">
             <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-ink-muted mb-3">
@@ -453,7 +453,7 @@ export default function SchwellenwertRechnerPage() {
       </section>
 
       {/* CTA 3 */}
-      <section className="py-[70px] px-8 bg-slate-50">
+      <section className="py-[70px] px-8 bg-cream">
         <div className="max-w-content mx-auto text-center">
           <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-gold mb-2.5">
             Jetzt handeln
@@ -467,7 +467,7 @@ export default function SchwellenwertRechnerPage() {
           </p>
           <a
             href="/#kontakt"
-            className="inline-block py-3.5 px-8 bg-gold text-white border-none rounded-sm font-sans text-base font-semibold no-underline transition-all hover:bg-[#3730a3] hover:-translate-y-px hover:shadow-[0_6px_20px_rgba(166,139,75,0.25)]"
+            className="inline-block py-3.5 px-8 bg-gold text-white border-none rounded-sm font-sans text-base font-semibold no-underline transition-all hover:bg-[#7A6530] hover:-translate-y-px hover:shadow-[0_6px_20px_rgba(166,139,75,0.25)]"
           >
             Kostenlose Ersteinschätzung &rarr;
           </a>

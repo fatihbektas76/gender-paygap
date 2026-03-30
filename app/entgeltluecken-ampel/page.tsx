@@ -177,7 +177,7 @@ export default function EntgeltlueckenAmpelPage() {
       <section className="py-[70px] px-8 bg-white">
         <div className="max-w-content mx-auto">
           <div className="max-w-[600px]">
-            <div className="bg-slate-50 border border-border-light rounded p-8">
+            <div className="bg-cream border border-border-light rounded p-8">
               <h2 className="font-serif text-[1.2rem] font-bold mb-5">
                 Unternehmensdaten eingeben
               </h2>
@@ -310,7 +310,7 @@ export default function EntgeltlueckenAmpelPage() {
                   className={`w-full py-3.5 border-none rounded-sm font-sans text-base font-semibold cursor-pointer transition-all mt-2 ${
                     allFilled
                       ? 'bg-blue text-white hover:bg-blue hover:-translate-y-px hover:shadow-[0_6px_20px_rgba(61,90,128,0.25)]'
-                      : 'bg-slate-200 text-ink-muted cursor-not-allowed'
+                      : 'bg-cream-dark text-ink-muted cursor-not-allowed'
                   }`}
                 >
                   Gender Pay Gap berechnen
@@ -418,7 +418,7 @@ export default function EntgeltlueckenAmpelPage() {
                 )}
 
                 {/* Handlungsempfehlung */}
-                <div className="mt-6 py-5 px-6 bg-slate-50 rounded-sm border-l-[3px] border-blue">
+                <div className="mt-6 py-5 px-6 bg-cream rounded-sm border-l-[3px] border-blue">
                   <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-blue mb-2">
                     Handlungsempfehlung
                   </div>
@@ -475,7 +475,7 @@ export default function EntgeltlueckenAmpelPage() {
       </section>
 
       {/* Explanation */}
-      <section className="py-[70px] px-8 bg-slate-50">
+      <section className="py-[70px] px-8 bg-cream">
         <div className="max-w-content mx-auto">
           <div className="max-w-[740px]">
             <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-blue mb-2.5">
@@ -542,7 +542,7 @@ export default function EntgeltlueckenAmpelPage() {
       </section>
 
       {/* Disclaimer */}
-      <section className="py-6 px-8 bg-slate-50 border-t border-border">
+      <section className="py-6 px-8 bg-cream border-t border-border">
         <div className="max-w-content mx-auto">
           <p className="text-[0.78rem] text-ink-muted leading-relaxed max-w-[740px]">
             <strong>Rechtlicher Hinweis:</strong> Alle Berechnungen sind Schätzungen und

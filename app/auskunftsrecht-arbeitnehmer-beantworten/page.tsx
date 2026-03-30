@@ -131,7 +131,7 @@ export default function AuskunftsrechtBeantwortenPage() {
         </section>
 
         {/* Fristen & Prozess */}
-        <section className="py-[90px] px-8 bg-slate-50 max-md:py-[60px] max-md:px-6">
+        <section className="py-[90px] px-8 bg-cream max-md:py-[60px] max-md:px-6">
           <div className="max-w-content mx-auto">
             <h2 className="font-serif text-[clamp(1.5rem,3vw,2rem)] font-bold leading-tight mb-8">
               Fristen und Ablauf der Auskunftserteilung
@@ -192,7 +192,7 @@ export default function AuskunftsrechtBeantwortenPage() {
         </section>
 
         {/* FAQ */}
-        <section className="py-[90px] px-8 bg-slate-50 max-md:py-[60px] max-md:px-6" id="faq">
+        <section className="py-[90px] px-8 bg-cream max-md:py-[60px] max-md:px-6" id="faq">
           <div className="max-w-content mx-auto">
             <h2 className="font-serif text-[clamp(1.5rem,3vw,2rem)] font-bold leading-tight mb-8">
               Häufige Fragen zur Beantwortung von Auskunftsanfragen

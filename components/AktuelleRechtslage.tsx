@@ -63,7 +63,7 @@ export default function AktuelleRechtslage() {
     <section className="py-12 px-8 bg-white">
       <div className="max-w-content mx-auto">
         <div className="max-w-[740px] border border-gold/30 rounded overflow-hidden">
-          <div className="bg-slate-50 px-6 py-3 border-b border-gold/30 flex items-center justify-between">
+          <div className="bg-cream px-6 py-3 border-b border-gold/30 flex items-center justify-between">
             <div className="text-[0.72rem] font-bold tracking-[0.14em] uppercase text-gold">
               Aktuelle Rechtslage
             </div>

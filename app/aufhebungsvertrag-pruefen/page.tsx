@@ -329,7 +329,7 @@ export default function AufhebungsvertragPruefenPage() {
         </div>
       </div>
 
-      <div className="mb-8 py-4 px-4 bg-slate-50 rounded-sm border border-border">
+      <div className="mb-8 py-4 px-4 bg-cream rounded-sm border border-border">
         <p className="text-[0.75rem] text-ink-muted leading-relaxed m-0">
           <strong>Hinweis:</strong> Dieses Tool dient ausschließlich der unverbindlichen Erstorientierung und ersetzt keine anwaltliche Beratung.
         </p>
@@ -403,7 +403,7 @@ export default function AufhebungsvertragPruefenPage() {
     };
 
     return (
-      <div className="flex min-h-screen bg-slate-50">
+      <div className="flex min-h-screen bg-cream">
         {sidebar}
         <div className="flex-1 flex flex-col">
           {/* Mobile header */}
@@ -419,7 +419,7 @@ export default function AufhebungsvertragPruefenPage() {
           <div className="flex-1 flex items-start justify-center px-6 py-10">
             <div className="w-full max-w-[600px]">
               {/* Ampel-Ergebnis-Box */}
-              <div className="ergebnis-box py-8 px-7 bg-slate-50 rounded-sm border-2 border-gold text-center animate-[fadeIn_0.5s_ease-out]">
+              <div className="ergebnis-box py-8 px-7 bg-cream rounded-sm border-2 border-gold text-center animate-[fadeIn_0.5s_ease-out]">
                 <div className="flex justify-center mb-4">
                   <AmpelIcon color={ampelColor} size={64} />
                 </div>
@@ -1126,7 +1126,7 @@ export default function AufhebungsvertragPruefenPage() {
 
   /* ───── Render (Checker) ───── */
   return (
-    <div className="flex min-h-screen bg-slate-50">
+    <div className="flex min-h-screen bg-cream">
       <SeoGeoBase
         pageUrl={`${SEO_CONFIG.baseUrl}/aufhebungsvertrag-pruefen/`}
         pageTitle="Aufhebungsvertrag prüfen — Ist Ihr Vertrag fair?"
@@ -1284,7 +1284,7 @@ export default function AufhebungsvertragPruefenPage() {
                   </p>
                   <Link
                     href="/#kontakt"
-                    className="inline-block py-2.5 px-6 bg-gold text-white rounded-sm font-sans text-[0.88rem] font-semibold no-underline transition-all hover:bg-[#3730a3] hover:-translate-y-px"
+                    className="inline-block py-2.5 px-6 bg-gold text-white rounded-sm font-sans text-[0.88rem] font-semibold no-underline transition-all hover:bg-[#7A6530] hover:-translate-y-px"
                   >
                     Kostenlose Erstberatung anfragen &rarr;
                   </Link>
@@ -1308,7 +1308,7 @@ export default function AufhebungsvertragPruefenPage() {
                 ) : <span />}
                 <button
                   onClick={continueFromInfo}
-                  className="py-3 px-8 bg-gold text-white border-none rounded-sm font-sans text-[0.92rem] font-semibold cursor-pointer transition-all hover:bg-[#3730a3] hover:-translate-y-px"
+                  className="py-3 px-8 bg-gold text-white border-none rounded-sm font-sans text-[0.92rem] font-semibold cursor-pointer transition-all hover:bg-[#7A6530] hover:-translate-y-px"
                 >
                   Weiter &rarr;
                 </button>
