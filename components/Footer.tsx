@@ -32,6 +32,14 @@ export default function Footer({ onOpenCookieSettings }: { onOpenCookieSettings:
             >
               LinkedIn
             </a>
+            <span className="text-white/50">|</span>
+            <Link href="/gender-pay-gap" className="text-white/70 no-underline hover:text-gold-light transition-colors text-[0.8rem]">
+              Wissen
+            </Link>
+            <span className="text-white/50">|</span>
+            <Link href="/kontakt" className="text-white/70 no-underline hover:text-gold-light transition-colors text-[0.8rem]">
+              Kontakt
+            </Link>
           </div>
         </div>
 

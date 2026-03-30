@@ -6,17 +6,17 @@ export default function CTA() {
           Jetzt handeln
         </div>
         <h2 className="font-serif text-[clamp(1.6rem,3vw,2.2rem)] font-bold text-white mb-3.5">
-          Kündigung erhalten? Zeit läuft.
+          Entgelttransparenz betrifft Sie — als Arbeitnehmer und Arbeitgeber.
         </h2>
         <p className="text-white/65 text-[1.05rem] max-w-[540px] mx-auto mb-8">
-          Schildern Sie uns Ihren Fall — wir prüfen kostenlos, ob Ihre Kündigung angreifbar ist und
-          wie hoch Ihre Abfindung sein kann. In der Regel innerhalb von 48 Stunden.
+          Schildern Sie uns Ihre Situation — wir prüfen kostenlos Ihre Rechte und Pflichten
+          nach der EU-Entgelttransparenzrichtlinie. In der Regel innerhalb von 48 Stunden.
         </p>
         <a
-          href="#kontakt"
+          href="/kontakt"
           className="inline-flex items-center gap-2 px-9 py-4 rounded-sm text-base font-semibold no-underline transition-all bg-gold-dark text-white hover:bg-[#635428] hover:-translate-y-0.5 hover:shadow-[0_8px_24px_rgba(166,139,75,0.25)]"
         >
-          Jetzt kostenlos prüfen lassen &rarr;
+          Kostenlose Ersteinschätzung anfragen &rarr;
         </a>
         <div className="flex gap-8 justify-center mt-9 flex-wrap max-md:flex-col max-md:items-center">
           <a
@@ -44,8 +44,8 @@ export default function CTA() {
           </a>
         </div>
         <p className="mt-7 text-[0.85rem] text-white/60 max-w-[500px] mx-auto">
-          Sie haben eine Kündigung erhalten? Die Klagefrist beträgt nur 3 Wochen (§4 KSchG).
-          Kontaktieren Sie uns sofort — wir können Fristen wahren, während wir Ihren Fall prüfen.
+          Die Umsetzungsfrist der EU-Entgelttransparenzrichtlinie endet am 7. Juni 2026.
+          Kontaktieren Sie uns jetzt — wir beraten Sie, bevor Fristen ablaufen und Sanktionen greifen.
         </p>
       </div>
     </section>

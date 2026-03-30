@@ -13,6 +13,7 @@ import TeamTeaser from '@/components/TeamTeaser';
 import FaqAccordion from '@/components/FaqAccordion';
 import StandortTeaser from '@/components/StandortTeaser';
 import ContactForm from '@/components/ContactForm';
+import CTA from '@/components/CTA';
 
 export const revalidate = 86400;
 
@@ -240,25 +241,7 @@ export default function Home() {
         {/* Kontakt */}
         <ContactForm />
 
-        {/* CTA */}
-        <section className="py-[70px] px-8 bg-gold text-white text-center max-md:py-12 max-md:px-6">
-          <div className="max-w-[700px] mx-auto">
-            <h2 className="font-serif text-[clamp(1.5rem,3vw,2rem)] font-bold mb-4">
-              Kostenlose Ersteinschätzung — für Arbeitnehmer und Arbeitgeber
-            </h2>
-            <p className="text-white/80 text-[1rem] leading-relaxed mb-6">
-              Schildern Sie uns Ihre Situation. Wir prüfen Ihren Fall und empfehlen konkrete nächste Schritte.
-            </p>
-            <div className="flex gap-3.5 justify-center flex-wrap">
-              <a
-                href="/kontakt"
-                className="inline-flex items-center gap-2 px-8 py-3.5 rounded-sm text-[0.95rem] font-semibold no-underline transition-all bg-white text-gold hover:bg-gold-bg hover:-translate-y-0.5"
-              >
-                Jetzt Kontakt aufnehmen &rarr;
-              </a>
-            </div>
-          </div>
-        </section>
+        <CTA />
       </main>
     </>
   );
