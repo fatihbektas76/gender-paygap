@@ -21,8 +21,8 @@ export default function TeamTeaser() {
           Erfahrene Fachanwälte an Ihrer Seite
         </h2>
         <p className="text-[1.05rem] text-ink-muted max-w-[580px] leading-relaxed">
-          Unser Team vertritt Arbeitnehmer bei Kündigung,
-          Abfindung und Aufhebungsvertrag — mit über 2.000 erfolgreichen Verfahren.
+          Unser Team berät Arbeitnehmer und Arbeitgeber bei Entgelttransparenz,
+          Equal Pay und Compliance — mit über 20 Jahren Erfahrung im Arbeitsrecht.
         </p>
         <div className="grid grid-cols-3 gap-6 mt-9 max-md:grid-cols-1">
           {teamPreview.map((member, i) => (

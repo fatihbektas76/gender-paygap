@@ -4,22 +4,22 @@ const steps = [
   {
     num: 1,
     title: 'Kostenlose Ersteinschätzung',
-    desc: 'Schildern Sie Ihren Fall. Wir prüfen Ihre Kündigung oder Ihren Aufhebungsvertrag — kostenlos und in der Regel innerhalb von 48 Stunden.',
+    desc: 'Schildern Sie Ihre Situation — als Arbeitnehmer oder Arbeitgeber. Wir prüfen Ihren Fall kostenlos und in der Regel innerhalb von 48 Stunden.',
   },
   {
     num: 2,
-    title: 'Strategie & Prüfung',
-    desc: 'Wir prüfen Ihre Kündigung oder Ihren Aufhebungsvertrag und zeigen Ihre Optionen auf: Kündigungsschutzklage, Abfindungsverhandlung oder Aufhebungsvertrag-Optimierung.',
+    title: 'Rechtslage & Ansprüche prüfen',
+    desc: 'Wir analysieren Ihre Vergütungssituation, prüfen Auskunftsansprüche und bewerten Ihre Chancen auf Entschädigung oder Compliance-Konformität.',
   },
   {
     num: 3,
-    title: 'Wir übernehmen alles',
-    desc: 'Arbeitsgericht, Gütetermin, Verhandlung oder außergerichtliche Einigung — wir kümmern uns um alles. Sie werden regelmäßig informiert.',
+    title: 'Auskunft, Klage oder Audit',
+    desc: 'Auskunftsantrag stellen, Equal-Pay-Klage einreichen oder Compliance-Audit durchführen — wir übernehmen die komplette Umsetzung für Sie.',
   },
   {
     num: 4,
-    title: 'Ergebnis & Abfindung',
-    desc: 'Abfindung, Weiterbeschäftigung oder optimierter Aufhebungsvertrag — wir setzen das beste Ergebnis für Sie durch.',
+    title: 'Ergebnis: Gehaltsanpassung oder Compliance',
+    desc: 'Gehaltsanpassung, Entschädigung, rechtssicheres Vergütungssystem — wir setzen das beste Ergebnis für Sie durch.',
   },
 ];
 
@@ -34,7 +34,7 @@ export default function Process() {
           Von der ersten Anfrage bis zum Ergebnis — in vier Schritten
         </h2>
         <p className="text-[1.05rem] text-ink-muted max-w-[580px] leading-relaxed">
-          Wir machen Arbeitsrecht unkompliziert. Keine versteckten Kosten, keine Überraschungen.
+          Wir machen Entgelttransparenz unkompliziert. Keine versteckten Kosten, keine Überraschungen.
         </p>
         <FadeUp className="grid grid-cols-4 gap-6 mt-10 max-md:grid-cols-2 max-md:gap-8">
           {steps.map((step, i) => (

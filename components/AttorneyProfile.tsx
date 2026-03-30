@@ -9,7 +9,7 @@ VERSION:3.0
 N:Bektas;Fatih;;;
 FN:Fatih Bektas
 TITLE:Rechtsanwalt & Fachanwalt für Arbeitsrecht
-ORG:gender-paygap.de
+ORG:APOS Legal Rechtsanwaltsgesellschaft mbH & Co. KG
 EMAIL:bektas@apos.legal
 TEL:+49 6222 9599 2400
 ADR:;;Am Paradeplatz 20;Heidelberg;;69126;Germany
@@ -55,13 +55,13 @@ export default function AttorneyProfile() {
               </div>
               <div className="text-gold text-base mb-1">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
               <div className="text-[0.82rem] text-ink-muted mb-6">
-                5.0 Bewertung &middot; 2.000+ vertretene Mandanten
+                4.9 Bewertung &middot; 68 Bewertungen auf anwalt.de
               </div>
               <p className="text-[0.95rem] text-ink-light leading-relaxed mb-5">
                 Fatih Bektas hat über 20 Jahre Erfahrung vor deutschen Arbeitsgerichten — und 10 Jahre
                 als CEO und Vorstandsmitglied in der FinTech-Branche. Diese doppelte Perspektive
-                bedeutet: Er kennt nicht nur das Recht, sondern versteht, was für Sie auf dem Spiel
-                steht. Er kämpft strategisch, kommuniziert klar und liefert Ergebnisse.
+                bedeutet: Er kennt nicht nur das Recht, sondern versteht Vergütungsstrukturen von innen.
+                Er berät Arbeitnehmer bei Equal-Pay-Ansprüchen und Arbeitgeber bei Entgelttransparenz-Compliance.
               </p>
               <p className="text-[0.95rem] text-ink-light leading-relaxed mb-5">
                 Seit 2011 Fachanwalt für Arbeitsrecht und zertifizierter Mediator. Er löst Konflikte

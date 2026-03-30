@@ -9,33 +9,33 @@ const Star = () => (
 const testimonials = [
   {
     quote:
-      'Nach 12 Jahren im Unternehmen wurde mir betriebsbedingt gekündigt. Herr Bektas hat sofort eine Kündigungsschutzklage eingereicht und innerhalb von 8 Wochen eine Abfindung von 45.000 € für mich durchgesetzt — das Dreifache des ersten Angebots.',
-    name: 'Thomas M.',
-    title: 'Vertriebsleiter',
-    company: 'Automobilzulieferer',
+      'Ich habe nach 8 Jahren im Unternehmen erfahren, dass ein männlicher Kollege in gleicher Position 15% mehr verdient. Herr Bektas hat sofort ein Auskunftsverlangen gestellt und innerhalb von 4 Monaten eine Gehaltsanpassung plus 18.000 € Nachzahlung für mich durchgesetzt.',
+    name: 'Julia S.',
+    title: 'Projektleiterin',
+    company: 'IT-Dienstleister',
     location: 'Stuttgart',
   },
   {
     quote:
-      'Mein Arbeitgeber hat mir einen Aufhebungsvertrag mit einer viel zu niedrigen Abfindung vorgelegt. Herr Bektas hat den Vertrag geprüft, nachverhandelt und die Abfindung von 8.000 € auf 28.000 € erhöht — ohne Sperrzeit beim Arbeitslosengeld.',
-    name: 'Sandra K.',
-    title: 'Teamleiterin Marketing',
-    company: 'IT-Dienstleister',
+      'Als HR-Leiterin wusste ich, dass unser Vergütungssystem Lücken hat. Herr Bektas hat ein umfassendes Compliance-Audit durchgeführt und unser gesamtes System EU-richtlinienkonform gemacht — bevor Auskunftsanfragen kamen. Das hat uns vor erheblichen Risiken bewahrt.',
+    name: 'Christine M.',
+    title: 'HR-Direktorin',
+    company: 'Mittelständisches Unternehmen',
     location: 'München',
   },
   {
     quote:
-      'Ich wurde fristlos gekündigt und war völlig verzweifelt. Herr Bektas hat die Kündigung vor dem Arbeitsgericht angefochten — sie war unwirksam. Am Ende habe ich eine Abfindung von 20.000 € erhalten und ein sehr gutes Zeugnis.',
-    name: 'Markus W.',
-    title: 'Projektmanager',
-    company: 'Bauunternehmen',
+      'Nach meiner Rückkehr aus der Elternzeit war mein Gehalt deutlich unter dem meiner Kollegen. Herr Bektas hat mit dem Arbeitgeber verhandelt — am Ende bekam ich eine Gehaltsanpassung und 12.000 € Entschädigung. Ohne ihn hätte ich das nie gewagt.',
+    name: 'Katrin W.',
+    title: 'Teamleiterin Finanzen',
+    company: 'Versicherung',
     location: 'Frankfurt',
   },
 ];
 
 const stats = [
-  { value: '2.000+', label: 'Erfolgreiche Verfahren' },
-  { value: '5.0 \u2605', label: 'Mandantenbewertung' },
+  { value: '68', label: 'Bewertungen auf anwalt.de' },
+  { value: '4.9 \u2605', label: 'Mandantenbewertung' },
   { value: '20+', label: 'Jahre Erfahrung' },
   { value: '48h', label: 'Ersteinschätzung' },
 ];
@@ -51,8 +51,8 @@ export default function Testimonials() {
           Was unsere Mandanten sagen
         </h2>
         <p className="text-[1.05rem] text-ink-muted max-w-[580px] leading-relaxed mb-10">
-          Über 2.000 Arbeitnehmer haben uns bereits vertraut — bei Kündigung, Abfindung und
-          Aufhebungsvertrag.
+          Arbeitnehmer und Arbeitgeber vertrauen uns bei Entgelttransparenz,
+          Equal Pay und Compliance.
         </p>
         <div className="grid grid-cols-3 gap-5 max-md:grid-cols-1">
           {testimonials.map((t, i) => (

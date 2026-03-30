@@ -2,6 +2,7 @@
 
 import { useState, useEffect, useRef, useCallback } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 
 export default function Navigation() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -38,9 +39,7 @@ export default function Navigation() {
     >
       <div className="max-w-content mx-auto px-8 flex items-center justify-between h-[72px]">
         <Link href="/" className="flex items-center gap-3.5 no-underline">
-          <span className="font-serif text-[1.15rem] font-bold text-gold tracking-tight">
-            gender-paygap.de
-          </span>
+          <Image src="/logo.png" alt="gender-paygap.de – Fachanwalt für Arbeitsrecht" width={140} height={48} className="h-10 w-auto" priority />
           <span className="inline-block text-[0.65rem] font-bold text-green bg-green-bg border-[1.5px] border-green/20 rounded px-2 py-0.5 tracking-wider uppercase whitespace-nowrap">
             Arbeitsrecht
           </span>

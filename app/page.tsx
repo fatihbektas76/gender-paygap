@@ -1,8 +1,17 @@
 import type { Metadata } from 'next';
 import { SEO_CONFIG } from '@/lib/seo-config';
 import Hero from '@/components/Hero';
+import AktuelleRechtslage from '@/components/AktuelleRechtslage';
 import FadeUp from '@/components/FadeUp';
+import Situations from '@/components/Situations';
+import Disputes from '@/components/Disputes';
+import Process from '@/components/Process';
+import Testimonials from '@/components/Testimonials';
+import Tools from '@/components/Tools';
+import AttorneyProfile from '@/components/AttorneyProfile';
+import TeamTeaser from '@/components/TeamTeaser';
 import FaqAccordion from '@/components/FaqAccordion';
+import StandortTeaser from '@/components/StandortTeaser';
 import ContactForm from '@/components/ContactForm';
 
 export const revalidate = 86400;
@@ -120,6 +129,8 @@ export default function Home() {
           Umsetzungsfrist EU-Entgelttransparenzrichtlinie: <strong>7. Juni 2026</strong> — Jetzt handeln, bevor Sanktionen drohen.
         </div>
 
+        <AktuelleRechtslage />
+
         {/* Dual-Audience Karten */}
         <section className="py-[90px] px-8 bg-white max-md:py-[60px] max-md:px-6">
           <div className="max-w-content mx-auto">
@@ -177,6 +188,14 @@ export default function Home() {
           </div>
         </section>
 
+        <Situations />
+        <Disputes />
+        <Process />
+        <Testimonials />
+        <Tools />
+        <AttorneyProfile />
+        <TeamTeaser />
+
         {/* Trust-Sektion */}
         <section className="py-[60px] px-8 bg-cream max-md:py-10 max-md:px-6">
           <div className="max-w-content mx-auto">
@@ -215,6 +234,8 @@ export default function Home() {
             <FaqAccordion items={homeFaqs} />
           </div>
         </section>
+
+        <StandortTeaser />
 
         {/* Kontakt */}
         <ContactForm />

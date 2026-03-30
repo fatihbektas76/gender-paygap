@@ -2,10 +2,22 @@ import FadeUp from './FadeUp';
 
 const tools = [
   {
-    title: 'Abfindungsrechner',
-    desc: 'Berechnen Sie Ihre voraussichtliche Abfindung anhand von Betriebszugehörigkeit und Bruttomonatsgehalt. Faustformel und individuelle Faktoren.',
-    href: '/abfindungsrechner',
+    title: 'Auskunftsrecht-Checker',
+    desc: 'Prüfen Sie in 3 Klicks, ob Sie ein Auskunftsrecht gegenüber Ihrem Arbeitgeber haben — und generieren Sie ein fertiges Auskunftsschreiben.',
+    href: '/auskunftsrecht-checker',
     delay: 0,
+    icon: (
+      <svg width="18" height="18" fill="none" stroke="currentColor" strokeWidth="2">
+        <path d="M9 11l3 3L22 4" />
+        <path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11" />
+      </svg>
+    ),
+  },
+  {
+    title: 'Compliance-Check Arbeitgeber',
+    desc: 'In 5 Fragen erfahren Sie, ob Ihr Unternehmen die Entgelttransparenz-Pflichten erfüllt. Ampel-Ergebnis mit konkretem Handlungsplan.',
+    href: '/compliance-check-arbeitgeber',
+    delay: 1,
     icon: (
       <svg width="18" height="18" fill="none" stroke="currentColor" strokeWidth="2">
         <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
@@ -13,14 +25,26 @@ const tools = [
     ),
   },
   {
-    title: 'Kündigung prüfen',
-    desc: 'Prüfen Sie in 2 Minuten Ihre Abfindungschancen nach einer Kündigung. Ersteinschätzung vom Fachanwalt für Arbeitsrecht — kostenlos und unverbindlich.',
-    href: '/kuendigung-pruefen',
-    delay: 1,
+    title: 'Equal-Pay-Schnellcheck',
+    desc: 'In 2 Minuten erfahren Sie, ob Sie einen Anspruch auf gleiche Bezahlung haben. 4 einfache Fragen — sofortige Einschätzung.',
+    href: '/equal-pay-anspruch-schnellcheck',
+    delay: 2,
     icon: (
       <svg width="18" height="18" fill="none" stroke="currentColor" strokeWidth="2">
-        <path d="M9 11l3 3L22 4" />
-        <path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11" />
+        <circle cx="10" cy="10" r="8" />
+        <path d="M10 6v4l3 3" />
+      </svg>
+    ),
+  },
+  {
+    title: 'Gender Pay Gap Rechner',
+    desc: 'Vergleichen Sie Ihr Gehalt mit dem Branchenmedian — aufgeschlüsselt nach Geschlecht. Basierend auf Destatis-Daten 2025.',
+    href: '/gender-pay-gap-rechner',
+    delay: 3,
+    icon: (
+      <svg width="18" height="18" fill="none" stroke="currentColor" strokeWidth="2">
+        <rect x="2" y="3" width="16" height="14" rx="2" />
+        <path d="M8 21h8M12 17v4" />
       </svg>
     ),
   },

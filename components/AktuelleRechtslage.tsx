@@ -1,51 +1,51 @@
 const monatsTipps = [
   { // Januar
-    titel: 'Jahresbeginn: Neue Kündigungsfristen beachten',
-    text: 'Zum Jahreswechsel ändern sich oft Betriebszugehörigkeiten und damit Kündigungsfristen. Prüfen Sie, ob sich Ihre Rechte durch ein weiteres Beschäftigungsjahr verbessert haben.',
+    titel: 'Neues Jahr, neue Pflichten: Entgelttransparenz 2026',
+    text: 'Ab diesem Jahr müssen Unternehmen mit mehr als 50 Mitarbeitern Auskunftsanfragen zu Gehältern beantworten. Prüfen Sie jetzt, ob Ihr Arbeitgeber seine Pflichten kennt — und ob Sie Ihr Auskunftsrecht nutzen sollten.',
   },
   { // Februar
-    titel: 'Probezeit-Kündigungen häufen sich',
-    text: 'Viele zum Jahresanfang gestartete Arbeitsverhältnisse werden jetzt in der Probezeit gekündigt. Auch bei Probezeit-Kündigungen können formale Fehler vorliegen.',
+    titel: 'Equal Pay Day: Frauen arbeiten bis heute „umsonst"',
+    text: 'Der Equal Pay Day markiert den Tag, bis zu dem Frauen rechnerisch unbezahlt arbeiten. In Deutschland liegt der Gender Pay Gap bei 16% (Destatis 2025). Das neue EU-Recht gibt Ihnen Werkzeuge, dagegen vorzugehen.',
   },
   { // März
-    titel: 'Quartalsende: Kündigungswelle erwartet',
-    text: 'Zum Ende des ersten Quartals häufen sich betriebsbedingte Kündigungen. Unternehmen reagieren auf Jahresbilanzen. Prüfen Sie die Sozialauswahl besonders genau.',
+    titel: 'BAG-Urteil stärkt Arbeitnehmerrechte bei Equal Pay',
+    text: 'Das BAG-Urteil Az. 8 AZR 300/24 vom 23.10.2025 bestätigt: Ein Paarvergleich reicht aus, um eine Diskriminierungsvermutung auszulösen. Die Beweislast liegt dann beim Arbeitgeber.',
   },
   { // April
-    titel: 'Neue BAG-Rechtsprechung im Blick',
-    text: 'Das Bundesarbeitsgericht veröffentlicht regelmäßig neue Urteile zum Kündigungsschutz. Aktuelle Entscheidungen können Ihre Verhandlungsposition stärken.',
+    titel: 'Stellenanzeigen: Gehaltsspannen werden Pflicht',
+    text: 'Die EU-Entgelttransparenzrichtlinie verpflichtet Arbeitgeber, in Stellenanzeigen eine Gehaltsspanne anzugeben. Unternehmen, die das nicht tun, riskieren Sanktionen ab Juni 2026.',
   },
   { // Mai
-    titel: 'Sonderkündigungsschutz prüfen',
-    text: 'Schwerbehinderte, Schwangere, Betriebsratsmitglieder und Elternzeit-Nehmer genießen besonderen Kündigungsschutz. Viele Arbeitgeber missachten diese Vorschriften.',
+    titel: 'Countdown: Noch einen Monat bis zur EU-Richtlinie',
+    text: 'Am 7. Juni 2026 tritt die EU-Entgelttransparenzrichtlinie in Kraft. Arbeitgeber müssen Auskunftsanfragen beantworten, Vergütungskriterien offenlegen und Berichtspflichten einhalten.',
   },
   { // Juni
-    titel: 'Halbjahres-Bilanz: Aufhebungsverträge nehmen zu',
-    text: 'Zur Jahresmitte bieten viele Arbeitgeber Aufhebungsverträge an. Unterschreiben Sie nie ohne anwaltliche Prüfung – die Abfindung ist fast immer verhandelbar.',
+    titel: 'EU-Entgelttransparenzrichtlinie tritt in Kraft',
+    text: 'Ab heute gilt: Alle Beschäftigten in Unternehmen ab 50 Mitarbeitern haben ein Auskunftsrecht über Vergleichsgehälter (Art. 7 EU-RL 2023/970). Arbeitgeber müssen innerhalb von 2 Monaten antworten.',
   },
   { // Juli
-    titel: 'Sommerkündigungen: Rechte auch im Urlaub wahren',
-    text: 'Eine Kündigung während des Urlaubs ist zulässig. Die 3-Wochen-Klagefrist läuft ab Zugang – auch wenn Sie im Urlaub sind. Reagieren Sie sofort.',
+    titel: 'Erste Auskunftsanfragen: Arbeitgeber unter Druck',
+    text: 'Einen Monat nach Inkrafttreten der Richtlinie häufen sich die Auskunftsanfragen. Viele Arbeitgeber sind schlecht vorbereitet. Nutzen Sie jetzt Ihr Recht — wir unterstützen Sie dabei.',
   },
   { // August
-    titel: 'Ausbildungsende: Übernahme oder Kündigung?',
-    text: 'Zum Ende der Ausbildung stehen wichtige Entscheidungen an. Ohne rechtzeitige Übernahme endet das Arbeitsverhältnis automatisch. Kennen Sie Ihre Rechte.',
+    titel: 'Rückkehr aus Elternzeit: Gehaltscheck machen',
+    text: 'Nach der Elternzeit haben viele Beschäftigte eine Gehaltslücke. Die neue Richtlinie gibt Ihnen das Recht, Ihr Gehalt mit dem Ihrer Vergleichsgruppe abzugleichen.',
   },
   { // September
-    titel: 'Herbstkündigungen: Restrukturierungen beginnen',
-    text: 'Im September starten viele Unternehmen Restrukturierungsprogramme für das kommende Jahr. Betriebsbedingte Kündigungen erfordern eine korrekte Sozialauswahl.',
+    titel: 'Compliance-Audit: Jetzt vorbereiten statt reagieren',
+    text: 'Unternehmen ab 250 Mitarbeitern müssen 2027 erstmals über den Gender Pay Gap berichten. Beginnen Sie jetzt mit der Analyse Ihrer Vergütungsstrukturen.',
   },
   { // Oktober
-    titel: 'Jahresendplanung: Abfindungen vor Dezember verhandeln',
-    text: 'Aufhebungsverträge zum Jahresende können steuerliche Vorteile bieten. Die Fünftelregelung kann Ihre Steuerbelastung auf die Abfindung erheblich senken.',
+    titel: 'Teilzeit & Equal Pay: Ihre Rechte als Teilzeitkraft',
+    text: 'Teilzeitbeschäftigte — überwiegend Frauen — sind häufig von Entgeltdiskriminierung betroffen. Die EU-Richtlinie schützt auch Teilzeitkräfte: Gleiche Arbeit verdient gleiches Entgelt.',
   },
   { // November
-    titel: 'Weihnachtsgeld & Kündigung: Was steht Ihnen zu?',
-    text: 'Bei Kündigung vor Jahresende stellt sich die Frage nach dem Weihnachtsgeld. Rückzahlungsklauseln sind oft unwirksam. Prüfen Sie Ihren Arbeitsvertrag.',
+    titel: 'Jahresbonus & Gehaltsrunde: Transparenz einfordern',
+    text: 'Vor den Jahresgesprächen lohnt sich ein Gehaltsvergleich. Nutzen Sie Ihr Auskunftsrecht, um mit konkreten Zahlen in die Verhandlung zu gehen.',
   },
   { // Dezember
-    titel: 'Jahresende: Letzte Chance für Kündigungsschutzklage',
-    text: 'Wenn Sie eine Kündigung erhalten haben, läuft die 3-Wochen-Frist auch über die Feiertage. Handeln Sie vor dem Jahreswechsel, um Ihre Rechte zu sichern.',
+    titel: 'Jahresrückblick: Entgelttransparenz-Bilanz ziehen',
+    text: 'Das erste Jahr unter der neuen EU-Richtlinie zeigt: Wer sein Auskunftsrecht nutzt, hat bessere Chancen auf faire Bezahlung. Planen Sie jetzt Ihre Schritte für das neue Jahr.',
   },
 ];
 
