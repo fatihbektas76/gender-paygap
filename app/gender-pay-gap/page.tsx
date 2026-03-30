@@ -1,5 +1,5 @@
 import type { Metadata } from 'next';
-import { buildMetadata, SEO_CONFIG } from '@/lib/seo-config';
+import { buildMetadata } from '@/lib/seo-config';
 import FadeUp from '@/components/FadeUp';
 import FaqAccordion from '@/components/FaqAccordion';
 import ContactForm from '@/components/ContactForm';
@@ -108,7 +108,7 @@ export default function GenderPayGapPage() {
                 <div className="bg-primary-50 border border-primary/20 rounded p-7 text-center">
                   <div className="font-serif text-[2.5rem] font-bold text-primary-700">66 Tage</div>
                   <div className="text-[0.9rem] text-ink-muted mt-1">Equal Pay Day 2026</div>
-                  <div className="text-[0.78rem] text-ink-muted mt-0.5">So lange arbeiten Frauen „umsonst"</div>
+                  <div className="text-[0.78rem] text-ink-muted mt-0.5">So lange arbeiten Frauen &bdquo;umsonst&ldquo;</div>
                 </div>
               </FadeUp>
             </div>

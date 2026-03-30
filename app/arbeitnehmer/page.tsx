@@ -1,5 +1,5 @@
 import type { Metadata } from 'next';
-import { buildMetadata, SEO_CONFIG } from '@/lib/seo-config';
+import { buildMetadata } from '@/lib/seo-config';
 import FadeUp from '@/components/FadeUp';
 import FaqAccordion from '@/components/FaqAccordion';
 import ContactForm from '@/components/ContactForm';
@@ -90,6 +90,41 @@ export default function ArbeitnehmerPage() {
             </h2>
             <div className="grid grid-cols-3 gap-5 max-md:grid-cols-1">
               {topics.map((t, i) => (
+                <FadeUp key={t.href} delay={Math.min(i, 3) as 0 | 1 | 2 | 3}>
+                  <a
+                    href={t.href}
+                    className="block bg-white border border-border-light rounded p-6 no-underline transition-all hover:border-secondary hover:shadow-[0_4px_16px_rgba(34,197,94,0.1)] hover:-translate-y-0.5 h-full"
+                  >
+                    <h3 className="font-serif text-[1.1rem] font-bold text-ink mb-2">{t.title}</h3>
+                    <p className="text-[0.88rem] text-ink-muted leading-relaxed m-0">{t.desc}</p>
+                  </a>
+                </FadeUp>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* Tools */}
+        <section className="py-[90px] px-8 bg-secondary-50 max-md:py-[60px] max-md:px-6">
+          <div className="max-w-content mx-auto">
+            <h2 className="font-serif text-[clamp(1.5rem,3vw,2rem)] font-bold leading-tight mb-3">
+              Interaktive Tools für Arbeitnehmer
+            </h2>
+            <p className="text-[0.95rem] text-ink-muted mb-8 max-w-[650px]">
+              Prüfen Sie Ihre Ansprüche direkt online — kostenlos und ohne Registrierung.
+            </p>
+            <div className="grid grid-cols-3 gap-5 max-md:grid-cols-1">
+              {[
+                { href: '/auskunftsrecht-checker', title: 'Auskunftsrecht prüfen', desc: 'Prüfen Sie in 3 Schritten, ob Sie Anspruch auf Gehaltsauskunft haben.' },
+                { href: '/auskunftsrecht-checker/schreiben-generator', title: 'Auskunftsschreiben erstellen', desc: 'Generieren Sie ein Muster-Auskunftsschreiben an Ihren Arbeitgeber.' },
+                { href: '/equal-pay-anspruch-schnellcheck', title: 'Equal-Pay-Schnellcheck', desc: '4 Fragen — erfahren Sie, ob Sie einen Equal-Pay-Anspruch haben.' },
+                { href: '/equal-pay-klage/entschaedigung-berechnen', title: 'Entschädigung berechnen', desc: 'Berechnen Sie Ihre mögliche Nachzahlung + Schadensersatz.' },
+                { href: '/gehaltsverhandlung-vorbereiter', title: 'Gehaltsverhandlung vorbereiten', desc: 'Rechtlich fundierter Gesprächsleitfaden für die Gehaltsverhandlung.' },
+                { href: '/vergleichsgruppen-finder', title: 'Vergleichsgruppen-Finder', desc: 'KI-gestützt: Finden Sie Ihre Vergleichspositionen nach EU-Kriterien.' },
+                { href: '/gender-pay-gap-rechner', title: 'Gender Pay Gap Rechner', desc: 'Vergleichen Sie Ihr Gehalt mit dem Branchenmedian.' },
+                { href: '/equal-pay-day-zaehler', title: 'Equal Pay Day Zähler', desc: 'Live-Countdown zum Equal Pay Day — national und nach Branche.' },
+                { href: '/situationscheck', title: 'KI-Situationscheck', desc: 'Beschreiben Sie Ihre Situation und erhalten Sie eine Ersteinschätzung.' },
+              ].map((t, i) => (
                 <FadeUp key={t.href} delay={Math.min(i, 3) as 0 | 1 | 2 | 3}>
                   <a
                     href={t.href}

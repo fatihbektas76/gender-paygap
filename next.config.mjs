@@ -11,6 +11,35 @@ const nextConfig = {
     PHONE: '+49 6222 9599 2400',
     CITY: 'Heidelberg',
   },
+  async rewrites() {
+    return [
+      // Template A: /auskunftsrecht-[branche]
+      {
+        source: '/auskunftsrecht-:branche/',
+        destination: '/auskunftsrecht/:branche/',
+      },
+      // Template B: /entgelttransparenz-[groesse]-mitarbeiter
+      {
+        source: '/entgelttransparenz-:groesse-mitarbeiter/',
+        destination: '/entgelttransparenz-mitarbeiter/:groesse/',
+      },
+      // Template C: /gender-pay-gap-[branche]
+      {
+        source: '/gender-pay-gap-:branche/',
+        destination: '/gender-pay-gap-branche/:branche/',
+      },
+      // Template D: /equal-pay-klage-[bundesland]
+      {
+        source: '/equal-pay-klage-:bundesland/',
+        destination: '/equal-pay-klage-bundesland/:bundesland/',
+      },
+      // Template E: /entgelttransparenz-arbeitgeber-[branche]
+      {
+        source: '/entgelttransparenz-arbeitgeber-:branche/',
+        destination: '/entgelttransparenz-arbeitgeber-branche/:branche/',
+      },
+    ];
+  },
 };
 
 export default nextConfig;

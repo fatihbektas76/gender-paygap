@@ -1,5 +1,5 @@
 import type { Metadata } from 'next';
-import { buildMetadata, SEO_CONFIG } from '@/lib/seo-config';
+import { buildMetadata } from '@/lib/seo-config';
 import FadeUp from '@/components/FadeUp';
 import FaqAccordion from '@/components/FaqAccordion';
 import ContactForm from '@/components/ContactForm';
