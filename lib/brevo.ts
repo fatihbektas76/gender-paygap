@@ -33,7 +33,7 @@ export async function createContact(data: {
         DISPUTE_VALUE: data.disputeValue || '',
         MESSAGE: data.message,
       },
-      listIds: [24],
+      listIds: [25],
       updateEnabled: true,
     }),
   });
@@ -41,6 +41,7 @@ export async function createContact(data: {
   if (!res.ok && res.status !== 204) {
     const text = await res.text();
     console.error('Brevo contact creation failed:', text);
+    throw new Error(`Brevo contact creation failed: ${res.status}`);
   }
 }
 
@@ -60,18 +61,18 @@ export async function sendNotificationEmail(data: {
       'api-key': getApiKey(),
     },
     body: JSON.stringify({
-      sender: { name: 'Website Contact Form', email: 'fb@fb-re.de' },
+      sender: { name: 'gender-paygap.de Kontaktformular', email: 'fb@fb-re.de' },
       to: [{ email: 'bektas@apos.legal', name: 'Fatih Bektas' }],
-      subject: `New Case Inquiry: ${data.disputeType || 'General'} — ${data.name}`,
+      subject: `Neue Anfrage gender-paygap.de: ${data.disputeType || 'Allgemein'} — ${data.name}`,
       htmlContent: `
-        <h2>New Inquiry from Website</h2>
+        <h2>Neue Anfrage über gender-paygap.de</h2>
         <p><strong>Name:</strong> ${escapeHtml(data.name)}</p>
-        <p><strong>Email:</strong> ${escapeHtml(data.email)}</p>
-        <p><strong>Company:</strong> ${escapeHtml(data.company || 'N/A')}</p>
-        <p><strong>Phone:</strong> ${escapeHtml(data.phone || 'N/A')}</p>
-        <p><strong>Dispute Type:</strong> ${escapeHtml(data.disputeType || 'N/A')}</p>
-        <p><strong>Dispute Value:</strong> ${escapeHtml(data.disputeValue || 'N/A')}</p>
-        <p><strong>Message:</strong><br>${escapeHtml(data.message).replace(/\n/g, '<br>')}</p>
+        <p><strong>E-Mail:</strong> ${escapeHtml(data.email)}</p>
+        <p><strong>Arbeitgeber:</strong> ${escapeHtml(data.company || 'Keine Angabe')}</p>
+        <p><strong>Telefon:</strong> ${escapeHtml(data.phone || 'Keine Angabe')}</p>
+        <p><strong>Thema:</strong> ${escapeHtml(data.disputeType || 'Keine Angabe')}</p>
+        <p><strong>Unternehmensgröße:</strong> ${escapeHtml(data.disputeValue || 'Keine Angabe')}</p>
+        <p><strong>Nachricht:</strong><br>${escapeHtml(data.message).replace(/\n/g, '<br>')}</p>
       `,
     }),
   });
@@ -79,6 +80,7 @@ export async function sendNotificationEmail(data: {
   if (!res.ok) {
     const text = await res.text();
     console.error('Brevo email sending failed:', text);
+    throw new Error(`Brevo email sending failed: ${res.status}`);
   }
 }
 
