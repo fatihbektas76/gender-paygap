@@ -91,7 +91,7 @@ export default function ContactForm() {
               </div>
               <div className="flex justify-center mt-5 mb-3.5">
                 <a
-                  href="https://meet.brevo.com/fatih-bektas/erstberatung-per-telefon-kuendigung-arbeitsrechtde"
+                  href="https://meet.brevo.com/fatih-bektas/erstberatung-per-telefon-gender-paygap"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-2.5 py-3.5 px-8 border-2 border-gold bg-gold-bg text-gold font-semibold text-[0.95rem] rounded-sm no-underline transition-all hover:bg-gold hover:text-white hover:-translate-y-px hover:shadow-[0_6px_20px_rgba(166,139,75,0.25)]"

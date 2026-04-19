@@ -386,7 +386,7 @@ export default function KuendigungPruefenPage() {
               </div>
             )}
             <a
-              href="https://meet.brevo.com/fatih-bektas/erstberatung-per-telefon-kuendigung-arbeitsrechtde"
+              href="https://meet.brevo.com/fatih-bektas/erstberatung-per-telefon-gender-paygap"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-block py-3.5 px-8 bg-gold text-white rounded-sm font-sans text-[0.92rem] font-semibold no-underline transition-all hover:bg-[#7A6530] hover:-translate-y-px"
