@@ -11,6 +11,16 @@ const nextConfig = {
     PHONE: '+49 6222 9599 2400',
     CITY: 'Heidelberg',
   },
+  async redirects() {
+    return [
+      {
+        source: '/:path*',
+        has: [{ type: 'host', value: 'gender-paygap.de' }],
+        destination: 'https://www.gender-paygap.de/:path*',
+        permanent: true,
+      },
+    ];
+  },
   async rewrites() {
     return [
       // Template A: /auskunftsrecht-[branche]
