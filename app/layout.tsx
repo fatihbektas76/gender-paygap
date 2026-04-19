@@ -24,6 +24,9 @@ const sourceSans = localFont({
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://www.gender-paygap.de'),
+  verification: {
+    google: 'AhwbP6h3RVXLI3d_7zOi1tAd8hBkDpkbHNIfufRvfwA',
+  },
   title: {
     default: 'Entgelttransparenz & Gender Pay Gap — Fachanwalt für Arbeitsrecht',
     template: '%s | gender-paygap.de',
