@@ -3,38 +3,35 @@ import { NextResponse } from 'next/server';
 const BASE_URL = 'https://www.gender-paygap.de';
 
 export async function GET() {
-  const content = `# gender-paygap.de — Kündigung & Abfindung
+  const content = `# gender-paygap.de — Entgelttransparenz & Gender Pay Gap
 
-> gender-paygap.de (Kanzlei Fatih Bektas) ist eine deutsche Anwaltskanzlei mit Schwerpunkt Arbeitsrecht, Kündigungsschutz und Abfindungsverhandlungen. Fatih Bektas ist seit 2011 Fachanwalt für Arbeitsrecht mit über 20 Jahren Prozesserfahrung. Kanzleistandorte: Heidelberg und Berlin.
+> gender-paygap.de (APOS Legal) ist eine Expertenseite für Entgelttransparenz und Gender Pay Gap. Fachanwalt Fatih Bektas berät Arbeitnehmer und Arbeitgeber zu Auskunftsrecht, Equal-Pay-Klage und Compliance-Pflichten. Kanzleistandort: Heidelberg.
 
 ## Kernthemen
 
-- [Abfindung nach Kündigung](${BASE_URL}/abfindung): Anspruch, Höhe, Berechnung und Verhandlung von Abfindungen bei Kündigung.
-- [Kündigung](${BASE_URL}/kuendigung): Kündigungsschutz, Kündigungsfristen, Kündigungsschutzklage, Abmahnung.
-- [Aufhebungsvertrag](${BASE_URL}/aufhebungsvertrag): Aufhebungsvertrag prüfen lassen, Abfindung verhandeln, Sperrzeit vermeiden.
-- [Abmahnung](${BASE_URL}/abmahnung): Abmahnung erhalten — Rechte, Reaktionsmöglichkeiten und Gegendarstellung.
-- [Fristlose Kündigung](${BASE_URL}/fristlose-kuendigung): Fristlose Kündigung erhalten — Gründe, Fristen, Abfindungschancen.
+- [Arbeitnehmer-Hub](${BASE_URL}/arbeitnehmer): Auskunftsrecht, Equal-Pay-Klage, Entschädigung bei Lohndiskriminierung.
+- [Arbeitgeber-Hub](${BASE_URL}/arbeitgeber): Compliance-Pflichten, Berichtspflichten, Vergütungsaudit.
+- [Gender Pay Gap](${BASE_URL}/gender-pay-gap): Was ist der Gender Pay Gap? Aktuelle Zahlen und Hintergründe.
+- [Entgelttransparenzgesetz](${BASE_URL}/entgelttransparenzgesetz): Gesetzliche Grundlagen und EU-Richtlinie 2023/970.
+- [Equal-Pay-Klage](${BASE_URL}/equal-pay-klage): Klage bei Lohndiskriminierung einreichen.
 
 ## Kostenlose Tools
 
-- [Abfindungsrechner](${BASE_URL}/abfindungsrechner): Berechnen Sie Ihre voraussichtliche Abfindung anhand von Betriebszugehörigkeit und Bruttomonatsgehalt.
-- [Kündigung prüfen](${BASE_URL}/kuendigung-pruefen): Kostenloser Kündigungscheck — Ersteinschätzung in 2 Minuten.
-- [Schwellenwert-Rechner §23 KSchG](${BASE_URL}/schwellenwert-rechner): Prüfen Sie, ob das Kündigungsschutzgesetz für Ihren Betrieb gilt.
+- [Compliance-Check Arbeitgeber](${BASE_URL}/compliance-check-arbeitgeber): 5-Fragen Ampel-Check für Unternehmen.
+- [Auskunftsrecht-Checker](${BASE_URL}/auskunftsrecht-checker): Prüfen Sie in 3 Klicks, ob Sie Anspruch auf Gehaltsauskunft haben.
+- [Sanktionsrechner](${BASE_URL}/compliance-check-arbeitgeber/sanktionsrechner): Bußgeld- und Nachzahlungsrisiko berechnen.
+- [Gender Pay Gap Rechner](${BASE_URL}/gender-pay-gap-rechner): Gehalt vs. Branchenmedian vergleichen.
+- [Situationscheck](${BASE_URL}/situationscheck): KI-gestützte Analyse Ihrer Situation.
 
-## Ratgeber & Vorlagen
+## Informationsseiten
 
-- [Ratgeber](${BASE_URL}/ratgeber): Übersicht aller Ratgeber-Themen rund um Arbeitsrecht.
-- [Muster & Vorlagen](${BASE_URL}/ratgeber/muster): Kostenlose Muster für Widerspruch, Gegendarstellung, Kündigungsschutzklage.
-- [Aktuelle Urteile](${BASE_URL}/ratgeber/urteile): Relevante Urteile im Arbeitsrecht.
-- [Glossar Arbeitsrecht](${BASE_URL}/glossar): Die wichtigsten Begriffe im Arbeitsrecht — von Abfindung bis Zeugnis.
-
-## Das Team
-
-- [Team-Übersicht](${BASE_URL}/team): Fatih Bektas (Rechtsanwalt & Fachanwalt für Arbeitsrecht), Georg Willem Büchler (Rechtsanwalt & Fachanwalt), Dr. Martin Duncker (Rechtsanwalt & Fachanwalt).
+- [Gender Pay Gap Deutschland 2026](${BASE_URL}/gender-pay-gap-deutschland-2026): Aktuelle Zahlen und Entwicklung.
+- [Bereinigter Gender Pay Gap](${BASE_URL}/bereinigter-gender-pay-gap): Unterschied zwischen bereinigtem und unbereinigtem GPG.
+- [Equal Pay Day 2026](${BASE_URL}/equal-pay-day-2026): Hintergründe und Bedeutung.
 
 ## Kontakt & Beratung
 
-- [Kostenlose Ersteinschätzung](${BASE_URL}/#kontakt): Schildern Sie Ihren Fall — Ersteinschätzung innerhalb von 24 Stunden.
+- [Kontakt](${BASE_URL}/kontakt): Kostenlose Ersteinschätzung anfragen.
 - [Telefontermin buchen](https://meet.brevo.com/fatih-bektas/erstberatung-per-telefon-gender-paygap): Kostenloses Erstgespräch per Telefon.
 - E-Mail: bektas@apos.legal
 - Telefon: +49 6222 9599 2400

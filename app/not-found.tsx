@@ -19,7 +19,7 @@ export default function NotFound() {
             Zur Startseite
           </Link>
           <Link
-            href="/#kontakt"
+            href="/kontakt"
             className="inline-block border-2 border-[#6B6626] text-[#6B6626] px-6 py-3 rounded text-sm font-semibold hover:bg-[#6B6626] hover:text-white transition-colors"
           >
             Kontakt aufnehmen
@@ -29,10 +29,10 @@ export default function NotFound() {
           <p className="text-sm text-gray-500 mb-3">Häufig gesucht:</p>
           <div className="flex flex-wrap gap-2 justify-center">
             {[
-              { label: 'Kündigung prüfen', href: '/kuendigung-pruefen' },
-              { label: 'Abfindungsrechner', href: '/abfindungsrechner' },
-              { label: 'Aufhebungsvertrag', href: '/aufhebungsvertrag' },
-              { label: 'Ratgeber', href: '/ratgeber' },
+              { label: 'Arbeitnehmer', href: '/arbeitnehmer' },
+              { label: 'Arbeitgeber', href: '/arbeitgeber' },
+              { label: 'Auskunftsrecht', href: '/auskunftsrecht-checker' },
+              { label: 'Gender Pay Gap', href: '/gender-pay-gap' },
             ].map((link) => (
               <Link
                 key={link.href}
