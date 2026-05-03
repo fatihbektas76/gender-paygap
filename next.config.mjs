@@ -48,6 +48,11 @@ const nextConfig = {
         source: '/entgelttransparenz-:groesse-mitarbeiter/',
         destination: '/entgelttransparenz-mitarbeiter/:groesse/',
       },
+      // Template F: /gender-pay-gap-[bundesland]
+      {
+        source: '/gender-pay-gap-:bundesland(baden-wuerttemberg|bayern|nordrhein-westfalen|hessen|berlin|hamburg|niedersachsen|sachsen)/',
+        destination: '/gender-pay-gap-bundesland/:bundesland/',
+      },
       // Template C: /gender-pay-gap-[branche]
       {
         source: '/gender-pay-gap-:branche/',

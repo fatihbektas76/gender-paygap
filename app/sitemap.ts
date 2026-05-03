@@ -123,6 +123,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.8,
   }));
 
+  // Template F: /gender-pay-gap-[bundesland]
+  const genderPayGapBundeslandPages: MetadataRoute.Sitemap = bundeslaender.map((bl) => ({
+    url: `${BASE_URL}/gender-pay-gap-${bl.slug}/`,
+    lastModified: monthly,
+    changeFrequency: 'weekly',
+    priority: 0.8,
+  }));
+
   // Template E: /entgelttransparenz-arbeitgeber-[branche] (all except finanzwesen)
   const entgelttransparenzArbeitgeberBranchePages: MetadataRoute.Sitemap = branchen
     .filter((b) => b.slug !== 'finanzwesen')
@@ -139,6 +147,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...entgelttransparenzGroessePages,
     ...genderPayGapBranchePages,
     ...equalPayKlageBundeslandPages,
+    ...genderPayGapBundeslandPages,
     ...entgelttransparenzArbeitgeberBranchePages,
   ];
 }
