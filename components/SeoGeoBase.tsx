@@ -194,17 +194,19 @@ export default function SeoGeoBase({
         />
       ))}
 
-      {/* Block 5: GEO-Microdata (versteckt) */}
-      <div itemScope itemType={`https://schema.org/${pageType}`} style={{ display: 'none' }}>
-        <meta itemProp="name" content={pageTitle} />
-        <meta itemProp="description" content={pageDescription} />
-        <meta itemProp="author" content={author.name} />
-        <meta itemProp="inLanguage" content="de" />
-        <meta itemProp="url" content={pageUrl} />
-        {pageType === 'WebApplication' && (
-          <meta itemProp="applicationCategory" content={appCategory} />
-        )}
-      </div>
+      {/* Block 5: GEO-Microdata (versteckt) — nur wenn pageUrl gesetzt */}
+      {pageUrl && (
+        <div itemScope itemType={`https://schema.org/${pageType}`} style={{ display: 'none' }}>
+          <meta itemProp="name" content={pageTitle} />
+          <meta itemProp="description" content={pageDescription} />
+          <meta itemProp="author" content={author.name} />
+          <meta itemProp="inLanguage" content="de" />
+          <meta itemProp="url" content={pageUrl} />
+          {pageType === 'WebApplication' && (
+            <meta itemProp="applicationCategory" content={appCategory} />
+          )}
+        </div>
+      )}
 
     </>
   );
