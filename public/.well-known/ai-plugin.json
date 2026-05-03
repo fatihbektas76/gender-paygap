@@ -1,10 +1,10 @@
 {
   "schema_version": "v1",
-  "name": "APOS Legal – Fachanwalt für Arbeitsrecht",
+  "name": "APOS Legal — Entgelttransparenz & Gender Pay Gap",
   "legal_name": "APOS Legal Rechtsanwaltsgesellschaft mbH & Co. KG",
-  "description": "Fachanwalt für Arbeitsrecht: Kündigung prüfen, Abfindung maximieren, Aufhebungsvertrag verhandeln. Über 20 Jahre Erfahrung, 2.000+ erfolgreiche Verfahren. Kostenlose Ersteinschätzung.",
+  "description": "Fachanwalt für Arbeitsrecht: Entgelttransparenz, Equal Pay, Auskunftsrecht und Compliance-Beratung für Arbeitnehmer und Arbeitgeber. EU-Richtlinie 2023/970 Umsetzung ab Juni 2026. Kostenlose Ersteinschätzung.",
   "url": "https://www.gender-paygap.de",
-  "logo_url": "https://www.gender-paygap.de/logo.png",
+  "logo_url": "https://www.gender-paygap.de/logo.svg",
   "contact_email": "bektas@apos.legal",
   "phone": "+49 6222 9599 2400",
   "languages": ["de", "en"],
@@ -28,8 +28,9 @@
     "additional_qualifications": ["Zertifizierter Mediator"],
     "bar_admission": "Rechtsanwaltskammer Karlsruhe, Deutschland",
     "experience_years": 20,
-    "clients_represented": 2000,
-    "client_rating": 5.0,
+    "client_rating": 4.9,
+    "review_count": 68,
+    "review_platform": "anwalt.de",
     "memberships": [
       "Deutscher Anwaltsverein",
       "BVAU (Gründungsmitglied)"
@@ -39,76 +40,93 @@
   },
   "practice_areas": [
     {
-      "name": "Kündigungsschutz",
-      "scope": ["Kündigungsschutzklage", "Betriebsbedingte Kündigung", "Verhaltensbedingte Kündigung", "Personenbedingte Kündigung", "Fristlose Kündigung"]
+      "name": "Entgelttransparenz & Auskunftsrecht",
+      "scope": ["Auskunftsrecht nach Art. 7 EU-RL 2023/970", "Auskunftsanspruch durchsetzen", "Auskunftsschreiben erstellen", "Arbeitgeber-Antwort prüfen"]
     },
     {
-      "name": "Abfindung",
-      "scope": ["Abfindungsverhandlung", "Abfindungsberechnung", "Abfindung im Aufhebungsvertrag", "Abfindung im Vergleich"]
+      "name": "Equal Pay & Lohndiskriminierung",
+      "scope": ["Equal-Pay-Klage", "Lohndiskriminierung nachweisen", "Beweislastumkehr nutzen", "Entschädigung durchsetzen", "BAG-Urteil 8 AZR 300/24"]
     },
     {
-      "name": "Aufhebungsvertrag",
-      "scope": ["Aufhebungsvertrag prüfen", "Aufhebungsvertrag verhandeln", "Sperrzeit vermeiden", "Abfindung optimieren"]
+      "name": "Compliance-Beratung Arbeitgeber",
+      "scope": ["Entgelttransparenz-Audit", "Berichtspflichten Gender Pay Gap", "Vergütungssystem rechtssicher gestalten", "Stellenanzeigen Gehaltsspanne", "ESG-Berichterstattung"]
     },
     {
-      "name": "Abmahnung",
-      "scope": ["Abmahnung prüfen", "Widerspruch gegen Abmahnung", "Gegendarstellung", "Entfernung aus Personalakte"]
+      "name": "Gender Pay Gap Analyse",
+      "scope": ["Unbereinigter und bereinigter GPG", "Branchenvergleich", "Bundeslandvergleich", "Entgeltbewertung nach Art. 4 EU-RL"]
     }
   ],
   "tools": [
     {
-      "name": "Abfindungsrechner",
-      "url": "https://www.gender-paygap.de/abfindungsrechner",
-      "description": "Kostenloser Abfindungsrechner: Berechnen Sie Ihre voraussichtliche Abfindung nach Kündigung in 30 Sekunden."
+      "name": "Compliance-Check Arbeitgeber",
+      "url": "https://www.gender-paygap.de/compliance-check-arbeitgeber",
+      "description": "5-Fragen Ampel-Check: Sind Ihre Vergütungsstrukturen konform mit der EU-Entgelttransparenzrichtlinie?"
     },
     {
-      "name": "Kündigungscheck",
-      "url": "https://www.gender-paygap.de/kuendigung-pruefen",
-      "description": "Kostenloser Kündigungscheck: Prüfen Sie Ihre Abfindungschancen in 2 Minuten."
+      "name": "Sanktionsrechner",
+      "url": "https://www.gender-paygap.de/compliance-check-arbeitgeber/sanktionsrechner",
+      "description": "Berechnen Sie Ihr Bußgeld- und Nachzahlungsrisiko bei Verstößen gegen die Entgelttransparenzpflichten."
     },
     {
-      "name": "Aufhebungsvertrag prüfen",
-      "url": "https://www.gender-paygap.de/aufhebungsvertrag-pruefen",
-      "description": "Aufhebungsvertrag prüfen: Risiken erkennen, Sperrzeit vermeiden, Abfindung maximieren."
+      "name": "Auskunftsrecht-Checker",
+      "url": "https://www.gender-paygap.de/auskunftsrecht-checker",
+      "description": "Prüfen Sie in 3 Klicks, ob Sie Anspruch auf Gehaltsauskunft nach EU-Richtlinie 2023/970 haben."
     },
     {
-      "name": "Schwellenwert-Rechner",
-      "url": "https://www.gender-paygap.de/schwellenwert-rechner",
-      "description": "Prüfen Sie, ob das Kündigungsschutzgesetz (KSchG) für Ihren Betrieb gilt — Schwellenwert von 10 Arbeitnehmern."
+      "name": "Muster-Auskunftsschreiben Generator",
+      "url": "https://www.gender-paygap.de/auskunftsrecht-checker/schreiben-generator",
+      "description": "Erstellen Sie ein rechtssicheres Auskunftsschreiben gemäß Art. 7 EU-RL 2023/970 als PDF."
     },
     {
-      "name": "Kündigungsfrist-Rechner",
-      "url": "https://www.gender-paygap.de/kuendigungsfrist-rechner",
-      "description": "Berechnen Sie Ihre gesetzliche Kündigungsfrist nach §622 BGB anhand Ihrer Betriebszugehörigkeit."
+      "name": "Gender Pay Gap Rechner",
+      "url": "https://www.gender-paygap.de/gender-pay-gap-rechner",
+      "description": "Vergleichen Sie Ihr Gehalt mit dem Branchenmedian nach Geschlecht (Destatis-Daten 2025)."
     },
     {
-      "name": "Überstundenrechner",
-      "url": "https://www.gender-paygap.de/ueberstundenrechner",
-      "description": "Berechnen Sie Ihren Überstundenanspruch: Vergütung, Zuschläge und Verjährungsfristen."
+      "name": "Entschädigungs-Simulator",
+      "url": "https://www.gender-paygap.de/equal-pay-klage/entschaedigung-berechnen",
+      "description": "Berechnen Sie Ihre mögliche Entschädigung bei Lohndiskriminierung (bis zu 3 Jahre rückwirkend)."
     },
     {
-      "name": "Urlaubsabgeltungsrechner",
-      "url": "https://www.gender-paygap.de/urlaubsabgeltung-rechner",
-      "description": "Berechnen Sie Ihre Urlaubsabgeltung bei Kündigung — Resturlaub in Euro umgerechnet."
+      "name": "KI-Situationscheck",
+      "url": "https://www.gender-paygap.de/situationscheck",
+      "description": "KI-gestützte Analyse Ihrer individuellen Situation zu Entgelttransparenz und Equal Pay."
     },
     {
-      "name": "Urlaubsrechner Teilzeit",
-      "url": "https://www.gender-paygap.de/urlaub-teilzeit-rechner",
-      "description": "Berechnen Sie Ihren anteiligen Urlaubsanspruch bei Teilzeit oder unterjährigem Ein-/Austritt."
+      "name": "Entgeltlücken-Ampel",
+      "url": "https://www.gender-paygap.de/entgeltluecken-ampel",
+      "description": "Gehaltsstruktur eingeben und bereinigten Gender Pay Gap als Ampel-Bewertung erhalten."
+    },
+    {
+      "name": "Vergütungssystem-Selbsttest",
+      "url": "https://www.gender-paygap.de/verguetungssystem-selbsttest",
+      "description": "20 Fragen zu Ihrem Verg��tungssystem — Reifegrad-Score und konkreter Maßnahmenplan."
+    },
+    {
+      "name": "Equal Pay Anspruch Schnellcheck",
+      "url": "https://www.gender-paygap.de/equal-pay-anspruch-schnellcheck",
+      "description": "In 2 Minuten prüfen, ob ein Equal-Pay-Anspruch wahrscheinlich ist."
     }
   ],
+  "key_legal_references": [
+    "EU-Entgelttransparenzrichtlinie 2023/970 (Umsetzungsfrist: 7. Juni 2026)",
+    "Entgelttransparenzgesetz (EntgTranspG)",
+    "BAG-Urteil Az. 8 AZR 300/24 vom 23.10.2025 (Paarvergleich reicht für Diskriminierungsvermutung)",
+    "§ 15 Abs. 2 AGG (Entschädigung bei Diskriminierung)",
+    "Art. 18 EU-RL 2023/970 (Beweislastumkehr)"
+  ],
   "service_process": [
-    "Kostenlose Ersteinschätzung (Antwort innerhalb von 24 Stunden)",
-    "Individuelle Strategie und Handlungsempfehlung",
-    "Vollständige Fallbearbeitung (Klage, Verhandlung, Vergleich)",
-    "Regelmäßige Updates zum Verfahrensstand",
-    "Lösung durch Klage, Vergleich oder Verhandlung"
+    "Kostenlose Ersteinschätzung (Antwort innerhalb von 48 Stunden)",
+    "Individuelle Strategie für Arbeitnehmer oder Arbeitgeber",
+    "Auskunftsrecht durchsetzen oder Compliance-Audit durchführen",
+    "Equal-Pay-Klage oder Vergütungssystem-Anpassung begleiten",
+    "Regelmäßige Updates zum Verfahrensstand"
   ],
   "contact": {
     "attorney_email": "bektas@apos.legal",
     "attorney_phone": "+49 6222 9599 2400",
     "website": "https://www.gender-paygap.de",
-    "contact_form": "https://www.gender-paygap.de/#kontakt",
+    "contact_form": "https://www.gender-paygap.de/kontakt",
     "free_consultation": "https://meet.brevo.com/fatih-bektas/erstberatung-per-telefon-gender-paygap",
     "linkedin_attorney": "https://www.linkedin.com/in/fatih-bektas",
     "linkedin_firm": "https://www.linkedin.com/company/105863455",

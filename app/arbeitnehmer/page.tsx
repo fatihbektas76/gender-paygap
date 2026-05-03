@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
-import { buildMetadata } from '@/lib/seo-config';
+import { buildMetadata, SEO_CONFIG } from '@/lib/seo-config';
+import SeoGeoBase from '@/components/SeoGeoBase';
 import FadeUp from '@/components/FadeUp';
 import FaqAccordion from '@/components/FaqAccordion';
 import ContactForm from '@/components/ContactForm';
@@ -51,6 +52,17 @@ const faqs = [
 export default function ArbeitnehmerPage() {
   return (
     <>
+      <SeoGeoBase
+        pageUrl={`${SEO_CONFIG.baseUrl}/arbeitnehmer/`}
+        pageTitle="Ihre Rechte bei ungleicher Bezahlung"
+        pageDescription="Auskunftsrecht, Equal-Pay-Klage, Entschädigung — Fachanwalt Fatih Bektas berät Sie."
+        pageType="CollectionPage"
+        speakableSelectors={['.max-w-content > p']}
+        breadcrumbs={[
+          { name: 'Start', url: `${SEO_CONFIG.baseUrl}/` },
+          { name: 'Arbeitnehmer', url: `${SEO_CONFIG.baseUrl}/arbeitnehmer/` },
+        ]}
+      />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{

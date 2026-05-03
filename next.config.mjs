@@ -2,6 +2,7 @@
 const nextConfig = {
   pageExtensions: ['ts', 'tsx', 'js', 'jsx', 'md', 'mdx'],
   trailingSlash: true,
+  poweredByHeader: false,
   env: {
     SITE_URL: 'https://www.gender-paygap.de',
     SITE_NAME: 'gender-paygap.de',
@@ -10,6 +11,20 @@ const nextConfig = {
     ANWALT_TITLE: 'Fachanwalt für Arbeitsrecht',
     PHONE: '+49 6222 9599 2400',
     CITY: 'Heidelberg',
+  },
+  async headers() {
+    return [
+      {
+        source: '/(.*)',
+        headers: [
+          { key: 'X-Content-Type-Options', value: 'nosniff' },
+          { key: 'X-Frame-Options', value: 'DENY' },
+          { key: 'Referrer-Policy', value: 'strict-origin-when-cross-origin' },
+          { key: 'Permissions-Policy', value: 'camera=(), microphone=(), geolocation=()' },
+          { key: 'Strict-Transport-Security', value: 'max-age=31536000; includeSubDomains; preload' },
+        ],
+      },
+    ];
   },
   async redirects() {
     return [

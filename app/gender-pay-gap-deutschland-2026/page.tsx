@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
-import { buildMetadata } from '@/lib/seo-config';
+import { buildMetadata, SEO_CONFIG } from '@/lib/seo-config';
+import SeoGeoBase from '@/components/SeoGeoBase';
 import FadeUp from '@/components/FadeUp';
 import FaqAccordion from '@/components/FaqAccordion';
 import ContactForm from '@/components/ContactForm';
@@ -55,6 +56,18 @@ const bundeslaenderGPG = [
 export default function GenderPayGapDeutschland2026Page() {
   return (
     <>
+      <SeoGeoBase
+        pageUrl={`${SEO_CONFIG.baseUrl}/gender-pay-gap-deutschland-2026/`}
+        pageTitle="Gender Pay Gap Deutschland 2026 — aktuelle Zahlen, Gesetz & Rechtslage"
+        pageDescription="Gender Pay Gap in Deutschland 2026: 16% unbereinigt (Destatis). Neue EU-Richtlinie ab 7. Juni 2026."
+        pageType="Article"
+        speakableSelectors={['#direktantwort', 'h1', 'h2']}
+        breadcrumbs={[
+          { name: 'Start', url: `${SEO_CONFIG.baseUrl}/` },
+          { name: 'Gender Pay Gap', url: `${SEO_CONFIG.baseUrl}/gender-pay-gap/` },
+          { name: 'Deutschland 2026', url: `${SEO_CONFIG.baseUrl}/gender-pay-gap-deutschland-2026/` },
+        ]}
+      />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{

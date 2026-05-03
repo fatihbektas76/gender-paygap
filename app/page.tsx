@@ -66,42 +66,19 @@ const homeFaqs = [
 export default function Home() {
   return (
     <>
-      {/* Schema.org - LegalService + AggregateRating */}
+      {/* Schema.org - AggregateRating (references Organization from layout) */}
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
           __html: JSON.stringify({
             '@context': 'https://schema.org',
-            '@graph': [
-              {
-                '@type': 'LegalService',
-                '@id': SEO_CONFIG.organization.id,
-                name: 'APOS Legal — Entgelttransparenz & Gender Pay Gap',
-                url: 'https://www.gender-paygap.de',
-                description: 'Fachanwalt für Arbeitsrecht berät Arbeitnehmer und Arbeitgeber zu Entgelttransparenz, Equal Pay und Gender Pay Gap.',
-                areaServed: 'DE',
-                serviceType: ['Entgelttransparenz', 'Equal Pay Beratung', 'Lohndiskriminierung', 'Compliance Audit'],
-                provider: {
-                  '@type': 'Attorney',
-                  name: 'Fatih Bektas',
-                  jobTitle: 'Fachanwalt für Arbeitsrecht',
-                  worksFor: {
-                    '@type': 'LegalService',
-                    name: 'APOS Legal Rechtsanwaltsgesellschaft mbH & Co. KG',
-                    address: {
-                      '@type': 'PostalAddress',
-                      addressLocality: 'Heidelberg',
-                      addressCountry: 'DE',
-                    },
-                  },
-                },
-                aggregateRating: {
-                  '@type': 'AggregateRating',
-                  ...SEO_CONFIG.rating,
-                },
-                review: SEO_CONFIG.reviews,
-              },
-            ],
+            '@type': 'LegalService',
+            '@id': SEO_CONFIG.organization.id,
+            aggregateRating: {
+              '@type': 'AggregateRating',
+              ...SEO_CONFIG.rating,
+            },
+            review: SEO_CONFIG.reviews,
           }),
         }}
       />
@@ -175,7 +152,7 @@ export default function Home() {
                   <ul className="list-none flex flex-col gap-2 mb-6">
                     <li><a href="/entgeltgleichheit-audit" className="text-blue font-medium no-underline hover:underline text-[0.9rem]">Compliance-Audit &rarr;</a></li>
                     <li><a href="/berichtspflichten-gender-pay-gap" className="text-blue font-medium no-underline hover:underline text-[0.9rem]">Berichtspflichten &rarr;</a></li>
-                    <li><a href="/vergütungssystem-rechtssicher" className="text-blue font-medium no-underline hover:underline text-[0.9rem]">Vergütungssystem prüfen &rarr;</a></li>
+                    <li><a href="/verguetungssystem-rechtssicher" className="text-blue font-medium no-underline hover:underline text-[0.9rem]">Vergütungssystem prüfen &rarr;</a></li>
                   </ul>
                   <a
                     href="/arbeitgeber"

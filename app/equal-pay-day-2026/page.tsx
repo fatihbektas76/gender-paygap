@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
-import { buildMetadata } from '@/lib/seo-config';
+import { buildMetadata, SEO_CONFIG } from '@/lib/seo-config';
+import SeoGeoBase from '@/components/SeoGeoBase';
 import FadeUp from '@/components/FadeUp';
 import FaqAccordion from '@/components/FaqAccordion';
 import ContactForm from '@/components/ContactForm';
@@ -55,6 +56,18 @@ const branchenEPD = [
 export default function EqualPayDay2026Page() {
   return (
     <>
+      <SeoGeoBase
+        pageUrl={`${SEO_CONFIG.baseUrl}/equal-pay-day-2026/`}
+        pageTitle="Equal Pay Day 2026 — Datum, Bedeutung & rechtliche Möglichkeiten"
+        pageDescription="Equal Pay Day 2026: Am 7. März markiert der Equal Pay Day die 66 Tage, die Frauen rechnerisch umsonst arbeiten."
+        pageType="Article"
+        speakableSelectors={['#direktantwort', 'h1', 'h2']}
+        breadcrumbs={[
+          { name: 'Start', url: `${SEO_CONFIG.baseUrl}/` },
+          { name: 'Gender Pay Gap', url: `${SEO_CONFIG.baseUrl}/gender-pay-gap/` },
+          { name: 'Equal Pay Day 2026', url: `${SEO_CONFIG.baseUrl}/equal-pay-day-2026/` },
+        ]}
+      />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{

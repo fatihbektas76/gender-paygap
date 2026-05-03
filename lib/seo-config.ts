@@ -12,6 +12,17 @@ export const SEO_CONFIG = {
     organization: ANWALT.organization,
     telephone: KANZLEI.phoneE164,
     email: KANZLEI.email,
+    url: `${SITE.url}/kontakt`,
+    description: 'Fachanwalt für Arbeitsrecht mit Schwerpunkt Entgelttransparenz, Equal Pay und Gender Pay Gap. Ex-CEO/CFO/COO (Unzer, iCOM Group).',
+    image: `${SITE.url}/images/fatih-bektas.jpg`,
+    knowsAbout: [
+      'Entgelttransparenz',
+      'Gender Pay Gap',
+      'Equal Pay',
+      'EU-Richtlinie 2023/970',
+      'Arbeitsrecht',
+      'Lohndiskriminierung',
+    ],
     memberOf: [
       { '@type': 'Organization' as const, name: 'Deutscher Anwaltverein' },
       { '@type': 'Organization' as const, name: 'BVAU' },
@@ -29,7 +40,7 @@ export const SEO_CONFIG = {
     sameAs: [
       SOCIAL.anwaltde,
       SOCIAL.linkedin,
-      SOCIAL.teamPage,
+      SOCIAL.aposLegal,
     ],
   },
 
@@ -47,6 +58,13 @@ export const SEO_CONFIG = {
       postalCode: KANZLEI.address.plz,
       addressCountry: KANZLEI.address.country,
     },
+    geo: {
+      '@type': 'GeoCoordinates' as const,
+      latitude: 49.3988,
+      longitude: 8.6724,
+    },
+    logo: `${SITE.url}/logo.svg`,
+    image: `${SITE.url}/opengraph-image`,
     areaServed: { '@type': 'Country' as const, name: 'Germany' },
     serviceType: [
       'Entgelttransparenz',
@@ -57,6 +75,20 @@ export const SEO_CONFIG = {
       'Gender Pay Gap Analyse',
     ],
     knowsLanguage: ['de', 'en'],
+    priceRange: '€€',
+    openingHoursSpecification: [
+      {
+        '@type': 'OpeningHoursSpecification' as const,
+        dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'],
+        opens: '09:00',
+        closes: '18:00',
+      },
+    ],
+    sameAs: [
+      SOCIAL.anwaltde,
+      SOCIAL.linkedin,
+      SOCIAL.aposLegal,
+    ],
   },
 
   rating: {

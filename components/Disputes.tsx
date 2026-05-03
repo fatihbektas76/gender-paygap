@@ -59,7 +59,7 @@ const disputes = [
     title: 'Vergütungssystem prüfen',
     badge: 'Prävention',
     desc: 'Analyse und Neugestaltung geschlechtsneutraler Vergütungssysteme. Objektive Kriterien nach Art. 4 EU-RL für gleiche und gleichwertige Arbeit.',
-    href: '/vergütungssystem-rechtssicher',
+    href: '/verguetungssystem-rechtssicher',
     icon: (
       <svg width="20" height="20" fill="none" stroke="currentColor" strokeWidth="2">
         <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />

@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
-import { buildMetadata } from '@/lib/seo-config';
+import { buildMetadata, SEO_CONFIG } from '@/lib/seo-config';
+import SeoGeoBase from '@/components/SeoGeoBase';
 import FadeUp from '@/components/FadeUp';
 import FaqAccordion from '@/components/FaqAccordion';
 import ContactForm from '@/components/ContactForm';
@@ -19,7 +20,7 @@ const topics = [
   { href: '/entgeltgleichheit-audit', title: 'Vergütungssystem audit-ready machen', desc: 'Compliance-Audit: Wir prüfen Ihre Entgeltstrukturen auf Risiken.' },
   { href: '/stellenanzeige-gehaltsspanne-pflicht', title: 'Stellenanzeigen mit Gehaltsspanne', desc: 'Art. 5 EU-RL: Gehaltsspanne in jeder Stellenanzeige ab 2026 Pflicht.' },
   { href: '/auskunftsrecht-arbeitnehmer-beantworten', title: 'Auskunftsanfragen beantworten', desc: 'So reagieren Sie korrekt auf individuelle Auskunftsanfragen Ihrer Beschäftigten.' },
-  { href: '/vergütungssystem-rechtssicher', title: 'Vergütungssystem rechtssicher', desc: 'Objektive, geschlechtsneutrale Kriterien für die Gehaltsfestlegung etablieren.' },
+  { href: '/verguetungssystem-rechtssicher', title: 'Vergütungssystem rechtssicher', desc: 'Objektive, geschlechtsneutrale Kriterien für die Gehaltsfestlegung etablieren.' },
   { href: '/esg-gender-pay-gap-berichterstattung', title: 'ESG & Gender Pay Gap', desc: 'Integration in die CSRD-Nachhaltigkeitsberichterstattung.' },
   { href: '/tarifbindung-entgelttransparenz', title: 'Tarifbindung & Transparenz', desc: 'Was Tarifbindung für die Entgelttransparenzpflichten bedeutet.' },
   { href: '/entgelttransparenz-sanktionen-bussgeld', title: 'Sanktionen & Bußgelder', desc: 'Welche Strafen drohen bei Verstößen — und wie Sie sie vermeiden.' },
@@ -58,6 +59,17 @@ const faqs = [
 export default function ArbeitgeberPage() {
   return (
     <>
+      <SeoGeoBase
+        pageUrl={`${SEO_CONFIG.baseUrl}/arbeitgeber/`}
+        pageTitle="Entgelttransparenz-Compliance für Ihr Unternehmen"
+        pageDescription="Berichtspflichten, Vergütungsaudit, Equal-Pay-Richtlinie 2026 — APOS Legal Heidelberg."
+        pageType="CollectionPage"
+        speakableSelectors={['.max-w-content > p']}
+        breadcrumbs={[
+          { name: 'Start', url: `${SEO_CONFIG.baseUrl}/` },
+          { name: 'Arbeitgeber', url: `${SEO_CONFIG.baseUrl}/arbeitgeber/` },
+        ]}
+      />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
@@ -154,7 +166,7 @@ export default function ArbeitgeberPage() {
                 { href: '/compliance-check-arbeitgeber', title: 'Compliance-Check', desc: 'In 5 Fragen: Wie gut ist Ihr Unternehmen auf die EU-Richtlinie vorbereitet?' },
                 { href: '/compliance-check-arbeitgeber/sanktionsrechner', title: 'Sanktionsrechner', desc: 'Berechnen Sie Ihr finanzielles Risiko bei Verstößen gegen die Entgelttransparenz.' },
                 { href: '/entgeltluecken-ampel', title: 'Entgeltlücken-Ampel', desc: 'Berechnen Sie den Gender Pay Gap Ihres Unternehmens mit Ampel-Bewertung.' },
-                { href: '/vergütungssystem-selbsttest', title: 'Vergütungssystem-Selbsttest', desc: '20 Fragen zu Transparenz, Gleichwertigkeit, Reporting und Prozessen.' },
+                { href: '/verguetungssystem-selbsttest', title: 'Vergütungssystem-Selbsttest', desc: '20 Fragen zu Transparenz, Gleichwertigkeit, Reporting und Prozessen.' },
                 { href: '/stellenanzeigen-checker', title: 'Stellenanzeigen-Checker', desc: 'KI-Prüfung: Erfüllt Ihre Stellenanzeige die Anforderungen der EU-Richtlinie?' },
                 { href: '/berichtspflicht-kalender', title: 'Berichtspflicht-Kalender', desc: 'Personalisierter Kalender mit allen Fristen für Ihre Unternehmensgröße.' },
                 { href: '/situationscheck', title: 'KI-Situationscheck', desc: 'Beschreiben Sie Ihre Situation und erhalten Sie eine Ersteinschätzung.' },

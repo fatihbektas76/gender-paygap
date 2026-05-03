@@ -56,5 +56,5 @@ export const ANALYTICS = {
 export const SOCIAL = {
   anwaltde: 'https://www.anwalt.de/fatihbektas',
   linkedin: 'https://www.linkedin.com/in/fatih-bektas',
-  teamPage: 'https://www.gender-paygap.de/team/',
+  aposLegal: 'https://apos.legal',
 } as const;

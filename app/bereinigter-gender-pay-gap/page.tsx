@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
-import { buildMetadata } from '@/lib/seo-config';
+import { buildMetadata, SEO_CONFIG } from '@/lib/seo-config';
+import SeoGeoBase from '@/components/SeoGeoBase';
 import FadeUp from '@/components/FadeUp';
 import FaqAccordion from '@/components/FaqAccordion';
 import ContactForm from '@/components/ContactForm';
@@ -44,6 +45,18 @@ const faqs = [
 export default function BereinigterGenderPayGapPage() {
   return (
     <>
+      <SeoGeoBase
+        pageUrl={`${SEO_CONFIG.baseUrl}/bereinigter-gender-pay-gap/`}
+        pageTitle="Bereinigter Gender Pay Gap — Definition, Berechnung & rechtliche Bedeutung"
+        pageDescription="Der bereinigte Gender Pay Gap in Deutschland beträgt ca. 6% (Destatis 2025). Fachanwalt erklärt."
+        pageType="Article"
+        speakableSelectors={['#direktantwort', 'h1', 'h2']}
+        breadcrumbs={[
+          { name: 'Start', url: `${SEO_CONFIG.baseUrl}/` },
+          { name: 'Gender Pay Gap', url: `${SEO_CONFIG.baseUrl}/gender-pay-gap/` },
+          { name: 'Bereinigter GPG', url: `${SEO_CONFIG.baseUrl}/bereinigter-gender-pay-gap/` },
+        ]}
+      />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{

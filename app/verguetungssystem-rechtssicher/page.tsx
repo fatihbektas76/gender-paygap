@@ -10,7 +10,7 @@ export const metadata: Metadata = buildMetadata({
   title: `Vergütungssystem rechtssicher gestalten — Compliance-Leitfaden (${new Date().getFullYear()})`,
   description:
     'Objektive Entgeltkriterien, geschlechtsneutrale Vergleichsgruppen und Dokumentation — so machen Sie Ihr Vergütungssystem EU-RL-konform. Fachanwalt APOS Legal Heidelberg.',
-  path: '/vergütungssystem-rechtssicher',
+  path: '/verguetungssystem-rechtssicher',
 });
 
 const faqs = [

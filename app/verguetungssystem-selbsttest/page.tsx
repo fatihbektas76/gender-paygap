@@ -137,7 +137,7 @@ export default function VergütungssystemSelbsttestPage() {
   return (
     <main>
       <SeoGeoBase
-        pageUrl={`${SEO_CONFIG.baseUrl}/vergütungssystem-selbsttest/`}
+        pageUrl={`${SEO_CONFIG.baseUrl}/verguetungssystem-selbsttest/`}
         pageTitle="Vergütungssystem-Selbsttest"
         pageDescription="Testen Sie in 20 Fragen, ob Ihr Vergütungssystem der EU-Entgelttransparenzrichtlinie standhält. Kostenloser Selbsttest von APOS Legal."
         pageType="WebApplication"
@@ -145,7 +145,7 @@ export default function VergütungssystemSelbsttestPage() {
         breadcrumbs={[
           { name: 'Start', url: `${SEO_CONFIG.baseUrl}/` },
           { name: 'Arbeitgeber', url: `${SEO_CONFIG.baseUrl}/arbeitgeber/` },
-          { name: 'Vergütungssystem-Selbsttest', url: `${SEO_CONFIG.baseUrl}/vergütungssystem-selbsttest/` },
+          { name: 'Vergütungssystem-Selbsttest', url: `${SEO_CONFIG.baseUrl}/verguetungssystem-selbsttest/` },
         ]}
         speakableSelectors={['.ergebnis-box']}
         includeOrganization={false}

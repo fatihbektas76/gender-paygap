@@ -68,7 +68,7 @@ export default function Footer({ onOpenCookieSettings }: { onOpenCookieSettings:
               <li><Link href="/berichtspflichten-gender-pay-gap" className={linkClass}>Berichtspflichten</Link></li>
               <li><Link href="/entgeltgleichheit-audit" className={linkClass}>Audit</Link></li>
               <li><Link href="/stellenanzeige-gehaltsspanne-pflicht" className={linkClass}>Gehaltsspanne</Link></li>
-              <li><Link href="/vergütungssystem-rechtssicher" className={linkClass}>Vergütungssystem</Link></li>
+              <li><Link href="/verguetungssystem-rechtssicher" className={linkClass}>Vergütungssystem</Link></li>
             </ul>
           </div>
 
@@ -89,7 +89,7 @@ export default function Footer({ onOpenCookieSettings }: { onOpenCookieSettings:
             <div className={headingClass}>Kontakt</div>
             <ul className="list-none flex flex-col gap-2">
               <li><Link href="/kontakt" className={linkClass}>Kontaktformular</Link></li>
-              <li><Link href="/team" className={linkClass}>Unser Team</Link></li>
+              <li><a href="https://apos.legal" target="_blank" rel="noopener noreferrer" className={linkClass}>APOS Legal</a></li>
               <li>
                 <a href="tel:+49622295992400" className={linkClass}>+49 6222 9599 2400</a>
               </li>

@@ -3,7 +3,6 @@ import localFont from 'next/font/local';
 import './globals.css';
 import LayoutClient from '@/components/LayoutClient';
 import SeoGeoBase from '@/components/SeoGeoBase';
-import { SEO_CONFIG } from '@/lib/seo-config';
 
 const playfair = localFont({
   src: [
@@ -112,7 +111,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                 '@type': 'SearchAction',
                 target: {
                   '@type': 'EntryPoint',
-                  urlTemplate: 'https://www.google.com/search?q=site%3Agender-paygap.de+{search_term_string}',
+                  urlTemplate: 'https://www.gender-paygap.de/?s={search_term_string}',
                 },
                 'query-input': 'required name=search_term_string',
               },
@@ -122,10 +121,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       </head>
       <body className="font-sans text-ink bg-white leading-relaxed">
         <SeoGeoBase
-          pageUrl={SEO_CONFIG.baseUrl + '/'}
-          pageTitle={SEO_CONFIG.siteName}
-          pageDescription="Expertenseite für Entgelttransparenz und Gender Pay Gap — Fachanwalt für Arbeitsrecht"
-          pageType="WebPage"
           includeOrganization={true}
           includeRating={false}
         />
