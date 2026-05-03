@@ -66,6 +66,17 @@ export async function GET() {
 - [Bereinigter Gender Pay Gap](${BASE_URL}/bereinigter-gender-pay-gap/)
 - [Equal Pay Day 2026](${BASE_URL}/equal-pay-day-2026/)
 
+## Gender Pay Gap nach Bundesland
+
+- [Baden-Württemberg](${BASE_URL}/gender-pay-gap-baden-wuerttemberg/): 22%
+- [Bayern](${BASE_URL}/gender-pay-gap-bayern/): 20%
+- [Nordrhein-Westfalen](${BASE_URL}/gender-pay-gap-nordrhein-westfalen/): 17%
+- [Hessen](${BASE_URL}/gender-pay-gap-hessen/): 19%
+- [Berlin](${BASE_URL}/gender-pay-gap-berlin/): 12%
+- [Hamburg](${BASE_URL}/gender-pay-gap-hamburg/): 16%
+- [Niedersachsen](${BASE_URL}/gender-pay-gap-niedersachsen/): 18%
+- [Sachsen](${BASE_URL}/gender-pay-gap-sachsen/): 7%
+
 ## Kontakt & Beratung
 
 - [Kontakt](${BASE_URL}/kontakt/): Kostenlose Ersteinschätzung anfragen.
