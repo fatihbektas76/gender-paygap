@@ -48,10 +48,13 @@ export default function PrivacyPolicyPage() {
 
         <h2>3. Hosting</h2>
         <p>
-          Diese Website wird über die Infrastruktur von Vercel Inc., 440 N Barranca Ave #4133,
-          Covina, CA 91723, USA gehostet. Vercel verarbeitet beim Aufruf der Website technisch
-          notwendige Daten (u.&nbsp;a. IP-Adressen) als Auftragsverarbeiter. Grundlage der
-          Datenübermittlung in die USA sind die Standardvertragsklauseln der EU-Kommission.
+          Diese Website wird auf Servern der Hetzner Online GmbH, Industriestr.&nbsp;25,
+          91710&nbsp;Gunzenhausen, Deutschland gehostet. Das Hosting findet ausschließlich in
+          Rechenzentren innerhalb der Bundesrepublik Deutschland statt. Hetzner verarbeitet beim
+          Aufruf der Website technisch notwendige Daten (u.&nbsp;a. IP-Adressen) als
+          Auftragsverarbeiter im Sinne von Art.&nbsp;28 DSGVO. Da die Verarbeitung ausschließlich
+          innerhalb Deutschlands und damit im Geltungsbereich der DSGVO erfolgt, findet keine
+          Datenübermittlung in Drittstaaten statt.
         </p>
         <p>
           <strong>Rechtsgrundlage:</strong> Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse an
@@ -59,8 +62,12 @@ export default function PrivacyPolicyPage() {
         </p>
         <p>
           Weitere Informationen finden Sie in der{' '}
-          <a href="https://vercel.com/legal/privacy-policy" target="_blank" rel="noopener noreferrer">
-            Datenschutzerklärung von Vercel
+          <a href="https://www.hetzner.com/de/rechtliches/datenschutz" target="_blank" rel="noopener noreferrer">
+            Datenschutzerklärung von Hetzner
+          </a>
+          {' '}sowie zur{' '}
+          <a href="https://www.hetzner.com/de/rechtliches/auftragsverarbeitung/" target="_blank" rel="noopener noreferrer">
+            Auftragsverarbeitung
           </a>
           .
         </p>
