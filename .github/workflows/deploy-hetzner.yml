@@ -1,0 +1,78 @@
+name: Deploy to Hetzner
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch: {}
+
+concurrency:
+  group: hetzner-deploy-gender-paygap
+  cancel-in-progress: false
+
+env:
+  SLUG: gender-paygap
+  PM2_APP: gender-paygap
+  SMOKE_URL: https://www.gender-paygap.de/
+  NODE_VERSION: 20.11.0
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Setup SSH
+        env:
+          KEY: ${{ secrets.HETZNER_SSH_KEY }}
+          HOST: ${{ secrets.HETZNER_HOST }}
+        run: |
+          mkdir -p ~/.ssh
+          printf '%s\n' "$KEY" > ~/.ssh/deploy_key
+          chmod 600 ~/.ssh/deploy_key
+          ssh-keyscan -H "$HOST" >> ~/.ssh/known_hosts 2>/dev/null
+
+      - name: Deploy
+        env:
+          HOST: ${{ secrets.HETZNER_HOST }}
+          USER: ${{ secrets.HETZNER_USER }}
+          SHA: ${{ github.sha }}
+        run: |
+          ssh -i ~/.ssh/deploy_key -o BatchMode=yes "$USER@$HOST" \
+            SLUG="$SLUG" PM2_APP="$PM2_APP" NODE_VERSION="$NODE_VERSION" SHA="$SHA" \
+            bash -s <<'REMOTE'
+          set -euo pipefail
+          export NVM_DIR="$HOME/.nvm"
+          [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
+          nvm use "$NODE_VERSION" >/dev/null
+
+          cd "/var/www/$SLUG"
+
+          echo "== Fetch =="
+          git fetch --all --prune
+          git reset --hard "$SHA"
+
+          echo "== Deps =="
+          NODE_ENV=development npm ci --no-audit --no-fund
+
+          echo "== Build =="
+          npm run build
+
+          echo "== Reload =="
+          pm2 reload "$PM2_APP" --update-env
+          pm2 save
+
+          echo "== Deployed commit =="
+          git log -1 --oneline
+          echo "== Node version =="
+          node --version
+          REMOTE
+
+      - name: Smoke test
+        run: |
+          for i in 1 2 3 4 5 6; do
+            code=$(curl -sS -o /dev/null -w "%{http_code}" -L "$SMOKE_URL")
+            echo "attempt $i -> HTTP $code"
+            if [ "$code" = "200" ]; then exit 0; fi
+            sleep 5
+          done
+          echo "Smoke test failed: site did not return 200"
+          exit 1
