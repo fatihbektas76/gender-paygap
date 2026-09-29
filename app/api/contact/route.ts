@@ -35,12 +35,8 @@ export async function POST(request: NextRequest) {
       message: String(message).slice(0, 5000),
     };
 
-    await Promise.all([
-      createContact(contactData),
-      sendNotificationEmail(contactData),
-    ]);
-
-    // APOS Admin ingest — parallel, fire-and-forget, non-blocking
+    // APOS Admin ingest — parallel, fire-and-forget, BEFORE Brevo so we get
+    // the lead even when Brevo is misconfigured or down. Non-blocking.
     forwardLeadToAdmin({
       name: contactData.name,
       email: contactData.email,
@@ -50,6 +46,17 @@ export async function POST(request: NextRequest) {
       pageUrl: request.headers.get('referer'),
       raw: contactData,
     }).catch(() => undefined);
+
+    // Brevo can fail independently; we still return 200 to the client below,
+    // because the lead is already safe in the admin backend.
+    try {
+      await Promise.all([
+        createContact(contactData),
+        sendNotificationEmail(contactData),
+      ]);
+    } catch (brevoErr) {
+      console.warn('[contact] Brevo failure (non-fatal, lead is in admin):', brevoErr instanceof Error ? brevoErr.message : brevoErr);
+    }
 
     return NextResponse.json({ success: true });
   } catch (error) {
