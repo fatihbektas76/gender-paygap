@@ -1,5 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { createContact, sendNotificationEmail } from '@/lib/brevo';
+import { forwardLeadToAdmin } from '@/lib/admin-ingest';
 
 export async function POST(request: NextRequest) {
   try {
@@ -38,6 +39,17 @@ export async function POST(request: NextRequest) {
       createContact(contactData),
       sendNotificationEmail(contactData),
     ]);
+
+    // APOS Admin ingest — parallel, fire-and-forget, non-blocking
+    forwardLeadToAdmin({
+      name: contactData.name,
+      email: contactData.email,
+      phone: contactData.phone ?? null,
+      rechtsgebiet: contactData.disputeType ?? null,
+      message: contactData.message,
+      pageUrl: request.headers.get('referer'),
+      raw: contactData,
+    }).catch(() => undefined);
 
     return NextResponse.json({ success: true });
   } catch (error) {
