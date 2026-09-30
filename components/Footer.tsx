@@ -91,10 +91,10 @@ export default function Footer({ onOpenCookieSettings }: { onOpenCookieSettings:
               <li><Link href="/kontakt" className={linkClass}>Kontaktformular</Link></li>
               <li><a href="https://apos.legal" target="_blank" rel="noopener noreferrer" className={linkClass}>APOS Legal</a></li>
               <li>
-                <a href="tel:+49622295992400" className={linkClass}>+49 6222 9599 2400</a>
+                <a href="tel:+49622295992400" data-track="cta_footer_phone" className={linkClass}>+49 6222 9599 2400</a>
               </li>
               <li>
-                <a href="mailto:bektas@apos.legal" className={linkClass}>bektas@apos.legal</a>
+                <a href="mailto:bektas@apos.legal" data-track="cta_footer_mail" className={linkClass}>bektas@apos.legal</a>
               </li>
             </ul>
           </div>
