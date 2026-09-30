@@ -85,7 +85,7 @@ export default function Navigation() {
           <li>
             <Link
               href="/kontakt"
-              onClick={closeMenu}
+              data-track="cta_nav_kontakt" onClick={closeMenu}
               className="bg-gold-dark text-white px-6 py-2.5 rounded-sm font-semibold text-[0.85rem] no-underline hover:bg-gold-dark hover:-translate-y-px hover:shadow-[0_4px_16px_rgba(166,139,75,0.2)] transition-all whitespace-nowrap"
             >
               Kontakt &rarr;
