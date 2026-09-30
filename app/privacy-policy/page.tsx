@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
+import TrackingOptOut from './tracking-opt-out';
 
 export const metadata: Metadata = {
   title: 'Datenschutzerklärung',
@@ -72,7 +73,59 @@ export default function PrivacyPolicyPage() {
           .
         </p>
 
-        <h2>4. Ihre Rechte</h2>
+        <h2>4. Reichweitenmessung (Plausible)</h2>
+        <p>
+          Wir setzen zur statistischen Auswertung unserer Website die Open-Source-Software{' '}
+          <strong>Plausible Analytics</strong> ein. Plausible wird{' '}
+          <strong>ausschließlich auf unserem eigenen Server</strong> der Hetzner Online GmbH in
+          Deutschland betrieben (self-hosted). Es findet <strong>keine Datenübermittlung an
+          Dritte oder in Drittstaaten</strong> statt.
+        </p>
+        <p>
+          Erfasst werden ausschließlich technisch aggregierte Zugriffsdaten: aufgerufene Seite,
+          Verweis-URL, Browser- und Gerätetyp, Betriebssystem und eine grobe Herkunftsregion. Die
+          IP-Adresse wird <strong>nicht gespeichert</strong>; sie wird ausschließlich am Tag des
+          Besuchs zu einem täglich rotierenden Hash-Wert verarbeitet und danach verworfen. Es
+          werden <strong>keine Cookies gesetzt</strong> und keine personenbezogenen Daten
+          verarbeitet.
+        </p>
+        <p>
+          <strong>Rechtsgrundlage:</strong> Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse an
+          Reichweitenmessung). Aufgrund der Anonymisierung und des Verzichts auf Cookies ist
+          keine Einwilligung nach &sect;&nbsp;25 TDDDG erforderlich.
+        </p>
+
+        <h2>5. Funnel-Analyse (eigenes Tracking)</h2>
+        <p>
+          Für die interne Optimierung unserer Kontaktformulare setzen wir ein{' '}
+          <strong>eigenes minimales Analyse-Tool</strong> ein, das auf unserer Infrastruktur
+          (admin.gekuendigt-abfindung.de, Hetzner, DE) läuft.
+        </p>
+        <p>
+          Erfasst werden: aufgerufene Seite, Verweis-URL, User-Agent, eine zufällige,{' '}
+          <strong>nur im Browser-Tab</strong> gespeicherte Session-Kennung (sessionStorage
+          &mdash; keine dauerhaften Cookies), sowie Formular-Ereignisse (Start, Feldfokus,
+          Abschicken, Abbruch). <strong>Die Feldinhalte selbst werden nicht übertragen</strong>
+          &mdash; wir erfassen lediglich <em>welches</em> Feld benutzt wurde, nicht{' '}
+          <em>was</em> darin steht.
+        </p>
+        <p>
+          Wenn Ihr Browser den <strong>Do-Not-Track-Header (DNT)</strong> aktiviert hat, findet
+          keine Erfassung statt. Sie können der Erfassung zudem jederzeit widersprechen &mdash;
+          der Widerspruch wird lokal in Ihrem Browser gespeichert und gilt für zukünftige Besuche.
+        </p>
+        <div style={{ border: '1px solid #E8E3D8', borderRadius: '12px', padding: '20px', backgroundColor: '#FAF8F3', margin: '20px 0' }}>
+          <p style={{ fontSize: '0.7rem', fontWeight: 700, letterSpacing: '0.14em', textTransform: 'uppercase', color: '#7A756B', marginTop: 0, marginBottom: '8px' }}>
+            Widerspruch
+          </p>
+          <TrackingOptOut />
+        </div>
+        <p>
+          <strong>Rechtsgrundlage:</strong> Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse an
+          einer nutzerfreundlichen Gestaltung der Kontaktformulare durch Drop-off-Analyse).
+        </p>
+
+        <h2>6. Ihre Rechte</h2>
         <p>Nach der DSGVO stehen Ihnen folgende Rechte bezüglich Ihrer personenbezogenen Daten zu:</p>
         <ul>
           <li>
@@ -119,7 +172,7 @@ export default function PrivacyPolicyPage() {
           </a>
         </p>
 
-        <h2>5. Kontaktformular</h2>
+        <h2>7. Kontaktformular</h2>
         <p>Wenn Sie unser Kontaktformular absenden, werden folgende Daten erhoben:</p>
         <ul>
           <li>Name (Pflichtfeld)</li>
@@ -149,7 +202,7 @@ export default function PrivacyPolicyPage() {
           übermittelt und dort gespeichert, siehe Abschnitt 8.
         </p>
 
-        <h2>6. Google Analytics</h2>
+        <h2>8. Google Analytics</h2>
         <p>
           Diese Website verwendet Google Analytics 4, einen Webanalysedienst der Google Ireland
           Limited, Gordon House, Barrow Street, Dublin 4, Irland (&bdquo;Google&ldquo;).
@@ -190,7 +243,7 @@ export default function PrivacyPolicyPage() {
           .
         </p>
 
-        <h2>7. Schriften (selbst gehostet)</h2>
+        <h2>9. Schriften (selbst gehostet)</h2>
         <p>
           Diese Website verwendet selbst gehostete Schriften, die auf unserem eigenen Server
           gespeichert sind. Es wird keine Verbindung zu externen Schriftdiensten (wie z.&nbsp;B. Google
@@ -203,7 +256,7 @@ export default function PrivacyPolicyPage() {
           werden, werden zu diesem Zweck keine personenbezogenen Daten an Dritte weitergegeben.
         </p>
 
-        <h2>8. Brevo (Sendinblue)</h2>
+        <h2>10. Brevo (Sendinblue)</h2>
         <p>
           Wir verwenden Brevo (ehemals Sendinblue), bereitgestellt von Brevo SAS, 106 boulevard
           Haussmann, 75008 Paris, Frankreich, für folgende Zwecke:
@@ -243,7 +296,7 @@ export default function PrivacyPolicyPage() {
           .
         </p>
 
-        <h2>9. Cookies</h2>
+        <h2>11. Cookies</h2>
         <p>
           Unsere Website verwendet Cookies. Cookies sind kleine Textdateien, die auf Ihrem Gerät
           gespeichert werden und die Analyse der Websitenutzung ermöglichen.
@@ -332,14 +385,14 @@ export default function PrivacyPolicyPage() {
           &bdquo;Cookie-Einstellungen&ldquo; in der Fußzeile unserer Website verwalten.
         </p>
 
-        <h2>10. SSL-/TLS-Verschlüsselung</h2>
+        <h2>12. SSL-/TLS-Verschlüsselung</h2>
         <p>
           Diese Website nutzt aus Sicherheitsgründen und zum Schutz der Übertragung vertraulicher
           Inhalte eine SSL-/TLS-Verschlüsselung. Eine verschlüsselte Verbindung erkennen Sie an dem
           Präfix &bdquo;https://&ldquo; in der Adresszeile Ihres Browsers.
         </p>
 
-        <h2>11. Änderungen dieser Datenschutzerklärung</h2>
+        <h2>13. Änderungen dieser Datenschutzerklärung</h2>
         <p>
           Wir behalten uns vor, diese Datenschutzerklärung zu aktualisieren, um Änderungen unserer
           Datenverarbeitungspraktiken oder rechtlicher Anforderungen widerzuspiegeln. Die aktuelle
