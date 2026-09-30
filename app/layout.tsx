@@ -137,6 +137,12 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           src="https://admin.gekuendigt-abfindung.de/apos-track.js"
           strategy="afterInteractive"
         />
+        <Script
+          defer
+          data-domain="gender-paygap.de"
+          src="https://stats.gekuendigt-abfindung.de/js/script.js"
+          strategy="afterInteractive"
+        />
       </body>
     </html>
   );
